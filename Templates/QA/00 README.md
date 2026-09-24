@@ -23,4 +23,6 @@ Bug:
 
 Para bugs, a mesma preparação Qase ocupa a posição `04 - Preparação Qase.md`, depois de `03 - Validação dev.md`.
 
+Modelos Qase: [[Templates/QA/04 - Preparação Qase|Qase para bugs]] · [[Templates/QA/05 - Preparação Qase|Qase para melhorias]]
+
 Os templates de tipo específico ficam em [[Templates/Bug/00 README|Bug]] e [[Templates/Melhoria/00 README|Melhoria]].

@@ -7,7 +7,7 @@ kanban-plugin: board
 ## 📥 Backlog
 
 - [ ] 🔴 [[NXG-008 PLAN-081 — navegação escalável]]
-- [ ] 🔴 [[03 Trabalho/QA/Nxgest/Demandas/Planos/NXG-027 Estrutura QA e fluxo de qualidade do vault|NXG-027 Estrutura QA e fluxo de qualidade do vault]]
+- [ ] 🔴 [[03 Trabalho/QA/Nxgest/Demandas/Planos/NXG-027 Estrutura QA e fluxo de qualidade.md|NXG-027 Estrutura QA e fluxo de qualidade]]
 - [ ] 🟡 [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-001 Excluir gasto/01 - Bug|NXG-001 Excluir gasto (GastoList órfão)]]
 - [ ] 🟡 [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-002 Excluir cliente/01 - Bug|NXG-002 Excluir cliente (sem UI)]]
 - [ ] 🟡 [[NXG-005 Cobranças e Atendidos sem item de nav (decisão)]]

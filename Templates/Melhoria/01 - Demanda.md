@@ -30,7 +30,8 @@ pontos_alocados: ""
 > [!settings]- Controle da demanda
 > **Prioridade:** `INPUT[inlineSelect(option(baixa),option(media),option(alta)):prioridade]`  
 > **Ambiente:** `INPUT[inlineSelect(option(dev),option(hml),option(prod)):ambiente]`  
-> **Origem:** `INPUT[inlineSelect(option(repo),option(observado),option(conversa),option(validação)):origem]`
+> **Origem:** `INPUT[inlineSelect(option(repo),option(observado),option(conversa),option(validação)):origem]`<br>
+> **Projeto:** preencher `projeto` no frontmatter antes de roteiar a melhoria.
 
 
 > [!info] Status atual
@@ -45,7 +46,7 @@ pontos_alocados: ""
 > Exemplo: se houver 50 pontos disponíveis no ciclo, usar `pontos_alocados: 50`.
 >
 > ```dataviewjs
-> const id = (dv.current().file.path.match(/MEL-\d+/) || [""])[0];
+> const id = (dv.current().file.path.match(/(?:[A-Z]{2,8}-)?MEL-\d+/) || [""])[0];
 > const paginas = dv.pages().where(p => id && p.file.path.includes(id) && typeof p.pontos === "number");
 > const lista = paginas.sort(p => p.file.name);
 > const necessario = lista.array().reduce((soma, pagina) => soma + Number(pagina.pontos), 0);

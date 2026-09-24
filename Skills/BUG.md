@@ -1,13 +1,13 @@
 # Skill: Criação e Organização de Bugs (universal)
 
-Criar, revisar e organizar bugs no padrão do vault. Adaptado do `brainwork` (SKILL_BUGS) — sem Notion/SGV: aqui o card é a fonte (`<PROJ>-NNN`), e o plano do repo é referência (`PLAN-NNN`).
+Criar, revisar e organizar bugs no padrão do vault. Adaptado do `brainwork` (SKILL_BUGS): aqui o card é a fonte (`<PROJ>-NNN`), e o plano do repo é referência (`PLAN-NNN`).
 
 ## Bug × Defeito × Melhoria
 
 Primeira pergunta antes de criar o card — muda o template e a esteira:
 
 - **Bug** — comportamento errado observado (dev, staging ou prod). Template `Templates/Bug/`. Esteira normal.
-- **Defeito** — reprovou um **CT de um card pai** (melhoria/funcionalidade) em `dev`. Abre como bug **filho** (`pai: <ID do card pai>`, por exemplo `pai: MEL-0001`), fecha sem passar por `hml`. Fronteira é **origem + ambiente**, não gravidade.
+- **Defeito** — reprovou um **CT de um card pai** (melhoria/funcionalidade) em `dev`. Abre como bug **filho** (`pai: <ID do card pai>`, por exemplo `pai: SOG-MEL-0001`), fecha sem passar por `hml`. Fronteira é **origem + ambiente**, não gravidade.
 - **Melhoria** — funciona, pode funcionar melhor. Template `Templates/Melhoria/` (hub) — ver `Skills/MELHORIA`.
 
 ## Modos de entrada

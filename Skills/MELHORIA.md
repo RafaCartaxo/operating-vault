@@ -1,11 +1,11 @@
 # Skill: Melhoria (universal)
 
-Ciclo da melhoria — da ideia ao card validado no board. Adaptado do `brainwork` (SKILL_MELHORIA) — sem Notion: o "cadastro" é criar o card no board; sem Qase: os CTs vivem em `03 - Casos de teste.md`.
+Ciclo da melhoria — da ideia ao card validado no board. Adaptado do `brainwork` (SKILL_MELHORIA). O card é criado no board; os CTs vivem em `03 - Casos de teste.md` e podem ser preparados para Qase quando o projeto usar essa integração.
 
 ## Onde nasce
 
 - **Daily** → seção `## Melhorias propostas`, checkbox `<PROJ>-MEL-NNNN · <Título>` — ou direto no board como card `<PROJ>-MEL-NNNN` com template `Melhoria`.
-- **Número**: sequencial (`MEL-0001`, `MEL-0002`...) e nunca reutilizado. O identificador é estável: não vira `<PROJ>-NNN` ao longo do ciclo. Quando necessário, a implementação recebe um `PLAN-NNN` no repositório.
+- **Número**: sequencial por projeto (`<PROJ>-MEL-0001`, `<PROJ>-MEL-0002`...) e nunca reutilizado. O identificador é estável durante todo o ciclo. IDs históricos sem prefixo de projeto permanecem válidos.
 
 ## Ciclo
 

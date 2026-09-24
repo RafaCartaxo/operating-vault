@@ -32,7 +32,8 @@ pontos_alocados: ""
 > **Tipo:** `INPUT[inlineSelect(option(bug),option(melhoria),option(plano_tecnico),option(demanda)):tipo]`  
 > **Prioridade:** `INPUT[inlineSelect(option(baixa),option(media),option(alta)):prioridade]`  
 > **Ambiente:** `INPUT[inlineSelect(option(dev),option(hml),option(prod)):ambiente]`  
-> **Origem:** `INPUT[inlineSelect(option(repo),option(observado),option(conversa),option(validação)):origem]`
+> **Origem:** `INPUT[inlineSelect(option(repo),option(observado),option(conversa),option(validação)):origem]`<br>
+> **Projeto:** preencher `projeto` no frontmatter antes de roteiar o card.
 
 ---
 

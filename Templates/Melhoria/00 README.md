@@ -32,8 +32,9 @@
 
 > [!warning]- Esforço adicional por defeitos filhos
 > ```dataviewjs
-> const id = (dv.current().file.folder.match(/MEL-\d+/) || [""])[0];
-> const defeitos = dv.pages('"03 Trabalho/QA/<projeto>/Demandas/Bugs"').where(p => String(p.pai ?? "").includes(id));
+> const projeto = String(dv.current().projeto || "").toLowerCase();
+> const id = (dv.current().file.folder.match(/(?:[A-Z]{2,8}-)?MEL-\d+/) || [""])[0];
+> const defeitos = dv.pages().where(p => projeto && p.file.path.includes(`03 Trabalho/QA/${projeto}/Demandas/Bugs`) && String(p.pai ?? "").includes(id));
 > const adicional = defeitos.array().reduce((soma, pagina) => soma + (typeof pagina.pontos === "number" ? pagina.pontos : 0), 0);
 > const original = dv.pages().where(p => id && p.file.path.includes(id) && typeof p.pontos === "number").array().reduce((soma, pagina) => soma + Number(pagina.pontos), 0);
 > dv.table(["Defeito filho", "Pontos"], defeitos.map(p => [p.file.link, p.pontos ?? 0]));
