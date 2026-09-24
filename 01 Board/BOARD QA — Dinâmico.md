@@ -1,6 +1,6 @@
 # Board QA — Visão dinâmica
 
-> Esta visão é alimentada pelo `status` do `00 README.md` de cada demanda ativa. Cards concluídos ficam em [[05 Arquivo/00 README|05 Arquivo]] e permanecem acessíveis pelo histórico.
+> Esta visão é alimentada pelo `status` do `00 README.md` de cada demanda ativa em todos os projetos. Cards concluídos ficam em [[05 Arquivo/00 README|05 Arquivo]] e permanecem acessíveis pelo histórico.
 
 ```dataviewjs
 const colunas = [
@@ -10,8 +10,8 @@ const colunas = [
   ["validacao", "🧪 Em validação"],
   ["concluido", "✅ Concluído"],
 ];
-const cards = dv.pages('"03 Trabalho QA/Demandas"')
-  .where((pagina) => pagina.file.name === "00 README");
+const cards = dv.pages()
+  .where((pagina) => pagina.file.name === "00 README" && String(pagina.file.folder).includes("/03 Trabalho/QA/") && String(pagina.file.folder).includes("/Demandas/"));
 const board = dv.el("div", "", { attr: { style: "display:flex;flex-direction:row;gap:12px;align-items:flex-start;width:100%;overflow-x:auto;padding-bottom:12px;" } });
 
 for (const [status, titulo] of colunas) {

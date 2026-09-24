@@ -6,7 +6,7 @@
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** [[04 Trabalho DEV/Execuções/<ID>/00 README|Execução DEV]]
+> **Execução DEV:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/00 README|Execução DEV]]
 
 > [!settings]- Controle do card
 > **Status:** `INPUT[inlineSelect(option(backlog),option(analise),option(execucao),option(validacao),option(concluido)):status]`  
@@ -18,7 +18,7 @@
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** [[04 Trabalho DEV/Execuções/<ID>/00 README|Execução DEV]]
+> **Execução DEV:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/00 README|Execução DEV]]
 
 > [!tip]- Esforço
 > ```dataviewjs
@@ -33,17 +33,17 @@
 > [!warning]- Esforço adicional por defeitos filhos
 > ```dataviewjs
 > const id = (dv.current().file.folder.match(/MEL-\d+/) || [""])[0];
-> const defeitos = dv.pages('"03 Trabalho QA/Demandas/Bugs"').where(p => String(p.pai ?? "").includes(id));
+> const defeitos = dv.pages('"03 Trabalho/QA/<projeto>/Demandas/Bugs"').where(p => String(p.pai ?? "").includes(id));
 > const adicional = defeitos.array().reduce((soma, pagina) => soma + (typeof pagina.pontos === "number" ? pagina.pontos : 0), 0);
 > const original = dv.pages().where(p => id && p.file.path.includes(id) && typeof p.pontos === "number").array().reduce((soma, pagina) => soma + Number(pagina.pontos), 0);
 > dv.table(["Defeito filho", "Pontos"], defeitos.map(p => [p.file.link, p.pontos ?? 0]));
 > dv.paragraph(`**${id || "<ID>"} — Retrabalho por defeitos filhos:** ${adicional} pontos (${defeitos.length} defeitos)`);
 > ```
 
-Pacote QA para `MEL-NNNN`:
+Pacote QA para `<PROJ>-MEL-NNNN`:
 
 ```text
-MEL-NNNN/
+<PROJ>-MEL-NNNN/
 ├── 00 README.md
 ├── 01 - Demanda.md
 ├── 02 - Plano de teste.md

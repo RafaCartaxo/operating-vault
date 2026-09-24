@@ -1,4 +1,4 @@
-# Skill: Criação de Casos de Teste (NX Gest)
+# Skill: Criação de Casos de Teste (universal)
 
 Criar e organizar casos de teste no padrão do vault. Adaptado do `brainwork` (SKILL_CASOS_DE_TESTE). Um único formato em todo o vault — o que muda é a numeração.
 

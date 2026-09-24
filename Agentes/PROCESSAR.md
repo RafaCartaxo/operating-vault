@@ -1,4 +1,4 @@
-# Agente: Processar material novo (NX Gest)
+# Agente: Processar material novo (universal)
 
 Recebe um material bruto (relato na daily, texto no `00 Inbox`, observação do usuário, diff/nota) e executa o pipeline **classificar → limpar → rotear → registrar**, sem intervenção. Adaptado do `brainwork` (AGENTE_PROCESSAR_EXPORT) — sem Notion: o destino é sempre um card no board + registro na daily.
 
@@ -30,7 +30,7 @@ material bruto (daily / inbox / relato)
              ▼
 ┌────────────────────────────┐
 │ 3. ROTEAR                 │  ← template certo (Bug | Melhoria | —)
-│    + numerar o tipo certo │  ← destino: 03 Trabalho QA/ + board
+│    + numerar o tipo certo │  ← destino: 03 Trabalho/QA/<projeto>/ + board
 └────────────┬───────────────┘
              ▼
 ┌────────────────────────────┐
@@ -41,8 +41,8 @@ material bruto (daily / inbox / relato)
 ## Como iniciar
 
 ```text
-BUG      relato + ambiente + reprodução → PROCESSAR → 03 Trabalho QA/Demandas/Bugs/NXG-NNN/
-MELHORIA ideia + problema + resultado   → PROCESSAR → 03 Trabalho QA/Demandas/Melhorias/MEL-NNNN/
+BUG      relato + ambiente + reprodução → PROCESSAR → 03 Trabalho/QA/<projeto>/Demandas/Bugs/<PROJ>-NNN/
+MELHORIA ideia + problema + resultado   → PROCESSAR → 03 Trabalho/QA/<projeto>/Demandas/Melhorias/<PROJ>-MEL-NNNN/
 ```
 
 O relato pode ser colado no chat, registrado em `00 Inbox/` ou anotado na daily. Não é necessário conhecer o número do card.
@@ -51,9 +51,9 @@ O relato pode ser colado no chat, registrado em `00 Inbox/` ou anotado na daily.
 
 ```text
 relato
-  ├─ comportamento errado confirmado? ── sim → BUG → NXG-NNN
-  ├─ melhoria/necessidade desejada? ───── sim → MELHORIA → MEL-NNNN
-  ├─ falha de CT de demanda pai? ───────── sim → DEFEITO → NXG-NNN (pai: <ID>)
+  ├─ comportamento errado confirmado? ── sim → BUG → <PROJ>-NNN
+  ├─ melhoria/necessidade desejada? ───── sim → MELHORIA → <PROJ>-MEL-NNNN
+  ├─ falha de CT de demanda pai? ───────── sim → DEFEITO → <PROJ>-NNN (pai: <ID>)
   ├─ suspeita não confirmada? ──────────── sim → daily como ❓, sem card
   └─ informação insuficiente? ──────────── sim → permanece no Inbox
 ```
@@ -62,7 +62,7 @@ relato
 
 1. **Classificar** com `Skills/BUG` (bug×defeito×melhoria) — na dúvida entre bug e melhoria, **perguntar**, não assumir.
 2. **Limpar**: extrair campos do template; **nada se infere** — ambíguo vira pergunta.
-3. **Roteamento**: bug → `Templates/Bug/` + `NXG-NNN`; melhoria → `Templates/Melhoria/` + `MEL-NNNN`; sem informação para decidir → fica em `00 Inbox/` até destilar. O ID da demanda nunca é renomeado.
+3. **Roteamento**: bug → `Templates/Bug/` + `<PROJ>-NNN`; melhoria → `Templates/Melhoria/` + `<PROJ>-MEL-NNNN`; sem informação para decidir → fica em `00 Inbox/` até destilar. O ID da demanda nunca é renomeado.
    O arquivo deve ser uma cópia do template correspondente; substituir placeholders, sem reconstruir a estrutura.
 4. **Suspeita sem confirmação** → registra `❓` na daily, **não** cria card (regra do `Skills/BUG`).
 5. **Prontidão de melhoria**: antes de mover para `backlog`, conferir Problema, Objetivo, Decisões, Escopo, Fora de escopo, Regras, Critérios e CTs. Decisão pendente que mude comportamento, escopo ou aceite mantém `status: analise`; registrar a pergunta em `## Pendências de decisão`.

@@ -9,9 +9,9 @@ pontos: ""
 > **README do card:** [[00 README|Abrir README do card]]  
 > **Bug:** [[01 - Bug]]  
 > **Casos de teste:** [[02 - Casos de teste]]  
-> **Fix DEV:** [[04 Trabalho DEV/Fixes/<ID>/00 README|Fix DEV]]  
+> **Fix DEV:** [[03 Trabalho/DEV/<projeto>/Fixes/<ID>/00 README|Fix DEV]]  
 > **Preparação Qase:** [[04 - Preparação Qase]]  
-> **Validação QA:** [[03 Trabalho QA/Demandas/Bugs/<ID>/03 - Validação dev|Validação QA]]
+> **Validação QA:** [[03 Trabalho/QA/<projeto>/Demandas/Bugs/<ID>/03 - Validação dev|Validação QA]]
 
 > [!settings]- Controle dos casos de teste
 > **Status:** `INPUT[inlineSelect(option(planejado),option(execucao),option(concluido)):status]`

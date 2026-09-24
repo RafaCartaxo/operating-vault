@@ -1,6 +1,6 @@
-# Skill: Criação e Organização de Bugs (NX Gest)
+# Skill: Criação e Organização de Bugs (universal)
 
-Criar, revisar e organizar bugs no padrão do vault. Adaptado do `brainwork` (SKILL_BUGS) — sem Notion/SGV: aqui o card é a fonte (`NXG-NNN`), e o plano do repo é referência (`PLAN-NNN`).
+Criar, revisar e organizar bugs no padrão do vault. Adaptado do `brainwork` (SKILL_BUGS) — sem Notion/SGV: aqui o card é a fonte (`<PROJ>-NNN`), e o plano do repo é referência (`PLAN-NNN`).
 
 ## Bug × Defeito × Melhoria
 
@@ -23,9 +23,9 @@ Cada bug vive em uma pasta própria: `01 - Bug.md` (sintoma, reprodução, esper
 
 ## Nome do arquivo e numeração
 
-- Card com número: `NXG-NNN Bug <Título>` (número atribuído no board — sequencial, nunca reutilizado).
+- Card com número: `<PROJ>-NNN Bug <Título>` (número atribuído no board — sequencial, nunca reutilizado).
 - Sem número ainda: `Bug <Título>` (prefixo entra quando numerar).
-- Defeito: `NXG-NNN Defeito <Título>` com `pai` preenchido.
+- Defeito: `<PROJ>-NNN Defeito <Título>` com `pai` preenchido.
 
 ## Descarte
 
@@ -33,6 +33,6 @@ Cada bug vive em uma pasta própria: `01 - Bug.md` (sintoma, reprodução, esper
 
 ## Onde registrar
 
-- Card em `03 Trabalho QA/Demandas/Bugs/<ID>/` · status no board · registro na daily (🐛 Bug encontrado / 🗑️ descartado).
+- Card em `03 Trabalho/QA/<projeto>/Demandas/Bugs/<ID>/` · status no board · registro na daily (🐛 Bug encontrado / 🗑️ descartado).
 - Os **CTs da nota `02 - Casos de teste.md` são a fonte única de verificação**; a validação registra os resultados e evidências.
 - O campo `pontos` registra o esforço da passagem pelo bug, usando a [[ESCALA-DE-ESFORCO|escala Fibonacci]]. Pode ficar vazio no registro inicial, mas deve ser preenchido antes de o bug sair de `QA · Triagem`.

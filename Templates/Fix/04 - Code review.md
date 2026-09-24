@@ -6,7 +6,7 @@
 > **Bug QA:** [[<CARD>|<ID> — <título>]]  
 > **Plano:** [[02 - Plano de correção|02 - Plano de correção]]  
 > **Implementação:** [[03 - Implementação|03 - Implementação]]  
-> **Validação QA:** [[03 Trabalho QA/Demandas/Bugs/<ID>/03 - Validação dev|Validação QA]]
+> **Validação QA:** [[03 Trabalho/QA/<projeto>/Demandas/Bugs/<ID>/03 - Validação dev|Validação QA]]
 
 **Estado:** ⏳ aguardando revisão
 

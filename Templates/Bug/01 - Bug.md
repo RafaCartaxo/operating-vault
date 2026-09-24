@@ -8,6 +8,7 @@ plano: ""
 execucao: ""
 ambiente: dev
 origem: observado
+projeto: ""
 pai: ""
 data_inicio: ""
 data_fim: ""
@@ -15,15 +16,15 @@ responsavel: ""
 pontos_alocados: ""
 ---
 
-# NXG-NNN — Bug <Título curto>
+# <PROJ>-NNN — Bug <Título curto>
 
 > [!info]- Navegação QA/DEV
 > **README do card:** [[00 README|Abrir README do card]]  
 > **Bug:** [[01 - Bug]]  
 > **Casos de teste:** [[02 - Casos de teste]]  
 > **Preparação Qase:** [[04 - Preparação Qase]]  
-> **Fix DEV:** [[04 Trabalho DEV/Fixes/<ID>/00 README|Fix DEV]]  
-> **Validação QA:** [[03 Trabalho QA/Demandas/Bugs/<ID>/03 - Validação dev|Validação QA]]
+> **Fix DEV:** [[03 Trabalho/DEV/<projeto>/Fixes/<ID>/00 README|Fix DEV]]  
+> **Validação QA:** [[03 Trabalho/QA/<projeto>/Demandas/Bugs/<ID>/03 - Validação dev|Validação QA]]
 
 > [!settings]- Controle do bug
 > **Prioridade:** `INPUT[inlineSelect(option(baixa),option(media),option(alta)):prioridade]`  

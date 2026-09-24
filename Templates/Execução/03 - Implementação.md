@@ -2,7 +2,7 @@
 
 > [!info]- Navegação QA/DEV
 > **README do card:** [[00 README|Abrir README do card]]  
-> **Execução:** [[04 Trabalho DEV/Execuções/<ID>/00 README|README da execução]]  
+> **Execução:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/00 README|README da execução]]  
 > **Demanda QA:** [[<DEMANDA>|<ID> — <título da demanda>]]  
 > **Plano:** [[02 - Plano de execução|02 - Plano de execução]]  
 > **Code review:** [[04 - Code review|04 - Code review]]  
@@ -39,7 +39,7 @@
 
 ## Verificação
 
-- [ ] CTs da demanda relacionados (fonte QA): [[03 Trabalho QA/Demandas/<tipo>/<ID>/03 - Casos de teste|ver casos de teste]].
+- [ ] CTs da demanda relacionados (fonte QA): [[03 Trabalho/QA/<projeto>/Demandas/<tipo>/<ID>/03 - Casos de teste|ver casos de teste]].
 - [ ] Gates aplicáveis do repositório verdes.
 - [ ] Documentação sincronizada quando aplicável.
 - [ ] Commit registrado no README.

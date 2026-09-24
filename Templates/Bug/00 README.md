@@ -4,7 +4,7 @@
 > **Bug:** [[01 - Bug]]  
 > **Casos de teste:** [[02 - Casos de teste]]  
 > **Preparação Qase:** [[04 - Preparação Qase]]  
-> **Fix DEV:** [[04 Trabalho DEV/Fixes/<ID>/00 README|Fix DEV]]
+> **Fix DEV:** [[03 Trabalho/DEV/<projeto>/Fixes/<ID>/00 README|Fix DEV]]
 > **Validação QA:** [[03 - Validação dev|Validação QA]] — criada junto com o Bug, copiando `Templates/QA/04 - Validação dev.md` e renomeando para `03 - Validação dev.md`.
 
 > [!settings]- Controle do card
@@ -16,7 +16,7 @@
 > **Casos de teste:** [[02 - Casos de teste]]  
 > **Validação:** [[03 - Validação dev]]  
 > **Preparação Qase:** [[04 - Preparação Qase]]  
-> **Fix DEV:** [[04 Trabalho DEV/Fixes/<ID>/00 README|Fix <ID>]]
+> **Fix DEV:** [[03 Trabalho/DEV/<projeto>/Fixes/<ID>/00 README|Fix <ID>]]
 
 > [!tip]- Esforço
 > ```dataviewjs
@@ -31,17 +31,17 @@
 > [!warning]- Esforço adicional por defeitos derivados
 > ```dataviewjs
 > const id = (dv.current().file.folder.match(/NXG-\d+/) || [""])[0];
-> const derivados = dv.pages('"03 Trabalho QA/Demandas/Bugs"').where(p => String(p.pai ?? "").includes(id));
+> const derivados = dv.pages('"03 Trabalho/QA/<projeto>/Demandas/Bugs"').where(p => String(p.pai ?? "").includes(id));
 > const adicional = derivados.array().reduce((soma, pagina) => soma + (typeof pagina.pontos === "number" ? pagina.pontos : 0), 0);
 > const original = dv.pages('"' + dv.current().file.folder + '"').where(p => typeof p.pontos === "number").array().reduce((soma, pagina) => soma + Number(pagina.pontos), 0);
 > dv.table(["Defeito derivado", "Pontos"], derivados.map(p => [p.file.link, p.pontos ?? 0]));
 > dv.paragraph(`**${id || "<ID>"} — Retrabalho por defeitos derivados:** ${adicional} pontos (${derivados.length} defeitos)`);
 > ```
 
-Pacote QA para `NXG-NNN`:
+Pacote QA para `<PROJ>-NNN`:
 
 ```text
-NXG-NNN/
+<PROJ>-NNN/
 ├── 00 README.md
 ├── 01 - Bug.md
 ├── 02 - Casos de teste.md

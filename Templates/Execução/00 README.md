@@ -12,11 +12,11 @@ pontos: ""
 
 > [!info]- Navegação QA/DEV
 > **Demanda QA:** [[<DEMANDA>|<ID> — <título da demanda>]]  
-> **Análise:** [[04 Trabalho DEV/Execuções/<ID>/01 - Análise|01 - Análise]]  
-> **Plano:** [[04 Trabalho DEV/Execuções/<ID>/02 - Plano de execução|02 - Plano de execução]]  
-> **Plano técnico:** [[04 Trabalho DEV/Planos/PLAN-NNN|PLAN-NNN — <título técnico>]]  
-> **Implementação:** [[04 Trabalho DEV/Execuções/<ID>/03 - Implementação|03 - Implementação]]  
-> **Code review:** [[04 Trabalho DEV/Execuções/<ID>/04 - Code review|04 - Code review]]
+> **Análise:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/01 - Análise|01 - Análise]]  
+> **Plano:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/02 - Plano de execução|02 - Plano de execução]]  
+> **Plano técnico:** [[03 Trabalho/DEV/<projeto>/Planos/PLAN-NNN|PLAN-NNN — <título técnico>]]  
+> **Implementação:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/03 - Implementação|03 - Implementação]]  
+> **Code review:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/04 - Code review|04 - Code review]]
 
 > [!settings]- Controle do card
 > **Status:** `INPUT[inlineSelect(option(backlog),option(analise),option(execucao),option(validacao),option(concluido)):status]`  
@@ -24,9 +24,9 @@ pontos: ""
 
 > [!info]- Cards relacionados
 > **Demanda QA:** [[<DEMANDA>|<ID> — <título da demanda>]]  
-> **Plano técnico:** [[04 Trabalho DEV/Planos/PLAN-NNN|PLAN-NNN]]  
-> **Implementação:** [[04 Trabalho DEV/Execuções/<ID>/03 - Implementação|03 - Implementação]]  
-> **Code review:** [[04 Trabalho DEV/Execuções/<ID>/04 - Code review|04 - Code review]]  
+> **Plano técnico:** [[03 Trabalho/DEV/<projeto>/Planos/PLAN-NNN|PLAN-NNN]]  
+> **Implementação:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/03 - Implementação|03 - Implementação]]  
+> **Code review:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/04 - Code review|04 - Code review]]  
 > **Validação QA:** [[<VALIDACAO>|Validação QA]]
 
 > [!tip]- Esforço

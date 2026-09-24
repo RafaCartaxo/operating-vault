@@ -1,11 +1,11 @@
-# Skill: Melhoria (NX Gest)
+# Skill: Melhoria (universal)
 
 Ciclo da melhoria — da ideia ao card validado no board. Adaptado do `brainwork` (SKILL_MELHORIA) — sem Notion: o "cadastro" é criar o card no board; sem Qase: os CTs vivem em `03 - Casos de teste.md`.
 
 ## Onde nasce
 
-- **Daily** → seção `## Melhorias propostas`, checkbox `MEL-NNNN · <Título>` — ou direto no board como card `MEL-NNNN` com template `Melhoria`.
-- **Número**: sequencial (`MEL-0001`, `MEL-0002`...) e nunca reutilizado. O identificador é estável: não vira `NXG-NNN` ao longo do ciclo. Quando necessário, a implementação recebe um `PLAN-NNN` no repositório.
+- **Daily** → seção `## Melhorias propostas`, checkbox `<PROJ>-MEL-NNNN · <Título>` — ou direto no board como card `<PROJ>-MEL-NNNN` com template `Melhoria`.
+- **Número**: sequencial (`MEL-0001`, `MEL-0002`...) e nunca reutilizado. O identificador é estável: não vira `<PROJ>-NNN` ao longo do ciclo. Quando necessário, a implementação recebe um `PLAN-NNN` no repositório.
 
 ## Ciclo
 
@@ -27,7 +27,7 @@ Ciclo da melhoria — da ideia ao card validado no board. Adaptado do `brainwork
 
 ## Bugs encontrados na validação da melhoria
 
-Se um CT da melhoria reprovar em `dev` → abre **Defeito** filho (`pai: MEL-NNNN`, `Skills/BUG`).
+Se um CT da melhoria reprovar em `dev` → abre **Defeito** filho (`pai: <PROJ>-MEL-NNNN`, `Skills/BUG`).
 
 Os pontos do defeito filho são esforço adicional e não alteram o total original da melhoria. O vínculo `pai` permite identificar a origem e apresentar separadamente o retrabalho gerado pela falha.
 
@@ -44,7 +44,7 @@ Antes de criar ou vincular um `PLAN-NNN`, confirmar:
 
 ## Identificadores e vínculos
 
-- **Melhoria:** `MEL-NNNN`, estável do registro ao arquivo.
-- **Bug/defeito:** `NXG-NNN`, inclusive quando for filho de uma melhoria (`pai: MEL-NNNN`).
+- **Melhoria:** `<PROJ>-MEL-NNNN`, estável do registro ao arquivo.
+- **Bug/defeito:** `<PROJ>-NNN`, inclusive quando for filho de uma melhoria (`pai: <PROJ>-MEL-NNNN`).
 - **Plano técnico:** `PLAN-NNN` no repositório; é vinculado no campo `plano`, sem substituir o ID da demanda.
 - **Esforço:** `pontos` registra o esforço da passagem pela melhoria, usando a [[ESCALA-DE-ESFORCO|escala Fibonacci]]. Pode ficar vazio ao registrar a ideia, mas deve ser preenchido antes de a melhoria sair de `QA · Triagem`.

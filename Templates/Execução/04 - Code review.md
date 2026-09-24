@@ -2,7 +2,7 @@
 
 > [!info]- Navegação QA/DEV
 > **README do card:** [[00 README|Abrir README do card]]  
-> **Execução:** [[04 Trabalho DEV/Execuções/<ID>/00 README|README da execução]]  
+> **Execução:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/00 README|README da execução]]  
 > **Demanda QA:** [[<DEMANDA>|<ID> — <título da demanda>]]  
 > **Plano:** [[02 - Plano de execução|02 - Plano de execução]]  
 > **Implementação:** [[03 - Implementação|03 - Implementação]]  

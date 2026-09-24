@@ -40,42 +40,6 @@
     "iconName": "LiCalendarDays",
     "iconColor": "#cb4b16"
   },
-  "03 Trabalho QA": {
-    "iconName": "LiShieldCheck",
-    "iconColor": "#2aa198"
-  },
-  "03 Trabalho QA/Demandas": {
-    "iconName": "LiClipboardList",
-    "iconColor": "#2aa198"
-  },
-  "03 Trabalho QA/Demandas/Bugs": {
-    "iconName": "LiBug",
-    "iconColor": "#dc322f"
-  },
-  "03 Trabalho QA/Demandas/Melhorias": {
-    "iconName": "LiLightbulb",
-    "iconColor": "#b58900"
-  },
-  "03 Trabalho QA/Demandas/Planos": {
-    "iconName": "LiListChecks",
-    "iconColor": "#6c71c4"
-  },
-  "04 Trabalho DEV": {
-    "iconName": "LiCode2",
-    "iconColor": "#268bd2"
-  },
-  "04 Trabalho DEV/Planos": {
-    "iconName": "LiFileText",
-    "iconColor": "#6c71c4"
-  },
-  "04 Trabalho DEV/Fixes": {
-    "iconName": "LiWrench",
-    "iconColor": "#dc322f"
-  },
-  "04 Trabalho DEV/Execuções": {
-    "iconName": "LiRocket",
-    "iconColor": "#cb4b16"
-  },
   "05 Arquivo": {
     "iconName": "LiArchive",
     "iconColor": "#657b83"

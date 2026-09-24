@@ -2,9 +2,9 @@
 
 > [!info]- Navegação QA/DEV
 > **README do card:** [[00 README|Abrir README do card]]  
-> **Execução:** [[04 Trabalho DEV/Execuções/<ID>/00 README|README da execução]]  
+> **Execução:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/00 README|README da execução]]  
 > **Demanda QA:** [[<DEMANDA>|<ID> — <título da demanda>]]  
-> **Plano técnico:** [[04 Trabalho DEV/Planos/PLAN-NNN|PLAN-NNN]]  
+> **Plano técnico:** [[03 Trabalho/DEV/<projeto>/Planos/PLAN-NNN|PLAN-NNN]]  
 > **Implementação:** [[03 - Implementação|03 - Implementação]]  
 > **Code review:** [[04 - Code review|04 - Code review]]  
 > **Validação QA:** [[<VALIDACAO>|Validação QA]]

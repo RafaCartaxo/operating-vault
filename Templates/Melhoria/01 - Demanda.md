@@ -8,6 +8,7 @@ plano: ""
 execucao: ""
 ambiente: dev
 origem: repo
+projeto: ""
 pai: ""
 data_inicio: ""
 data_fim: ""
@@ -15,7 +16,7 @@ responsavel: ""
 pontos_alocados: ""
 ---
 
-# MEL-NNNN — <título curto orientado ao resultado>
+# <PROJ>-MEL-NNNN — <título curto orientado ao resultado>
 
 > [!info]- Navegação QA/DEV
 > **README do card:** [[00 README|Abrir README do card]]  
@@ -24,7 +25,7 @@ pontos_alocados: ""
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** [[04 Trabalho DEV/Execuções/<ID>/00 README|Execução DEV]]
+> **Execução DEV:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/00 README|Execução DEV]]
 
 > [!settings]- Controle da demanda
 > **Prioridade:** `INPUT[inlineSelect(option(baixa),option(media),option(alta)):prioridade]`  

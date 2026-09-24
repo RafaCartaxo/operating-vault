@@ -7,8 +7,8 @@
 > **Plano:** [[02 - Plano de correção|02 - Plano de correção]]  
 > **Implementação:** [[03 - Implementação|03 - Implementação]]  
 > **Code review:** [[04 - Code review|04 - Code review]]  
-> **Casos de teste QA:** [[03 Trabalho QA/Demandas/Bugs/<ID>/02 - Casos de teste|Casos de teste]]  
-> **Validação QA:** [[03 Trabalho QA/Demandas/Bugs/<ID>/03 - Validação dev|Validação QA]]
+> **Casos de teste QA:** [[03 Trabalho/QA/<projeto>/Demandas/Bugs/<ID>/02 - Casos de teste|Casos de teste]]  
+> **Validação QA:** [[03 Trabalho/QA/<projeto>/Demandas/Bugs/<ID>/03 - Validação dev|Validação QA]]
 
 ---
 
