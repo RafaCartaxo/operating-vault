@@ -1,0 +1,29 @@
+# Estado volátil do Obsidian
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Evidências grandes/binárias — manter fora do Git
+03 Trabalho QA/Evidências/*
+!03 Trabalho QA/Evidências/README.md
+04 Trabalho DEV/Evidências/*
+!04 Trabalho DEV/Evidências/README.md
+**/*.mp4
+**/*.mov
+**/*.mkv
+
+# Arquivos temporários e caches
+.DS_Store
+Thumbs.db
+.obsidian/cache/
+.obsidian/scripts/__pycache__/
+__pycache__/
+*.pyc
+
+# Segredos locais
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+

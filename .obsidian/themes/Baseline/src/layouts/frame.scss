@@ -1,0 +1,143 @@
+body:is(.layout-frame, .layout-viewfinder) {
+  --radius-window: 8px;
+
+  // Tab styles
+  &:is(.tab-floating, .tab-floating-center):not(.colorful-frame) .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
+    --tab-outline-width: 1px;
+    margin-inline: var(--tab-outline-width) !important;
+    background-color: var(--tab-background-active);
+  }
+
+  .mod-root {
+    .workspace-tab-header-container {
+      border-bottom: var(--tab-outline-width) solid var(--tab-outline-color);
+    }
+    .workspace-tab-header-container-inner {
+      margin-bottom: -1px !important;
+    }
+    .workspace-tab-container {
+      border-radius: 0;
+    }
+  }
+
+  // Contrast
+  .contrast-light-vivid.theme-light .mod-root {
+    border: none;
+  }
+}
+
+body.layout-frame:not(.is-mobile) {
+  --tab-outline-width: 1px;
+
+  .workspace {
+    padding: 4px;
+  }
+  .workspace > .workspace-ribbon,
+  .workspace > .workspace-split {
+    margin: 4px;
+    height: unset;
+    background-color: var(--background-primary);
+    border-radius: var(--radius-window);
+    border: var(--border-width) solid var(--background-modifier-border);
+    overflow: hidden;
+  }
+
+  .workspace-ribbon.mod-left:not(.is-collapsed) {
+    padding-left: 4px;
+  }
+
+  // macOS fix
+  &.mod-macos.is-hidden-frameless .workspace-ribbon.mod-left {
+    padding-top: var(--header-height);
+  }
+  &.mod-macos.is-hidden-frameless:not(.hover-ribbon) .workspace-ribbon.mod-left {
+    --ribbon-width: 74px;
+  }
+
+  // Windows & Linux fix
+  &:not(.mod-macos).is-hidden-frameless .titlebar {
+    height: var(--header-height);
+    top: 8px;
+    right: 8px;
+
+    .titlebar-button-container.mod-right {
+      border-top-right-radius: var(--radius-s);
+      overflow: hidden;
+    }
+  }
+
+  // Status bar
+  &:not(.status-bar-full, .status-bar-cupertino) .status-bar {
+    right: 8px;
+    bottom: 8px;
+  }
+
+  // Hover sidedock
+  &.hover-sidedock .mod-sidedock.is-sidedock-collapsed[style*="display"] {
+    height: calc(100% - 16px);
+    overflow: visible;
+    background-color: var(--background-primary);
+
+    &.mod-left-split {
+      margin: 4px 4px 4px 8px;
+    }
+    &.mod-right-split {
+      margin: 4px 8px 4px 4px;
+    }
+
+    &::before {
+      background: none;
+      margin-inline: -16px;
+      pointer-events: auto;
+      width: 16px;
+    }
+  }
+  &.hover-ribbon.show-ribbon .workspace-ribbon.mod-left:not(.is-collapsed) {
+    --ribbon-width: 56px;
+  }
+
+  // Style Settings: Status bar fix
+  &.status-bar-full .workspace {
+    padding-bottom: 0;
+
+    .workspace-ribbon,
+    .workspace-split {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Mobile
+body.layout-frame.is-tablet {
+  .workspace {
+    padding: 0 4px 4px;
+    background-color: var(--mobile-sidebar-background);
+  }
+  .mod-root,
+  .workspace-drawer.is-pinned {
+    padding-top: 0;
+    margin: var(--safe-area-inset-top) 4px 4px;
+    height: auto;
+    background-color: var(--background-primary);
+    border-radius: var(--radius-m);
+    border: var(--border-width) solid var(--background-modifier-border);
+    overflow: hidden;
+  }
+  .workspace-drawer-ribbon,
+  .workspace-drawer-inner {
+    padding-block: 0px 16px;
+  }
+
+  &.contrast-dark-black.theme-dark,
+  &.contrast-dark-black-mobile.theme-dark {
+    .mod-root,
+    .workspace-drawer {
+      background-color: black;
+    }
+  }
+
+  // Tab style
+  &.tab-default .workspace-tab-header-container-inner {
+    padding-top: 8px !important;
+  }
+}

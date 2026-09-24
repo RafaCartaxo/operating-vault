@@ -1,0 +1,9 @@
+{
+  "baseFontSize": 15,
+  "cssTheme": "Baseline",
+  "accentColor": "#eb4d0a",
+  "baseFontSizeAction": false,
+  "enabledCssSnippets": [
+    "nxgest-solarized"
+  ]
+}

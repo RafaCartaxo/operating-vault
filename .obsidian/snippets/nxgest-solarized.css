@@ -1,0 +1,106 @@
+/* NX Gest — Solarized suave + títulos mais legíveis */
+
+body.theme-dark {
+  --background-primary: #002b36;
+  --background-primary-alt: #073642;
+  --background-secondary: #073642;
+  --background-secondary-alt: #002b36;
+  --background-modifier-border: #586e75;
+  --background-modifier-hover: #094452;
+  --text-normal: #839496;
+  --text-muted: #657b83;
+  --text-faint: #586e75;
+  --text-accent: #2aa198;
+  --interactive-accent: #268bd2;
+  --interactive-accent-hover: #2aa198;
+}
+
+body.theme-light {
+  --background-primary: #fdf6e3;
+  --background-primary-alt: #eee8d5;
+  --background-secondary: #eee8d5;
+  --background-secondary-alt: #fdf6e3;
+  --background-modifier-border: #93a1a1;
+  --background-modifier-hover: #e7e0cc;
+  --text-normal: #657b83;
+  --text-muted: #586e75;
+  --text-faint: #93a1a1;
+  --text-accent: #268bd2;
+  --interactive-accent: #268bd2;
+  --interactive-accent-hover: #2aa198;
+}
+
+/* Leitura dos casos de teste: fonte larga e confortável, sem condensação do tema. */
+.markdown-preview-view,
+.markdown-source-view {
+  --font-text: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-interface: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-family: var(--font-text);
+  line-height: 1.6;
+}
+
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-source-view .cm-header-1,
+.markdown-source-view .cm-header-2,
+.markdown-source-view .cm-header-3 {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-weight: 700;
+  letter-spacing: normal;
+}
+
+.markdown-preview-view h1,
+.markdown-source-view .cm-header-1 {
+  font-size: 2em;
+}
+
+.markdown-preview-view h2,
+.markdown-source-view .cm-header-2 {
+  font-size: 1.45em;
+}
+
+.markdown-preview-view h3,
+.markdown-source-view .cm-header-3 {
+  font-size: 1.15em;
+}
+
+/* CTs: azul Solarized para diferenciar cenário, seletor e navegação. */
+.markdown-preview-view .callout[data-callout="example"],
+.markdown-source-view .HyperMD-callout[data-callout="example"] {
+  --callout-color: 38, 139, 210;
+}
+
+.markdown-preview-view .mb-select-input-element {
+  min-width: 170px;
+  border: 1px solid #268bd2;
+  border-radius: 6px;
+  background: #073642;
+  color: #b8e1e8;
+  font-weight: 600;
+}
+
+.markdown-preview-view .mb-select-input-element:hover,
+.markdown-preview-view .mb-select-input-element.is-selected {
+  background: #0b5263;
+  border-color: #2aa198;
+  color: #fdf6e3;
+}
+
+.markdown-preview-view .mb-button-inner {
+  border-radius: 6px;
+  background: #268bd2;
+  color: #fdf6e3;
+  font-weight: 600;
+}
+
+.markdown-preview-view .mb-button-inner:hover {
+  background: #2aa198;
+}
+
+/* Na prévia acionada pela tabela de validação, o usuário já está na validação. */
+.popover.hover-popover .mb-button,
+.popover.hover-popover .mb-button-group,
+.popover.hover-popover .block-language-meta-bind-button {
+  display: none;
+}

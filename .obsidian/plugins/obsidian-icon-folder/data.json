@@ -1,0 +1,95 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": null,
+    "recentlyUsedIcons": [],
+    "recentlyUsedIconsSize": 10,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": false,
+    "iconInTitleEnabled": false,
+    "iconInTitlePosition": "above",
+    "iconInFrontmatterEnabled": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "lucideIconPackType": "native",
+    "debugMode": false,
+    "useInternalPlugins": false
+  },
+  "00 Inbox": {
+    "iconName": "LiInbox",
+    "iconColor": "#268bd2"
+  },
+  "01 Board": {
+    "iconName": "LiKanban",
+    "iconColor": "#b58900"
+  },
+  "02 Daily": {
+    "iconName": "LiCalendarDays",
+    "iconColor": "#cb4b16"
+  },
+  "03 Trabalho QA": {
+    "iconName": "LiShieldCheck",
+    "iconColor": "#2aa198"
+  },
+  "03 Trabalho QA/Demandas": {
+    "iconName": "LiClipboardList",
+    "iconColor": "#2aa198"
+  },
+  "03 Trabalho QA/Demandas/Bugs": {
+    "iconName": "LiBug",
+    "iconColor": "#dc322f"
+  },
+  "03 Trabalho QA/Demandas/Melhorias": {
+    "iconName": "LiLightbulb",
+    "iconColor": "#b58900"
+  },
+  "03 Trabalho QA/Demandas/Planos": {
+    "iconName": "LiListChecks",
+    "iconColor": "#6c71c4"
+  },
+  "04 Trabalho DEV": {
+    "iconName": "LiCode2",
+    "iconColor": "#268bd2"
+  },
+  "04 Trabalho DEV/Planos": {
+    "iconName": "LiFileText",
+    "iconColor": "#6c71c4"
+  },
+  "04 Trabalho DEV/Fixes": {
+    "iconName": "LiWrench",
+    "iconColor": "#dc322f"
+  },
+  "04 Trabalho DEV/Execuções": {
+    "iconName": "LiRocket",
+    "iconColor": "#cb4b16"
+  },
+  "05 Arquivo": {
+    "iconName": "LiArchive",
+    "iconColor": "#657b83"
+  },
+  "Agentes": {
+    "iconName": "LiBot",
+    "iconColor": "#6c71c4"
+  },
+  "Skills": {
+    "iconName": "LiBookOpen",
+    "iconColor": "#2aa198"
+  },
+  "Templates": {
+    "iconName": "LiLayoutTemplate",
+    "iconColor": "#859900"
+  }
+}
