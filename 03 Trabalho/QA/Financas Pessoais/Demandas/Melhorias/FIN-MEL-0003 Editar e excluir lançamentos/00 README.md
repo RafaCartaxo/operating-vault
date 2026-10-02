@@ -1,6 +1,6 @@
 ---
-status: analise
-etapa_atual: "QA · Análise da demanda"
+status: execucao
+etapa_atual: "DEV · Análise técnica"
 demanda: FIN-MEL-0003
 tipo: melhoria
 projeto: financas-pessoais

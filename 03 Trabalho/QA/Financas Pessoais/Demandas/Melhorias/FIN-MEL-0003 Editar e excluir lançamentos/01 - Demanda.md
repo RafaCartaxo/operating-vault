@@ -1,8 +1,8 @@
 ---
 prioridade: alta
-status: analise
+status: execucao
 tipo: melhoria
-etapa_atual: "QA · Análise da demanda"
+etapa_atual: "DEV · Análise técnica"
 modulo: lancamentos
 plano: "[[02 - Plano de teste]]"
 execucao: "[[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0003/00 README|Execução DEV]]"
@@ -28,7 +28,7 @@ pontos_alocados: 8
 > **Execução DEV:** [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0003/00 README|Execução DEV]]
 
 > [!info] Status atual
-> Próximo passo: revisar demanda, plano e CTs antes de liberar para DEV.
+> Status: demanda aprovada; execução DEV aberta para análise técnica.
 
 ## Problema / contexto
 
@@ -82,4 +82,3 @@ Permitir editar e excluir lançamentos diretamente na consulta mensal, com confi
 - [x] Critérios testáveis.
 - [ ] Plano e CTs revisados e aprovados.
 - [x] Pontos iniciais preenchidos.
-

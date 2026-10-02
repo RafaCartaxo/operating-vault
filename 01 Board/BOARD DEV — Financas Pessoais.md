@@ -5,6 +5,7 @@ kanban-plugin: board
 ## 🔎 Análise técnica
 
 - [ ]
+- [ ] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0003/00 README|FIN-MEL-0003 — Editar e excluir lançamentos]]
 
 ## 📋 Plano de execução
 

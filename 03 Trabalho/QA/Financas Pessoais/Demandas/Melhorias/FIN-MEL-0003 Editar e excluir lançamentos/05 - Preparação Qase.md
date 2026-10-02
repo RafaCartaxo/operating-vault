@@ -25,7 +25,7 @@ qase_projeto: ""
 
 ## Casos preparados
 
-- CT-001 a CT-007, após aprovação do pacote.
+- CT-001 a CT-012, após aprovação do pacote.
 
 ## Checklist de envio
 
@@ -34,4 +34,3 @@ qase_projeto: ""
 - [ ] Campos de execução definidos.
 - [ ] Evidências previstas.
 - [ ] Envio realizado.
-

@@ -41,14 +41,14 @@ Validar edição e exclusão com segurança, preservando validações, persistê
 |---|---|
 | [[01 - Demanda#^c1|C1]] | [[03 - Casos de teste#^ct-001|CT-001]] |
 | [[01 - Demanda#^c2|C2]] | [[03 - Casos de teste#^ct-002|CT-002]] |
-| [[01 - Demanda#^c3|C3]] | [[03 - Casos de teste#^ct-003|CT-003]] |
+| [[01 - Demanda#^c3|C3]] | [[03 - Casos de teste#^ct-003|CT-003]], [[03 - Casos de teste#^ct-008|CT-008]], [[03 - Casos de teste#^ct-012|CT-012]] |
 | [[01 - Demanda#^c4|C4]] | [[03 - Casos de teste#^ct-004|CT-004]] |
-| [[01 - Demanda#^c5|C5]] | [[03 - Casos de teste#^ct-005|CT-005]] |
-| [[01 - Demanda#^c6|C6]] | [[03 - Casos de teste#^ct-006|CT-006]] |
+| [[01 - Demanda#^c5|C5]] | [[03 - Casos de teste#^ct-005|CT-005]], [[03 - Casos de teste#^ct-009|CT-009]], [[03 - Casos de teste#^ct-010|CT-010]] |
+| [[01 - Demanda#^c6|C6]] | [[03 - Casos de teste#^ct-006|CT-006]], [[03 - Casos de teste#^ct-011|CT-011]] |
 | [[01 - Demanda#^c7|C7]] | [[03 - Casos de teste#^ct-007|CT-007]] |
+| [[01 - Demanda#^c3|C3]] | [[03 - Casos de teste#^ct-012|CT-012]] |
 
 ## Entrada e saída
 
 **Entrada:** lançamentos persistidos e consulta mensal disponível.  
 **Saída:** edição e exclusão concluídas, canceladas ou comunicadas com erro; lista e total consistentes.
-
