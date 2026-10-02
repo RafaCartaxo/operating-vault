@@ -10,12 +10,14 @@ Ciclo da melhoria — da ideia ao card validado no board. Adaptado do `brainwork
 ## Ciclo
 
 1. **Registrar** a ideia (daily/board).
-2. **Refinar a demanda** — preencher Problema, Objetivo, Decisões de produto, Escopo, Fora de escopo e Regras de negócio em `01 - Demanda.md`.
-3. **Resolver pendências** — uma decisão que altere escopo, regra ou critério mantém a melhoria em `analise`; não criar PLAN nem iniciar implementação enquanto ela estiver aberta.
-4. **Definir critérios e CTs** — cada critério de aceite deve ser coberto por pelo menos um `CT-001..` em `03 - Casos de teste.md`, dentro da pasta da demanda (formato `Skills/CASOS-DE-TESTE`). Os critérios são identificados por `C1..Cn` e IDs de bloco, sem checkbox de aprovação; quando houver vários CTs para o mesmo critério, todos precisam passar na validação.
-5. **Planejar e executar** — quando a demanda estiver pronta, vincular o `PLAN-NNN` do repositório e seguir a esteira: `📥 Backlog → 🔍 Em análise → ⚙️ Em execução → 🧪 Em validação → ✅ Feito` — validação em `dev` (local) e, quando aplicável, `hml` (staging) e `prod`.
-6. **Sincronizar cada transição** — ao mudar de etapa, atualizar `status` e `etapa_atual` da demanda, a coluna do Board, o `00 README.md` da demanda e a execução DEV; em validação, manter também o registro QA vinculado.
-7. **✅ Feito** → move o card para `05 Arquivo/`.
+2. **Instanciar o pacote** — criar os seis arquivos copiando os templates correspondentes, preservando ordem, headings, callouts, blocos Dataview/Meta Bind, anchors e tabelas. Só depois preencher placeholders e adaptar o conteúdo da demanda.
+3. **Refinar a demanda** — preencher Problema, Objetivo, Decisões de produto, Escopo, Fora de escopo e Regras de negócio em `01 - Demanda.md`.
+4. **Resolver pendências** — uma decisão que altere escopo, regra ou critério mantém a melhoria em `analise`; não criar PLAN nem iniciar implementação enquanto ela estiver aberta.
+5. **Definir critérios e CTs** — cada critério de aceite deve ser coberto por pelo menos um `CT-001..` em `03 - Casos de teste.md`, dentro da pasta da demanda (formato `Skills/CASOS-DE-TESTE`). Os critérios são identificados por `C1..Cn` e IDs de bloco, sem checkbox de aprovação; quando houver vários CTs para o mesmo critério, todos precisam passar na validação.
+6. **Validar a instância do template** — antes de mover para DEV, conferir que os seis arquivos existem, que os headings e blocos canônicos continuam presentes e que cada `C1..Cn` aparece na matriz de cobertura e nos CTs; a nota de validação deve conter um resultado para cada CT.
+7. **Planejar e executar** — quando a demanda estiver pronta, vincular o `PLAN-NNN` do repositório e seguir a esteira: `📥 Backlog → 🔍 Em análise → ⚙️ Em execução → 🧪 Em validação → ✅ Feito` — validação em `dev` (local) e, quando aplicável, `hml` (staging) e `prod`.
+8. **Sincronizar cada transição** — ao mudar de etapa, atualizar `status` e `etapa_atual` da demanda, a coluna do Board, o `00 README.md` da demanda e a execução DEV; em validação, manter também o registro QA vinculado.
+9. **✅ Feito** → move o card para `05 Arquivo/`.
 
 ## Melhoria × Bug
 
@@ -41,6 +43,19 @@ Antes de criar ou vincular um `PLAN-NNN`, confirmar:
 - regras de negócio são verificáveis;
 - critérios de aceite são objetivos e cada um aponta para CTs;
 - casos feliz, de borda/validação e de erro foram avaliados.
+
+### Integridade obrigatória do template
+
+A adaptação de uma melhoria não é uma recriação livre. O procedimento obrigatório é:
+
+1. copiar `Templates/Melhoria/00 README.md` para `00 README.md`;
+2. copiar `Templates/Melhoria/01 - Demanda.md` para `01 - Demanda.md`;
+3. copiar os templates de `Templates/QA/` para os quatro artefatos restantes;
+4. substituir placeholders e preencher o conteúdo específico;
+5. preservar a estrutura, os blocos de automação e os campos do template;
+6. revisar a matriz de cobertura e os resultados de todos os CTs antes de entregar ao DEV.
+
+Não substituir blocos do template por uma versão resumida nem criar uma estrutura paralela “equivalente”. Se o template precisar mudar, atualizar primeiro o template e só depois instanciar o card.
 
 ## Identificadores e vínculos
 

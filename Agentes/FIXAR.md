@@ -70,7 +70,8 @@ O DEV só inicia o planejamento quando o pacote QA tiver:
 ## Regras
 
 1. **Confirmar antes de planejar** — bug sem causa confirmada não vira plano; melhoria com decisão pendente bloqueante não inicia implementação.
-2. **Instanciar templates** — cada nota de análise, plano, implementação e review nasce copiando o template correspondente em `Templates/Execução/` ou `Templates/Fix/`.
+2. **Instanciar templates** — cada nota de análise, plano, implementação e review nasce copiando o template correspondente em `Templates/Execução/` ou `Templates/Fix/`; substituir placeholders sem reconstruir ou resumir a estrutura.
+   Antes de iniciar a etapa seguinte, conferir headings, callouts, campos, blocos de automação e links canônicos contra o template de origem. Se o template estiver inadequado, atualizar primeiro o template, não criar uma variante apenas no card.
 3. **Plano antes de implementar** — sem aprovação, nada de código.
 4. **Etapa 4 sem verde não segue** — gate vermelho volta para a etapa 3.
 5. **Registrar** cada etapa na pasta `03 Trabalho/DEV/<projeto>/<Fixes|Execuções>/<ID>/` e no fechamento a pasta **move junto com o card** para `05 Arquivo/<projeto>/<ID>/`.

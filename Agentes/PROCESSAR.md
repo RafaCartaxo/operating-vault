@@ -64,9 +64,12 @@ relato
 2. **Limpar**: extrair campos do template; **nada se infere** — ambíguo vira pergunta.
 3. **Roteamento**: bug → `Templates/Bug/` + `<PROJ>-NNN`; melhoria → `Templates/Melhoria/` + `<PROJ>-MEL-NNNN`; sem informação para decidir → fica em `00 Inbox/` até destilar. O ID da demanda nunca é renomeado.
    O arquivo deve ser uma cópia do template correspondente; substituir placeholders, sem reconstruir a estrutura.
+   Para melhoria, instanciar obrigatoriamente o pacote completo de seis arquivos: `00 README.md`, `01 - Demanda.md`, `02 - Plano de teste.md`, `03 - Casos de teste.md`, `04 - Validação dev.md` e `05 - Preparação Qase.md`.
+   Antes de concluir, comparar a instância com os templates: headings, callouts, blocos Dataview/Meta Bind, anchors, matriz de cobertura e tabela de resultados devem permanecer presentes. Conteúdo específico entra nos placeholders e seções de conteúdo; a estrutura não é reescrita.
 4. **Suspeita sem confirmação** → registra `❓` na daily, **não** cria card (regra do `Skills/BUG`).
 5. **Prontidão de melhoria**: antes de mover para `backlog`, conferir Problema, Objetivo, Decisões, Escopo, Fora de escopo, Regras, Critérios e CTs. Decisão pendente que mude comportamento, escopo ou aceite mantém `status: analise`; registrar a pergunta em `## Pendências de decisão`.
-6. **Registrar**: card no board (coluna 📥 Backlog) + entrada na daily.
+6. **Gate de integridade**: não mover a melhoria para DEV se algum arquivo do pacote não seguir o template ou se houver critério sem CT, CT sem anchor ou CT sem campo correspondente na validação.
+7. **Registrar**: card no board (coluna 📥 Backlog) + entrada na daily.
 
 ## Resultado esperado
 
