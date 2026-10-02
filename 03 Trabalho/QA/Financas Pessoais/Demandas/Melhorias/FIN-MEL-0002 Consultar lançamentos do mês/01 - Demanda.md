@@ -1,8 +1,8 @@
 ---
 prioridade: alta
-status: analise
+status: execucao
 tipo: melhoria
-etapa_atual: "QA · Análise da demanda"
+etapa_atual: "DEV · Análise técnica"
 modulo: lancamentos
 plano: "[[02 - Plano de teste]]"
 execucao: "[[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0002/00 README|Execução DEV]]"
@@ -34,7 +34,7 @@ pontos_alocados: 5
 > **Projeto:** preencher `projeto` no frontmatter antes de roteiar a melhoria.
 
 > [!info] Status atual
-> **Próximo passo:** revisar a demanda e os CTs antes de liberar para DEV.
+> **Status:** demanda aprovada; execução DEV aberta para análise técnica e plano de implementação.
 
 ---
 

@@ -1,5 +1,11 @@
 # FIN-MEL-0002 — Consultar lançamentos do mês
 
+---
+status: execucao
+etapa_atual: "DEV · Análise técnica"
+demanda: FIN-MEL-0002
+---
+
 > [!info]- Navegação QA/DEV
 > **Demanda:** [[01 - Demanda]]  
 > **Plano de teste:** [[02 - Plano de teste]]  
