@@ -17,4 +17,5 @@
 - [x] Frontend React: edição, confirmação de exclusão e atualização da lista.
 - [x] Testes automatizados: 16 testes frontend e suíte Go aprovados.
 - [x] Build frontend aprovado.
+- [x] Smoke HTTP local: PUT 200, DELETE 204 e ID inexistente 404.
 - [ ] Smoke visual mobile/desktop: aguardando QA.

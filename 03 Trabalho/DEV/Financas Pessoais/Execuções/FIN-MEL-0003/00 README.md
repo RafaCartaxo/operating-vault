@@ -1,7 +1,7 @@
 ---
-status: analise
+status: validacao
 tipo: melhoria
-etapa_atual: "DEV · Análise técnica"
+etapa_atual: "QA · Validação"
 demanda: FIN-MEL-0003
 plano: "[[02 - Plano de execução]]"
 pontos: 8
@@ -26,10 +26,9 @@ pontos: 8
 
 | Etapa | Estado | Data |
 |---|---|---|
-| Análise | 🔵 | 2026-10-02 |
-| Plano de execução | ⏳ | |
-| Execução | ⏳ | |
-| Code review | ⏳ | |
-| Verificação CTs | ⏳ | |
+| Análise | ✅ | 2026-10-02 |
+| Plano de execução | ✅ | 2026-10-02 |
+| Execução | ✅ | 2026-10-02 |
+| Code review | ✅ | 2026-10-02 |
+| Verificação CTs | 🔵 | 2026-10-02 |
 | Fechamento | ⏳ | |
-

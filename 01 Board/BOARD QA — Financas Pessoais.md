@@ -19,7 +19,7 @@ kanban-plugin: board
 ## 🧪 Validação
 
 - [ ]
-- [ ] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0003 Editar e excluir lançamentos/00 README|FIN-MEL-0003 — aguardando implementação DEV]]
+- [ ] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0003 Editar e excluir lançamentos/00 README|FIN-MEL-0003 — executar CT-001 a CT-012]]
 
 ## ✅ Concluído
 

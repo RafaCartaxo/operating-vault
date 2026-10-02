@@ -9,13 +9,12 @@
 
 ## Resultado
 
-⏳ Aguardando implementação.
+✅ Aprovado — implementação, testes, build e smoke dos contratos revisados.
 
 ## Checklist
 
-- [ ] Contratos PUT e DELETE revisados.
-- [ ] Confirmação de exclusão revisada.
-- [ ] Testes e build aprovados.
-- [ ] Regressões aprovadas.
-- [ ] Liberado para QA.
-
+- [x] Contratos PUT e DELETE revisados.
+- [x] Confirmação de exclusão revisada.
+- [x] Testes e build aprovados.
+- [x] Regressões aprovadas.
+- [x] Liberado para QA.
