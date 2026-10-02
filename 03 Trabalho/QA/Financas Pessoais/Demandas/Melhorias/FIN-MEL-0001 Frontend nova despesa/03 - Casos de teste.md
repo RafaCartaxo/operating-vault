@@ -34,6 +34,7 @@ pontos: 1
 | [[01 - Demanda#^c4\|C4]] | [[03 - Casos de teste#^ct-003\|CT-003]] |
 | [[01 - Demanda#^c5\|C5]] | [[03 - Casos de teste#^ct-001\|CT-001]] |
 | [[01 - Demanda#^c6\|C6]] | [[03 - Casos de teste#^ct-004\|CT-004]] |
+| [[01 - Demanda#^c2\|C2]] | [[03 - Casos de teste#^ct-005\|CT-005]] |
 
 ---
 
@@ -142,3 +143,114 @@ pontos: 1
 > **Execução:** planejado
 
 ^ct-004
+
+> [!example]- CT-005 · Filtrar entrada monetária inválida
+>
+> ```meta-bind-button
+> style: primary
+> label: ↩ Validação
+> action:
+>   type: open
+>   link: "[[04 - Validação dev#Resultado dos casos de teste]]"
+> ```
+>
+> ## Cenário
+>
+> **Descrição:** confirma que o campo de valor aceita somente números, separadores válidos e até duas casas decimais.
+>
+> **Pré-condições:** formulário de nova despesa aberto.
+>
+> **Dado** que o usuário digita letras, símbolos ou mais de duas casas no campo de valor  
+> **Quando** o valor é editado  
+> **Então** caracteres inválidos são removidos e a entrada permanece em formato monetário válido.
+>
+> **Resultado esperado:** o campo não aceita caracteres arbitrários e o valor convertido continua correto.
+>
+> **Pós-condição:** o formulário permanece pronto para envio com valor sanitizado.
+>
+> **Critérios cobertos:** [[01 - Demanda#^c2|C2]]
+>
+> ---
+>
+> **Informações do CT**
+>
+> **Tipo:** funcional  
+> **Camada:** UI/unit  
+> **Automação:** ambos  
+> **Execução:** aprovado
+
+^ct-005
+
+> [!example]- CT-006 · Exibir máscara monetária em tempo real
+>
+> ```meta-bind-button
+> style: primary
+> label: ↩ Validação
+> action:
+>   type: open
+>   link: "[[04 - Validação dev#Resultado dos casos de teste]]"
+> ```
+>
+> ## Cenário
+>
+> **Descrição:** confirma que o valor é exibido sempre no formato monetário brasileiro.
+>
+> **Pré-condições:** formulário de nova despesa aberto.
+>
+> **Dado** que o usuário informa os dígitos `123456` ou cola `1.234,56`  
+> **Quando** o campo é atualizado  
+> **Então** a tela exibe `R$ 1.234,56` e o backend recebe `123456` centavos.
+>
+> **Resultado esperado:** o usuário visualiza o valor formatado durante a digitação sem alterar o valor enviado.
+>
+> **Pós-condição:** campo permanece pronto para envio com o valor canônico em centavos.
+>
+> **Critérios cobertos:** [[01 - Demanda#^c2|C2]]
+>
+> ---
+>
+> **Informações do CT**
+>
+> **Tipo:** usabilidade  
+> **Camada:** UI/unit  
+> **Automação:** ambos  
+> **Execução:** planejado
+
+^ct-006
+
+> [!example]- CT-007 · Preservar posição do cursor ao editar
+>
+> ```meta-bind-button
+> style: primary
+> label: ↩ Validação
+> action:
+>   type: open
+>   link: "[[04 - Validação dev#Resultado dos casos de teste]]"
+> ```
+>
+> ## Cenário
+>
+> **Descrição:** confirma que a máscara não reposiciona o cursor para o fim ao editar o valor.
+>
+> **Pré-condições:** campo de valor preenchido com um valor formatado.
+>
+> **Dado** que o cursor está no meio do valor  
+> **Quando** o usuário apaga ou insere um dígito  
+> **Então** o cursor permanece próximo à posição editada após a reformatação.
+>
+> **Resultado esperado:** é possível corrigir o valor no meio da expressão sem precisar reposicionar o cursor manualmente.
+>
+> **Pós-condição:** valor permanece formatado e editável.
+>
+> **Critérios cobertos:** [[01 - Demanda#^c2|C2]]
+>
+> ---
+>
+> **Informações do CT**
+>
+> **Tipo:** usabilidade  
+> **Camada:** UI/unit  
+> **Automação:** ambos  
+> **Execução:** planejado
+
+^ct-007

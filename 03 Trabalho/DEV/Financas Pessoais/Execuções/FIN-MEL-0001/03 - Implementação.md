@@ -23,12 +23,16 @@
 - Adicionado filtro de entrada monetária para aceitar apenas números, separadores e duas casas decimais.
 - Adicionado teste automatizado do service da API.
 - Adicionados testes da sanitização monetária.
+- Refinamento registrado no QA como CT-005, cobrindo a restrição de entrada monetária.
+- Máscara monetária em tempo real adicionada, mantendo o valor canônico em centavos.
+- Novo CT-006 registrado para validar a máscara e a preservação do payload.
+- Preservação da posição do cursor adicionada e registrada como CT-007.
 
 ---
 
 ## Evidências
 
-- `npm test`: 7 testes aprovados.
+- `npm test`: 10 testes aprovados.
 - `npm run build`: concluído com sucesso.
 - `GOCACHE=/tmp/financas-go-build GOPATH=/tmp/financas-go-path go test ./...`: backend aprovado.
 - Smoke test manual pelo navegador: validação vazia exibiu erro; lançamento sintético de `R$ 12,34` retornou sucesso via backend Go.

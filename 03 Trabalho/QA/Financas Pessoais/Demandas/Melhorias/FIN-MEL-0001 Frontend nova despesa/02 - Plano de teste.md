@@ -50,6 +50,9 @@ Comprovar que o usuário consegue registrar uma despesa válida e recebe orienta
 |---|---|---|---|---|
 | [[03 - Casos de teste#^ct-001\|CT-001]] | Funcional | E2E/API | Manual | [[04 - Validação dev\|Registrar resultado]] |
 | [[03 - Casos de teste#^ct-002\|CT-002]] | Funcional | E2E | Manual | [[04 - Validação dev\|Registrar resultado]] |
+| [[03 - Casos de teste#^ct-005\|CT-005]] | Validação | UI | Manual + automatizado | [[04 - Validação dev\|Registrar resultado]] |
+| [[03 - Casos de teste#^ct-006\|CT-006]] | Usabilidade | UI | Manual + automatizado | [[04 - Validação dev\|Registrar resultado]] |
+| [[03 - Casos de teste#^ct-007\|CT-007]] | Usabilidade | UI | Manual + automatizado | [[04 - Validação dev\|Registrar resultado]] |
 | [[03 - Casos de teste#^ct-003\|CT-003]] | Negativo | E2E/API | Manual | [[04 - Validação dev\|Registrar resultado]] |
 | [[03 - Casos de teste#^ct-004\|CT-004]] | Regressão | API | Automatizado | [[04 - Validação dev\|Registrar resultado]] |
 

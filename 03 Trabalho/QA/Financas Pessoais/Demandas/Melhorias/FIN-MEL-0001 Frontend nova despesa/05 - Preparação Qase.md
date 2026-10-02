@@ -44,7 +44,7 @@ Valores normalizados: `funcional`/`regressão`; camada `E2E`/`API`/`unit`; autom
 
 ## Casos preparados
 
-Os CTs candidatos são `CT-001` a `CT-004`, mantidos exclusivamente na nota [[03 - Casos de teste]].
+Os CTs candidatos são `CT-001` a `CT-007`, mantidos exclusivamente na nota [[03 - Casos de teste]].
 
 ## Checklist de envio
 
