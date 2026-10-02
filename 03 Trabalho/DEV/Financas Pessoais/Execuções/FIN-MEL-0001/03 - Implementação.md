@@ -29,6 +29,7 @@
 - Preservação da posição do cursor adicionada e registrada como CT-007.
 - Validação em lote de campos obrigatórios adicionada, com foco no primeiro erro e mensagens simultâneas.
 - Novo CT-008 registrado para validar a experiência de correção completa.
+- Componentes reutilizáveis extraídos: `src/components/FormField.tsx` e `src/components/CurrencyInput.tsx`.
 
 ---
 
@@ -54,7 +55,7 @@
 
 ## Verificação
 
-- [ ] CTs da demanda relacionados (fonte QA): [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0001 Frontend nova despesa/03 - Casos de teste|ver casos de teste]].
+- [x] CTs da demanda relacionados (fonte QA): [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0001 Frontend nova despesa/03 - Casos de teste|ver casos de teste]].
 - [x] Gates aplicáveis do repositório verdes.
 - [x] Documentação sincronizada: `docs/fluxos.md`.
-- [ ] Commit registrado no README.
+- [ ] Commit registrado no README (não há repositório Git inicializado para o projeto neste momento).

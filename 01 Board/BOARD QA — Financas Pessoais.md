@@ -16,11 +16,11 @@ kanban-plugin: board
 
 ## 🧪 Validação
 
-- [ ] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0001 Frontend nova despesa/04 - Validação dev|FIN-MEL-0001 — executar CTs]]
+- [ ]
 
 ## ✅ Concluído
 
-- [ ]
+- [x] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0001 Frontend nova despesa/00 README|FIN-MEL-0001 — todos os CTs aprovados]]
 
 %% kanban:settings
 ```json

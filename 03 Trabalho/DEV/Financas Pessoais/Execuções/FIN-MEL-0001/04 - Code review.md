@@ -48,4 +48,4 @@
 - [x] Aprovar
 - [ ] Solicitar ajustes
 
-Próximo estágio: QA executar CT-001 a CT-008 no pacote de validação.
+Próximo estágio: nenhum; todos os CTs foram aprovados e a melhoria está concluída.

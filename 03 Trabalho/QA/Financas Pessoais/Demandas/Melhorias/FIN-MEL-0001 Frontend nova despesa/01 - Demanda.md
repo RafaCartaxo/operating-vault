@@ -1,8 +1,8 @@
 ---
 prioridade: media
-status: validacao
+status: concluido
 tipo: melhoria
-etapa_atual: "QA · Validação"
+etapa_atual: "Concluído"
 modulo: lancamentos
 plano: "[[02 - Plano de teste]]"
 execucao: "[[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0001/00 README|Execução DEV]]"
@@ -34,7 +34,7 @@ pontos_alocados: 6
 > **Projeto:** preencher `projeto` no frontmatter antes de roteiar a melhoria.
 
 > [!info] Status atual
-> **Próximo passo:** iniciar a análise técnica DEV, preservando os critérios e CTs deste pacote.
+> **Próximo passo:** nenhum. Melhoria concluída após aprovação de todos os CTs.
 
 ---
 
