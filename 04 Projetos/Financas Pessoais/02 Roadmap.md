@@ -34,6 +34,12 @@ Usar `GET /api/lancamentos?mes=AAAA-MM` para exibir os lançamentos do mês na a
 
 Permitir corrigir ou remover registros já persistidos, preservando validações, confirmação de exclusão e consistência da lista mensal.
 
+### Ajuste responsivo em análise
+
+**FIN-MEL-0004 — Refinamentos responsivos dos campos**
+
+Validar data, filtro mensal e máscara monetária em iPhone, Android e desktop.
+
 ## Fase 3 — Cálculos
 
 - [ ] Parcelas.

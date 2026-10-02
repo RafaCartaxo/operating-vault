@@ -5,6 +5,7 @@ kanban-plugin: board
 ## 🔍 Análise da demanda
 
 - [ ]
+- [ ] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0004 Refinamentos responsivos dos campos/00 README|FIN-MEL-0004 — Refinamentos responsivos dos campos]]
 - [ ]
 - [ ]
 
