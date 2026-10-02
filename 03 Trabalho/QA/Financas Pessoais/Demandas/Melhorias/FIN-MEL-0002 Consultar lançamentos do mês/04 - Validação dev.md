@@ -35,12 +35,12 @@ ct_resultados:
 
 | CT | Resultado | Evidência | Observação | Defeito/Bug | Pontos entregues |
 |---|---|---|---|---|---:|
-| [[03 - Casos de teste#^ct-001|CT-001]] | ✅ Aprovado | `GET /api/lancamentos?mes=AAAA-MM` | Mês atual consultado e registros exibidos. |  | 1 |
-| [[03 - Casos de teste#^ct-002|CT-002]] | ✅ Aprovado | Execução QA | Data, descrição, tipo e valores formatados. |  | 1 |
-| [[03 - Casos de teste#^ct-003|CT-003]] | ✅ Aprovado | Execução QA | Total soma somente despesas. |  | 1 |
-| [[03 - Casos de teste#^ct-004|CT-004]] | ✅ Aprovado | Execução QA | Seletor mensal, retorno ao mês atual e data retroativa aprovados. |  | 1 |
-| [[03 - Casos de teste#^ct-005|CT-005]] | ✅ Aprovado | Execução QA | Vazio, erro e retry aprovados. |  | 1 |
-| [[03 - Casos de teste#^ct-006|CT-006]] | ✅ Aprovado | `npm test`, `npm run build` e smoke HTTP | Uso responsivo liberado. |  | 1 |
+| [[03 - Casos de teste#^ct-001\|CT-001]] | ✅ Aprovado | `GET /api/lancamentos?mes=AAAA-MM` | Mês atual consultado e registros exibidos. |  | 1 |
+| [[03 - Casos de teste#^ct-002\|CT-002]] | ✅ Aprovado | Execução QA | Data, descrição, tipo e valores formatados. |  | 1 |
+| [[03 - Casos de teste#^ct-003\|CT-003]] | ✅ Aprovado | Execução QA | Total soma somente despesas. |  | 1 |
+| [[03 - Casos de teste#^ct-004\|CT-004]] | ✅ Aprovado | Execução QA | Seletor mensal, retorno ao mês atual e data retroativa aprovados. |  | 1 |
+| [[03 - Casos de teste#^ct-005\|CT-005]] | ✅ Aprovado | Execução QA | Vazio, erro e retry aprovados. |  | 1 |
+| [[03 - Casos de teste#^ct-006\|CT-006]] | ✅ Aprovado | `npm test`, `npm run build` e smoke HTTP | Uso responsivo liberado. |  | 1 |
 
 ---
 

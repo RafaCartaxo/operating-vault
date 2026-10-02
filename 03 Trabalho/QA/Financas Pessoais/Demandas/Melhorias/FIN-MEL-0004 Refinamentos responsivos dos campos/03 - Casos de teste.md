@@ -41,7 +41,7 @@ pontos: 1
 >
 > **Informações do CT:** funcional · UI/E2E · manual · planejado
 >
-^ct-001
+> ^ct-001
 
 > [!example]- CT-002 · Data no Android
 >
@@ -53,7 +53,7 @@ pontos: 1
 >
 > **Informações do CT:** funcional · UI/E2E · manual · planejado
 >
-^ct-002
+> ^ct-002
 
 > [!example]- CT-003 · Alinhamento do reset mensal
 >
@@ -65,7 +65,7 @@ pontos: 1
 >
 > **Informações do CT:** usabilidade · UI/E2E · manual · planejado
 >
-^ct-003
+> ^ct-003
 
 > [!example]- CT-004 · Primeiro dígito monetário
 >
@@ -77,7 +77,7 @@ pontos: 1
 >
 > **Informações do CT:** usabilidade · UI/unit · ambos · planejado
 >
-^ct-004
+> ^ct-004
 
 > [!example]- CT-005 · Estado inicial do valor
 >
@@ -89,7 +89,7 @@ pontos: 1
 >
 > **Informações do CT:** funcional · UI/E2E · manual · planejado
 >
-^ct-005
+> ^ct-005
 
 > [!example]- CT-006 · Regressão desktop
 >
@@ -101,7 +101,7 @@ pontos: 1
 >
 > **Informações do CT:** regressão · UI/E2E · manual · planejado
 >
-^ct-006
+> ^ct-006
 
 > [!example]- CT-007 · Impedir zoom automático nos campos
 >

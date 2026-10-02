@@ -107,18 +107,12 @@ Entregar o formulário React + Vite + TypeScript, responsivo, com estados de val
 
 ## Critérios de aceite
 
-- C1. O formulário abre e permanece utilizável em viewport móvel e desktop.
-^c1
-- C2. Campos obrigatórios e valor/data inválidos impedem o envio; o campo monetário aceita apenas números e separadores válidos, sempre exibe máscara em reais, e todos os erros são apresentados simultaneamente em ordem de formulário.
-^c2
-- C3. Um lançamento válido chama `POST /api/lancamentos` com o contrato documentado.
-^c3
-- C4. Erros da API são apresentados sem perder silenciosamente os dados preenchidos.
-^c4
-- C5. Após sucesso, o usuário recebe confirmação clara e o formulário fica pronto para um novo lançamento.
-^c5
-- C6. O fluxo possui testes básicos e documentação atualizada.
-^c6
+- C1. O formulário abre e permanece utilizável em viewport móvel e desktop. ^c1
+- C2. Campos obrigatórios e valor/data inválidos impedem o envio; o campo monetário aceita apenas números e separadores válidos, sempre exibe máscara em reais, e todos os erros são apresentados simultaneamente em ordem de formulário. ^c2
+- C3. Um lançamento válido chama `POST /api/lancamentos` com o contrato documentado. ^c3
+- C4. Erros da API são apresentados sem perder silenciosamente os dados preenchidos. ^c4
+- C5. Após sucesso, o usuário recebe confirmação clara e o formulário fica pronto para um novo lançamento. ^c5
+- C6. O fluxo possui testes básicos e documentação atualizada. ^c6
 
 ---
 

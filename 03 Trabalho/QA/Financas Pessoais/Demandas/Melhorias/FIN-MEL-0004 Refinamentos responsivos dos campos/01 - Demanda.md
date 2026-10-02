@@ -51,20 +51,13 @@ Garantir que os campos de data, filtro mensal e valor sejam previsíveis e utili
 
 ## Critérios de aceite
 
-- C1. Campo de data cabe no container em iPhone mobile.
-^c1
-- C2. Campo de data cabe no container em Android mobile.
-^c2
-- C3. Reset do filtro fica alinhado ao seletor mensal.
-^c3
-- C4. Primeiro dígito do valor mantém o cursor correto.
-^c4
-- C5. Estado visual inicial do valor é R$ 0,00.
-^c5
-- C6. Layout permanece correto em desktop.
-^c6
-- C7. Tocar nos campos no iPhone não causa zoom automático da página.
-^c7
+- C1. Campo de data cabe no container em iPhone mobile. ^c1
+- C2. Campo de data cabe no container em Android mobile. ^c2
+- C3. Reset do filtro fica alinhado ao seletor mensal. ^c3
+- C4. Primeiro dígito do valor mantém o cursor correto. ^c4
+- C5. Estado visual inicial do valor é R$ 0,00. ^c5
+- C6. Layout permanece correto em desktop. ^c6
+- C7. Tocar nos campos no iPhone não causa zoom automático da página. ^c7
 
 ## Checklist de entrega ao DEV
 

@@ -67,20 +67,13 @@ Permitir editar e excluir lançamentos diretamente na consulta mensal, com confi
 
 ## Critérios de aceite
 
-- C1. Cada lançamento apresenta ações de editar e excluir.
-^c1
-- C2. Editar abre o formulário preenchido com os dados atuais.
-^c2
-- C3. Dados editados são validados e persistidos pela API.
-^c3
-- C4. Excluir exige confirmação e remove o registro correto.
-^c4
-- C5. Lista e totais são atualizados após editar ou excluir.
-^c5
-- C6. Erros preservam a tela e informam o usuário.
-^c6
-- C7. O fluxo funciona em celular e desktop.
-^c7
+- C1. Cada lançamento apresenta ações de editar e excluir. ^c1
+- C2. Editar abre o formulário preenchido com os dados atuais. ^c2
+- C3. Dados editados são validados e persistidos pela API. ^c3
+- C4. Excluir exige confirmação e remove o registro correto. ^c4
+- C5. Lista e totais são atualizados após editar ou excluir. ^c5
+- C6. Erros preservam a tela e informam o usuário. ^c6
+- C7. O fluxo funciona em celular e desktop. ^c7
 
 ## Checklist de entrega ao DEV
 

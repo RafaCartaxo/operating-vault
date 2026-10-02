@@ -97,18 +97,12 @@ Entregar uma visão mensal mobile-first com seletor de mês, lista de lançament
 
 ## Critérios de aceite
 
-- C1. Ao abrir a consulta mensal, o mês atual é selecionado e os lançamentos são carregados pela API.
-^c1
-- C2. Cada lançamento é exibido com data, descrição, tipo e valor formatado em reais.
-^c2
-- C3. O total de despesas do mês é calculado e exibido corretamente.
-^c3
-- C4. O usuário pode trocar o mês e a lista é atualizada com os dados correspondentes.
-^c4
-- C5. A tela apresenta estados claros de carregamento, lista vazia e erro de API, com opção de tentar novamente quando aplicável.
-^c5
-- C6. A consulta funciona em viewport móvel e desktop sem quebrar o layout.
-^c6
+- C1. Ao abrir a consulta mensal, o mês atual é selecionado e os lançamentos são carregados pela API. ^c1
+- C2. Cada lançamento é exibido com data, descrição, tipo e valor formatado em reais. ^c2
+- C3. O total de despesas do mês é calculado e exibido corretamente. ^c3
+- C4. O usuário pode trocar o mês e a lista é atualizada com os dados correspondentes. ^c4
+- C5. A tela apresenta estados claros de carregamento, lista vazia e erro de API, com opção de tentar novamente quando aplicável. ^c5
+- C6. A consulta funciona em viewport móvel e desktop sem quebrar o layout. ^c6
 
 ---
 
