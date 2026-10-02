@@ -49,12 +49,12 @@ Comprovar que o usuário consegue consultar os lançamentos de qualquer mês e e
 
 | CT | Tipo | Camada | Automação | Validação |
 |---|---|---|---|---|
-| [[03 - Casos de teste#^ct-001\|CT-001]] | Funcional | UI/API | Manual + automatizado | [[04 - Validação dev\|Registrar resultado]] |
-| [[03 - Casos de teste#^ct-002\|CT-002]] | Funcional | UI/unit | Manual + automatizado | [[04 - Validação dev\|Registrar resultado]] |
-| [[03 - Casos de teste#^ct-003\|CT-003]] | Funcional | UI/unit | Manual + automatizado | [[04 - Validação dev\|Registrar resultado]] |
-| [[03 - Casos de teste#^ct-004\|CT-004]] | Funcional | UI/API | Manual | [[04 - Validação dev\|Registrar resultado]] |
-| [[03 - Casos de teste#^ct-005\|CT-005]] | Negativo | UI/API | Manual | [[04 - Validação dev\|Registrar resultado]] |
-| [[03 - Casos de teste#^ct-006\|CT-006]] | Responsividade | UI | Manual | [[04 - Validação dev\|Registrar resultado]] |
+| [[03 - Casos de teste#^ct-001|CT-001]] | Funcional | UI/API | Manual + automatizado | [[04 - Validação dev|Registrar resultado]] |
+| [[03 - Casos de teste#^ct-002|CT-002]] | Funcional | UI/unit | Manual + automatizado | [[04 - Validação dev|Registrar resultado]] |
+| [[03 - Casos de teste#^ct-003|CT-003]] | Funcional | UI/unit | Manual + automatizado | [[04 - Validação dev|Registrar resultado]] |
+| [[03 - Casos de teste#^ct-004|CT-004]] | Funcional | UI/API | Manual | [[04 - Validação dev|Registrar resultado]] |
+| [[03 - Casos de teste#^ct-005|CT-005]] | Negativo | UI/API | Manual | [[04 - Validação dev|Registrar resultado]] |
+| [[03 - Casos de teste#^ct-006|CT-006]] | Responsividade | UI | Manual | [[04 - Validação dev|Registrar resultado]] |
 
 ---
 

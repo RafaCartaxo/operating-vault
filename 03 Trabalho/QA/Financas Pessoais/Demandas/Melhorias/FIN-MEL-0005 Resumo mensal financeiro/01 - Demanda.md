@@ -53,12 +53,18 @@ Exibir um resumo mensal com receitas, despesas, saldo e quantidade de lançament
 
 ## Critérios de aceite
 
-- C1. O resumo exibe o total de receitas do mês. ^c1
-- C2. O resumo exibe o total de despesas do mês. ^c2
-- C3. O saldo é calculado como receitas menos despesas. ^c3
-- C4. A quantidade de lançamentos corresponde à lista exibida. ^c4
-- C5. O resumo acompanha a troca de mês e os estados da consulta. ^c5
-- C6. O resumo funciona em celular e desktop. ^c6
+- C1. O resumo exibe o total de receitas do mês.
+^c1
+- C2. O resumo exibe o total de despesas do mês.
+^c2
+- C3. O saldo é calculado como receitas menos despesas.
+^c3
+- C4. A quantidade de lançamentos corresponde à lista exibida.
+^c4
+- C5. O resumo acompanha a troca de mês e os estados da consulta.
+^c5
+- C6. O resumo funciona em celular e desktop.
+^c6
 
 ## Checklist de entrega ao DEV
 
@@ -66,4 +72,3 @@ Exibir um resumo mensal com receitas, despesas, saldo e quantidade de lançament
 - [x] Escopo e fora de escopo definidos.
 - [x] Critérios objetivos e testáveis.
 - [ ] Plano e CTs aprovados.
-

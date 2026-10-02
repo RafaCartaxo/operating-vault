@@ -81,14 +81,14 @@ dv.list([
 
 | CT | Resultado | Evidência | Observação | Defeito/Bug | Pontos entregues |
 |---|---|---|---|---|---:|
-| [[03 - Casos de teste#^ct-001\|CT-001]] | ✅ Aprovado | `POST /api/lancamentos → 201`; registro confirmado em `GET /api/lancamentos?mes=2026-10` | Despesa criada pelo frontend e persistida no backend. |  | `= choice(this.ct_resultados.ct_001 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
-| [[03 - Casos de teste#^ct-002\|CT-002]] | ✅ Aprovado | Execução QA | Validação de campos inválidos aprovada. |  | `= choice(this.ct_resultados.ct_002 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
-| [[03 - Casos de teste#^ct-003\|CT-003]] | ✅ Aprovado | Execução QA | Tratamento de erro da API aprovado. |  | `= choice(this.ct_resultados.ct_003 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
-| [[03 - Casos de teste#^ct-004\|CT-004]] | ✅ Aprovado | `go test ./...` | Regressão do backend aprovada. |  | `= choice(this.ct_resultados.ct_004 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
-| [[03 - Casos de teste#^ct-005\|CT-005]] | ✅ Aprovado | `npm test` | Entrada monetária sanitizada e coberta por testes automatizados. |  | `= choice(this.ct_resultados.ct_005 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
-| [[03 - Casos de teste#^ct-006\|CT-006]] | ✅ Aprovado | Execução QA | Máscara monetária aprovada. |  | `= choice(this.ct_resultados.ct_006 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
-| [[03 - Casos de teste#^ct-007\|CT-007]] | ✅ Aprovado | Execução QA | Cursor preservado durante edição. |  | `= choice(this.ct_resultados.ct_007 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
-| [[03 - Casos de teste#^ct-008\|CT-008]] | ✅ Aprovado | Execução QA | Todos os erros exibidos simultaneamente. |  | `= choice(this.ct_resultados.ct_008 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
+| [[03 - Casos de teste#^ct-001|CT-001]] | ✅ Aprovado | `POST /api/lancamentos → 201`; registro confirmado em `GET /api/lancamentos?mes=2026-10` | Despesa criada pelo frontend e persistida no backend. |  | `= choice(this.ct_resultados.ct_001 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
+| [[03 - Casos de teste#^ct-002|CT-002]] | ✅ Aprovado | Execução QA | Validação de campos inválidos aprovada. |  | `= choice(this.ct_resultados.ct_002 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
+| [[03 - Casos de teste#^ct-003|CT-003]] | ✅ Aprovado | Execução QA | Tratamento de erro da API aprovado. |  | `= choice(this.ct_resultados.ct_003 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
+| [[03 - Casos de teste#^ct-004|CT-004]] | ✅ Aprovado | `go test ./...` | Regressão do backend aprovada. |  | `= choice(this.ct_resultados.ct_004 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
+| [[03 - Casos de teste#^ct-005|CT-005]] | ✅ Aprovado | `npm test` | Entrada monetária sanitizada e coberta por testes automatizados. |  | `= choice(this.ct_resultados.ct_005 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
+| [[03 - Casos de teste#^ct-006|CT-006]] | ✅ Aprovado | Execução QA | Máscara monetária aprovada. |  | `= choice(this.ct_resultados.ct_006 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
+| [[03 - Casos de teste#^ct-007|CT-007]] | ✅ Aprovado | Execução QA | Cursor preservado durante edição. |  | `= choice(this.ct_resultados.ct_007 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
+| [[03 - Casos de teste#^ct-008|CT-008]] | ✅ Aprovado | Execução QA | Todos os erros exibidos simultaneamente. |  | `= choice(this.ct_resultados.ct_008 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
 
 > **Regra de esforço:** aprovado e falhou = 100% da parcela; em andamento = 25%; bloqueado = 50%; aguardando e não executado = 0%.
 
