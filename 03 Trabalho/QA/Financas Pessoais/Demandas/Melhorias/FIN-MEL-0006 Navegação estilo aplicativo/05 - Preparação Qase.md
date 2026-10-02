@@ -10,7 +10,7 @@ qase_suite_id: ""
 casos_origem: ""
 validacao_origem: ""
 ---
-# Preparação Qase — <ID>
+# Preparação Qase — FIN-MEL-0006
 
 > **Posição no pacote:** melhoria → `05 - Preparação Qase.md`; bug → `04 - Preparação Qase.md`. O conteúdo deste modelo é o mesmo nos dois casos.
 
@@ -28,7 +28,11 @@ Esta nota transforma os CTs refinados do vault em casos da Qase. Não crie CT no
 
 - **Projeto Qase:** `<código>`
 - **Suite Qase:** `<id>`
-- **Origem:** nota de casos de teste do próprio card (`02` para bug, `03` para melhoria)
+- **Origem:** `03 - Casos de teste.md` deste card
+
+## Casos candidatos
+
+CT-001 a CT-006, após aprovação do plano e dos casos no vault.
 
 ## Mapeamento dos campos
 

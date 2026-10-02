@@ -14,7 +14,7 @@ pontos: ""
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/00 README|Execução <ID>]]
+> **Execução DEV:** será criada após aprovação QA.
 
 > [!settings]- Controle do plano de teste
 > **Status:** `INPUT[inlineSelect(option(planejado),option(execucao),option(concluido)):status]`
@@ -53,11 +53,10 @@ Defina apenas as camadas aplicáveis; não crie testes por obrigação quando n�
 |---|---|---|---|---|
 | [[03 - Casos de teste#^ct-001\|CT-001]] | Funcional | UI/E2E | Manual | [[04 - Validação dev\|Registrar resultado]] |
 | [[03 - Casos de teste#^ct-002\|CT-002]] | Funcional | UI/E2E | Manual | [[04 - Validação dev\|Registrar resultado]] |
-| [[03 - Casos de teste#^ct-003\|CT-003]] | Funcional | UI/E2E | Manual | [[04 - Validação dev\|Registrar resultado]] |
-| [[03 - Casos de teste#^ct-004\|CT-004]] | Acessibilidade | UI/E2E | Manual | [[04 - Validação dev\|Registrar resultado]] |
-| [[03 - Casos de teste#^ct-005\|CT-005]] | Regressão | UI/E2E | Manual | [[04 - Validação dev\|Registrar resultado]] |
-| [[03 - Casos de teste#^ct-006\|CT-006]] | Responsividade | UI/E2E | Manual | [[04 - Validação dev\|Registrar resultado]] |
-| [[03 - Casos de teste#^ct-007\|CT-007]] | Arquitetura UI | UI | Manual | [[04 - Validação dev\|Registrar resultado]] |
+| [[03 - Casos de teste#^ct-003\|CT-003]] | Acessibilidade | UI/E2E | Manual | [[04 - Validação dev\|Registrar resultado]] |
+| [[03 - Casos de teste#^ct-004\|CT-004]] | Regressão | UI/E2E | Manual | [[04 - Validação dev\|Registrar resultado]] |
+| [[03 - Casos de teste#^ct-005\|CT-005]] | Responsividade | UI/E2E | Manual | [[04 - Validação dev\|Registrar resultado]] |
+| [[03 - Casos de teste#^ct-006\|CT-006]] | Arquitetura | Code review | Manual | [[04 - Validação dev\|Registrar resultado]] |
 
 > Exemplo: replique a linha para cada CT do pacote. O link do CT abre a prévia do cenário; o link de Validação leva à tabela onde o resultado e a evidência são registrados.
 
