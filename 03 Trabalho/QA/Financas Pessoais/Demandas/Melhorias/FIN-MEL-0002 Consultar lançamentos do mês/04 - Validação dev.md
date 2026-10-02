@@ -3,17 +3,17 @@ demanda: FIN-MEL-0002
 execucao: "[[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0002/00 README|Execução DEV]]"
 ambiente: dev
 versao: ""
-status: execucao
+status: concluido
 responsavel: ""
-resultado: aguardando
+resultado: aprovado
 pontos: 1
 ct_resultados:
-  ct_001: "⏳ Aguardando"
-  ct_002: "⏳ Aguardando"
-  ct_003: "⏳ Aguardando"
-  ct_004: "⏳ Aguardando"
-  ct_005: "⏳ Aguardando"
-  ct_006: "⏳ Aguardando"
+  ct_001: "✅ Aprovado"
+  ct_002: "✅ Aprovado"
+  ct_003: "✅ Aprovado"
+  ct_004: "✅ Aprovado"
+  ct_005: "✅ Aprovado"
+  ct_006: "✅ Aprovado"
 ---
 
 # Validação — FIN-MEL-0002
@@ -35,26 +35,26 @@ ct_resultados:
 
 | CT | Resultado | Evidência | Observação | Defeito/Bug | Pontos entregues |
 |---|---|---|---|---|---:|
-| [[03 - Casos de teste#^ct-001\|CT-001]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_001]` |  |  |  |  |
-| [[03 - Casos de teste#^ct-002\|CT-002]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_002]` |  |  |  |  |
-| [[03 - Casos de teste#^ct-003\|CT-003]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_003]` |  |  |  |  |
-| [[03 - Casos de teste#^ct-004\|CT-004]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_004]` |  |  |  |  |
-| [[03 - Casos de teste#^ct-005\|CT-005]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_005]` |  |  |  |  |
-| [[03 - Casos de teste#^ct-006\|CT-006]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_006]` |  |  |  |  |
+| [[03 - Casos de teste#^ct-001\|CT-001]] | ✅ Aprovado | `GET /api/lancamentos?mes=AAAA-MM` | Mês atual consultado e registros exibidos. |  | 1 |
+| [[03 - Casos de teste#^ct-002\|CT-002]] | ✅ Aprovado | Execução QA | Data, descrição, tipo e valores formatados. |  | 1 |
+| [[03 - Casos de teste#^ct-003\|CT-003]] | ✅ Aprovado | Execução QA | Total soma somente despesas. |  | 1 |
+| [[03 - Casos de teste#^ct-004\|CT-004]] | ✅ Aprovado | Execução QA | Seletor mensal, retorno ao mês atual e data retroativa aprovados. |  | 1 |
+| [[03 - Casos de teste#^ct-005\|CT-005]] | ✅ Aprovado | Execução QA | Vazio, erro e retry aprovados. |  | 1 |
+| [[03 - Casos de teste#^ct-006\|CT-006]] | ✅ Aprovado | `npm test`, `npm run build` e smoke HTTP | Uso responsivo liberado. |  | 1 |
 
 ---
 
 ## Decisão
 
-**Resultado geral:** aguardando / aprovado / reprovado / aprovado com ressalvas
+**Resultado geral:** aprovado
 
 ---
 
 ## Checklist de encerramento QA
 
-- [ ] Todos os CTs executados ou com justificativa registrada.
-- [ ] Evidências e observações preenchidas quando necessário.
-- [ ] Bugs filhos vinculados na coluna **Defeito/Bug**.
-- [ ] Resultado geral definido.
-- [ ] Status da validação e da demanda atualizados.
-- [ ] Próximo passo registrado.
+- [x] Todos os CTs executados ou com justificativa registrada.
+- [x] Evidências e observações preenchidas quando necessário.
+- [x] Bugs filhos vinculados na coluna **Defeito/Bug**.
+- [x] Resultado geral definido.
+- [x] Status da validação e da demanda atualizados.
+- [x] Próximo passo registrado: melhoria concluída.

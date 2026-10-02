@@ -17,6 +17,7 @@
 - `App.tsx` agora consulta o mês atual, permite trocar o mês, exibe lista, total de despesas, vazio, erro e retry.
 - O mês inicia no período atual e é selecionado por um botão que abre um painel mensal próprio; não existe campo digitável e o comportamento é consistente entre navegadores.
 - Após salvar um lançamento retroativo, o filtro muda automaticamente para o mês da data salva e recarrega a lista.
+- O seletor oferece o atalho “Voltar para o mês atual” quando o filtro está em outro período.
 - A máscara monetária existente foi reaproveitada para exibição dos valores.
 - `docs/fluxos.md` e `docs/api.md` foram atualizados com o fluxo GET.
 - Backend: sem alteração.

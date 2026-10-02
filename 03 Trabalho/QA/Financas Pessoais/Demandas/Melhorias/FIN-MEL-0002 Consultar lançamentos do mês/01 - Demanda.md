@@ -1,8 +1,8 @@
 ---
 prioridade: alta
-status: execucao
+status: concluido
 tipo: melhoria
-etapa_atual: "QA · Validação"
+etapa_atual: "Concluído"
 modulo: lancamentos
 plano: "[[02 - Plano de teste]]"
 execucao: "[[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0002/00 README|Execução DEV]]"
@@ -34,7 +34,7 @@ pontos_alocados: 5
 > **Projeto:** preencher `projeto` no frontmatter antes de roteiar a melhoria.
 
 > [!info] Status atual
-> **Status:** demanda aprovada; execução DEV aberta para análise técnica e plano de implementação.
+> **Status:** concluída; todos os CTs aprovados e execução DEV encerrada.
 
 ---
 

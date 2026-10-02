@@ -1,8 +1,8 @@
 # FIN-MEL-0002 — Consultar lançamentos do mês
 
 ---
-status: execucao
-etapa_atual: "DEV · Análise técnica"
+status: concluido
+etapa_atual: "Concluído"
 demanda: FIN-MEL-0002
 ---
 

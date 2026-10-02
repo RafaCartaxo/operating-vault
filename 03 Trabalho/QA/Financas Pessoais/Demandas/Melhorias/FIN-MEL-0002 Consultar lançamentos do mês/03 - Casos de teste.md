@@ -167,7 +167,7 @@ pontos: 1
 >
 > **Dado** que o usuário está consultando um mês  
 > **Quando** clica no botão do mês e seleciona outro mês no painel mensal  
-> **Então** a aplicação consulta o novo `AAAA-MM` e substitui os resultados. Se o lançamento recém-salvo tiver data em outro mês, esse mês passa a ser selecionado automaticamente.
+> **Então** a aplicação consulta o novo `AAAA-MM` e substitui os resultados. Se o lançamento recém-salvo tiver data em outro mês, esse mês passa a ser selecionado automaticamente; o botão “Voltar para o mês atual” retorna ao período corrente.
 >
 > **Resultado esperado:** lista, total e mês exibido correspondem ao novo período.
 >

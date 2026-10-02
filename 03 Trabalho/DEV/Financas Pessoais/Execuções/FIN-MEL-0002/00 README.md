@@ -1,7 +1,7 @@
 ---
-status: validacao
+status: concluido
 tipo: melhoria
-etapa_atual: "QA · Validação"
+etapa_atual: "Concluído"
 demanda: "FIN-MEL-0002"
 plano: "[[02 - Plano de execução]]"
 pontos: 5
@@ -36,8 +36,8 @@ pontos: 5
 | Plano de execução | ✅ | 2026-10-02 |
 | Execução | ✅ | 2026-10-02 |
 | Code review | ✅ | 2026-10-02 |
-| Verificação (CTs) | 🔵 | 2026-10-02 |
-| Fechamento | ⏳ | |
+| Verificação (CTs) | ✅ | 2026-10-02 |
+| Fechamento | ✅ | 2026-10-02 |
 
 ## Checklist de transição
 
@@ -46,5 +46,5 @@ pontos: 5
 - [x] Análise técnica preenchida.
 - [x] Plano de execução preenchido e congelado.
 - [x] Implementação concluída.
-- [ ] Code review aprovado.
+- [x] Code review aprovado.
 - [x] Liberado para QA após code review.
