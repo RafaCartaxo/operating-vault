@@ -20,13 +20,19 @@ tipo: roadmap
 - [ ] Configurar PWA e instalação na tela inicial.
 - [x] Criar formulário de nova despesa.
 - [x] Validar valores em centavos.
-- [ ] Consultar despesas por mês.
+- [x] Consultar despesas por mês.
 
-### Próxima melhoria recomendada
+### Melhoria concluída
 
 **FIN-MEL-0002 — Consultar lançamentos do mês**
 
 Usar `GET /api/lancamentos?mes=AAAA-MM` para exibir os lançamentos do mês na aplicação, com totalizadores simples e estados de carregamento, vazio e erro. Esta etapa fecha o primeiro ciclo de uso antes de avançar para PWA, parcelas ou recorrências.
+
+### Próxima melhoria recomendada
+
+**FIN-MEL-0003 — Editar e excluir lançamentos**
+
+Permitir corrigir ou remover registros já persistidos, preservando validações, confirmação de exclusão e consistência da lista mensal.
 
 ## Fase 3 — Cálculos
 
