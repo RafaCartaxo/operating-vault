@@ -20,13 +20,15 @@
 - Criada tela responsiva de nova despesa, com tipo, descrição, valor e data.
 - Criada camada `src/services/lancamentos.ts` para o `POST /api/lancamentos`.
 - Implementada conversão de valor monetário para centavos e tratamento de erros `422`.
+- Adicionado filtro de entrada monetária para aceitar apenas números, separadores e duas casas decimais.
 - Adicionado teste automatizado do service da API.
+- Adicionados testes da sanitização monetária.
 
 ---
 
 ## Evidências
 
-- `npm test`: 2 testes aprovados.
+- `npm test`: 7 testes aprovados.
 - `npm run build`: concluído com sucesso.
 - `GOCACHE=/tmp/financas-go-build GOPATH=/tmp/financas-go-path go test ./...`: backend aprovado.
 - Smoke test manual pelo navegador: validação vazia exibiu erro; lançamento sintético de `R$ 12,34` retornou sucesso via backend Go.

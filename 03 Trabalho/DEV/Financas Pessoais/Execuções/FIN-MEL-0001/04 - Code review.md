@@ -8,7 +8,7 @@
 > **Implementação:** [[03 - Implementação|03 - Implementação]]  
 > **Validação QA:** [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0001 Frontend nova despesa/04 - Validação dev|Validação QA]]
 
-**Estado:** ✅ aprovado após ajustes
+**Estado:** ✅ aprovado após ajustes finais
 
 ---
 
@@ -28,10 +28,11 @@
 
 - **Ajustado:** parsing inicial removia todos os pontos e poderia transformar `12.34` em `1234`. A conversão foi isolada em `src/utils/money.ts` e coberta por testes.
 - **Ajustado:** a interface permitia `receita`, mas usava textos fixos de despesa. Os títulos e mensagens agora são neutros/dinâmicos.
+- **Ajustado após observação de uso:** o campo monetário agora filtra caracteres inválidos e limita a entrada a duas casas decimais; cobertura adicionada em `src/utils/money.test.ts`.
 
 ## Evidências
 
-- `npm test`: 5 testes aprovados.
+- `npm test`: 7 testes aprovados.
 - `npm run build`: aprovado.
 - `go test ./...`: backend aprovado.
 - Smoke test manual: criação de lançamento via formulário retornou sucesso.
