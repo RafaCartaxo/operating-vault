@@ -12,6 +12,8 @@ status: preparado
 
 Demanda concluída: [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0001 Frontend nova despesa/00 README|FIN-MEL-0001 — Cadastro mobile de nova despesa]]. O pacote permanece em `03 Trabalho` até a movimentação administrativa para `05 Arquivo`.
 
+Demanda em análise: [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0002 Consultar lançamentos do mês/00 README|FIN-MEL-0002 — Consultar lançamentos do mês]]. O próximo passo é revisar e aprovar o escopo, plano e casos de teste antes da abertura da execução DEV.
+
 ## Fluxo QA
 
 ```text
