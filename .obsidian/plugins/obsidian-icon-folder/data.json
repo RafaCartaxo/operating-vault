@@ -55,5 +55,61 @@
   "Templates": {
     "iconName": "LiLayoutTemplate",
     "iconColor": "#859900"
+  },
+  "03 Trabalho": {
+    "iconName": "LiBriefcaseBusiness",
+    "iconColor": "#2563eb"
+  },
+  "04 Projetos": {
+    "iconName": "LiBoxes",
+    "iconColor": "#0d9488"
+  },
+  "Sistema": {
+    "iconName": "LiSettings",
+    "iconColor": "#475569"
+  },
+  "03 Trabalho/DEV": {
+    "iconName": "LiCode2",
+    "iconColor": "#059669"
+  },
+  "03 Trabalho/DEV/Nxgest": {
+    "iconName": "LiCode2",
+    "iconColor": "#059669"
+  },
+  "03 Trabalho/DEV/SOGOV": {
+    "iconName": "LiCode2",
+    "iconColor": "#ea580c"
+  },
+  "03 Trabalho/DEV/Financas Pessoais": {
+    "iconName": "LiWalletCards",
+    "iconColor": "#0d9488"
+  },
+  "03 Trabalho/QA": {
+    "iconName": "LiShieldCheck",
+    "iconColor": "#0891b2"
+  },
+  "03 Trabalho/QA/Financas Pessoais": {
+    "iconName": "LiShieldCheck",
+    "iconColor": "#0891b2"
+  },
+  "03 Trabalho/QA/Nxgest": {
+    "iconName": "LiShieldCheck",
+    "iconColor": "#2563eb"
+  },
+  "03 Trabalho/QA/SOGOV": {
+    "iconName": "LiShieldCheck",
+    "iconColor": "#ea580c"
+  },
+  "04 Projetos/Nxgest": {
+    "iconName": "LiTarget",
+    "iconColor": "#0d9488"
+  },
+  "04 Projetos/SOGOV": {
+    "iconName": "LiGlobe",
+    "iconColor": "#2563eb"
+  },
+  "04 Projetos/Financas Pessoais": {
+    "iconName": "LiWalletCards",
+    "iconColor": "#0d9488"
   }
 }

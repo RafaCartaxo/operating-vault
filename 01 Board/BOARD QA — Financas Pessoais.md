@@ -1,31 +1,29 @@
 ---
-
 kanban-plugin: board
-
 ---
 
-## 📥 Backlog
+## 🔍 Análise da demanda
 
 - [ ]
 
-## 🔍 Em análise
+## 🧪 Plano de teste
 
 - [ ]
 
-## ⚙️ Em execução
+## 🧪 Casos de teste
 
 - [ ]
 
-## 🧪 Em validação
+## 🧪 Validação
 
 - [ ]
 
-## ✅ Feito
+## ✅ Concluído
 
 - [ ]
 
 %% kanban:settings
-```
+```json
 {"kanban-plugin":"board","list-collapse":[false,false,false,false,false]}
 ```
 %%

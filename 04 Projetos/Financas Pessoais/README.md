@@ -27,6 +27,9 @@ Criar um fluxo funcional para cadastrar uma despesa e consultá-la no mês corre
 - [[01 Visão do produto|Visão do produto]]
 - [[02 Roadmap|Roadmap]]
 - [[03 Decisões|Decisões do projeto]]
+- [[04 Fluxo de trabalho|Fluxo de trabalho entre os três espaços]]
+- [[01 Board/BOARD QA — Financas Pessoais|Board QA]]
+- [[01 Board/BOARD DEV — Financas Pessoais|Board DEV]]
 
 ## Caminhos locais
 

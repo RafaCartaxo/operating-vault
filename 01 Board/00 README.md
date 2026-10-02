@@ -14,4 +14,11 @@ Os boards são visões por projeto. O status real vive no frontmatter do card; m
 - [[01 Board/BOARD QA — SOGOV|Board QA SOGOV]]
 - [[01 Board/BOARD DEV — SOGOV|Board DEV SOGOV]]
 
+## Visões gerais
+
 - [[01 Board/BOARD QA — Dinâmico|Board QA dinâmico — todos os projetos]]
+
+## Finanças Pessoais
+
+- [[01 Board/BOARD QA — Financas Pessoais|Board QA Finanças Pessoais]]
+- [[01 Board/BOARD DEV — Financas Pessoais|Board DEV Finanças Pessoais]]

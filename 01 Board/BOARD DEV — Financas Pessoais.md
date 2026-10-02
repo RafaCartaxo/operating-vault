@@ -27,7 +27,7 @@ kanban-plugin: board
 - [ ]
 
 %% kanban:settings
-```
+```json
 {"kanban-plugin":"board","list-collapse":[false,false,false,false,false,false]}
 ```
 %%

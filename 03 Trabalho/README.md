@@ -11,3 +11,4 @@ Projetos ativos:
 
 - [[03 Trabalho/QA/Nxgest/00 README|Nxgest — QA]] · [[03 Trabalho/DEV/Nxgest/00 README|Nxgest — DEV]]
 - [[03 Trabalho/QA/SOGOV/00 README|SOGOV — QA]] · [[03 Trabalho/DEV/SOGOV/00 README|SOGOV — DEV]]
+- [[03 Trabalho/QA/Financas Pessoais/00 README|Finanças Pessoais — QA]] · [[03 Trabalho/DEV/Financas Pessoais/00 README|Finanças Pessoais — DEV]]
