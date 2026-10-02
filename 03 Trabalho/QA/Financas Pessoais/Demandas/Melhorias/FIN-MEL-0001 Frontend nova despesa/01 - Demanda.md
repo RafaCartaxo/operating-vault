@@ -5,18 +5,18 @@ tipo: melhoria
 etapa_atual: "QA · Análise da demanda"
 modulo: lancamentos
 plano: "[[02 - Plano de teste]]"
-execucao: "[[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0001/00 README|FIN-MEL-0001 — DEV]]"
+execucao: "[[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0001/00 README|Execução DEV]]"
 ambiente: dev
 origem: conversa
 projeto: financas-pessoais
 pai: ""
 data_inicio: 2026-10-02
-pontos_alocados: 6
 data_fim: ""
 responsavel: ""
+pontos_alocados: 6
 ---
 
-# FIN-MEL-0001 — Demanda
+# FIN-MEL-0001 — Cadastro mobile de nova despesa
 
 > [!info]- Navegação QA/DEV
 > **README do card:** [[00 README|Abrir README do card]]  
@@ -30,46 +30,70 @@ responsavel: ""
 > [!settings]- Controle da demanda
 > **Prioridade:** `INPUT[inlineSelect(option(baixa),option(media),option(alta)):prioridade]`  
 > **Ambiente:** `INPUT[inlineSelect(option(dev),option(hml),option(prod)):ambiente]`  
-> **Origem:** `INPUT[inlineSelect(option(repo),option(observado),option(conversa),option(validação)):origem]`  
-> **Projeto:** `financas-pessoais`
+> **Origem:** `INPUT[inlineSelect(option(repo),option(observado),option(conversa),option(validação)):origem]`<br>
+> **Projeto:** preencher `projeto` no frontmatter antes de roteiar a melhoria.
 
 > [!info] Status atual
-> **Próximo passo:** revisar o pacote QA e fechar a entrega ao DEV.
+> **Próximo passo:** revisar e fechar os critérios e casos de teste antes de liberar a execução DEV.
 
 ---
 
 ## Capacidade e esforço
 
-> **Capacidade alocada:** 5 pontos.
+> [!tip]- Capacidade do ciclo
+> **Capacidade alocada:** 6 pontos.
+> O esforço será distribuído entre o pacote QA e a execução DEV vinculada.
 >
-> O esforço planejado desta melhoria é distribuído entre QA, DEV e validação conforme as etapas forem detalhadas.
+> ```dataviewjs
+> const id = (dv.current().file.path.match(/(?:[A-Z]{2,8}-)?MEL-\d+/) || [""])[0];
+> const paginas = dv.pages().where(p => id && p.file.path.includes(id) && typeof p.pontos === "number");
+> const lista = paginas.sort(p => p.file.name);
+> const necessario = lista.array().reduce((soma, pagina) => soma + Number(pagina.pontos), 0);
+> const alocado = Number(dv.current().pontos_alocados || 0);
+> const diferenca = alocado - necessario;
+> if (lista.length > 0) {
+>   dv.table(["Etapa/artefato", "Pontos"], lista.map(p => [p.file.link, p.pontos]));
+> } else {
+>   dv.paragraph("Nenhum artefato com pontos registrado ainda.");
+> }
+> dv.paragraph(`**Esforço necessário:** ${necessario} pontos · **Capacidade alocada:** ${alocado} pontos · **${diferenca >= 0 ? "Saldo" : "Déficit"}:** ${Math.abs(diferenca)} pontos`);
+> ```
+
+---
 
 ## Problema / contexto
 
 O backend de Finanças Pessoais já expõe o cadastro de lançamentos, mas ainda não existe uma interface simples para registrar uma despesa pelo celular ou navegador.
 
+---
+
 ## Objetivo
 
-Disponibilizar a primeira tela de cadastro de despesa, com experiência mobile-first, validação clara e integração com `POST /api/lancamentos`.
+Disponibilizar uma tela mobile-first para cadastrar uma despesa, com validação clara e integração com `POST /api/lancamentos`.
 
 ### Entrega desta capacidade
 
-Entregar uma tela funcional de nova despesa, responsiva, integrada ao endpoint existente e com estados claros de validação, erro e sucesso.
+Entregar o formulário React + Vite + TypeScript, responsivo, com estados de validação, erro e sucesso, integrado ao contrato atual do backend Go.
+
+---
 
 ## Decisões de produto
 
 - O primeiro fluxo prioriza o lançamento rápido de uma despesa simples.
-- O backend Go existente é o contrato de integração desta entrega.
 - O uso em celular é requisito desde o primeiro incremento.
+- O backend Go existente é o contrato de integração desta entrega.
+
+---
 
 ## Escopo
 
-- Frontend React + Vite + TypeScript.
 - Formulário de nova despesa.
-- Campos: tipo, descrição, valor, data, conta/carteira e observação quando aplicável ao contrato atual.
+- Campos compatíveis com o contrato atual da API: tipo, descrição, valor e data.
 - Validação de campos obrigatórios e valor monetário.
 - Estados de envio, sucesso e erro.
 - Layout responsivo para celular e desktop.
+
+---
 
 ## Fora de escopo
 
@@ -78,6 +102,8 @@ Entregar uma tela funcional de nova despesa, responsiva, integrada ao endpoint e
 - Autenticação.
 - Publicação em produção e PWA completa.
 - Exportação para o `financas-vault`.
+
+---
 
 ## Critérios de aceite
 
@@ -88,11 +114,7 @@ Entregar uma tela funcional de nova despesa, responsiva, integrada ao endpoint e
 - C5. Após sucesso, o usuário recebe confirmação clara e o formulário fica pronto para um novo lançamento. ^c5
 - C6. O fluxo possui testes básicos e documentação atualizada. ^c6
 
-## Fonte
-
-- Código: `/home/rafacartaxo/Documentos/Desenvolvimento/financas-pessoais`
-- API: `/home/rafacartaxo/Documentos/Desenvolvimento/financas-pessoais/docs/api.md`
-- Fluxos: `/home/rafacartaxo/Documentos/Desenvolvimento/financas-pessoais/docs/fluxos.md`
+---
 
 ## Checklist de entrega ao DEV
 
@@ -102,6 +124,8 @@ Entregar uma tela funcional de nova despesa, responsiva, integrada ao endpoint e
 - [x] Plano e casos de teste estão vinculados.
 - [x] `pontos_alocados` foi preenchido.
 
+---
+
 ## Pendências de decisão
 
-- Confirmar durante a revisão do contrato se conta/carteira e observação fazem parte do payload inicial do endpoint.
+- Nenhuma. O contrato inicial considera tipo, descrição, valor e data; campos adicionais ficam fora desta melhoria.

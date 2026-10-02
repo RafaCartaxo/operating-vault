@@ -19,24 +19,41 @@ pontos: 1
 > [!settings]- Controle do plano de teste
 > **Status:** `INPUT[inlineSelect(option(planejado),option(execucao),option(concluido)):status]`
 
+---
+
 ## Objetivo
 
 Comprovar que o usuário consegue registrar uma despesa válida e recebe orientação adequada nos cenários de erro, em celular e desktop.
 
-## Estratégia
+---
 
-- **UI:** formulário, responsividade, mensagens e estados.
-- **API/integração:** payload enviado e tratamento das respostas do backend.
-- **Regressão:** testes atuais do backend continuam passando.
+## Riscos e escopo
+
+- Risco de o formulário não ser utilizável em telas pequenas.
+- Risco de divergência entre o payload do frontend e o contrato Go.
+- Risco de perda dos dados preenchidos quando a API falha.
+
+---
+
+## Estratégia de teste
+
+- **Unitário:** regras de validação do formulário, quando isoladas.
+- **API/repositório:** contrato e persistência continuam cobertos pela suíte Go existente.
+- **UI/E2E:** preenchimento, envio, mensagens e responsividade.
+- **Regressão:** execução dos testes atuais do backend após a integração.
+
+---
 
 ## Matriz de cobertura
 
-| CT | Tipo | Camada | Automação | Critérios |
+| CT | Tipo | Camada | Automação | Validação |
 |---|---|---|---|---|
-| [[03 - Casos de teste#^ct-001|CT-001]] | Funcional | UI/API | Manual + automatizável | C1, C3, C5 |
-| [[03 - Casos de teste#^ct-002|CT-002]] | Funcional | UI | Manual | C2 |
-| [[03 - Casos de teste#^ct-003|CT-003]] | Negativo | UI/API | Manual | C4 |
-| [[03 - Casos de teste#^ct-004|CT-004]] | Regressão | API | Automatizado | C3, C6 |
+| [[03 - Casos de teste#^ct-001\|CT-001]] | Funcional | E2E/API | Manual | [[04 - Validação dev\|Registrar resultado]] |
+| [[03 - Casos de teste#^ct-002\|CT-002]] | Funcional | E2E | Manual | [[04 - Validação dev\|Registrar resultado]] |
+| [[03 - Casos de teste#^ct-003\|CT-003]] | Negativo | E2E/API | Manual | [[04 - Validação dev\|Registrar resultado]] |
+| [[03 - Casos de teste#^ct-004\|CT-004]] | Regressão | API | Automatizado | [[04 - Validação dev\|Registrar resultado]] |
+
+---
 
 ## Entrada e saída
 
