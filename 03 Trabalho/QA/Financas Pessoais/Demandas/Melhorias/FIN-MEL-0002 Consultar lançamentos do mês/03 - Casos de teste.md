@@ -161,13 +161,13 @@ pontos: 1
 >   link: "[[04 - Validação dev#Resultado dos casos de teste]]"
 > ```
 >
-> **Descrição:** confirma que o calendário nativo permite selecionar outro mês sem digitação manual e atualiza a lista.
+> **Descrição:** confirma que o seletor mensal permite escolher outro mês sem digitação manual e atualiza a lista, inclusive após salvar um lançamento com data retroativa.
 >
 > **Pré-condições:** existem dados diferentes em dois meses.
 >
 > **Dado** que o usuário está consultando um mês  
-> **Quando** clica no campo e seleciona outro mês no calendário nativo  
-> **Então** a aplicação consulta o novo `AAAA-MM` e substitui os resultados.
+> **Quando** clica no botão do mês e seleciona outro mês no painel mensal  
+> **Então** a aplicação consulta o novo `AAAA-MM` e substitui os resultados. Se o lançamento recém-salvo tiver data em outro mês, esse mês passa a ser selecionado automaticamente.
 >
 > **Resultado esperado:** lista, total e mês exibido correspondem ao novo período.
 >
