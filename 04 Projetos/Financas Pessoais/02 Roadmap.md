@@ -28,7 +28,7 @@ tipo: roadmap
 
 Usar `GET /api/lancamentos?mes=AAAA-MM` para exibir os lançamentos do mês na aplicação, com totalizadores simples e estados de carregamento, vazio e erro. Esta etapa fecha o primeiro ciclo de uso antes de avançar para PWA, parcelas ou recorrências.
 
-### Próxima melhoria recomendada
+### Melhoria concluída
 
 **FIN-MEL-0003 — Editar e excluir lançamentos**
 
@@ -40,11 +40,11 @@ Permitir corrigir ou remover registros já persistidos, preservando validações
 
 Validar data, filtro mensal e máscara monetária em iPhone, Android e desktop.
 
-### Próxima melhoria recomendada
+### Melhoria em execução
 
 **FIN-MEL-0005 — Resumo mensal financeiro**
 
-Exibir receitas, despesas, saldo e quantidade de lançamentos no período consultado, sem alterar o cadastro.
+Exibir receitas, despesas, saldo e quantidade de lançamentos no período consultado, sem alterar o cadastro. Implementação frontend concluída; validação dos 16 CTs pendente.
 
 ## Fase 3 — Cálculos
 

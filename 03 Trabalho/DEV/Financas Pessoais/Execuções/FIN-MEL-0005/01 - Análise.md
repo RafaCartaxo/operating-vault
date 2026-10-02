@@ -36,4 +36,4 @@ A melhoria é viável no frontend, calculando o resumo a partir dos lançamentos
 
 ## Perguntas abertas
 
-- A aprovação QA dos 13 CTs deve ocorrer antes da implementação.
+- A execução QA dos 16 CTs deve ocorrer antes do fechamento da demanda.
