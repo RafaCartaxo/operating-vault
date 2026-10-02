@@ -20,7 +20,7 @@ kanban-plugin: board
 
 ## 🧪 Aguardando QA
 
-- [ ]
+- [ ] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0001/00 README|FIN-MEL-0001 — implementação aprovada; aguardando QA]]
 
 ## ✅ Concluído
 

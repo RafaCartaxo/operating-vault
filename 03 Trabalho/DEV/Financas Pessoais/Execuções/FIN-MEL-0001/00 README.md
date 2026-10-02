@@ -1,7 +1,7 @@
 ---
-status: analise
+status: validacao
 tipo: melhoria
-etapa_atual: "DEV · Análise técnica"
+etapa_atual: "QA · Validação"
 demanda: "FIN-MEL-0001"
 plano: ""
 commit: ""
@@ -51,7 +51,7 @@ pontos: 5
 | Análise | 🔵 | 2026-10-02 |
 | Plano de execução | ⏳ | |
 | Execução | ⏳ | |
-| Code review | ⏳ | |
+| Code review | ✅ | 2026-10-02 |
 | Verificação (CTs) | ⏳ | |
 | Fechamento | ⏳ | |
 
@@ -61,6 +61,7 @@ pontos: 5
 
 - 2026-10-02 — QA concluído e execução DEV liberada.
 - 2026-10-02 — análise técnica preenchida.
+- 2026-10-02 — implementação concluída e code review aprovado; liberado para QA.
 
 ---
 

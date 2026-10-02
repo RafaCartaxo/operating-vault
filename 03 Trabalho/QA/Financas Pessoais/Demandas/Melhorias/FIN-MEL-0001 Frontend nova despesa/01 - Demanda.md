@@ -1,8 +1,8 @@
 ---
 prioridade: media
-status: execucao
+status: validacao
 tipo: melhoria
-etapa_atual: "DEV · Análise técnica"
+etapa_atual: "QA · Validação"
 modulo: lancamentos
 plano: "[[02 - Plano de teste]]"
 execucao: "[[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0001/00 README|Execução DEV]]"
