@@ -10,7 +10,7 @@ status: preparado
 
 ## Estado atual
 
-Ainda não há demandas QA ativas. O backend possui testes automatizados; a validação de produto começa quando o frontend mobile-first estiver disponível.
+Há uma primeira demanda em triagem: [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0001 Frontend nova despesa/00 README|FIN-MEL-0001 — Frontend mobile-first para nova despesa]]. O backend possui testes automatizados; a validação de produto começa pelo contrato de comportamento e continua quando o frontend estiver disponível.
 
 ## Fluxo QA
 
