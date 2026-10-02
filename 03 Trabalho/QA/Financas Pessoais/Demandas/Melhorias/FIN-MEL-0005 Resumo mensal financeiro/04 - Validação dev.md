@@ -19,6 +19,9 @@ ct_resultados:
   ct_011: "⏳ Aguardando"
   ct_012: "⏳ Aguardando"
   ct_013: "⏳ Aguardando"
+  ct_014: "⏳ Aguardando"
+  ct_015: "⏳ Aguardando"
+  ct_016: "⏳ Aguardando"
 ---
 
 # Validação — FIN-MEL-0005
@@ -46,6 +49,9 @@ ct_resultados:
 | CT-011 | Aguardando |  |  |  |
 | CT-012 | Aguardando |  |  |  |
 | CT-013 | Aguardando |  |  |  |
+| CT-014 | Aguardando |  |  |  |
+| CT-015 | Aguardando |  |  |  |
+| CT-016 | Aguardando |  |  |  |
 
 ## Decisão
 

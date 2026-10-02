@@ -43,7 +43,7 @@ Exibir receitas, despesas, saldo e quantidade de lançamentos do mês selecionad
 ## Pronto quando
 
 - Critérios da demanda [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0005 Resumo mensal financeiro/01 - Demanda#^c1|C1]] a [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0005 Resumo mensal financeiro/01 - Demanda#^c6|C6]] estiverem cobertos.
-- Os 13 CTs do pacote QA estiverem executados.
+- Os 16 CTs do pacote QA estiverem executados.
 - `npm test`, `npm run build`, `npm run audit:styles` e `npm run audit:ui` estiverem verdes.
 
 ### Testes desta etapa

@@ -23,12 +23,12 @@ pontos: 1
 
 | Critério | CTs |
 |---|---|
-| [[01 - Demanda#^c1\|C1]] | [[03 - Casos de teste#^ct-001\|CT-001]], [[03 - Casos de teste#^ct-008\|CT-008]] |
-| [[01 - Demanda#^c2\|C2]] | [[03 - Casos de teste#^ct-002\|CT-002]], [[03 - Casos de teste#^ct-007\|CT-007]] |
-| [[01 - Demanda#^c3\|C3]] | [[03 - Casos de teste#^ct-003\|CT-003]], [[03 - Casos de teste#^ct-007\|CT-007]], [[03 - Casos de teste#^ct-008\|CT-008]], [[03 - Casos de teste#^ct-009\|CT-009]] |
-| [[01 - Demanda#^c4\|C4]] | [[03 - Casos de teste#^ct-004\|CT-004]], [[03 - Casos de teste#^ct-010\|CT-010]] |
-| [[01 - Demanda#^c5\|C5]] | [[03 - Casos de teste#^ct-005\|CT-005]], [[03 - Casos de teste#^ct-010\|CT-010]], [[03 - Casos de teste#^ct-011\|CT-011]], [[03 - Casos de teste#^ct-012\|CT-012]], [[03 - Casos de teste#^ct-013\|CT-013]] |
-| [[01 - Demanda#^c6\|C6]] | [[03 - Casos de teste#^ct-006\|CT-006]], [[03 - Casos de teste#^ct-013\|CT-013]] |
+| [[01 - Demanda#^c1\|C1]] | [[03 - Casos de teste#^ct-001\|CT-001]], [[03 - Casos de teste#^ct-008\|CT-008]], [[03 - Casos de teste#^ct-015\|CT-015]] |
+| [[01 - Demanda#^c2\|C2]] | [[03 - Casos de teste#^ct-002\|CT-002]], [[03 - Casos de teste#^ct-007\|CT-007]], [[03 - Casos de teste#^ct-015\|CT-015]] |
+| [[01 - Demanda#^c3\|C3]] | [[03 - Casos de teste#^ct-003\|CT-003]], [[03 - Casos de teste#^ct-007\|CT-007]], [[03 - Casos de teste#^ct-008\|CT-008]], [[03 - Casos de teste#^ct-009\|CT-009]], [[03 - Casos de teste#^ct-015\|CT-015]] |
+| [[01 - Demanda#^c4\|C4]] | [[03 - Casos de teste#^ct-004\|CT-004]], [[03 - Casos de teste#^ct-010\|CT-010]], [[03 - Casos de teste#^ct-011\|CT-011]], [[03 - Casos de teste#^ct-012\|CT-012]] |
+| [[01 - Demanda#^c5\|C5]] | [[03 - Casos de teste#^ct-005\|CT-005]], [[03 - Casos de teste#^ct-010\|CT-010]], [[03 - Casos de teste#^ct-011\|CT-011]], [[03 - Casos de teste#^ct-012\|CT-012]], [[03 - Casos de teste#^ct-013\|CT-013]], [[03 - Casos de teste#^ct-014\|CT-014]], [[03 - Casos de teste#^ct-016\|CT-016]] |
+| [[01 - Demanda#^c6\|C6]] | [[03 - Casos de teste#^ct-006\|CT-006]], [[03 - Casos de teste#^ct-014\|CT-014]], [[03 - Casos de teste#^ct-016\|CT-016]] |
 
 > [!example]- CT-001 · Total de receitas
 >
@@ -82,9 +82,9 @@ pontos: 1
 
 > [!example]- CT-005 · Troca de mês e estados
 >
-> **Dado** que o usuário troca o mês ou consulta um mês vazio  
-> **Quando** a API responde  
-> **Então** indicadores, lista vazia, carregamento e erro permanecem coerentes.
+> **Dado** que existem lançamentos em dois meses diferentes  
+> **Quando** o usuário troca o mês selecionado  
+> **Então** o resumo corresponde somente ao novo período.
 >
 > **Critérios cobertos:** [[01 - Demanda#^c5|C5]]
 >
@@ -110,7 +110,7 @@ pontos: 1
 > **Quando** o resumo é exibido  
 > **Então** receitas são R$ 0,00, despesas são somadas e o saldo fica negativo.
 >
-> **Critérios cobertos:** C2, C3
+> **Critérios cobertos:** [[01 - Demanda#^c2|C2]], [[01 - Demanda#^c3|C3]]
 
 ^ct-007
 
@@ -120,7 +120,7 @@ pontos: 1
 > **Quando** o resumo é exibido  
 > **Então** despesas são R$ 0,00, receitas são somadas e o saldo fica positivo.
 
-> **Critérios cobertos:** C1, C3
+> **Critérios cobertos:** [[01 - Demanda#^c1|C1]], [[01 - Demanda#^c3|C3]]
 
 ^ct-008
 
@@ -130,7 +130,7 @@ pontos: 1
 > **Quando** o resumo é calculado  
 > **Então** o saldo exibido é R$ 0,00.
 
-> **Critérios cobertos:** C3
+> **Critérios cobertos:** [[01 - Demanda#^c3|C3]]
 
 ^ct-009
 
@@ -140,36 +140,72 @@ pontos: 1
 > **Quando** o usuário troca o mês  
 > **Então** quantidade, receitas, despesas e saldo correspondem somente ao novo período.
 
-> **Critérios cobertos:** C4, C5
+> **Critérios cobertos:** [[01 - Demanda#^c4|C4]], [[01 - Demanda#^c5|C5]]
 
 ^ct-010
 
-> [!example]- CT-011 · Atualizar resumo após editar ou excluir
+> [!example]- CT-011 · Atualizar resumo após editar
 >
 > **Dado** que existe um lançamento listado  
-> **Quando** ele é editado ou excluído  
-> **Então** os indicadores são recalculados sem manter o valor anterior.
+> **Quando** ele é editado  
+> **Então** os indicadores são recalculados com o novo valor.
 
-> **Critérios cobertos:** C5
+> **Critérios cobertos:** [[01 - Demanda#^c4|C4]], [[01 - Demanda#^c5|C5]]
 
 ^ct-011
 
-> [!example]- CT-012 · Mês vazio sem resumo antigo
+> [!example]- CT-012 · Atualizar resumo após excluir
+>
+> **Dado** que existe um lançamento listado  
+> **Quando** ele é excluído  
+> **Então** os indicadores são recalculados sem manter o valor anterior.
+
+> **Critérios cobertos:** [[01 - Demanda#^c4|C4]], [[01 - Demanda#^c5|C5]]
+
+^ct-012
+
+> [!example]- CT-013 · Mês vazio sem resumo antigo
 >
 > **Dado** que o mês selecionado não possui lançamentos  
 > **Quando** a consulta termina  
 > **Então** a lista fica vazia e nenhum indicador do mês anterior permanece visível.
 
-> **Critérios cobertos:** C5
-
-^ct-012
-
-> [!example]- CT-013 · Erro e responsividade do resumo
->
-> **Dado** que a API falha ou a tela é aberta em celular/desktop  
-> **Quando** o resumo é carregado  
-> **Então** o erro é informado e os indicadores não quebram o layout.
-
-> **Critérios cobertos:** C5, C6
+> **Critérios cobertos:** [[01 - Demanda#^c5|C5]]
 
 ^ct-013
+
+> [!example]- CT-014 · Erro da API
+>
+> **Dado** que a API falha durante a consulta mensal  
+> **Quando** o resumo é carregado  
+> **Então** o erro é informado e o resumo não exibe dados inconsistentes.
+>
+> **Critérios cobertos:** [[01 - Demanda#^c5|C5]]
+>
+> **Informações do CT:** negativo · UI/API · manual · planejado
+>
+^ct-014
+
+> [!example]- CT-015 · Formatação monetária do resumo
+>
+> **Dado** que o mês possui valores inteiros, centavos e valores acima de mil reais  
+> **Quando** o resumo é exibido  
+> **Então** todos os indicadores monetários usam o padrão brasileiro, incluindo `R$ 0,00` e saldo negativo.
+>
+> **Critérios cobertos:** [[01 - Demanda#^c1|C1]], [[01 - Demanda#^c2|C2]], [[01 - Demanda#^c3|C3]]
+>
+> **Informações do CT:** validação · UI/unit · manual + automatizado · planejado
+>
+^ct-015
+
+> [!example]- CT-016 · Estado de carregamento
+>
+> **Dado** que a consulta mensal ainda está em andamento  
+> **Quando** a tela aguarda a resposta da API  
+> **Então** o estado de carregamento é exibido sem apresentar dados antigos como se fossem do mês atual.
+>
+> **Critérios cobertos:** [[01 - Demanda#^c5|C5]], [[01 - Demanda#^c6|C6]]
+>
+> **Informações do CT:** funcional · UI/E2E · manual · planejado
+>
+^ct-016

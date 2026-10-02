@@ -19,4 +19,4 @@ qase_projeto: ""
 
 ## Casos preparados
 
-- CT-001 a CT-013, após aprovação da demanda.
+- CT-001 a CT-016, após aprovação da demanda.
