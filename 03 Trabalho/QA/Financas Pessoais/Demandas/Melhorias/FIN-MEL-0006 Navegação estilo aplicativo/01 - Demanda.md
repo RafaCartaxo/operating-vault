@@ -1,11 +1,11 @@
 ---
 prioridade: media
-status: analise
+status: execucao
 tipo: melhoria
-etapa_atual: "QA · Análise da demanda"
+etapa_atual: "DEV · Code review"
 modulo: navegacao
 plano: "[[02 - Plano de teste]]"
-execucao: ""
+execucao: "[[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0006/00 README|Execução DEV]]"
 ambiente: dev
 origem: conversa
 projeto: financas-pessoais
@@ -25,7 +25,7 @@ pontos_alocados: 5
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** será criada após aprovação QA.
+> **Execução DEV:** [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0006/00 README|Abrir execução DEV]]
 
 > [!settings]- Controle da demanda
 > **Prioridade:** `INPUT[inlineSelect(option(baixa),option(media),option(alta)):prioridade]`  
@@ -35,7 +35,7 @@ pontos_alocados: 5
 
 
 > [!info] Status atual
-> **Próximo passo:** revisar e aprovar o escopo, plano e casos de teste.
+> **Próximo passo:** concluir análise técnica e plano de execução DEV.
 
 ---
 
@@ -121,7 +121,7 @@ Será entregue uma navegação inferior responsiva, com áreas separadas e estru
 - [x] Decisões e regras de negócio estão fechadas.
 - [x] Escopo e fora de escopo estão claros.
 - [x] Critérios de aceite são objetivos e testáveis.
-- [ ] Plano e casos de teste estão vinculados.
+- [x] Plano e casos de teste estão vinculados.
 - [x] `pontos_alocados` foi preenchido.
 
 ---

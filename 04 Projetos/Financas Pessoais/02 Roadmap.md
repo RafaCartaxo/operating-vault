@@ -46,6 +46,10 @@ Validar data, filtro mensal e máscara monetária em iPhone, Android e desktop.
 
 Exibir receitas, despesas, saldo e quantidade de lançamentos no período consultado, sem alterar o cadastro. Implementação frontend concluída; validação dos 16 CTs pendente.
 
+**FIN-MEL-0006 — Navegação estilo aplicativo**
+
+Pacote QA aprovado e execução DEV aberta. Próxima etapa: análise técnica e plano de execução frontend.
+
 ## Fase 3 — Cálculos
 
 - [ ] Parcelas.

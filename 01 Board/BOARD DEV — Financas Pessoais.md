@@ -18,6 +18,7 @@ kanban-plugin: board
 ## 🔍 Code review
 
 - [ ]
+- [ ] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0006/00 README|FIN-MEL-0006 — Navegação estilo aplicativo]]
 
 ## 🧪 Aguardando QA
 
