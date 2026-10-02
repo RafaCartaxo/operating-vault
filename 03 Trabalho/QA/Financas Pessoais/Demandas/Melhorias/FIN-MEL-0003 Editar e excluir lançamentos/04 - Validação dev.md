@@ -3,23 +3,23 @@ demanda: FIN-MEL-0003
 execucao: "[[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0003/00 README|Execução DEV]]"
 ambiente: dev
 versao: ""
-status: execucao
+status: concluido
 responsavel: ""
-resultado: aguardando
+resultado: aprovado
 pontos: 1
 ct_resultados:
-  ct_001: "⏳ Aguardando"
-  ct_002: "⏳ Aguardando"
-  ct_003: "⏳ Aguardando"
-  ct_004: "⏳ Aguardando"
-  ct_005: "⏳ Aguardando"
-  ct_006: "⏳ Aguardando"
-  ct_007: "⏳ Aguardando"
-  ct_008: "⏳ Aguardando"
-  ct_009: "⏳ Aguardando"
-  ct_010: "⏳ Aguardando"
-  ct_011: "⏳ Aguardando"
-  ct_012: "⏳ Aguardando"
+  ct_001: "✅ Aprovado"
+  ct_002: "✅ Aprovado"
+  ct_003: "✅ Aprovado"
+  ct_004: "✅ Aprovado"
+  ct_005: "✅ Aprovado"
+  ct_006: "✅ Aprovado"
+  ct_007: "✅ Aprovado"
+  ct_008: "✅ Aprovado"
+  ct_009: "✅ Aprovado"
+  ct_010: "✅ Aprovado"
+  ct_011: "✅ Aprovado"
+  ct_012: "✅ Aprovado"
 ---
 
 # Validação — FIN-MEL-0003
@@ -40,13 +40,18 @@ ct_resultados:
 
 | CT | Resultado | Evidência | Observação | Defeito/Bug | Pontos entregues |
 |---|---|---|---|---|---:|
-| CT-001 | Aguardando |  |  |  |  |
-| CT-002 | Aguardando |  |  |  |  |
-| CT-003 | Aguardando |  |  |  |  |
-| CT-004 | Aguardando |  |  |  |  |
-| CT-005 | Aguardando |  |  |  |  |
-| CT-006 | Aguardando |  |  |  |  |
-| CT-007 | Aguardando |  |  |  |  |
+| CT-001 | ✅ Aprovado | Execução QA | Ações de editar e excluir disponíveis. |  | 1 |
+| CT-002 | ✅ Aprovado | Execução QA | Formulário preenchido com o registro selecionado. |  | 1 |
+| CT-003 | ✅ Aprovado | PUT /api/lancamentos/:id | Edição válida persistida. |  | 1 |
+| CT-004 | ✅ Aprovado | Execução QA | Exclusão cancelada sem alteração. |  | 1 |
+| CT-005 | ✅ Aprovado | DELETE /api/lancamentos/:id | Registro correto excluído e total atualizado. |  | 1 |
+| CT-006 | ✅ Aprovado | Smoke de erro | Tela preservada quando a API falha. |  | 1 |
+| CT-007 | ✅ Aprovado | Execução QA | Ações acessíveis em celular e desktop. |  | 1 |
+| CT-008 | ✅ Aprovado | Execução QA | Edição inválida bloqueada. |  | 1 |
+| CT-009 | ✅ Aprovado | Execução QA | Mudança de mês refletida corretamente. |  | 1 |
+| CT-010 | ✅ Aprovado | Execução QA | Tipo alterado e total recalculado. |  | 1 |
+| CT-011 | ✅ Aprovado | DELETE 404 | ID inexistente tratado sem afetar outros registros. |  | 1 |
+| CT-012 | ✅ Aprovado | npm test, build e go test | Regressões e contratos preservados. |  | 1 |
 | CT-008 | Aguardando |  |  |  |  |
 | CT-009 | Aguardando |  |  |  |  |
 | CT-010 | Aguardando |  |  |  |  |
@@ -55,12 +60,12 @@ ct_resultados:
 
 ## Decisão
 
-**Resultado geral:** aguardando
+**Resultado geral:** aprovado
 
 ## Checklist de encerramento QA
 
-- [ ] Todos os CTs executados.
-- [ ] Evidências registradas.
-- [ ] Bugs vinculados.
-- [ ] Resultado definido.
-- [ ] Status atualizados.
+- [x] Todos os CTs executados.
+- [x] Evidências registradas.
+- [x] Bugs vinculados.
+- [x] Resultado definido.
+- [x] Status atualizados.

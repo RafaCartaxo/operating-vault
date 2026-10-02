@@ -19,12 +19,13 @@ kanban-plugin: board
 ## 🧪 Validação
 
 - [ ]
-- [ ] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0003 Editar e excluir lançamentos/00 README|FIN-MEL-0003 — executar CT-001 a CT-012]]
+- [ ]
 
 ## ✅ Concluído
 
 - [x] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0001 Frontend nova despesa/00 README|FIN-MEL-0001 — todos os CTs aprovados]]
 - [x] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0002 Consultar lançamentos do mês/00 README|FIN-MEL-0002 — todos os CTs aprovados]]
+- [x] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0003 Editar e excluir lançamentos/00 README|FIN-MEL-0003 — todos os CTs aprovados]]
 
 %% kanban:settings
 ```json

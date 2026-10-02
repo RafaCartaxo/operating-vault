@@ -1,7 +1,7 @@
 ---
-status: validacao
+status: concluido
 tipo: melhoria
-etapa_atual: "QA · Validação"
+etapa_atual: "Concluído"
 demanda: FIN-MEL-0003
 plano: "[[02 - Plano de execução]]"
 pontos: 8
@@ -30,5 +30,5 @@ pontos: 8
 | Plano de execução | ✅ | 2026-10-02 |
 | Execução | ✅ | 2026-10-02 |
 | Code review | ✅ | 2026-10-02 |
-| Verificação CTs | 🔵 | 2026-10-02 |
-| Fechamento | ⏳ | |
+| Verificação CTs | ✅ | 2026-10-02 |
+| Fechamento | ✅ | 2026-10-02 |

@@ -1,8 +1,8 @@
 ---
 prioridade: alta
-status: execucao
+status: concluido
 tipo: melhoria
-etapa_atual: "QA · Validação"
+etapa_atual: "Concluído"
 modulo: lancamentos
 plano: "[[02 - Plano de teste]]"
 execucao: "[[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0003/00 README|Execução DEV]]"
@@ -28,7 +28,7 @@ pontos_alocados: 8
 > **Execução DEV:** [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0003/00 README|Execução DEV]]
 
 > [!info] Status atual
-> Status: demanda aprovada; execução DEV aberta para análise técnica.
+> Status: concluída; todos os CTs aprovados e execução DEV encerrada.
 
 ## Problema / contexto
 
