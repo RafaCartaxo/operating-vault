@@ -1,8 +1,8 @@
 ---
 prioridade: media
-status: analise
+status: concluido
 tipo: melhoria
-etapa_atual: "QA · Análise da demanda"
+etapa_atual: "Concluído"
 modulo: frontend
 plano: "[[02 - Plano de teste]]"
 execucao: "[[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0004/00 README|Execução DEV]]"
@@ -57,6 +57,7 @@ Garantir que os campos de data, filtro mensal e valor sejam previsíveis e utili
 - C4. Primeiro dígito do valor mantém o cursor correto. ^c4
 - C5. Estado visual inicial do valor é R$ 0,00. ^c5
 - C6. Layout permanece correto em desktop. ^c6
+- C7. Tocar nos campos no iPhone não causa zoom automático da página. ^c7
 
 ## Checklist de entrega ao DEV
 
@@ -64,4 +65,3 @@ Garantir que os campos de data, filtro mensal e valor sejam previsíveis e utili
 - [x] Escopo e fora de escopo definidos.
 - [x] Critérios testáveis.
 - [ ] Plano e CTs aprovados.
-

@@ -40,6 +40,12 @@ Permitir corrigir ou remover registros já persistidos, preservando validações
 
 Validar data, filtro mensal e máscara monetária em iPhone, Android e desktop.
 
+### Próxima melhoria recomendada
+
+**FIN-MEL-0005 — Resumo mensal financeiro**
+
+Exibir receitas, despesas, saldo e quantidade de lançamentos no período consultado, sem alterar o cadastro.
+
 ## Fase 3 — Cálculos
 
 - [ ] Parcelas.

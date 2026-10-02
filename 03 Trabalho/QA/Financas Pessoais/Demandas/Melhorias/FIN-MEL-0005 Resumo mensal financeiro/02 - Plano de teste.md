@@ -1,11 +1,11 @@
 ---
-demanda: FIN-MEL-0004
+demanda: FIN-MEL-0005
 status: planejado
 responsavel: ""
 pontos: 1
 ---
 
-# Plano de teste — FIN-MEL-0004
+# Plano de teste — FIN-MEL-0005
 
 > [!info]- Navegação QA
 > **README:** [[00 README]]  
@@ -15,15 +15,15 @@ pontos: 1
 
 ## Objetivo
 
-Validar o comportamento dos campos responsivos em iPhone, Android e desktop.
+Validar os indicadores mensais calculados a partir da lista persistida.
 
 ## Estratégia
 
-- Execução manual em dispositivo iPhone com Chrome.
-- Execução manual em dispositivo Android com Chrome.
-- Teste de viewport desktop.
-- Teste funcional de máscara e cursor.
-- Regressão do cadastro e consulta mensal.
+- Testes com receitas e despesas conhecidas.
+- Testes de saldo positivo, negativo e zero.
+- Teste de quantidade e troca de mês.
+- Teste de vazio, carregamento e erro.
+- Regressão em celular e desktop.
 
 ## Matriz de cobertura
 
@@ -35,9 +35,4 @@ Validar o comportamento dos campos responsivos em iPhone, Android e desktop.
 | [[01 - Demanda#^c4|C4]] | [[03 - Casos de teste#^ct-004|CT-004]] |
 | [[01 - Demanda#^c5|C5]] | [[03 - Casos de teste#^ct-005|CT-005]] |
 | [[01 - Demanda#^c6|C6]] | [[03 - Casos de teste#^ct-006|CT-006]] |
-| [[01 - Demanda#^c7|C7]] | [[03 - Casos de teste#^ct-007|CT-007]] |
 
-## Entrada e saída
-
-**Entrada:** aplicação acessível pela URL local e dispositivos na mesma rede.  
-**Saída:** campos utilizáveis, alinhados e sem overflow.

@@ -29,6 +29,7 @@ pontos: 1
 | [[01 - Demanda#^c4|C4]] | [[03 - Casos de teste#^ct-004|CT-004]] |
 | [[01 - Demanda#^c5|C5]] | [[03 - Casos de teste#^ct-005|CT-005]] |
 | [[01 - Demanda#^c6|C6]] | [[03 - Casos de teste#^ct-006|CT-006]] |
+| [[01 - Demanda#^c7|C7]] | [[03 - Casos de teste#^ct-007|CT-007]] |
 
 > [!example]- CT-001 · Data no iPhone
 >
@@ -102,3 +103,14 @@ pontos: 1
 >
 > ^ct-006
 
+> [!example]- CT-007 · Impedir zoom automático nos campos
+>
+> **Dado** que estou no iPhone Chrome  
+> **Quando** toco nos campos de texto, valor ou data  
+> **Então** a página não aplica zoom automático e mantém o enquadramento.
+>
+> **Critérios cobertos:** [[01 - Demanda#^c7|C7]]
+>
+> **Informações do CT:** usabilidade · UI/E2E · manual · planejado
+
+^ct-007
