@@ -23,13 +23,13 @@ pontos: 1
 
 | Critério | CTs |
 |---|---|
-| [[01 - Demanda#^c1|C1]] | [[03 - Casos de teste#^ct-001|CT-001]] |
-| [[01 - Demanda#^c2|C2]] | [[03 - Casos de teste#^ct-002|CT-002]] |
-| [[01 - Demanda#^c3|C3]] | [[03 - Casos de teste#^ct-003|CT-003]] |
-| [[01 - Demanda#^c4|C4]] | [[03 - Casos de teste#^ct-004|CT-004]] |
-| [[01 - Demanda#^c5|C5]] | [[03 - Casos de teste#^ct-005|CT-005]] |
-| [[01 - Demanda#^c6|C6]] | [[03 - Casos de teste#^ct-006|CT-006]] |
-| [[01 - Demanda#^c7|C7]] | [[03 - Casos de teste#^ct-007|CT-007]] |
+| [[01 - Demanda#^c1\|C1]] | [[03 - Casos de teste#^ct-001\|CT-001]] |
+| [[01 - Demanda#^c2\|C2]] | [[03 - Casos de teste#^ct-002\|CT-002]] |
+| [[01 - Demanda#^c3\|C3]] | [[03 - Casos de teste#^ct-003\|CT-003]] |
+| [[01 - Demanda#^c4\|C4]] | [[03 - Casos de teste#^ct-004\|CT-004]] |
+| [[01 - Demanda#^c5\|C5]] | [[03 - Casos de teste#^ct-005\|CT-005]] |
+| [[01 - Demanda#^c6\|C6]] | [[03 - Casos de teste#^ct-006\|CT-006]] |
+| [[01 - Demanda#^c7\|C7]] | [[03 - Casos de teste#^ct-007\|CT-007]] |
 
 > [!example]- CT-001 · Data no iPhone
 >
