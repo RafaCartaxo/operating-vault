@@ -2,7 +2,7 @@
 demanda: FIN-MEL-0005
 execucao: "[[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0005/00 README|Execução DEV]]"
 ambiente: dev
-status: execucao
+status: aguardando
 resultado: aguardando
 pontos: 1
 ct_resultados:
