@@ -17,7 +17,7 @@ tipo: roadmap
 
 - [x] Criar frontend React.
 - [x] Tornar a interface responsiva para celular.
-- [ ] Configurar PWA e instalação na tela inicial.
+- [x] Configurar PWA e instalação na tela inicial.
 - [x] Criar formulário de nova despesa.
 - [x] Validar valores em centavos.
 - [x] Consultar despesas por mês.
@@ -49,6 +49,10 @@ Exibir receitas, despesas, saldo e quantidade de lançamentos no período consul
 **FIN-MEL-0006 — Navegação estilo aplicativo**
 
 Implementação frontend concluída, code review aprovado e todos os 6 CTs aprovados em QA.
+
+**FIN-MEL-0007 — PWA instalável**
+
+Manifest, ícones, service worker e cache do app shell implementados; validação técnica concluída.
 
 ## Fase 3 — Cálculos
 
