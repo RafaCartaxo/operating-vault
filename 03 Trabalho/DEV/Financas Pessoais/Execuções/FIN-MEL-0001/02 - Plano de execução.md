@@ -60,7 +60,7 @@ Permanece intacto:
 ## Pronto quando
 
 - Critérios da demanda [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0001 Frontend nova despesa/01 - Demanda#^c1|C1]] a [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0001 Frontend nova despesa/01 - Demanda#^c6|C6]] estiverem cobertos.
-- [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0001 Frontend nova despesa/03 - Casos de teste|CT-001 a CT-004]] estiverem cobertos pelos testes e pela validação QA.
+- [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0001 Frontend nova despesa/03 - Casos de teste|CT-001 a CT-008]] estiverem cobertos pelos testes e pela validação QA.
 - `npm run build` passar.
 - Testes do frontend passarem.
 - Uma despesa puder ser enviada pelo navegador ao backend.

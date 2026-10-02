@@ -10,7 +10,7 @@ status: preparado
 
 ## Estado atual
 
-Há uma primeira demanda em triagem: [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0001 Frontend nova despesa/00 README|FIN-MEL-0001 — Frontend mobile-first para nova despesa]]. O backend possui testes automatizados; a validação de produto começa pelo contrato de comportamento e continua quando o frontend estiver disponível.
+Demanda concluída: [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0001 Frontend nova despesa/00 README|FIN-MEL-0001 — Cadastro mobile de nova despesa]]. O pacote permanece em `03 Trabalho` até a movimentação administrativa para `05 Arquivo`.
 
 ## Fluxo QA
 

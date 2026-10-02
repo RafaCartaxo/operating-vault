@@ -15,12 +15,18 @@ tipo: roadmap
 
 ## Fase 2 — Entrada rápida
 
-- [ ] Criar frontend React.
-- [ ] Tornar a interface responsiva para celular.
+- [x] Criar frontend React.
+- [x] Tornar a interface responsiva para celular.
 - [ ] Configurar PWA e instalação na tela inicial.
-- [ ] Criar formulário de nova despesa.
-- [ ] Validar valores em centavos.
+- [x] Criar formulário de nova despesa.
+- [x] Validar valores em centavos.
 - [ ] Consultar despesas por mês.
+
+### Próxima melhoria recomendada
+
+**FIN-MEL-0002 — Consultar lançamentos do mês**
+
+Usar `GET /api/lancamentos?mes=AAAA-MM` para exibir os lançamentos do mês na aplicação, com totalizadores simples e estados de carregamento, vazio e erro. Esta etapa fecha o primeiro ciclo de uso antes de avançar para PWA, parcelas ou recorrências.
 
 ## Fase 3 — Cálculos
 
