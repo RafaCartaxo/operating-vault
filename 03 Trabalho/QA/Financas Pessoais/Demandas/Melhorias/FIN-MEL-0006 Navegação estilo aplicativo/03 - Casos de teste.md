@@ -2,7 +2,7 @@
 demanda: FIN-MEL-0006
 plano: "[[02 - Plano de teste]]"
 validacao: "[[04 - Validação dev]]"
-status: planejado
+status: concluido
 pontos: 2
 ---
 

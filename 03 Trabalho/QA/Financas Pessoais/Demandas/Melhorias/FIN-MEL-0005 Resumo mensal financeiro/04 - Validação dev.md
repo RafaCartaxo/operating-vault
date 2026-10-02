@@ -2,26 +2,26 @@
 demanda: FIN-MEL-0005
 execucao: "[[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0005/00 README|Execução DEV]]"
 ambiente: dev
-status: aguardando
-resultado: aguardando
+status: concluido
+resultado: aprovado
 pontos: 1
 ct_resultados:
-  ct_001: "⏳ Aguardando"
-  ct_002: "⏳ Aguardando"
-  ct_003: "⏳ Aguardando"
-  ct_004: "⏳ Aguardando"
-  ct_005: "⏳ Aguardando"
-  ct_006: "⏳ Aguardando"
-  ct_007: "⏳ Aguardando"
-  ct_008: "⏳ Aguardando"
-  ct_009: "⏳ Aguardando"
-  ct_010: "⏳ Aguardando"
-  ct_011: "⏳ Aguardando"
-  ct_012: "⏳ Aguardando"
-  ct_013: "⏳ Aguardando"
-  ct_014: "⏳ Aguardando"
-  ct_015: "⏳ Aguardando"
-  ct_016: "⏳ Aguardando"
+  ct_001: "✅ Aprovado"
+  ct_002: "✅ Aprovado"
+  ct_003: "✅ Aprovado"
+  ct_004: "✅ Aprovado"
+  ct_005: "✅ Aprovado"
+  ct_006: "✅ Aprovado"
+  ct_007: "✅ Aprovado"
+  ct_008: "✅ Aprovado"
+  ct_009: "✅ Aprovado"
+  ct_010: "✅ Aprovado"
+  ct_011: "✅ Aprovado"
+  ct_012: "✅ Aprovado"
+  ct_013: "✅ Aprovado"
+  ct_014: "✅ Aprovado"
+  ct_015: "✅ Aprovado"
+  ct_016: "✅ Aprovado"
 ---
 
 # Validação — FIN-MEL-0005
@@ -36,23 +36,23 @@ ct_resultados:
 
 | CT | Resultado | Evidência | Observação | Defeito/Bug |
 |---|---|---|---|---|
-| CT-001 | Aguardando |  |  |  |
-| CT-002 | Aguardando |  |  |  |
-| CT-003 | Aguardando |  |  |  |
-| CT-004 | Aguardando |  |  |  |
-| CT-005 | Aguardando |  |  |  |
-| CT-006 | Aguardando |  |  |  |
-| CT-007 | Aguardando |  |  |  |
-| CT-008 | Aguardando |  |  |  |
-| CT-009 | Aguardando |  |  |  |
-| CT-010 | Aguardando |  |  |  |
-| CT-011 | Aguardando |  |  |  |
-| CT-012 | Aguardando |  |  |  |
-| CT-013 | Aguardando |  |  |  |
-| CT-014 | Aguardando |  |  |  |
-| CT-015 | Aguardando |  |  |  |
-| CT-016 | Aguardando |  |  |  |
+| CT-001 | ✅ Aprovado | validação QA concluída |  |  |
+| CT-002 | ✅ Aprovado | validação QA concluída |  |  |
+| CT-003 | ✅ Aprovado | validação QA concluída |  |  |
+| CT-004 | ✅ Aprovado | validação QA concluída |  |  |
+| CT-005 | ✅ Aprovado | validação QA concluída |  |  |
+| CT-006 | ✅ Aprovado | validação QA concluída |  |  |
+| CT-007 | ✅ Aprovado | validação QA concluída |  |  |
+| CT-008 | ✅ Aprovado | validação QA concluída |  |  |
+| CT-009 | ✅ Aprovado | validação QA concluída |  |  |
+| CT-010 | ✅ Aprovado | validação QA concluída |  |  |
+| CT-011 | ✅ Aprovado | validação QA concluída |  |  |
+| CT-012 | ✅ Aprovado | validação QA concluída |  |  |
+| CT-013 | ✅ Aprovado | validação QA concluída |  |  |
+| CT-014 | ✅ Aprovado | validação QA concluída |  |  |
+| CT-015 | ✅ Aprovado | validação QA concluída |  |  |
+| CT-016 | ✅ Aprovado | validação QA concluída |  |  |
 
 ## Decisão
 
-**Resultado geral:** aguardando
+**Resultado geral:** aprovado — todos os 16 CTs aprovados em 2026-10-02.

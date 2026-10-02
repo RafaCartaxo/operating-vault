@@ -1,8 +1,8 @@
 ---
 prioridade: media
-status: analise
+status: concluido
 tipo: melhoria
-etapa_atual: "QA · Análise da demanda"
+etapa_atual: "Concluído"
 modulo: lancamentos
 plano: "[[02 - Plano de teste]]"
 execucao: "[[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0005/00 README|Execução DEV]]"
@@ -11,7 +11,7 @@ origem: conversa
 projeto: financas-pessoais
 pai: ""
 data_inicio: 2026-10-02
-data_fim: ""
+data_fim: 2026-10-02
 responsavel: ""
 pontos_alocados: 3
 ---
@@ -65,4 +65,4 @@ Exibir um resumo mensal com receitas, despesas, saldo e quantidade de lançament
 - [x] Problema e objetivo definidos.
 - [x] Escopo e fora de escopo definidos.
 - [x] Critérios objetivos e testáveis.
-- [ ] Plano e CTs aprovados.
+- [x] Plano e CTs aprovados.

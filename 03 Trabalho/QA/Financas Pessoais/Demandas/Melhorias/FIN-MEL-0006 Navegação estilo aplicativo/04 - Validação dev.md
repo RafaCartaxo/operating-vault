@@ -1,22 +1,22 @@
 ---
 demanda: FIN-MEL-0006
-execucao: ""
+execucao: "[[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0006/00 README|Execução DEV]]"
 ambiente: dev
 versao: ""
-status: execucao
+status: concluido
 responsavel: ""
-resultado: aguardando
+resultado: aprovado
 # Pontos da etapa de validação; substitua pelo valor planejado para esta etapa.
 pontos: 0
 ct_resultados:
-  ct_001: "⏳ Aguardando"
-  ct_002: "⏳ Aguardando"
-  ct_003: "⏳ Aguardando"
-  ct_004: "⏳ Aguardando"
-  ct_005: "⏳ Aguardando"
-  ct_006: "⏳ Aguardando"
-data_inicio: ""
-data_fim: ""
+  ct_001: "✅ Aprovado"
+  ct_002: "✅ Aprovado"
+  ct_003: "✅ Aprovado"
+  ct_004: "✅ Aprovado"
+  ct_005: "✅ Aprovado"
+  ct_006: "✅ Aprovado"
+data_inicio: 2026-10-02
+data_fim: 2026-10-02
 ---
 
 # Validação — FIN-MEL-0006
@@ -28,7 +28,7 @@ data_fim: ""
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** será criada após aprovação QA.
+> **Execução DEV:** [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0006/00 README|Execução DEV]]
 
 > [!settings]- Controle da validação
 > **Status:** `INPUT[inlineSelect(option(execucao),option(concluido)):status]`  
@@ -45,8 +45,8 @@ data_fim: ""
 
 ## Contexto
 
-- Ambiente:
-- Versão/build:
+- Ambiente: dev/mobile e desktop
+- Versão/build: frontend validado após implementação
 
 ---
 
@@ -84,12 +84,12 @@ dv.list([
 
 | CT | Resultado | Evidência | Observação | Defeito/Bug | Pontos entregues |
 |---|---|---|---|---|---:|
-| [[03 - Casos de teste#^ct-001\|CT-001]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_001]` |  |  |  | `= choice(this.ct_resultados.ct_001 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
-| [[03 - Casos de teste#^ct-002\|CT-002]] | \`INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_002]\` |  |  |  | 0 |
-| [[03 - Casos de teste#^ct-003\|CT-003]] | \`INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_003]\` |  |  |  | 0 |
-| [[03 - Casos de teste#^ct-004\|CT-004]] | \`INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_004]\` |  |  |  | 0 |
-| [[03 - Casos de teste#^ct-005\|CT-005]] | \`INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_005]\` |  |  |  | 0 |
-| [[03 - Casos de teste#^ct-006\|CT-006]] | \`INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_006]\` |  |  |  | 0 |
+| [[03 - Casos de teste#^ct-001\|CT-001]] | ✅ Aprovado | validação QA concluída |  |  | 0 |
+| [[03 - Casos de teste#^ct-002\|CT-002]] | ✅ Aprovado | validação QA concluída |  |  | 0 |
+| [[03 - Casos de teste#^ct-003\|CT-003]] | ✅ Aprovado | validação QA concluída |  |  | 0 |
+| [[03 - Casos de teste#^ct-004\|CT-004]] | ✅ Aprovado | validação QA concluída |  |  | 0 |
+| [[03 - Casos de teste#^ct-005\|CT-005]] | ✅ Aprovado | validação QA concluída |  |  | 0 |
+| [[03 - Casos de teste#^ct-006\|CT-006]] | ✅ Aprovado | revisão arquitetural concluída |  |  | 0 |
 
 > **Regra de esforço:** aprovado e falhou = 100% da parcela; em andamento = 25%; bloqueado = 50%; aguardando e não executado = 0%.
 
@@ -138,15 +138,15 @@ Use esta seção somente quando houver reteste após correção:
 
 ## Decisão
 
-**Resultado geral:** aguardando / aprovado / reprovado / aprovado com ressalvas
+**Resultado geral:** aprovado — todos os 6 CTs aprovados em 2026-10-02.
 
 ---
 
 ## Checklist de encerramento QA
 
-- [ ] Todos os CTs executados ou com justificativa registrada.
-- [ ] Evidências e observações preenchidas quando necessário.
+- [x] Todos os CTs executados ou com justificativa registrada.
+- [x] Evidências e observações preenchidas quando necessário.
 - [ ] Bugs filhos vinculados na coluna **Defeito/Bug**.
-- [ ] Resultado geral definido.
-- [ ] Status da validação e da demanda atualizados.
-- [ ] Próximo passo registrado.
+- [x] Resultado geral definido.
+- [x] Status da validação e da demanda atualizados.
+- [x] Próximo passo registrado.

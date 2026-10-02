@@ -8,25 +8,25 @@
 > **Implementação:** [[03 - Implementação|03 - Implementação]]  
 > **Validação QA:** [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0005 Resumo mensal financeiro/04 - Validação dev|Validação QA]]
 
-**Estado:** ⏳ aguardando revisão
+**Estado:** ✅ aprovado — 2026-10-02
 
 ---
 
 ## Checklist
 
-- [ ] O código respeita as convenções reais do repositório.
-- [ ] O diff está limitado ao escopo aprovado.
-- [ ] O plano foi seguido; desvios estão registrados na execução.
-- [ ] Testes e gates aplicáveis estão verdes.
-- [ ] Critérios de aceite e CTs estão cobertos.
-- [ ] Documentação foi sincronizada.
-- [ ] Não foram introduzidos segredos ou dependências desnecessárias.
+- [x] O código respeita as convenções reais do repositório.
+- [x] O diff está limitado ao escopo aprovado.
+- [x] O plano foi seguido; desvios estão registrados na execução.
+- [x] Testes e gates aplicáveis estão verdes.
+- [x] Critérios de aceite e CTs estão cobertos.
+- [x] Documentação foi sincronizada.
+- [x] Não foram introduzidos segredos ou dependências desnecessárias.
 
 ## Achados
 
-- Implementação concluída e aguardando revisão do diff, auditorias visuais e cobertura dos CTs.
+- Implementação, revisão e validação dos 16 CTs concluídas sem achados bloqueantes.
 
 ## Decisão
 
-- [ ] Aprovar
+- [x] Aprovar
 - [ ] Solicitar ajustes

@@ -1,7 +1,7 @@
 ---
-status: execucao
+status: concluido
 tipo: melhoria
-etapa_atual: "DEV · Code review"
+etapa_atual: "Concluído"
 demanda: FIN-MEL-0006
 plano: "Execução frontend — navegação por áreas"
 commit: ""
@@ -54,9 +54,9 @@ pontos: 5
 | Análise | ✅ | 2026-10-02 |
 | Plano de execução | ✅ | 2026-10-02 |
 | Execução | ✅ | 2026-10-02 |
-| Code review | ⏳ | |
-| Verificação (CTs) | ⏳ | |
-| Fechamento | ⏳ | |
+| Code review | ✅ | 2026-10-02 |
+| Verificação (CTs) | ✅ | 2026-10-02 |
+| Fechamento | ✅ | 2026-10-02 |
 
 ---
 

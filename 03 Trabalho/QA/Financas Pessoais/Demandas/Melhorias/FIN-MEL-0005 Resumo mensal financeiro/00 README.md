@@ -1,6 +1,6 @@
 ---
-status: analise
-etapa_atual: "QA · Análise da demanda"
+status: concluido
+etapa_atual: "Concluído"
 demanda: FIN-MEL-0005
 tipo: melhoria
 projeto: financas-pessoais
@@ -21,4 +21,3 @@ projeto: financas-pessoais
 
 > [!tip]- Esforço
 > Estimativa inicial: 3 pontos.
-

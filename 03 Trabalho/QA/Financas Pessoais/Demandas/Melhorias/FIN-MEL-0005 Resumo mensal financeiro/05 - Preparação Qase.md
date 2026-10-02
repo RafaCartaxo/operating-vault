@@ -1,7 +1,7 @@
 ---
 tags: [qa, qase]
 tipo: referencia
-status: rascunho
+status: concluido
 tipo_card: melhoria
 projeto: financas-pessoais
 modulo: lancamentos

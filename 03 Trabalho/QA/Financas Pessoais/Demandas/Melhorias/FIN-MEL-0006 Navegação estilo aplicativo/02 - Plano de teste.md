@@ -1,6 +1,6 @@
 ---
 demanda: FIN-MEL-0006
-status: planejado
+status: concluido
 responsavel: ""
 pontos: ""
 ---

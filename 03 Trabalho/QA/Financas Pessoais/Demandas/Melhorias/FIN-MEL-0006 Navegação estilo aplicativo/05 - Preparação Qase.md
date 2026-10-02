@@ -1,7 +1,7 @@
 ---
 tags: [qa, qase]
 tipo: referencia
-status: rascunho
+status: concluido
 tipo_card: ""
 projeto: ""
 modulo: ""
@@ -32,7 +32,7 @@ Esta nota transforma os CTs refinados do vault em casos da Qase. Não crie CT no
 
 ## Casos candidatos
 
-CT-001 a CT-006, após aprovação do plano e dos casos no vault.
+CT-001 a CT-006 aprovados no vault; envio à Qase permanece conforme a rotina de integração definida.
 
 ## Mapeamento dos campos
 

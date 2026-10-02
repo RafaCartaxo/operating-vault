@@ -18,7 +18,6 @@ kanban-plugin: board
 ## 🔍 Code review
 
 - [ ]
-- [ ] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0006/00 README|FIN-MEL-0006 — Navegação estilo aplicativo]]
 
 ## 🧪 Aguardando QA
 
@@ -30,6 +29,8 @@ kanban-plugin: board
 - [x] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0002/00 README|FIN-MEL-0002 — Consultar lançamentos do mês concluído]]
 - [x] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0003/00 README|FIN-MEL-0003 — Editar e excluir lançamentos concluído]]
 - [x] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0004/00 README|FIN-MEL-0004 — Refinamentos responsivos dos campos concluído]]
+- [x] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0006/00 README|FIN-MEL-0006 — Navegação estilo aplicativo concluída]]
+- [x] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0005/00 README|FIN-MEL-0005 — Resumo mensal financeiro concluído]]
 
 %% kanban:settings
 ```json

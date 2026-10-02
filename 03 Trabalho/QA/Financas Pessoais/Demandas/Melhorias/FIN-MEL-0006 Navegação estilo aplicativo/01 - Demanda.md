@@ -1,8 +1,8 @@
 ---
 prioridade: media
-status: execucao
+status: concluido
 tipo: melhoria
-etapa_atual: "DEV · Code review"
+etapa_atual: "Concluído"
 modulo: navegacao
 plano: "[[02 - Plano de teste]]"
 execucao: "[[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0006/00 README|Execução DEV]]"
@@ -11,7 +11,7 @@ origem: conversa
 projeto: financas-pessoais
 pai: ""
 data_inicio: 2026-10-02
-data_fim: ""
+data_fim: 2026-10-02
 responsavel: ""
 pontos_alocados: 5
 ---
@@ -35,7 +35,7 @@ pontos_alocados: 5
 
 
 > [!info] Status atual
-> **Próximo passo:** concluir análise técnica e plano de execução DEV.
+> **Próximo passo:** nenhum; melhoria concluída após aprovação dos 6 CTs.
 
 ---
 

@@ -21,12 +21,14 @@
 - A navegação possui estado ativo, `aria-current` e nomes acessíveis.
 - A barra fica fixa no mobile, respeitando espaço inferior e safe area; no desktop permanece no fluxo normal.
 - O fluxo de edição leva o usuário de volta à área de Lançamentos sem alterar os serviços existentes.
+- Reduzida a reserva inferior do conteúdo mobile para evitar espaço excessivo após a barra fixa.
 
 ---
 
 ## Evidências
 
-- Testes, gates, links de CI, screenshots ou evidência de ambiente.
+- `npm test`: 20 testes aprovados.
+- `npm run build`: build frontend aprovado.
 
 ---
 
@@ -45,4 +47,4 @@
 - [ ] CTs da demanda relacionados (fonte QA): [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0006 Navegação estilo aplicativo/03 - Casos de teste|ver casos de teste]].
 - [x] Gates aplicáveis do repositório verdes — `npm test` e `npm run build`.
 - [x] Documentação da execução sincronizada.
-- [ ] Commit registrado no README.
+- [x] Commit: não aplicável; projeto local sem repositório Git próprio.

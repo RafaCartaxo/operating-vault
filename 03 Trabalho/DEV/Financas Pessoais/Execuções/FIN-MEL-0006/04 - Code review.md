@@ -8,7 +8,7 @@
 > **Implementação:** [[03 - Implementação|03 - Implementação]]  
 > **Validação QA:** [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0006 Navegação estilo aplicativo/04 - Validação dev|Validação QA]]
 
-**Estado:** ⏳ aguardando revisão
+**Estado:** ✅ aprovado — 2026-10-02
 
 Implementação frontend concluída e pronta para revisão. Não houve alteração no backend, banco ou contratos da API.
 
@@ -16,23 +16,23 @@ Implementação frontend concluída e pronta para revisão. Não houve alteraç�
 
 ## Checklist
 
-- [ ] O código respeita as convenções reais do repositório.
-- [ ] O diff está limitado ao escopo aprovado.
-- [ ] O plano foi seguido; desvios estão registrados na execução.
-- [ ] Testes de regressão e gates aplicáveis estão verdes.
-- [ ] Critérios de aceite e CTs do pacote QA estão cobertos.
-- [ ] Documentação foi sincronizada quando aplicável.
-- [ ] Não foram introduzidos segredos, dados sensíveis ou dependências desnecessárias.
+- [x] O código respeita as convenções reais do repositório.
+- [x] O diff está limitado ao escopo aprovado.
+- [x] O plano foi seguido; desvios estão registrados na execução.
+- [x] Testes de regressão e gates aplicáveis estão verdes.
+- [x] Critérios de aceite e CTs do pacote QA estão cobertos.
+- [x] Documentação foi sincronizada quando aplicável.
+- [x] Não foram introduzidos segredos, dados sensíveis ou dependências desnecessárias.
 
 ---
 
 ## Achados
 
-- Nenhum.
+- Nenhum achado bloqueante.
 
 ---
 
 ## Decisão
 
-- [ ] Aprovar
+- [x] Aprovar
 - [ ] Solicitar ajustes

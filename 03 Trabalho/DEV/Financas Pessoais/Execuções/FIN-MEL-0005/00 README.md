@@ -1,7 +1,7 @@
 ---
-status: execucao
+status: concluido
 tipo: melhoria
-etapa_atual: "DEV · Code review"
+etapa_atual: "Concluído"
 demanda: FIN-MEL-0005
 plano: ""
 commit: ""

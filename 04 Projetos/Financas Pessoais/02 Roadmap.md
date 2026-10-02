@@ -40,15 +40,15 @@ Permitir corrigir ou remover registros já persistidos, preservando validações
 
 Validar data, filtro mensal e máscara monetária em iPhone, Android e desktop.
 
-### Melhoria em execução
+### Melhorias concluídas
 
 **FIN-MEL-0005 — Resumo mensal financeiro**
 
-Exibir receitas, despesas, saldo e quantidade de lançamentos no período consultado, sem alterar o cadastro. Implementação frontend concluída; validação dos 16 CTs pendente.
+Exibir receitas, despesas, saldo e quantidade de lançamentos no período consultado, sem alterar o cadastro. Implementação frontend, code review e validação dos 16 CTs concluídos.
 
 **FIN-MEL-0006 — Navegação estilo aplicativo**
 
-Pacote QA aprovado e execução DEV aberta. Próxima etapa: análise técnica e plano de execução frontend.
+Implementação frontend concluída, code review aprovado e todos os 6 CTs aprovados em QA.
 
 ## Fase 3 — Cálculos
 
