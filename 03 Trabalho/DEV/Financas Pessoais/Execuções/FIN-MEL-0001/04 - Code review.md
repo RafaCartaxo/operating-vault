@@ -32,10 +32,11 @@
 - O refinamento está formalizado no pacote QA como [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0001 Frontend nova despesa/03 - Casos de teste#^ct-005|CT-005]].
 - A máscara monetária está formalizada no pacote QA como [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0001 Frontend nova despesa/03 - Casos de teste#^ct-006|CT-006]].
 - A preservação do cursor está formalizada no pacote QA como [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0001 Frontend nova despesa/03 - Casos de teste#^ct-007|CT-007]].
+- A validação simultânea está formalizada no pacote QA como [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0001 Frontend nova despesa/03 - Casos de teste#^ct-008|CT-008]].
 
 ## Evidências
 
-- `npm test`: 10 testes aprovados.
+- `npm test`: 12 testes aprovados.
 - `npm run build`: aprovado.
 - `go test ./...`: backend aprovado.
 - Smoke test manual: criação de lançamento via formulário retornou sucesso.
@@ -47,4 +48,4 @@
 - [x] Aprovar
 - [ ] Solicitar ajustes
 
-Próximo estágio: QA executar CT-001 a CT-004 no pacote de validação.
+Próximo estágio: QA executar CT-001 a CT-008 no pacote de validação.

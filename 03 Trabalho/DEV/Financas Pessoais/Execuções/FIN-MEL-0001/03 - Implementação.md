@@ -27,12 +27,14 @@
 - Máscara monetária em tempo real adicionada, mantendo o valor canônico em centavos.
 - Novo CT-006 registrado para validar a máscara e a preservação do payload.
 - Preservação da posição do cursor adicionada e registrada como CT-007.
+- Validação em lote de campos obrigatórios adicionada, com foco no primeiro erro e mensagens simultâneas.
+- Novo CT-008 registrado para validar a experiência de correção completa.
 
 ---
 
 ## Evidências
 
-- `npm test`: 10 testes aprovados.
+- `npm test`: 12 testes aprovados.
 - `npm run build`: concluído com sucesso.
 - `GOCACHE=/tmp/financas-go-build GOPATH=/tmp/financas-go-path go test ./...`: backend aprovado.
 - Smoke test manual pelo navegador: validação vazia exibiu erro; lançamento sintético de `R$ 12,34` retornou sucesso via backend Go.

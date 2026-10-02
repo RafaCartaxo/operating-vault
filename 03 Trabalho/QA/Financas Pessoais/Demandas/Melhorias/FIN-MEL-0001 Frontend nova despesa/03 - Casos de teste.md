@@ -236,7 +236,7 @@ pontos: 1
 >
 > **Dado** que o cursor está no meio do valor  
 > **Quando** o usuário apaga ou insere um dígito  
-> **Então** o cursor permanece próximo à posição editada após a reformatação.
+> **Então** o cursor permanece próximo à posição editada após a reformatação e nunca é deslocado para antes do prefixo `R$`.
 >
 > **Resultado esperado:** é possível corrigir o valor no meio da expressão sem precisar reposicionar o cursor manualmente.
 >
@@ -254,3 +254,40 @@ pontos: 1
 > **Execução:** planejado
 
 ^ct-007
+
+> [!example]- CT-008 · Apresentar todos os erros obrigatórios de uma vez
+>
+> ```meta-bind-button
+> style: primary
+> label: ↩ Validação
+> action:
+>   type: open
+>   link: "[[04 - Validação dev#Resultado dos casos de teste]]"
+> ```
+>
+> ## Cenário
+>
+> **Descrição:** confirma que o formulário informa todos os campos inválidos no mesmo envio.
+>
+> **Pré-condições:** formulário aberto; descrição, valor e data vazios ou inválidos.
+>
+> **Dado** que existem vários campos obrigatórios inválidos  
+> **Quando** o usuário tenta salvar  
+> **Então** todas as mensagens aparecem simultaneamente de cima para baixo, com foco no primeiro campo inválido.
+>
+> **Resultado esperado:** o usuário consegue corrigir todos os problemas sem submeter o formulário repetidamente.
+>
+> **Pós-condição:** cada mensagem desaparece quando seu respectivo campo é corrigido.
+>
+> **Critérios cobertos:** [[01 - Demanda#^c2|C2]]
+>
+> ---
+>
+> **Informações do CT**
+>
+> **Tipo:** validação  
+> **Camada:** UI/unit  
+> **Automação:** ambos  
+> **Execução:** planejado
+
+^ct-008
