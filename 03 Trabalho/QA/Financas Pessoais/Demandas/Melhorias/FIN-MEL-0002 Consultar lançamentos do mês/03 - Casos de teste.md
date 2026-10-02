@@ -161,12 +161,12 @@ pontos: 1
 >   link: "[[04 - Validação dev#Resultado dos casos de teste]]"
 > ```
 >
-> **Descrição:** confirma que o seletor troca o filtro e atualiza a lista.
+> **Descrição:** confirma que o calendário nativo permite selecionar outro mês sem digitação manual e atualiza a lista.
 >
 > **Pré-condições:** existem dados diferentes em dois meses.
 >
 > **Dado** que o usuário está consultando um mês  
-> **Quando** seleciona outro mês  
+> **Quando** clica no campo e seleciona outro mês no calendário nativo  
 > **Então** a aplicação consulta o novo `AAAA-MM` e substitui os resultados.
 >
 > **Resultado esperado:** lista, total e mês exibido correspondem ao novo período.
@@ -257,4 +257,3 @@ pontos: 1
 > **Execução:** planejado
 
 ^ct-006
-

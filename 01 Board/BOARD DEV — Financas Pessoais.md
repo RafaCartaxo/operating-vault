@@ -4,7 +4,7 @@ kanban-plugin: board
 
 ## 🔎 Análise técnica
 
-- [ ] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0002/00 README|FIN-MEL-0002 — Consultar lançamentos do mês]]
+- [ ]
 
 ## 📋 Plano de execução
 
@@ -20,7 +20,7 @@ kanban-plugin: board
 
 ## 🧪 Aguardando QA
 
-- [ ]
+- [ ] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0002/00 README|FIN-MEL-0002 — Consultar lançamentos do mês]]
 
 ## ✅ Concluído
 

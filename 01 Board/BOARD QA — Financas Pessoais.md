@@ -17,7 +17,7 @@ kanban-plugin: board
 
 ## 🧪 Validação
 
-- [ ] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0002 Consultar lançamentos do mês/00 README|FIN-MEL-0002 — aguardando implementação DEV]]
+- [ ] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0002 Consultar lançamentos do mês/00 README|FIN-MEL-0002 — executar CT-001 a CT-006]]
 
 ## ✅ Concluído
 

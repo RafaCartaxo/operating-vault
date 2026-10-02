@@ -1,9 +1,7 @@
 {
   "baseFontSize": 15,
   "cssTheme": "Blue Topaz",
-  "accentColor": "#eb4d0a",
+  "accentColor": "#2a1a13",
   "baseFontSizeAction": false,
-  "enabledCssSnippets": [
-    "nxgest-solarized"
-  ]
+  "enabledCssSnippets": []
 }
