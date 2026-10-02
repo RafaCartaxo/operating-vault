@@ -7,6 +7,29 @@ status: planejado
 
 # Casos de teste — FIN-MEL-0001
 
+> [!info]- Navegação QA
+> **README do card:** [[00 README|Abrir README do card]]  
+> **Demanda:** [[01 - Demanda]]  
+> **Plano de teste:** [[02 - Plano de teste]]  
+> **Casos de teste:** [[03 - Casos de teste]]  
+> **Validação:** [[04 - Validação dev]]  
+> **Preparação Qase:** [[05 - Preparação Qase]]  
+> **Execução DEV:** [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0001/00 README|Execução DEV]]
+
+> [!settings]- Controle dos casos de teste
+> **Status:** `INPUT[inlineSelect(option(planejado),option(execucao),option(concluido)):status]`
+
+## Matriz de cobertura
+
+| Critério | CTs |
+|---|---|
+| [[01 - Demanda#^c1|C1]] | [[03 - Casos de teste#^ct-001|CT-001]] |
+| [[01 - Demanda#^c2|C2]] | [[03 - Casos de teste#^ct-002|CT-002]] |
+| [[01 - Demanda#^c3|C3]] | [[03 - Casos de teste#^ct-001|CT-001]], [[03 - Casos de teste#^ct-004|CT-004]] |
+| [[01 - Demanda#^c4|C4]] | [[03 - Casos de teste#^ct-003|CT-003]] |
+| [[01 - Demanda#^c5|C5]] | [[03 - Casos de teste#^ct-001|CT-001]] |
+| [[01 - Demanda#^c6|C6]] | [[03 - Casos de teste#^ct-004|CT-004]] |
+
 ## CT-001 · Registrar despesa válida
 
 **Dado** que o usuário está na tela de nova despesa e informa dados válidos  

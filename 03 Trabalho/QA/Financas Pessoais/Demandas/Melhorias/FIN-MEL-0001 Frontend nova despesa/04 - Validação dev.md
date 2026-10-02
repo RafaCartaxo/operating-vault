@@ -3,8 +3,10 @@ demanda: FIN-MEL-0001
 execucao: "[[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0001/00 README|Execução DEV]]"
 ambiente: dev
 versao: ""
-status: aguardando
+status: execucao
 resultado: aguardando
+responsavel: ""
+pontos: 0
 ct_resultados:
   ct_001: "⏳ Aguardando"
   ct_002: "⏳ Aguardando"
@@ -13,6 +15,15 @@ ct_resultados:
 ---
 
 # Validação — FIN-MEL-0001
+
+> [!info]- Navegação QA
+> **README do card:** [[00 README|Abrir README do card]]  
+> **Demanda:** [[01 - Demanda]]  
+> **Plano de teste:** [[02 - Plano de teste]]  
+> **Casos de teste:** [[03 - Casos de teste]]  
+> **Validação:** [[04 - Validação dev]]  
+> **Preparação Qase:** [[05 - Preparação Qase]]  
+> **Execução DEV:** [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0001/00 README|Execução DEV]]
 
 ## Contexto
 

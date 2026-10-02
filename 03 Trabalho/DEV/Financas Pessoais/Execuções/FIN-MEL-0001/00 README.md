@@ -1,8 +1,8 @@
 ---
 projeto: financas-pessoais
-status: analise
+status: aguardando_qa
 tipo: melhoria
-etapa_atual: "DEV · Análise técnica"
+etapa_atual: "QA · Análise da demanda"
 demanda: "FIN-MEL-0001"
 plano: ""
 commit: ""

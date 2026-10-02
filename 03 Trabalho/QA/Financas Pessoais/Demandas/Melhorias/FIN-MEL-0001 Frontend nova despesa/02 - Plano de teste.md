@@ -7,7 +7,17 @@ pontos: 1
 
 # Plano de teste — FIN-MEL-0001
 
-> **Demanda:** [[01 - Demanda]] · **Casos:** [[03 - Casos de teste]] · **Validação:** [[04 - Validação dev]] · **DEV:** [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0001/00 README|Execução DEV]]
+> [!info]- Navegação QA
+> **README do card:** [[00 README|Abrir README do card]]  
+> **Demanda:** [[01 - Demanda]]  
+> **Plano de teste:** [[02 - Plano de teste]]  
+> **Casos de teste:** [[03 - Casos de teste]]  
+> **Validação:** [[04 - Validação dev]]  
+> **Preparação Qase:** [[05 - Preparação Qase]]  
+> **Execução DEV:** [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0001/00 README|Execução DEV]]
+
+> [!settings]- Controle do plano de teste
+> **Status:** `INPUT[inlineSelect(option(planejado),option(execucao),option(concluido)):status]`
 
 ## Objetivo
 
