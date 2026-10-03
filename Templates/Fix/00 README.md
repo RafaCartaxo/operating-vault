@@ -10,8 +10,6 @@ pontos: ""
 
 # <ID> — Fix
 
-> [!important] Instanciação obrigatória
-> Copie todos os arquivos de `Templates/Fix/` antes de adaptar. Preserve a estrutura e substitua apenas placeholders, links e conteúdo da correção.
 
 > [!info]- Navegação QA/DEV
 > **Bug QA:** [[<CARD>|<ID> — <título>]]  

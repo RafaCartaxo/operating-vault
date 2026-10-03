@@ -51,7 +51,7 @@ flowchart TD
 |---|---|---|---|
 | Triagem e definição | QA | ideia, relato ou necessidade | demanda classificada |
 | Critérios e cobertura | QA | demanda | critérios, CTs, matriz e validação preparada |
-| Handoff | QA | pacote íntegro | demanda pronta para DEV |
+| Handoff | QA | pacote íntegro e aprovado | demanda pronta para DEV |
 | Análise e plano | DEV | pacote QA aprovado | decisão técnica e plano congelado |
 | Implementação | DEV | plano | código, testes e documentação |
 | Code review | DEV | implementação verificada | execução pronta para QA |
@@ -110,8 +110,8 @@ flowchart TD
 
 ## Skills associadas
 
-- `$qa-first-delivery`: organiza a entrada, templates, critérios, CTs e gate QA.
-- `$dev-execution`: executa o pacote aprovado, registra evidências e devolve para QA.
+- `$qa-first-delivery`: organiza a entrada, instancia templates, define critérios e CTs e conduz o gate QA.
+- `$dev-execution`: executa o pacote aprovado, registra evidências e devolve a demanda para QA.
 
 As skills são reutilizáveis em outros projetos; os caminhos concretos de templates, boards e IDs continuam sendo definidos pelo vault do projeto.
 

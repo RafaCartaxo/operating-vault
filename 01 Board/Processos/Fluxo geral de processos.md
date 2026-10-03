@@ -4,7 +4,7 @@ status: ativo
 escopo: operating-vault
 ---
 
-# Fluxo geral de processos
+# Mapa geral de processos
 
 Este é o mapa dos processos universais do Operating Vault. Ele mostra o caminho do trabalho desde a entrada até o fechamento, independentemente do projeto, produto ou tecnologia.
 
@@ -58,7 +58,7 @@ flowchart TD
 Entrada → Triagem → QA → Handoff QA → DEV → Handoff DEV → Validação QA → Fechamento → Arquivo
              ↑          │                         │              │
              └──────────┘                         └──────────────┘
-                 pendência                         defeito/ajuste
+              pendência                      defeito ou ajuste
 ```
 
 ## Fontes canônicas
@@ -73,4 +73,3 @@ Entrada → Triagem → QA → Handoff QA → DEV → Handoff DEV → Validaçã
 ## Regra de leitura
 
 O processo é universal; o conteúdo concreto é sempre resolvido pelo projeto identificado na entrada. Nenhuma regra de domínio deve ser adicionada a este documento. Regras de um produto devem ficar em `04 Projetos/<projeto>/` e os artefatos da execução em `03 Trabalho/<camada>/<projeto>/`.
-

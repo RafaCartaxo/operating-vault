@@ -11,8 +11,6 @@ pontos: ""
 
 # <ID> — Execução (<resultado em uma frase>)
 
-> [!important] Instanciação obrigatória
-> Copie todos os arquivos de `Templates/Execução/` antes de adaptar. Preserve a estrutura, os links, os checklists e os blocos de automação.
 
 > [!info]- Navegação QA/DEV
 > **Demanda QA:** [[<DEMANDA>|<ID> — <título da demanda>]]  

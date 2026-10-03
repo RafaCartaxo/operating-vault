@@ -1,7 +1,5 @@
 # Template de Melhoria
 
-> [!important] Instanciação obrigatória
-> Copie `Templates/Melhoria/` junto com o pacote QA antes de adaptar. Preserve a estrutura, os blocos e os campos; substitua apenas placeholders e conteúdo específico.
 
 > [!info]- Navegação QA/DEV
 > **Demanda:** [[01 - Demanda]]  

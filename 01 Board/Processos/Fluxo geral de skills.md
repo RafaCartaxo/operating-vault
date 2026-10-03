@@ -4,7 +4,7 @@ status: ativo
 escopo: operating-vault
 ---
 
-# Fluxo geral de skills
+# Mapa geral de skills
 
 Esta página mostra como as skills do Operating Vault se relacionam. Ela complementa o [[Fluxo QA DEV|Fluxo QA → DEV]]: o fluxo QA/DEV define as grandes etapas; este mapa define qual regra especializada é usada dentro de cada etapa.
 
@@ -45,7 +45,7 @@ flowchart TD
 
 Agentes adicionais pertencem ao contexto do projeto que os utiliza. Eles não fazem parte automaticamente do fluxo universal e devem ser documentados em `04 Projetos/<projeto>/` ou na configuração do próprio repositório.
 
-Um agente especializado deve declarar: projeto atendido, responsabilidade, momento de entrada, permissões, artefato de saída e próximo handoff. Ele não substitui `qa-first-delivery` ou `dev-execution` sem uma decisão explícita do Operating Vault.
+Um agente especializado deve declarar o projeto atendido, a responsabilidade, o momento de entrada, as permissões, o artefato de saída e o próximo handoff. Ele não substitui `qa-first-delivery` ou `dev-execution` sem uma decisão explícita do Operating Vault.
 
 ## Mapa visual
 

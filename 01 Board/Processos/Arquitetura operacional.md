@@ -4,7 +4,7 @@ status: ativo
 escopo: operating-vault
 ---
 
-# Arquitetura operacional
+# Arquitetura operacional do vault
 
 Este documento define como uma entrada humana vira um registro rastreável no Operating Vault. A arquitetura é universal; o projeto, o domínio e os dados concretos entram somente depois que o contexto é identificado.
 
@@ -24,7 +24,7 @@ flowchart TD
     G --> I
     H --> I
     I --> J[Adaptar placeholders e conteúdo específico]
-    J --> K[Aplicar processo, gates e handoffs]
+    J --> K[Aplicar processo, gates e passagens]
     K --> L[Registrar dados e evidências]
     L --> M[Board + demanda + execução + daily + projeto]
     M --> N{Próximo estado}

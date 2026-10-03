@@ -21,13 +21,6 @@ Primeira pergunta antes de criar o card — muda o template e a esteira:
 
 Cada bug vive em uma pasta própria: `01 - Bug.md` (sintoma, reprodução, esperado e critérios), `02 - Casos de teste.md` (cenários de reprodução/regressão) e `03 - Validação <ambiente>.md` quando o fix for validado.
 
-## Template obrigatório
-
-1. Copiar `Templates/Bug/` para a pasta do bug.
-2. Copiar os complementos QA exigidos, preservando a estrutura oficial.
-3. Substituir placeholders e adaptar somente o contexto, sintoma, ambiente, critérios e CTs.
-4. Comparar a instância com o template antes de entregar ao DEV; não reconstruir a pasta manualmente.
-
 ## Nome do arquivo e numeração
 
 - Card com número: `<PROJ>-NNN Bug <Título>` (número atribuído no board — sequencial, nunca reutilizado).
