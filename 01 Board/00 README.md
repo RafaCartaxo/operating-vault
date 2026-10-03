@@ -2,6 +2,11 @@
 
 Os boards são visões por projeto. O status real vive no frontmatter do card; mover um card no Kanban deve ser acompanhado da atualização do `status` da nota.
 
+## Processo comum
+
+- [[01 Board/Fluxo QA DEV|Fluxo QA → DEV — responsabilidades, gates e artefatos]]
+- [[01 Board/Fluxo QA DEV.excalidraw|Fluxo QA → DEV — diagrama visual]]
+
 ## Nxgest
 
 - [[01 Board/BOARD Nxgest|Board geral Nxgest]]
