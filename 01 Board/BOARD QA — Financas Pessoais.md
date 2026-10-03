@@ -5,6 +5,7 @@ kanban-plugin: board
 ## 🔍 Análise da demanda
 
 - [ ]
+- [ ] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0011 Organização navbar mobile/00 README|FIN-MEL-0011 — Organização da navbar mobile]]
 - [x] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0008 Parcelas/00 README|FIN-MEL-0008 — Parcelas — todos os 8 CTs aprovados]]
 - [ ]
 - [ ]
