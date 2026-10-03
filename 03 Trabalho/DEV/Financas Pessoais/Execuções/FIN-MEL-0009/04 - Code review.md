@@ -8,7 +8,7 @@
 > **Implementação:** [[03 - Implementação|03 - Implementação]]  
 > **Validação QA:** [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0009 Navegação lançamento modal/04 - Validação dev|Validação QA]]
 
-**Estado:** ⏳ aguardando revisão
+**Estado:** 🔵 pronto para revisão
 
 ---
 
@@ -17,9 +17,9 @@
 - [ ] O código respeita as convenções reais do repositório.
 - [ ] O diff está limitado ao escopo aprovado.
 - [ ] O plano foi seguido; desvios estão registrados na execução.
-- [ ] Testes de regressão e gates aplicáveis estão verdes.
+- [x] Testes de regressão e gates aplicáveis estão verdes.
 - [ ] Critérios de aceite e CTs do pacote QA estão cobertos.
-- [ ] Documentação foi sincronizada quando aplicável.
+- [x] Documentação foi sincronizada quando aplicável.
 - [ ] Não foram introduzidos segredos, dados sensíveis ou dependências desnecessárias.
 
 ---

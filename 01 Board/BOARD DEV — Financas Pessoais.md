@@ -5,7 +5,6 @@ kanban-plugin: board
 ## 🔎 Análise técnica
 
 - [ ]
-- [ ] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0009/00 README|FIN-MEL-0009 — Navegação do lançamento por modal]]
 - [ ]
 
 ## 📋 Plano de execução
@@ -20,6 +19,7 @@ kanban-plugin: board
 
 - [ ]
 - [x] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0008/00 README|FIN-MEL-0008 — Parcelas — concluído]]
+- [ ] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0009/00 README|FIN-MEL-0009 — Navegação do lançamento por modal]]
 
 ## 🧪 Aguardando QA
 

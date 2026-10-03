@@ -27,6 +27,8 @@ Transformar o Acompanhamento na tela principal e abrir o formulário de lançame
 - Implementar apresentação mobile e desktop conforme decisão aprovada.
 - Atualizar lista após sucesso e preservar filtros/edição.
 
+Sequência: reorganizar o formulário dentro do `App.tsx` → adicionar modal e backdrop → aplicar layout mobile/desktop → conectar estados de sucesso/erro/submissão → adicionar cobertura de UI/regressão → executar build e testes.
+
 ---
 
 ## Escopo aprovado
@@ -55,3 +57,12 @@ Transformar o Acompanhamento na tela principal e abrir o formulário de lançame
 - **Formulário/UI:** interação, estados, mensagens e regressões visuais.
 - **API/repositório:** contrato, persistência e retorno dos dados.
 - Registrar os caminhos dos testes previstos e executá-los antes do code review.
+
+### Arquivos e responsabilidades
+
+| Área | Responsabilidade |
+|---|---|
+| `src/App.tsx` | Orquestração do estado, abertura/fechamento, foco, submissão e atualização dos registros |
+| `src/styles.css` | Apresentação do modal, bottom sheet, backdrop, responsividade e safe area |
+| `src/services/lancamentos.ts` | Permanece inalterado; mantém o contrato atual da API |
+| `src/components/*` | Reutilização dos campos existentes, sem duplicar validações |

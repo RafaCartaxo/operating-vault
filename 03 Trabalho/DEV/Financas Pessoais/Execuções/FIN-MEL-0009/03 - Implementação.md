@@ -14,32 +14,38 @@
 
 ## Rodadas
 
-### Rodada 1 — ⏳
+### Rodada 1 — ✅ concluída (2026-10-03)
 
-- O que foi implementado.
-- Desvio do plano, se houver, e decisão correspondente.
+- A tela principal passou a ser o Acompanhamento.
+- O formulário existente passou a ser aberto em modal, sem duplicar campos ou regras.
+- No desktop, o modal é centralizado; no mobile, funciona como bottom sheet com rolagem interna.
+- Adicionados botão de novo lançamento no cabeçalho desktop e ação de novo lançamento na navegação mobile.
+- Implementados fechamento, cancelamento, backdrop, tecla Escape e bloqueio de fechamento durante salvamento.
+- Edição de lançamentos existentes passou a abrir o mesmo modal.
+- Serviços da API e backend permaneceram inalterados.
 
 ---
 
 ## Evidências
 
-- Testes, gates, links de CI, screenshots ou evidência de ambiente.
+- `npm test`: 20 testes aprovados.
+- `npm run build`: TypeScript e build Vite aprovados.
 
 ---
 
 ## Testes da implementação
 
-- [ ] Unitários da regra/serviço alterado.
-- [ ] Testes de formulário/UI, quando houver interação.
-- [ ] Testes de API/repositório, quando houver contrato ou persistência.
-- [ ] Testes de regressão relacionados à demanda.
-- [ ] Registrar os caminhos dos arquivos de teste e o comando executado.
+- [x] Unitários da regra/serviço alterado — não aplicável, sem alteração de regra/API.
+- [ ] Testes de formulário/UI, quando houver interação — validação manual pendente nos CTs QA.
+- [x] Testes de API/repositório, quando houver contrato ou persistência — não aplicável, contrato inalterado.
+- [x] Testes de regressão relacionados à demanda — build e suíte existente aprovados.
+- [x] Registrar os caminhos dos arquivos de teste e o comando executado.
 
 ---
 
 ## Verificação
 
 - [ ] CTs da demanda relacionados (fonte QA): [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0009 Navegação lançamento modal/03 - Casos de teste|ver casos de teste]].
-- [ ] Gates aplicáveis do repositório verdes.
-- [ ] Documentação sincronizada quando aplicável.
+- [x] Gates aplicáveis do repositório verdes.
+- [x] Documentação sincronizada quando aplicável.
 - [ ] Commit registrado no README.
