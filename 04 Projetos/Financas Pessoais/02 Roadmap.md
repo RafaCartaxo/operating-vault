@@ -56,7 +56,7 @@ Manifest, ícones, service worker e cache do app shell implementados; validaçã
 
 ## Fase 3 — Cálculos
 
-- [ ] Parcelas.
+- [ ] Parcelas — FIN-MEL-0008 em análise.
 - [ ] Recorrências.
 - [ ] Contas fixas.
 - [ ] Faturas.
