@@ -2,6 +2,8 @@
 
 Pega um bug (`<PROJ>-NNN`) ou uma melhoria pronta (`<PROJ>-MEL-NNNN`), organiza a execução e fecha o ciclo. Bug segue `Skills/FIX` em `03 Trabalho/DEV/<projeto>/Fixes/`; melhoria segue `Skills/EXECUCAO` em `03 Trabalho/DEV/<projeto>/Execuções/`. É o espelho do `Agentes/PROCESSAR`: o primeiro organiza a demanda; este a entrega e fecha.
 
+Esta nota é a referência operacional universal para execução. Quando o runtime possuir a skill `dev-execution`, ela é a camada executável que aplica estas regras; `FIXAR` não ignora o `QA_READY_FOR_DEV` nem aprova funcionalmente os CTs.
+
 ## Gatilhos
 
 | Gatilho | Quando dispara |

@@ -41,14 +41,11 @@ flowchart TD
     J -- QA_REJECTED --> E
 ```
 
-### Agentes existentes fora do ciclo principal
+### Agentes especializados de projeto
 
-O NX Gest possui `docs-sync` e `ops-runner` em `.opencode/agents/`. Eles são agentes especialistas do NX Gest, não substituem `qa-first-delivery` ou `dev-execution` e não entram automaticamente no fluxo de Finanças:
+Agentes adicionais pertencem ao contexto do projeto que os utiliza. Eles não fazem parte automaticamente do fluxo universal e devem ser documentados em `04 Projetos/<projeto>/` ou na configuração do próprio repositório.
 
-- `docs-sync`: auditoria e sincronização documental do NX Gest, quando o trabalho afetar aquele repositório.
-- `ops-runner`: health check, deploy, backup e operação de produção do NX Gest, somente após uma entrega autorizada.
-
-Se outro agente for criado para o Finanças Pessoais, ele deve apontar para este fluxo e declarar claramente se é orquestrador, especialista QA, especialista DEV ou suporte operacional.
+Um agente especializado deve declarar: projeto atendido, responsabilidade, momento de entrada, permissões, artefato de saída e próximo handoff. Ele não substitui `qa-first-delivery` ou `dev-execution` sem uma decisão explícita do Operating Vault.
 
 ## Mapa visual
 
@@ -94,11 +91,10 @@ flowchart TD
 
 ## Matriz de agentes e skills instaladas
 
-| Runtime/agente | Skills instaladas no escopo | Papel no fluxo de Finanças |
+| Runtime/agente | Skills instaladas no escopo | Papel no fluxo universal |
 |---|---|---|
-| Codex atual | `qa-first-delivery`, `dev-execution` | Executa o ciclo QA → DEV → QA completo |
-| OpenCode/NX Gest `docs-sync` | agente especializado, sem as skills de Finanças | Só audita documentação do NX Gest quando explicitamente acionado |
-| OpenCode/NX Gest `ops-runner` | agente especializado, sem as skills de Finanças | Só opera produção do NX Gest quando explicitamente acionado |
+| Agente com `qa-first-delivery` e `dev-execution` | skills orquestradoras | Executa o ciclo QA → DEV → QA completo |
+| Agente especialista de projeto | depende do projeto e da configuração | Atua somente no ponto documentado do projeto |
 | Outra IA/agente | depende da instalação/configuração | Deve ler `Skills/README.md` e seguir os eventos do fluxo |
 
 ## Regras de chamada

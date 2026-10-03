@@ -2,6 +2,8 @@
 
 Recebe um material bruto (relato na daily, texto no `00 Inbox`, observação do usuário, diff/nota) e executa o pipeline **classificar → limpar → rotear → registrar**, sem intervenção. Adaptado do `brainwork` (AGENTE_PROCESSAR_EXPORT) — sem Notion: o destino é sempre um card no board + registro na daily.
 
+Esta nota é a referência operacional universal para destilação de material bruto. Quando o runtime possuir a skill `qa-first-delivery`, ela é a camada executável que aplica estas regras; `PROCESSAR` não substitui o gate QA nem autoriza iniciar DEV.
+
 ## Gatilhos
 
 | Gatilho | Quando dispara |
