@@ -116,6 +116,7 @@ Será entregue o primeiro fluxo de parcelamento, com geração dos lançamentos 
 - C5. Cada parcela identifica sua posição e o total da série. ^c5
 - C6. A criação da série é atômica: falha não deixa parcelas incompletas. ^c6
 - C7. Lançamentos não parcelados continuam funcionando sem alteração de comportamento. ^c7
+- C8. Editar ou excluir uma parcela, mediante confirmação, altera ou remove toda a série. ^c8
 
 ---
 

@@ -57,6 +57,7 @@ Defina apenas as camadas aplicáveis; não crie testes por obrigação quando n�
 | [[03 - Casos de teste#^ct-005\|CT-005]] | Integridade | API/DB | Automatizado | [[04 - Validação dev\|Registrar resultado]] |
 | [[03 - Casos de teste#^ct-006\|CT-006]] | Regressão | UI/API | Automatizado + manual | [[04 - Validação dev\|Registrar resultado]] |
 | [[03 - Casos de teste#^ct-007\|CT-007]] | Série | UI/API | Manual | [[04 - Validação dev\|Registrar resultado]] |
+| [[03 - Casos de teste#^ct-008\|CT-008]] | Série | UI/API | Manual | [[04 - Validação dev\|Registrar resultado]] |
 
 > Exemplo: replique a linha para cada CT do pacote. O link do CT abre a prévia do cenário; o link de Validação leva à tabela onde o resultado e a evidência são registrados.
 

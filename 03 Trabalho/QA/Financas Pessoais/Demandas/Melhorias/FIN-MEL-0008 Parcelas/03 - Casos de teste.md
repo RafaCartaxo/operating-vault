@@ -35,6 +35,7 @@ pontos: ""
 | [[01 - Demanda#^c5\|C5]] | [[03 - Casos de teste#^ct-005\|CT-005]] |
 | [[01 - Demanda#^c6\|C6]] | [[03 - Casos de teste#^ct-006\|CT-006]] |
 | [[01 - Demanda#^c7\|C7]] | [[03 - Casos de teste#^ct-007\|CT-007]] |
+| [[01 - Demanda#^c8\|C8]] | [[03 - Casos de teste#^ct-008\|CT-008]] |
 
 Use esta matriz para verificar a cobertura sem abrir a demanda. Atualize-a ao criar ou alterar CTs.
 
@@ -93,7 +94,7 @@ Use esta matriz para verificar a cobertura sem abrir a demanda. Atualize-a ao cr
 > **Pré-condições:**
 > - A melhoria está disponível no ambiente de teste.
 >
-> **Dado** que informo quantidade inválida  
+> **Dado** que informo quantidade inválida, zero ou um valor menor que a quantidade de parcelas em centavos  
 > **Quando** tento salvar  
 > **Então** recebo validação e nenhuma parcela é criada.
 >
@@ -170,3 +171,17 @@ Use esta matriz para verificar a cobertura sem abrir a demanda. Atualize-a ao cr
 > **Critérios cobertos:** [[01 - Demanda#^c7|C7]]
 
 ^ct-007
+
+> [!example]- CT-008 · Editar e excluir a série inteira
+>
+> **Descrição:** confirma que as ações em uma parcela respeitam a regra de série.
+>
+> **Dado** que existe uma série com várias parcelas  
+> **Quando** edito ou excluo uma parcela e confirmo a operação  
+> **Então** todas as parcelas da série são atualizadas ou removidas.
+>
+> **Resultado esperado:** a série permanece consistente, sem parcelas órfãs.
+>
+> **Critérios cobertos:** [[01 - Demanda#^c8|C8]]
+
+^ct-008
