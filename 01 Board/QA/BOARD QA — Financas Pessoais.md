@@ -15,8 +15,6 @@ kanban-plugin: board
 
 ## 🧪 Validação
 
-- [ ] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0011 Organização navbar mobile/00 README|FIN-MEL-0011 — pronta para execução dos CTs QA]]
-
 ## ✅ Concluído
 
 - [x] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0008 Parcelas/00 README|FIN-MEL-0008 — todos os 8 CTs aprovados]]
@@ -29,6 +27,7 @@ kanban-plugin: board
 - [x] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0007 PWA instalável/00 README|FIN-MEL-0007 — PWA validado]]
 - [x] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0009 Navegação lançamento modal/00 README|FIN-MEL-0009 — todos os 10 CTs aprovados]]
 - [x] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0010 Ação novo lançamento mobile/00 README|FIN-MEL-0010 — todos os 5 CTs aprovados]]
+- [x] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0011 Organização navbar mobile/00 README|FIN-MEL-0011 — todos os 5 CTs aprovados]]
 
 %% kanban:settings
 ```

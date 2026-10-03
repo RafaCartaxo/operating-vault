@@ -1,24 +1,20 @@
 ---
-demanda: FIN-MEL-0011
+demanda: ""
 execucao: ""
 ambiente: dev
 versao: ""
-status: concluido
+status: execucao
 responsavel: ""
-resultado: aprovado
-# Pontos da etapa de validação: serão registrados após a execução dos CTs pelo QA.
+resultado: aguardando
+# Pontos da etapa de validação; substitua pelo valor planejado para esta etapa.
 pontos: 0
 ct_resultados:
-  ct_001: "✅ Aprovado"
-  ct_002: "✅ Aprovado"
-  ct_003: "✅ Aprovado"
-  ct_004: "✅ Aprovado"
-  ct_005: "✅ Aprovado"
+  ct_001: "⏳ Aguardando"
 data_inicio: ""
-data_fim: 2026-10-03
+data_fim: ""
 ---
 
-# Validação — FIN-MEL-0011
+# Validação — <ID>
 
 > [!info]- Navegação QA
 > **README do card:** [[00 README|Abrir README do card]]  
@@ -27,7 +23,7 @@ data_fim: 2026-10-03
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** será criada após aprovação QA.
+> **Execução DEV:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/00 README|Execução <ID>]]
 
 > [!settings]- Controle da validação
 > **Status:** `INPUT[inlineSelect(option(execucao),option(concluido)):status]`  
@@ -85,11 +81,6 @@ dv.list([
 |---|---|---|---|---|---:|
 | [[03 - Casos de teste#^ct-001\|CT-001]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_001]` |  |  |  | `= choice(this.ct_resultados.ct_001 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
 
-| [[03 - Casos de teste#^ct-002\|CT-002]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_002]` |  |  |  | `= choice(this.ct_resultados.ct_002 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
-| [[03 - Casos de teste#^ct-003\|CT-003]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_003]` |  |  |  | `= choice(this.ct_resultados.ct_003 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
-| [[03 - Casos de teste#^ct-004\|CT-004]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_004]` |  |  |  | `= choice(this.ct_resultados.ct_004 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
-| [[03 - Casos de teste#^ct-005\|CT-005]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_005]` |  |  |  | `= choice(this.ct_resultados.ct_005 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
-
 > **Regra de esforço:** aprovado e falhou = 100% da parcela; em andamento = 25%; bloqueado = 50%; aguardando e não executado = 0%.
 
 > **Pontos entregues:** a coluna é calculada automaticamente conforme o status de cada CT.
@@ -137,15 +128,15 @@ Use esta seção somente quando houver reteste após correção:
 
 ## Decisão
 
-**Resultado geral:** ✅ aprovado
+**Resultado geral:** aguardando / aprovado / reprovado / aprovado com ressalvas
 
 ---
 
 ## Checklist de encerramento QA
 
-- [x] Todos os CTs executados ou com justificativa registrada.
-- [x] Evidências e observações preenchidas quando necessário.
-- [x] Bugs filhos vinculados na coluna **Defeito/Bug**.
-- [x] Resultado geral definido.
-- [x] Status da validação e da demanda atualizados.
-- [x] Próximo passo registrado.
+- [ ] Todos os CTs executados ou com justificativa registrada.
+- [ ] Evidências e observações preenchidas quando necessário.
+- [ ] Bugs filhos vinculados na coluna **Defeito/Bug**.
+- [ ] Resultado geral definido.
+- [ ] Status da validação e da demanda atualizados.
+- [ ] Próximo passo registrado.

@@ -18,7 +18,7 @@ FIN-MEL-0009 em validação QA: [[03 Trabalho/QA/Financas Pessoais/Demandas/Melh
 
 FIN-MEL-0010 em validação QA: [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0010 Ação novo lançamento mobile/00 README|FIN-MEL-0010 — Ação de novo lançamento mobile]]. A implementação foi entregue pelo DEV e aguarda execução dos CTs funcionais.
 
-FIN-MEL-0011 em triagem QA: [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0011 Organização navbar mobile/00 README|FIN-MEL-0011 — Organização da navbar mobile]]. O pacote QA está em análise e ainda não possui execução DEV.
+FIN-MEL-0011 concluída com 5 CTs aprovados: [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0011 Organização navbar mobile/00 README|FIN-MEL-0011 — Organização da navbar mobile]].
 
 ## Fluxo QA
 

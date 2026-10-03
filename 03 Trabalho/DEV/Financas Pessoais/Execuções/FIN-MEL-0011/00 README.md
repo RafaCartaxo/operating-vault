@@ -1,7 +1,7 @@
 ---
-status: validacao
+status: concluido
 tipo: melhoria
-etapa_atual: "QA · Validação"
+etapa_atual: "Concluído"
 demanda: FIN-MEL-0011
 epico: "[[04 Projetos/Financas Pessoais/Epicos/FIN-EPIC-0001 Evolução lançamentos mobile/00 README|FIN-EPIC-0001 — Evolução da experiência de lançamentos mobile]]"
 plano: ""
@@ -58,14 +58,15 @@ pontos: ""
 | Plano de execução | ✅ | 2026-10-03 |
 | Execução | ✅ | 2026-10-03 |
 | Code review | ✅ | 2026-10-03 |
-| Verificação (CTs) | ⏳ | |
-| Fechamento | ⏳ | |
+| Verificação (CTs) | ✅ | 2026-10-03 |
+| Fechamento | ✅ | 2026-10-03 |
 
 ---
 
 ## Histórico
 
 - 2026-10-03 — execução criada após gate QA e handoff para DEV.
+- 2026-10-03 — 5 CTs QA aprovados e demanda encerrada.
 
 ---
 

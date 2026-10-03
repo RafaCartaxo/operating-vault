@@ -1,11 +1,11 @@
 ---
 id: FIN-EPIC-0001
 tipo: epico
-status: execucao
+status: concluido
 projeto: financas-pessoais
 prioridade: media
 data_inicio: 2026-10-03
-data_fim: ""
+data_fim: 2026-10-03
 responsavel: ""
 ---
 
@@ -41,7 +41,7 @@ Evoluir o fluxo de lançamentos no celular para que o acompanhamento seja a tela
 |---|---|---|---|
 | FIN-MEL-0009 | [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0009 Navegação lançamento modal/00 README|Navegação do lançamento por modal]] | início do fluxo | Concluído |
 | FIN-MEL-0010 | [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0010 Ação novo lançamento mobile/00 README|Ação de novo lançamento mobile]] | evolução da ação rápida | Concluído |
-| FIN-MEL-0011 | [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0011 Organização navbar mobile/00 README|Organização da navbar mobile]] | evolução da navegação | QA · Validação |
+| FIN-MEL-0011 | [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0011 Organização navbar mobile/00 README|Organização da navbar mobile]] | evolução da navegação | Concluído |
 
 ### Dependências anteriores
 
@@ -70,7 +70,7 @@ flowchart LR
 | Implementação `0009` | ✅ concluída |
 | Implementação `0010` | ✅ concluída |
 | Code review `0009/0010` | ✅ aprovado tecnicamente |
-| Validação QA `0009/0010` | ✅ aprovada |
+| Validação QA `0009/0010/0011` | ✅ aprovada |
 | Preparação `0011` | ✅ concluída |
 | Implementação `0011` | ✅ concluída |
 
