@@ -8,27 +8,35 @@ escopo: operating-vault
 
 Esta página é a referência operacional para qualquer projeto dentro do Operating Vault. O arquivo [Fluxo QA DEV.excalidraw](Fluxo%20QA%20DEV.excalidraw) complementa esta visão com o desenho visual; esta nota define o contrato que deve ser seguido.
 
+## Entrada em um chat novo
+
+Quando uma pessoa apresenta uma nova melhoria, bug ou necessidade, a skill `qa-first-delivery` é o ponto de entrada automático. Não é necessário explicar novamente o processo nem chamar a skill manualmente.
+
+Depois do gate QA, o próximo responsável é `$dev-execution`. A troca é determinada pelos artefatos e pelo status da demanda, não por uma palavra-chave específica. Se o gate não estiver pronto, o fluxo permanece em QA.
+
 ## Visão geral
 
 ```mermaid
 flowchart LR
-    A[Entrada: ideia, melhoria ou bug] --> B[QA · Triagem]
-    B --> C[Copiar template oficial]
-    C --> D[Critérios de aceite]
-    D --> E[CTs + matriz de cobertura]
-    E --> F{Pacote QA íntegro?}
-    F -- Não --> B
-    F -- Sim --> G[QA · Handoff aprovado]
-    G --> H[DEV · Análise]
-    H --> I[DEV · Plano congelado]
-    I --> J[DEV · Implementação]
-    J --> K[Testes técnicos + auditorias]
-    K --> L[DEV · Code review]
-    L --> M[QA · Execução dos CTs]
-    M --> N{Comportamento aprovado?}
-    N -- Não --> O[Defeito/ajuste vinculado]
-    O --> H
-    N -- Sim --> P[Concluído + arquivo]
+    A[Entrada em chat novo] --> B[qa-first-delivery]
+    B --> C[QA · Triagem]
+    C --> D[Copiar template oficial]
+    D --> E[Critérios de aceite]
+    E --> F[CTs + matriz de cobertura]
+    F --> G{Pacote QA íntegro?}
+    G -- Não --> C
+    G -- Sim --> H[Handoff para dev-execution]
+    H --> I[DEV · Análise]
+    I --> J[DEV · Plano congelado]
+    J --> K[DEV · Implementação]
+    K --> L[Testes técnicos + auditorias]
+    L --> M[DEV · Code review]
+    M --> N[Handoff para QA]
+    N --> O[QA · Execução dos CTs]
+    O --> P{Comportamento aprovado?}
+    P -- Não --> Q[Defeito/ajuste vinculado]
+    Q --> I
+    P -- Sim --> R[Concluído + arquivo]
 ```
 
 ## Responsabilidades
@@ -102,3 +110,5 @@ sequenceDiagram
 - `$dev-execution`: executa o pacote aprovado, registra evidências e devolve para QA.
 
 As skills são reutilizáveis em outros projetos; os caminhos concretos de templates, boards e IDs continuam sendo definidos pelo vault do projeto.
+
+O usuário não precisa escolher a skill seguinte: a etapa atual define o próximo responsável. A chamada explícita das skills continua disponível, mas é opcional.

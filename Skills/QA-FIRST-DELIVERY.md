@@ -34,6 +34,12 @@ O handoff só ocorre quando:
 
 Se a descoberta mudar o objetivo ou o comportamento esperado, ela retorna para QA como complemento ou nova demanda vinculada. Não existe escopo rasteiro silencioso.
 
+## Handoff para DEV
+
+Quando o gate QA estiver completo, a etapa QA entrega o contexto para a skill DEV. Se houver pendência, a skill permanece em QA e informa o que falta.
+
+O usuário não precisa escolher manualmente entre QA e DEV nem usar uma palavra-chave específica. A próxima skill é determinada pela etapa registrada, pelos artefatos existentes e pelo gate do processo.
+
 ## Artefatos esperados
 
 Para melhoria, usar o pacote de `Templates/QA/` e `Templates/Melhoria/`, conforme a convenção do projeto:

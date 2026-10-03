@@ -6,6 +6,7 @@ Os boards são visões por projeto. O status real vive no frontmatter do card; m
 
 - [[01 Board/Processos/Fluxo QA DEV|Fluxo QA → DEV — responsabilidades, gates e artefatos]]
 - [[01 Board/Processos/Fluxo QA DEV.excalidraw|Fluxo QA → DEV — diagrama visual]]
+- [[01 Board/Processos/Interação entre skills QA DEV|Interação entre skills QA ↔ DEV]]
 
 ## Estrutura
 
