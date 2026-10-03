@@ -43,4 +43,4 @@ Criar `03 Trabalho/DEV/<projeto>/Execuções/<ID>/` copiando `Templates/Execuç�
 - `03 - Implementação.md`
 - `04 - Code review.md`
 
-O DEV referencia os CTs existentes; não duplica os casos nem substitui a validação funcional do QA. O fluxo geral está em [[01 Board/Processos/Fluxo QA DEV|Fluxo QA → DEV]].
+O DEV referencia os CTs existentes; não duplica os casos nem substitui a validação funcional do QA. O fluxo geral está em [[01 Board/Processos/04 - Fluxo QA DEV|Fluxo QA → DEV]].

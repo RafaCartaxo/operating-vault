@@ -99,7 +99,7 @@ O vault continua sendo a fonte legível do processo. A aplicação pode automati
 
 ## Relações
 
-- [[Fluxo geral de skills|Fluxo geral de skills]] — roteamento entre agentes e regras.
-- [[Fluxo QA DEV|Fluxo QA → DEV]] — gates e handoffs.
+- [[03 - Mapa geral de skills|Mapa geral de skills]] — roteamento entre agentes e regras.
+- [[04 - Fluxo QA DEV|Fluxo QA → DEV]] — gates e handoffs.
 - [[Agentes/README|Agentes — entrada e roteamento]] — como o usuário inicia o trabalho.
 - [[Templates/00 README|Templates]] — catálogo de modelos.

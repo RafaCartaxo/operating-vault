@@ -12,13 +12,13 @@ Comece pelo mapa geral de processos. Depois consulte o documento específico da 
 
 ## Mapas principais
 
-- [[Fluxo geral de processos|Mapa geral de processos — entrada até arquivo]]
-- [[Arquitetura operacional|Arquitetura operacional — comando, skill, agente, template, processo e dados]]
-- [[Fluxo geral de skills|Mapa geral de skills — roteamento e handoffs]]
+- [[02 - Mapa geral de processos|Mapa geral de processos — entrada até arquivo]]
+- [[01 - Arquitetura operacional|Arquitetura operacional — comando, skill, agente, template, processo e dados]]
+- [[03 - Mapa geral de skills|Mapa geral de skills — roteamento e handoffs]]
 
 ## Processos do ciclo
 
-- [[Fluxo QA DEV|Fluxo QA → DEV — responsabilidades, gates e artefatos]]
-- [[Interação entre skills QA DEV|Contrato de interação QA ↔ DEV — orquestradores]]
+- [[04 - Fluxo QA DEV|Fluxo QA → DEV — responsabilidades, gates e artefatos]]
+- [[05 - Contrato de interação QA DEV|Contrato de interação QA ↔ DEV — orquestradores]]
 
 Processos específicos de um produto devem permanecer junto da documentação daquele produto.

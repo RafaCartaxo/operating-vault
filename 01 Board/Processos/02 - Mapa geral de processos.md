@@ -64,10 +64,10 @@ Entrada → Triagem → QA → Handoff QA → DEV → Handoff DEV → Validaçã
 ## Fontes canônicas
 
 - Entrada e roteamento: [[Agentes/README|Agentes — entrada e roteamento]].
-- Arquitetura das camadas: [[Arquitetura operacional|Arquitetura operacional]].
-- Roteamento de skills: [[Fluxo geral de skills|Fluxo geral de skills]].
-- Contrato QA → DEV: [[Fluxo QA DEV|Fluxo QA → DEV]].
-- Interação entre orquestradores: [[Interação entre skills QA DEV|Interação entre skills QA ↔ DEV]].
+- Arquitetura das camadas: [[01 - Arquitetura operacional|Arquitetura operacional]].
+- Roteamento de skills: [[03 - Mapa geral de skills|Mapa geral de skills]].
+- Contrato QA → DEV: [[04 - Fluxo QA DEV|Fluxo QA → DEV]].
+- Interação entre orquestradores: [[05 - Contrato de interação QA DEV|Contrato de interação QA ↔ DEV]].
 - Modelos: [[Templates/00 README|Templates]].
 
 ## Regra de leitura

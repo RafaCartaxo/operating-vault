@@ -7,7 +7,7 @@ Estas notas são a fonte de verdade do processo do Operating Vault. Elas são es
 - [[Skills/QA-FIRST-DELIVERY|QA First Delivery]] — transforma uma necessidade em demanda, critérios, CTs, cobertura e handoff aprovado.
 - [[Skills/DEV-EXECUTION|DEV Execution]] — executa o pacote QA aprovado, registra evidências, revisa e devolve para validação.
 
-As duas skills acima orquestram o ciclo. O mapa de roteamento para as regras especializadas está em [[01 Board/Processos/Fluxo geral de skills|Fluxo geral de skills]].
+As duas skills acima orquestram o ciclo. O mapa de roteamento para as regras especializadas está em [[01 Board/Processos/03 - Mapa geral de skills|Mapa geral de skills]].
 
 ## Skills específicas
 
@@ -26,4 +26,4 @@ O usuário informa o trabalho; não precisa escolher a próxima skill. `qa-first
 
 As skills deste diretório definem o processo compartilhado. A skill instalada em um agente, como a skill global do Codex, funciona como uma camada de execução que aponta para estas regras. Se houver divergência, o processo documentado no vault deve ser revisado antes de adaptar o agente.
 
-O fluxo visual e o contrato entre as etapas estão em [[01 Board/Processos/Fluxo QA DEV|Fluxo QA → DEV]].
+O fluxo visual e o contrato entre as etapas estão em [[01 Board/Processos/04 - Fluxo QA DEV|Fluxo QA → DEV]].

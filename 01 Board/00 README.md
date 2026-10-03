@@ -4,16 +4,16 @@ Os boards são visões por projeto. O status real vive no frontmatter do card; m
 
 ## Processo comum
 
-- [[01 Board/Processos/Fluxo QA DEV|Fluxo QA → DEV — responsabilidades, gates e artefatos]]
-- [[01 Board/Processos/Fluxo QA DEV|Fluxo QA → DEV — diagrama visual]]
-- [[01 Board/Processos/Interação entre skills QA DEV|Interação entre skills QA ↔ DEV]]
+- [[01 Board/Processos/04 - Fluxo QA DEV|Fluxo QA → DEV — responsabilidades, gates e artefatos]]
+- [[01 Board/Processos/04 - Fluxo QA DEV|Fluxo QA → DEV — diagrama visual]]
+- [[01 Board/Processos/05 - Contrato de interação QA DEV|Contrato de interação QA ↔ DEV]]
 
 ## Estrutura
 
 - [[01 Board/Boards Gerais/00 README|Boards gerais por projeto]]
 - [[01 Board/QA/00 README|Boards de QA]]
 - [[01 Board/DEV/00 README|Boards de DEV]]
-- [[01 Board/Processos/00 README|Processos e diagramas]]
+- [[01 Board/Processos/00 - Índice|Índice de processos e diagramas]]
 
 ## Nxgest
 

@@ -6,7 +6,7 @@ escopo: operating-vault
 
 # Mapa geral de skills
 
-Esta página mostra como as skills do Operating Vault se relacionam. Ela complementa o [[Fluxo QA DEV|Fluxo QA → DEV]]: o fluxo QA/DEV define as grandes etapas; este mapa define qual regra especializada é usada dentro de cada etapa.
+Esta página mostra como as skills do Operating Vault se relacionam. Ela complementa o [[04 - Fluxo QA DEV|Fluxo QA → DEV]]: o fluxo QA/DEV define as grandes etapas; este mapa define qual regra especializada é usada dentro de cada etapa.
 
 ## Princípio de roteamento
 
@@ -110,6 +110,6 @@ flowchart TD
 
 ## Relação com o fluxo QA/DEV
 
-- [[Fluxo QA DEV|Fluxo QA → DEV]] — estados, gates e handoffs principais.
-- [[Interação entre skills QA DEV|Interação entre skills QA ↔ DEV]] — contrato entre as duas skills orquestradoras.
+- [[04 - Fluxo QA DEV|Fluxo QA → DEV]] — estados, gates e handoffs principais.
+- [[05 - Contrato de interação QA DEV|Contrato de interação QA ↔ DEV]] — contrato entre as duas skills orquestradoras.
 - [[Skills/README|Skills operacionais]] — índice das regras reutilizáveis.
