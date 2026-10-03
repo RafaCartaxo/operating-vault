@@ -4,8 +4,6 @@ kanban-plugin: board
 
 ## 🔍 Análise da demanda
 
-- [ ] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0011 Organização navbar mobile/00 README|FIN-MEL-0011 — Organização da navbar mobile]]
-
 ## ⚙️ Em execução DEV
 
 
@@ -17,6 +15,7 @@ kanban-plugin: board
 
 ## 🧪 Validação
 
+- [ ] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0011 Organização navbar mobile/00 README|FIN-MEL-0011 — pronta para execução dos CTs QA]]
 
 ## ✅ Concluído
 

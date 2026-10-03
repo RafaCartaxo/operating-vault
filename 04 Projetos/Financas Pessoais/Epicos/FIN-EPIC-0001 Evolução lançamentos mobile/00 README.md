@@ -41,7 +41,7 @@ Evoluir o fluxo de lançamentos no celular para que o acompanhamento seja a tela
 |---|---|---|---|
 | FIN-MEL-0009 | [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0009 Navegação lançamento modal/00 README|Navegação do lançamento por modal]] | início do fluxo | Concluído |
 | FIN-MEL-0010 | [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0010 Ação novo lançamento mobile/00 README|Ação de novo lançamento mobile]] | evolução da ação rápida | Concluído |
-| FIN-MEL-0011 | [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0011 Organização navbar mobile/00 README|Organização da navbar mobile]] | evolução da navegação | QA · Triagem |
+| FIN-MEL-0011 | [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0011 Organização navbar mobile/00 README|Organização da navbar mobile]] | evolução da navegação | QA · Validação |
 
 ### Dependências anteriores
 
@@ -71,8 +71,8 @@ flowchart LR
 | Implementação `0010` | ✅ concluída |
 | Code review `0009/0010` | ✅ aprovado tecnicamente |
 | Validação QA `0009/0010` | ✅ aprovada |
-| Preparação `0011` | 🔵 em QA |
-| Implementação `0011` | ⏳ bloqueada pelo gate QA |
+| Preparação `0011` | ✅ concluída |
+| Implementação `0011` | ✅ concluída |
 
 ## Critério de conclusão
 

@@ -1,11 +1,11 @@
 ---
 prioridade: media
-status: analise
+status: validacao
 tipo: melhoria
-etapa_atual: "QA · Análise da demanda"
+etapa_atual: "QA · Validação"
 modulo: navegacao
 plano: "[[02 - Plano de teste]]"
-execucao: ""
+execucao: "[[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0011/00 README|Execução DEV]]"
 ambiente: dev
 origem: conversa
 projeto: financas-pessoais
@@ -26,7 +26,7 @@ pontos_alocados: 5
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** ainda não criada — aguarda aprovação do pacote QA.
+> **Execução DEV:** [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0011/00 README|Execução DEV]]
 
 > [!settings]- Controle da demanda
 > **Prioridade:** `INPUT[inlineSelect(option(baixa),option(media),option(alta)):prioridade]`  
