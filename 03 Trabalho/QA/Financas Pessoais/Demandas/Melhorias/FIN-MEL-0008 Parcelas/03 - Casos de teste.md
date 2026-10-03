@@ -89,16 +89,16 @@ Use esta matriz para verificar a cobertura sem abrir a demanda. Atualize-a ao cr
 >
 > ## Cenário
 >
-> **Descrição:** confirma as validações de quantidade e valor para parcelamento.
+> **Descrição:** confirma que a quantidade de parcelas aceita somente números e valida quantidade e valor para parcelamento.
 >
 > **Pré-condições:**
 > - A melhoria está disponível no ambiente de teste.
 >
-> **Dado** que informo quantidade inválida, zero ou um valor menor que a quantidade de parcelas em centavos  
+> **Dado** que tento informar letras/símbolos e depois uma quantidade inválida, zero ou um valor menor que a quantidade de parcelas em centavos  
 > **Quando** tento salvar  
-> **Então** recebo validação e nenhuma parcela é criada.
+> **Então** o campo mantém somente os dígitos, recebo validação e nenhuma parcela é criada.
 >
-> **Resultado esperado:** a entrada inválida é recusada sem persistência parcial.
+> **Resultado esperado:** o campo aceita somente dígitos e a entrada inválida é recusada sem persistência parcial.
 >
 > **Pós-condição:** nenhuma série inválida permanece persistida.
 >
