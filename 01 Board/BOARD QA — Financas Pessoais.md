@@ -21,6 +21,7 @@ kanban-plugin: board
 ## 🧪 Validação
 
 - [ ]
+- [ ] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0010 Ação novo lançamento mobile/00 README|FIN-MEL-0010 — aguardando implementação DEV]]
 - [ ] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0009 Navegação lançamento modal/00 README|FIN-MEL-0009 — aguardando implementação DEV]]
 - [ ]
 

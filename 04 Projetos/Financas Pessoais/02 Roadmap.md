@@ -64,6 +64,7 @@ Evoluir a navegação entregue na FIN-MEL-0006: o Acompanhamento será a tela pr
 
 - [x] Parcelas — FIN-MEL-0008 concluído com 8 CTs aprovados.
 - [ ] Navegação do lançamento por modal — FIN-MEL-0009 em execução DEV, dependente da FIN-MEL-0006.
+- [ ] Ação de novo lançamento mobile — FIN-MEL-0010 em análise, complemento visual da FIN-MEL-0009.
 - [ ] Recorrências.
 - [ ] Contas fixas.
 - [ ] Faturas.
