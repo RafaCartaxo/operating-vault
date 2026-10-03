@@ -1,11 +1,11 @@
 ---
 prioridade: media
-status: analise
+status: execucao
 tipo: melhoria
-etapa_atual: "QA · Plano de teste"
+etapa_atual: "DEV · Análise técnica"
 modulo: lancamentos
 plano: "[[02 - Plano de teste]]"
-execucao: ""
+execucao: "[[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0008/00 README|Execução DEV]]"
 ambiente: dev
 origem: conversa
 projeto: financas-pessoais
@@ -25,7 +25,7 @@ pontos_alocados: 8
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** será criada após aprovação QA.
+> **Execução DEV:** [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0008/00 README|Abrir execução DEV]]
 
 > [!settings]- Controle da demanda
 > **Prioridade:** `INPUT[inlineSelect(option(baixa),option(media),option(alta)):prioridade]`  
