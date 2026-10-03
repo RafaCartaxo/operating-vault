@@ -1,20 +1,25 @@
 ---
-demanda: ""
+demanda: FIN-MEL-0012
 execucao: ""
 ambiente: dev
 versao: ""
 status: execucao
 responsavel: ""
 resultado: aguardando
-# Pontos da etapa de validação; substitua pelo valor planejado para esta etapa.
+# Pontos da etapa de validação: serão registrados após a execução dos CTs.
 pontos: 0
 ct_resultados:
   ct_001: "⏳ Aguardando"
+  ct_002: "⏳ Aguardando"
+  ct_003: "⏳ Aguardando"
+  ct_004: "⏳ Aguardando"
+  ct_005: "⏳ Aguardando"
+  ct_006: "⏳ Aguardando"
 data_inicio: ""
 data_fim: ""
 ---
 
-# Validação — <ID>
+# Validação — FIN-MEL-0012
 
 > [!info]- Navegação QA
 > **README do card:** [[00 README|Abrir README do card]]  
@@ -23,7 +28,7 @@ data_fim: ""
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/00 README|Execução <ID>]]
+> **Execução DEV:** será criada após aprovação QA.
 
 > [!settings]- Controle da validação
 > **Status:** `INPUT[inlineSelect(option(execucao),option(concluido)):status]`  

@@ -43,7 +43,7 @@ pontos_alocados: 8
 ## Capacidade e esforço
 
 > [!tip]- Capacidade do ciclo
-> **Capacidade alocada:** preencher `pontos_alocados`.
+> **Capacidade alocada:** 8 pontos.
 > Exemplo: se houver 50 pontos disponíveis no ciclo, usar `pontos_alocados: 50`.
 >
 > ```dataviewjs
@@ -129,4 +129,4 @@ Cadastro da regra recorrente, geração mensal com série identificável, térmi
 
 ## Pendências de decisão
 
-- Nenhuma. Se houver pendência, manter `status: analise`.
+- Nenhuma. A demanda permanece em `status: backlog` até a triagem formal do próximo ciclo.

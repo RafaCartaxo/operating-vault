@@ -1,109 +1,55 @@
 ---
-demanda: ""
+demanda: FIN-MEL-0012
 plano: "[[02 - Plano de teste]]"
 validacao: "[[04 - Validação dev]]"
-status: planejado
-pontos: ""
+status: concluido
 ---
 
-# Casos de teste — <ID>
-
-> [!info]- Navegação QA
-> **README do card:** [[00 README|Abrir README do card]]  
-> **Demanda:** [[01 - Demanda]]  
-> **Plano de teste:** [[02 - Plano de teste]]  
-> **Casos de teste:** [[03 - Casos de teste]]  
-> **Validação:** [[04 - Validação dev]]  
-> **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/00 README|Execução DEV]]
-
-> [!settings]- Controle dos casos de teste
-> **Status:** `INPUT[inlineSelect(option(planejado),option(execucao),option(concluido)):status]`
-
-> Os critérios ficam na demanda; esta nota concentra os cenários executáveis.
-
----
+# Casos de teste — FIN-MEL-0012
 
 ## Matriz de cobertura
 
 | Critério | CTs |
 |---|---|
-| [[01 - Demanda#^c1\|C1]] | [[03 - Casos de teste#^ct-001\|CT-001]] |
-| [[01 - Demanda#^c2\|C2]] | [[03 - Casos de teste#^ct-001\|CT-001]] |
+| C1 | CT-001 |
+| C2 | CT-002 |
+| C3 | CT-003 |
+| C4 | CT-004 |
+| C5 | CT-005 |
+| C6 | CT-006 |
 
-Use esta matriz para verificar a cobertura sem abrir a demanda. Atualize-a ao criar ou alterar CTs.
-
-> [!example]- CT-001 · Título claro do cenário
->
-> ```meta-bind-button
-> style: primary
-> label: ↩ Validação
-> action:
->   type: open
->   link: "[[04 - Validação dev#Resultado dos casos de teste]]"
-> ```
->
-> ## Cenário
->
-> **Descrição:** explique em uma frase o que este caso confirma.
->
-> **Pré-condições:**
-> - Informe o que precisa estar preparado antes do teste.
-> - Inclua usuário, dados ou estado necessário.
->
-> **Dado** que ...
-> **Quando** ...
-> **Então** ...
->
-> **Resultado esperado:** descreva o comportamento observado em linguagem direta.
->
-> **Pós-condição:** registre como o sistema deve ficar depois do teste.
->
-> **Critérios cobertos:** [[01 - Demanda#^c1|C1]]
->
-> ---
->
-> **Informações do CT**
->
-> **Tipo:** funcional  
-> **Camada:** UI/API  
-> **Automação:** manual  
-> **Execução:** planejado
+> [!example]- CT-001 · Cadastrar recorrência mensal
+> Dado descrição, valor, cartão/conta e data inicial válidos; quando salvo; então a regra mensal fica ativa e identificável.
+> **Resultado esperado:** regra criada sem duplicidade. **Critérios:** C1. **Execução:** planejado.
 
 ^ct-001
 
-> [!example]- CT-002 · Reabrir o fluxo sem perder os dados preenchidos
->
-> ```meta-bind-button
-> style: primary
-> label: ↩ Validação
-> action:
->   type: open
->   link: "[[04 - Validação dev#Resultado dos casos de teste]]"
-> ```
->
-> ## Cenário
->
-> **Descrição:** confirma que a melhoria mantém os dados ao sair e retornar ao fluxo.
->
-> **Pré-condições:**
-> - O fluxo foi iniciado com dados válidos.
-> - A melhoria está disponível no ambiente de teste.
->
-> **Dado** um registro com os dados da melhoria preenchidos  
-> **Quando** avanço, volto ou reabro o fluxo  
-> **Então** os dados continuam disponíveis e o comportamento permanece consistente.
->
-> **Resultado esperado:** o fluxo pode ser retomado sem perda de informação.
->
-> **Pós-condição:** registro permanece íntegro e pronto para conclusão.
->
-> **Critérios cobertos:** [[01 - Demanda#^c2|C2]]
->
-> **Informações do CT**  
-> **Tipo:** regressão  
-> **Camada:** UI  
-> **Automação:** manual  
-> **Execução:** planejado
+> [!example]- CT-002 · Gerar uma ocorrência por mês
+> Dado uma regra ativa; quando o sistema recalcula dois meses; então gera uma ocorrência por mês sem duplicar a competência.
+> **Resultado esperado:** origem e valor preservados. **Critérios:** C2. **Execução:** planejado.
 
 ^ct-002
+
+> [!example]- CT-003 · Respeitar data final
+> Dado uma regra com término; quando consulto o mês final e o seguinte; então gera no mês final e não depois.
+> **Resultado esperado:** regra sem término permanece ativa. **Critérios:** C3. **Execução:** planejado.
+
+^ct-003
+
+> [!example]- CT-004 · Editar e encerrar sem apagar histórico
+> Dado uma regra com ocorrência; quando altero ou encerro; então o histórico permanece e novas ocorrências respeitam o estado.
+> **Resultado esperado:** nenhuma ocorrência anterior é apagada. **Critérios:** C4. **Execução:** planejado.
+
+^ct-004
+
+> [!example]- CT-005 · Não duplicar recorrente já incluído em fatura
+> Dado recorrência vinculada a cartão e fatura contendo a cobrança; quando consulto o mês; então aparece para controle sem somar novamente ao saldo.
+> **Resultado esperado:** fatura descontada uma única vez. **Critérios:** C5. **Execução:** planejado.
+
+^ct-005
+
+> [!example]- CT-006 · Rejeitar regra inválida sem ocorrência parcial
+> Dado valor, data, cartão/conta ou término inválidos; quando tento salvar; então exibe erro e não cria regra nem ocorrência.
+> **Resultado esperado:** nenhum dado parcial é persistido. **Critérios:** C6. **Execução:** planejado.
+
+^ct-006

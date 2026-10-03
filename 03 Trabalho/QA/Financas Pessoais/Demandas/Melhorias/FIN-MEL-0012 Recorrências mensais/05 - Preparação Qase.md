@@ -2,15 +2,15 @@
 tags: [qa, qase]
 tipo: referencia
 status: rascunho
-tipo_card: ""
-projeto: ""
-modulo: ""
+tipo_card: melhoria
+projeto: financas-pessoais
+modulo: lancamentos
 qase_projeto: ""
 qase_suite_id: ""
-casos_origem: ""
-validacao_origem: ""
+casos_origem: "[[03 - Casos de teste]]"
+validacao_origem: "[[04 - Validação dev]]"
 ---
-# Preparação Qase — <ID>
+# Preparação Qase — FIN-MEL-0012
 
 > **Posição no pacote:** melhoria → `05 - Preparação Qase.md`; bug → `04 - Preparação Qase.md`. O conteúdo deste modelo é o mesmo nos dois casos.
 
@@ -26,8 +26,8 @@ Esta nota transforma os CTs refinados do vault em casos da Qase. Não crie CT no
 
 ## Configuração
 
-- **Projeto Qase:** `<código>`
-- **Suite Qase:** `<id>`
+- **Projeto Qase:** a definir no envio
+- **Suite Qase:** a definir no envio
 - **Origem:** nota de casos de teste do próprio card (`02` para bug, `03` para melhoria)
 
 ## Mapeamento dos campos
@@ -43,15 +43,15 @@ Esta nota transforma os CTs refinados do vault em casos da Qase. Não crie CT no
 
 Valores normalizados: `funcional`/`regressão`; camada `E2E`/`API`/`unit`; automação `manual`/`automatizado`/`ambos`.
 
-Tags da nota: manter somente `qa` e `qase`. Tags enviadas ao Qase: usar o ID da demanda e o módulo (`<PROJ>-MEL-NNNN`, `cliente`); não criar uma tag para cada CT, pois o título e o ID do caso já fazem essa identificação.
+Tags da nota: manter somente `qa` e `qase`. Tags enviadas ao Qase: usar `FIN-MEL-0012` e `lancamentos`; não criar uma tag para cada CT.
 
 ## Casos preparados
 
 > O bloco abaixo é um exemplo de preenchimento. Ao criar a nota do card, substitua-o pelos CTs reais da nota de origem. Não envie este exemplo para a Qase.
 
-### CT-NNN — Salvar registro com dados válidos *(exemplo)*
+### CT-001 — Cadastrar recorrência mensal
 
-- **Qase ID:** `preencher após o envio`
+- **Qase ID:** a registrar após o envio
 - **Descrição:** confirma que o registro pode ser salvo quando os dados obrigatórios são válidos.
 - **Pré-condições:** usuário está na tela de cadastro; os dados obrigatórios estão preenchidos com valores válidos.
 - **Passos:** separar Dado/Quando/Então em passos numerados, cada um com ação e resultado esperado.
@@ -66,7 +66,7 @@ Tags da nota: manter somente `qa` e `qase`. Tags enviadas ao Qase: usar o ID da 
 - **Prioridade Qase:** média.
 - **Severidade Qase:** normal.
 - **Comportamento:** positivo.
-- **Tags Qase:** `<ID da demanda>`, `<módulo>`
+- **Tags Qase:** `FIN-MEL-0012`, `lancamentos`
 
 > **Regra:** critérios, evidências, esforço e resultado da execução continuam no vault ou no Test Run; não duplicar esses dados no caso da Qase.
 
