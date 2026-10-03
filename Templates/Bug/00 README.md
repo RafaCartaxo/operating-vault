@@ -1,5 +1,8 @@
 # Template de Bug
 
+> [!important] Instanciação obrigatória
+> Copie a pasta `Templates/Bug/` e os complementos QA antes de adaptar. Preserve a estrutura e substitua apenas placeholders e conteúdo específico.
+
 > [!info]- Navegação QA/DEV
 > **Bug:** [[01 - Bug]]  
 > **Épico:** [[<EPICO>|<épico>]]

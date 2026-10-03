@@ -12,6 +12,7 @@
 | [[01 Board/00 README\|01 Board]] | ★ **Boards por projeto** e visões operacionais |
 | [[01 Board/Processos/Fluxo QA DEV\|Fluxo QA ↔ DEV]] | Fluxograma e dependências entre as camadas |
 | [[01 Board/Processos/Fluxo geral de skills\|Fluxo geral de skills]] | Como agentes, skills e regras do vault se relacionam |
+| [[01 Board/Processos/Arquitetura operacional\|Arquitetura operacional]] | Cadeia universal: comando → skill → agente → template → processo → dados |
 | [[03 Trabalho/README\|03 Trabalho]] | **Fonte dos cards** — uma nota por demanda e execução |
 | [[03 Trabalho/README\|03 Trabalho]] | Índice global de QA e DEV por projeto |
 | [[04 Projetos/00 README\|04 Projetos]] | Contexto, repositório, ambientes e decisões por produto |

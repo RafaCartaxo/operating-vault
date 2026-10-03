@@ -1,5 +1,8 @@
 # Templates QA
 
+> [!important] Instanciação obrigatória
+> Copie o pacote QA correspondente antes de adaptar. Preserve frontmatter, headings, callouts, âncoras, matriz e tabela de validação; substitua apenas placeholders e conteúdo específico.
+
 Modelos do pacote de qualidade de uma demanda.
 
 ```text
