@@ -14,6 +14,42 @@ Esta página mostra como as skills do Operating Vault se relacionam. Ela complem
 
 O fluxo é orientado por estado e artefatos. Uma palavra como “siga” pode indicar continuidade da conversa, mas não substitui o gate nem muda o responsável da etapa.
 
+## Camadas: agente, skill instalada e regra do vault
+
+Há três camadas diferentes:
+
+1. **Agente/runtime:** Codex, OpenCode ou outra IA que recebe a conversa e possui permissões para ler/escrever.
+2. **Skill instalada:** instrução operacional que o agente carrega automaticamente. Atualmente, no Codex, `qa-first-delivery` e `dev-execution` são as skills orquestradoras deste fluxo.
+3. **Regra do vault:** notas como `MELHORIA`, `BUG`, `CASOS-DE-TESTE`, `EXECUCAO` e `FIX`. Elas são a fonte de processo compartilhada; as skills instaladas devem consultá-las e aplicá-las.
+
+O agente não “chama” uma nota Markdown do vault como se fosse uma skill executável. Ele carrega a skill instalada, e essa skill consulta as regras do vault. O handoff entre agentes/skills acontece pelo estado e pelos eventos documentados (`QA_READY_FOR_DEV`, `DEV_READY_FOR_QA`, `QA_REJECTED` e `QA_APPROVED`).
+
+```mermaid
+flowchart TD
+    A[Pessoa / conversa] --> B[Agente ou runtime de IA]
+    B --> C{Estado atual da demanda}
+    C -- Entrada ou retorno DEV --> D[Skill instalada · qa-first-delivery]
+    C -- QA_READY_FOR_DEV --> E[Skill instalada · dev-execution]
+    D --> F[Consultar regras do Operating Vault]
+    E --> G[Consultar EXECUCAO ou FIX no vault]
+    F --> H[Atualizar artefatos QA e emitir handoff]
+    H --> E
+    G --> I[Implementar, testar, revisar e emitir DEV_READY_FOR_QA]
+    I --> D
+    D --> J{QA_APPROVED ou QA_REJECTED?}
+    J -- QA_APPROVED --> K[Fechamento e sincronização]
+    J -- QA_REJECTED --> E
+```
+
+### Agentes existentes fora do ciclo principal
+
+O NX Gest possui `docs-sync` e `ops-runner` em `.opencode/agents/`. Eles são agentes especialistas do NX Gest, não substituem `qa-first-delivery` ou `dev-execution` e não entram automaticamente no fluxo de Finanças:
+
+- `docs-sync`: auditoria e sincronização documental do NX Gest, quando o trabalho afetar aquele repositório.
+- `ops-runner`: health check, deploy, backup e operação de produção do NX Gest, somente após uma entrega autorizada.
+
+Se outro agente for criado para o Finanças Pessoais, ele deve apontar para este fluxo e declarar claramente se é orquestrador, especialista QA, especialista DEV ou suporte operacional.
+
 ## Mapa visual
 
 ```mermaid
@@ -56,6 +92,15 @@ flowchart TD
 | `EXECUCAO` | Regra de execução | handoff é uma melhoria aprovada | análise, plano, implementação e review | `DEV_READY_FOR_QA` |
 | `FIX` | Regra de correção | handoff é bug/defeito confirmado | causa, correção, testes e review | `DEV_READY_FOR_QA` |
 
+## Matriz de agentes e skills instaladas
+
+| Runtime/agente | Skills instaladas no escopo | Papel no fluxo de Finanças |
+|---|---|---|
+| Codex atual | `qa-first-delivery`, `dev-execution` | Executa o ciclo QA → DEV → QA completo |
+| OpenCode/NX Gest `docs-sync` | agente especializado, sem as skills de Finanças | Só audita documentação do NX Gest quando explicitamente acionado |
+| OpenCode/NX Gest `ops-runner` | agente especializado, sem as skills de Finanças | Só opera produção do NX Gest quando explicitamente acionado |
+| Outra IA/agente | depende da instalação/configuração | Deve ler `Skills/README.md` e seguir os eventos do fluxo |
+
 ## Regras de chamada
 
 1. Uma entrada nova começa em `qa-first-delivery`; o usuário não precisa escolher a skill seguinte.
@@ -72,4 +117,3 @@ flowchart TD
 - [[Fluxo QA DEV|Fluxo QA → DEV]] — estados, gates e handoffs principais.
 - [[Interação entre skills QA DEV|Interação entre skills QA ↔ DEV]] — contrato entre as duas skills orquestradoras.
 - [[Skills/README|Skills operacionais]] — índice das regras reutilizáveis.
-
