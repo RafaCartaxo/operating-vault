@@ -1,11 +1,11 @@
 ---
 prioridade: media
-status: backlog
+status: execucao
 tipo: melhoria
-etapa_atual: "QA · Triagem"
+etapa_atual: "DEV · Análise técnica"
 modulo: lancamentos
 plano: "[[02 - Plano de teste]]"
-execucao: ""
+execucao: "[[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0009/00 README|Execução DEV]]"
 ambiente: dev
 origem: conversa
 projeto: financas-pessoais
@@ -113,13 +113,15 @@ Será entregue a reorganização da entrada de lançamentos em modal/container, 
 ## Critérios de aceite
 
 - C1. O Acompanhamento é apresentado como tela principal, sem exigir uma área exclusiva de lançamento. ^c1
-- C2. O botão de adicionar abre o formulário de novo lançamento em modal/container. ^c2
+- C2. O botão de adicionar é visível, acessível e não cobre filtros/cards; ao ser acionado, abre o formulário em modal/container com fechamento/cancelamento disponível. ^c2
 - C3. O modal permanece utilizável no mobile, com conteúdo contido, rolagem e interação correta com teclado e data. ^c3
 - C4. O formulário mantém campos, validações, máscara de valor e parcelamento já aprovados. ^c4
 - C5. Um lançamento válido é salvo e o acompanhamento é atualizado sem recarregamento manual. ^c5
 - C6. O filtro de mês ativo é respeitado para lançamentos com data fora do período. ^c6
 - C7. Salvamento em andamento impede múltiplos envios e o modal não fecha antes da confirmação. ^c7
 - C8. Erro de API ou rede exibe feedback e não indica sucesso falso; desktop permanece sem regressão. ^c8
+- C9. Fechar ou cancelar o modal sem salvar não cria nem altera lançamentos. ^c9
+- C10. A edição de lançamento existente continua acessível e funcional após a mudança de entrada. ^c10
 
 ---
 
@@ -135,5 +137,6 @@ Será entregue a reorganização da entrada de lançamentos em modal/container, 
 
 ## Pendências de decisão
 
-- Confirmar no plano se o modal será centralizado no desktop e apresentado como bottom sheet no mobile.
-- Confirmar se o botão flutuante será exclusivo do mobile ou também estará disponível no desktop.
+- No mobile, o lançamento será apresentado em bottom sheet/modal com rolagem interna.
+- No desktop, o lançamento será apresentado em modal centralizado.
+- No mobile, o acesso será por botão flutuante; no desktop, por ação visível no cabeçalho.

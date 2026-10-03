@@ -1,6 +1,6 @@
 ---
 demanda: FIN-MEL-0009
-status: planejado
+status: concluido
 responsavel: ""
 pontos: ""
 ---
@@ -59,6 +59,8 @@ Defina apenas as camadas aplicáveis; não crie testes por obrigação quando n�
 | [[03 - Casos de teste#^ct-006\|CT-006]] | Funcional | E2E | Manual | [[04 - Validação dev\|Registrar resultado]] |
 | [[03 - Casos de teste#^ct-007\|CT-007]] | Validação | E2E | Manual | [[04 - Validação dev\|Registrar resultado]] |
 | [[03 - Casos de teste#^ct-008\|CT-008]] | Regressão | E2E | Manual | [[04 - Validação dev\|Registrar resultado]] |
+| [[03 - Casos de teste#^ct-009\|CT-009]] | Funcional | E2E | Manual | [[04 - Validação dev\|Registrar resultado]] |
+| [[03 - Casos de teste#^ct-010\|CT-010]] | Regressão | E2E | Manual | [[04 - Validação dev\|Registrar resultado]] |
 
 > Exemplo: replique a linha para cada CT do pacote. O link do CT abre a prévia do cenário; o link de Validação leva à tabela onde o resultado e a evidência são registrados.
 

@@ -2,7 +2,7 @@
 demanda: FIN-MEL-0009
 plano: "[[02 - Plano de teste]]"
 validacao: "[[04 - Validação dev]]"
-status: planejado
+status: concluido
 pontos: ""
 ---
 
@@ -36,6 +36,8 @@ pontos: ""
 | [[01 - Demanda#^c6\|C6]] | [[03 - Casos de teste#^ct-006\|CT-006]] |
 | [[01 - Demanda#^c7\|C7]] | [[03 - Casos de teste#^ct-007\|CT-007]] |
 | [[01 - Demanda#^c8\|C8]] | [[03 - Casos de teste#^ct-008\|CT-008]] |
+| [[01 - Demanda#^c9\|C9]] | [[03 - Casos de teste#^ct-009\|CT-009]] |
+| [[01 - Demanda#^c10\|C10]] | [[03 - Casos de teste#^ct-010\|CT-010]] |
 
 Use esta matriz para verificar a cobertura sem abrir a demanda. Atualize-a ao criar ou alterar CTs.
 
@@ -89,16 +91,16 @@ Use esta matriz para verificar a cobertura sem abrir a demanda. Atualize-a ao cr
 >
 > ## Cenário
 >
-> **Descrição:** confirma a abertura do formulário de lançamento em modal/container.
+> **Descrição:** confirma que o botão de adicionar é localizável, acionável e abre o formulário em modal/container sem cobrir os controles do Acompanhamento.
 >
 > **Pré-condições:**
-> - Usuário está no Acompanhamento.
+> - Usuário está no Acompanhamento em viewport mobile e desktop.
 >
 > **Dado** que estou no Acompanhamento  
-> **Quando** aciono o botão de adicionar  
+> **Quando** localizo e aciono o botão de adicionar  
 > **Então** o formulário de lançamento abre sobre a tela atual.
 >
-> **Resultado esperado:** o modal é visível, possui fechamento e exibe os campos do lançamento.
+> **Resultado esperado:** o botão permanece visível e acessível, não cobre filtros/cards, responde ao toque/clique e o modal exibe os campos do lançamento com opção de fechamento.
 >
 > **Pós-condição:** modal aberto e pronto para preenchimento.
 >
@@ -284,3 +286,66 @@ Use esta matriz para verificar a cobertura sem abrir a demanda. Atualize-a ao cr
 > **Execução:** planejado
 
 ^ct-008
+
+> [!example]- CT-009 · Fechar ou cancelar sem salvar
+>
+> ```meta-bind-button
+> style: primary
+> label: ↩ Validação
+> action:
+>   type: open
+>   link: "[[04 - Validação dev#Resultado dos casos de teste]]"
+> ```
+>
+> **Descrição:** confirma que abandonar o modal não persiste dados.
+>
+> **Pré-condições:**
+> - Modal de lançamento aberto.
+> - Acompanhamento com dados consultáveis.
+>
+> **Dado** que preencho parte do formulário  
+> **Quando** fecho ou cancelo o modal sem salvar  
+> **Então** nenhum lançamento novo é criado ou alterado.
+>
+> **Resultado esperado:** ao reabrir, o formulário está limpo e a lista permanece inalterada.
+>
+> **Critérios cobertos:** [[01 - Demanda#^c9|C9]]
+>
+> **Informações do CT**  
+> **Tipo:** funcional  
+> **Camada:** E2E  
+> **Automação:** manual  
+> **Execução:** planejado
+
+^ct-009
+
+> [!example]- CT-010 · Manter edição de lançamento existente
+>
+> ```meta-bind-button
+> style: primary
+> label: ↩ Validação
+> action:
+>   type: open
+>   link: "[[04 - Validação dev#Resultado dos casos de teste]]"
+> ```
+>
+> **Descrição:** confirma que a mudança do cadastro não quebra a edição existente.
+>
+> **Pré-condições:**
+> - Existe um lançamento no Acompanhamento.
+>
+> **Dado** que aciono Editar em um lançamento  
+> **Quando** altero um campo e salvo  
+> **Então** o registro é atualizado normalmente, sem criar um lançamento indevido.
+>
+> **Resultado esperado:** a edição continua acessível e funcional.
+>
+> **Critérios cobertos:** [[01 - Demanda#^c10|C10]]
+>
+> **Informações do CT**  
+> **Tipo:** regressão  
+> **Camada:** E2E  
+> **Automação:** manual  
+> **Execução:** planejado
+
+^ct-010

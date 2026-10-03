@@ -14,7 +14,7 @@ Demanda concluída: [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-ME
 
 Demanda em execução DEV: [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0008 Parcelas/00 README|FIN-MEL-0008 — Parcelas]]. A validação QA possui 8 CTs aguardando execução.
 
-Próxima demanda em análise: [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0009 Navegação lançamento modal/00 README|FIN-MEL-0009 — Navegação do lançamento por modal]]. Ela evolui a navegação da FIN-MEL-0006 sem alterar as regras do formulário.
+FIN-MEL-0009 em execução DEV: [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0009 Navegação lançamento modal/00 README|FIN-MEL-0009 — Navegação do lançamento por modal]]. A demanda evolui a navegação da FIN-MEL-0006 sem alterar as regras do formulário; a validação QA ocorrerá após a entrega DEV.
 
 ## Fluxo QA
 

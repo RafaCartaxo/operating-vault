@@ -5,7 +5,6 @@ kanban-plugin: board
 ## 🔍 Análise da demanda
 
 - [ ]
-- [ ] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0009 Navegação lançamento modal/00 README|FIN-MEL-0009 — Navegação do lançamento por modal]]
 - [x] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0008 Parcelas/00 README|FIN-MEL-0008 — Parcelas — todos os 8 CTs aprovados]]
 - [ ]
 - [ ]
@@ -22,6 +21,7 @@ kanban-plugin: board
 ## 🧪 Validação
 
 - [ ]
+- [ ] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0009 Navegação lançamento modal/00 README|FIN-MEL-0009 — aguardando implementação DEV]]
 - [ ]
 
 ## ✅ Concluído
