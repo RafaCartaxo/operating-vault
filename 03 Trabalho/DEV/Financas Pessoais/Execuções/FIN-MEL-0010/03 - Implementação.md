@@ -20,6 +20,10 @@
 - Adicionado botão flutuante mobile separado da navegação.
 - O botão reutiliza `openNewLancamento` e abre o modal existente.
 - O botão respeita safe area, possui área de toque de 56px e fica acima da barra inferior.
+- A barra inferior passou de colunas fixas para layout flexível, com largura baseada na quantidade de itens, centralização e limite responsivo.
+- Em telas menores, a barra usa largura de conteúdo e permanece centralizada sem ocupar a viewport inteira.
+- A área antes identificada como “Histórico” passou a ser chamada de “Acompanhamento”, alinhando o nome à função de tela principal e ao resumo mensal exibido.
+- O botão flutuante permanece alinhado à direita, conforme a composição original aprovada; o item Acompanhamento da navbar recebeu alinhamento interno centralizado.
 - Navegação desktop e ação do cabeçalho permanecem preservadas.
 
 ---
