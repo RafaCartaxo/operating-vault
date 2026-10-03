@@ -8,9 +8,9 @@ Visão rápida do trabalho atual. O contexto completo fica separado por projeto;
 
 ## Projetos
 
-- [[04 Projetos/Nxgest/README|Nxgest]] · [[01 Board/BOARD Nxgest|Board Nxgest]]
-- [[04 Projetos/SOGOV/README|SOGOV]] · [[01 Board/BOARD SOGOV|Board SOGOV]]
-- [[01 Board/BOARD QA — Dinâmico|QA — todos os projetos]]
+- [[04 Projetos/Nxgest/README|Nxgest]] · [[01 Board/Boards Gerais/BOARD Nxgest|Board Nxgest]]
+- [[04 Projetos/SOGOV/README|SOGOV]] · [[01 Board/Boards Gerais/BOARD SOGOV|Board SOGOV]]
+- [[01 Board/QA/BOARD QA — Dinâmico|QA — todos os projetos]]
 
 ## Resumo — Nxgest
 
@@ -51,10 +51,10 @@ Nenhuma melhoria ativa no momento.
 ## Acessos
 
 - [[01 Board/00 README|Boards por projeto]]
-- [[01 Board/BOARD Nxgest|Board Kanban Nxgest]]
-- [[01 Board/BOARD QA — SOGOV|Board QA SOGOV]]
-- [[01 Board/BOARD DEV — SOGOV|Board DEV SOGOV]]
-- [[01 Board/BOARD QA — Dinâmico|Board QA — visão dinâmica]]
+- [[01 Board/Boards Gerais/BOARD Nxgest|Board Kanban Nxgest]]
+- [[01 Board/QA/BOARD QA — SOGOV|Board QA SOGOV]]
+- [[01 Board/DEV/BOARD DEV — SOGOV|Board DEV SOGOV]]
+- [[01 Board/QA/BOARD QA — Dinâmico|Board QA — visão dinâmica]]
 - [[02 Daily/00 README|Dailies]]
 - [[03 Trabalho/QA/Nxgest/00 README|Trabalho QA]]
 - [[03 Trabalho/DEV/Nxgest/00 README|Trabalho DEV]]

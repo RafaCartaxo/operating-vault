@@ -25,5 +25,5 @@ QA · Análise da demanda → QA · Plano de teste → QA · Casos de teste → 
 ## Locais relacionados
 
 - Projeto: [[04 Projetos/Financas Pessoais/README|Finanças Pessoais]]
-- Board: [[01 Board/BOARD QA — Financas Pessoais|Board QA]]
+- Board: [[01 Board/QA/BOARD QA — Financas Pessoais|Board QA]]
 - Implementação: [[03 Trabalho/DEV/Financas Pessoais/00 README|Finanças Pessoais — DEV]]

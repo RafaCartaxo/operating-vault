@@ -10,10 +10,10 @@
 |---|---|
 | [[Dashboard.md\|Dashboard]] | ★ **Central de trabalho** — entrada rápida e visão do fluxo |
 | [[01 Board/00 README\|01 Board]] | ★ **Boards por projeto** — Nxgest, SOGOV e visão dinâmica |
-| [[01 Board/BOARD Nxgest\|BOARD Nxgest]] | Kanban operacional do Nxgest |
-| [[01 Board/BOARD QA — Nxgest\|BOARD QA Nxgest]] | Fila QA do Nxgest |
-| [[01 Board/BOARD DEV — Nxgest\|BOARD DEV Nxgest]] | Fila DEV do Nxgest |
-| [[01 Board/Fluxo QA DEV.excalidraw\|Fluxo QA ↔ DEV]] | Diagrama visual das dependências entre as camadas |
+| [[01 Board/Boards Gerais/BOARD Nxgest\|BOARD Nxgest]] | Kanban operacional do Nxgest |
+| [[01 Board/QA/BOARD QA — Nxgest\|BOARD QA Nxgest]] | Fila QA do Nxgest |
+| [[01 Board/DEV/BOARD DEV — Nxgest\|BOARD DEV Nxgest]] | Fila DEV do Nxgest |
+| [[01 Board/Processos/Fluxo QA DEV.excalidraw\|Fluxo QA ↔ DEV]] | Diagrama visual das dependências entre as camadas |
 | [[03 Trabalho/QA/Nxgest/00 README.md\|03 Trabalho/QA/Nxgest]] | **Fonte dos cards** — uma nota por demanda (frontmatter + corpo) |
 | [[03 Trabalho/DEV/Nxgest/00 README.md\|03 Trabalho/DEV/Nxgest]] | **Trabalho do DEV** — `Fixes` para bugs e `Execuções` para melhorias |
 | [[03 Trabalho/README\|03 Trabalho]] | Índice global de QA e DEV por projeto |

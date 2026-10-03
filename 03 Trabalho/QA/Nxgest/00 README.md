@@ -1,6 +1,6 @@
 # 03 Trabalho/QA/Nxgest
 
-Área de qualidade do produto: transformar uma demanda em critérios verificáveis, preparar a cobertura, executar os cenários e registrar a decisão de validação. A nota da demanda é a fonte; o board (`01 Board/BOARD Nxgest.md`) é apenas a visão de acompanhamento.
+Área de qualidade do produto: transformar uma demanda em critérios verificáveis, preparar a cobertura, executar os cenários e registrar a decisão de validação. A nota da demanda é a fonte; o board (`01 Board/Boards Gerais/BOARD Nxgest.md`) é apenas a visão de acompanhamento.
 
 ## Fluxo QA
 

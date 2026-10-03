@@ -17,7 +17,7 @@ DEV · Análise técnica → DEV · Plano → DEV · Implementação → DEV · 
 ## Locais relacionados
 
 - Projeto e roadmap: [[04 Projetos/Financas Pessoais/README|Finanças Pessoais]]
-- Board: [[01 Board/BOARD DEV — Financas Pessoais|Board DEV]]
+- Board: [[01 Board/DEV/BOARD DEV — Financas Pessoais|Board DEV]]
 - Código: `/home/rafacartaxo/Documentos/Desenvolvimento/financas-pessoais`
 - Dados e painéis: `/home/rafacartaxo/Documentos/Desenvolvimento/financas-vault`
 
