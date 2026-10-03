@@ -2,6 +2,7 @@
 
 > [!info]- Navegação QA/DEV
 > **Demanda:** [[01 - Demanda]]  
+> **Épico:** [[04 Projetos/Financas Pessoais/Epicos/FIN-EPIC-0001 Evolução lançamentos mobile/00 README|FIN-EPIC-0001 — Evolução da experiência de lançamentos mobile]]
 > **Plano de teste:** [[02 - Plano de teste]]  
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  

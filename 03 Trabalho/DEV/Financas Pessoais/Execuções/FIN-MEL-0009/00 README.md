@@ -3,6 +3,7 @@ status: validacao
 tipo: melhoria
 etapa_atual: "QA · Validação"
 demanda: FIN-MEL-0009
+epico: "[[04 Projetos/Financas Pessoais/Epicos/FIN-EPIC-0001 Evolução lançamentos mobile/00 README|FIN-EPIC-0001 — Evolução da experiência de lançamentos mobile]]"
 plano: ""
 commit: ""
 pontos: ""
@@ -12,6 +13,7 @@ pontos: ""
 
 > [!info]- Navegação QA/DEV
 > **Demanda QA:** [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0009 Navegação lançamento modal/01 - Demanda|FIN-MEL-0009 — Navegação do lançamento por modal]]  
+> **Épico:** [[04 Projetos/Financas Pessoais/Epicos/FIN-EPIC-0001 Evolução lançamentos mobile/00 README|FIN-EPIC-0001 — Evolução da experiência de lançamentos mobile]]
 > **Análise:** [[01 - Análise|01 - Análise]]  
 > **Plano:** [[02 - Plano de execução|02 - Plano de execução]]  
 > **Plano técnico:** não aplicável; execução frontend vinculada à demanda.  

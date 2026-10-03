@@ -10,14 +10,15 @@ Ciclo da melhoria — da ideia ao card validado no board. Adaptado do `brainwork
 ## Ciclo
 
 1. **Registrar** a ideia (daily/board).
-2. **Instanciar o pacote** — criar os seis arquivos copiando os templates correspondentes, preservando ordem, headings, callouts, blocos Dataview/Meta Bind, anchors e tabelas. Só depois preencher placeholders e adaptar o conteúdo da demanda.
-3. **Refinar a demanda** — preencher Problema, Objetivo, Decisões de produto, Escopo, Fora de escopo e Regras de negócio em `01 - Demanda.md`.
-4. **Resolver pendências** — uma decisão que altere escopo, regra ou critério mantém a melhoria em `analise`; não criar PLAN nem iniciar implementação enquanto ela estiver aberta.
-5. **Definir critérios e CTs** — cada critério de aceite deve ser coberto por pelo menos um `CT-001..` em `03 - Casos de teste.md`, dentro da pasta da demanda (formato `Skills/CASOS-DE-TESTE`). Os critérios são identificados por `C1..Cn` e IDs de bloco, sem checkbox de aprovação; quando houver vários CTs para o mesmo critério, todos precisam passar na validação.
-6. **Validar a instância do template** — antes de mover para DEV, conferir que os seis arquivos existem, que os headings e blocos canônicos continuam presentes e que cada `C1..Cn` aparece na matriz de cobertura e nos CTs; a nota de validação deve conter um resultado para cada CT.
-7. **Planejar e executar** — quando a demanda estiver pronta, vincular o `PLAN-NNN` do repositório e seguir a esteira: `📥 Backlog → 🔍 Em análise → ⚙️ Em execução → 🧪 Em validação → ✅ Feito` — validação em `dev` (local) e, quando aplicável, `hml` (staging) e `prod`.
-8. **Sincronizar cada transição** — ao mudar de etapa, atualizar `status` e `etapa_atual` da demanda, a coluna do Board, o `00 README.md` da demanda e a execução DEV; em validação, manter também o registro QA vinculado.
-9. **✅ Feito** → move o card para `05 Arquivo/`.
+2. **Identificar o épico, quando houver** — preencher `epico` com o link do agrupamento estratégico. O épico organiza várias demandas; não substitui `pai`, que continua representando dependência direta.
+3. **Instanciar o pacote** — criar os seis arquivos copiando os templates correspondentes, preservando ordem, headings, callouts, blocos Dataview/Meta Bind, anchors e tabelas. Só depois preencher placeholders e adaptar o conteúdo da demanda.
+4. **Refinar a demanda** — preencher Problema, Objetivo, Decisões de produto, Escopo, Fora de escopo e Regras de negócio em `01 - Demanda.md`.
+5. **Resolver pendências** — uma decisão que altere escopo, regra ou critério mantém a melhoria em `analise`; não criar PLAN nem iniciar implementação enquanto ela estiver aberta.
+6. **Definir critérios e CTs** — cada critério de aceite deve ser coberto por pelo menos um `CT-001..` em `03 - Casos de teste.md`, dentro da pasta da demanda (formato `Skills/CASOS-DE-TESTE`). Os critérios são identificados por `C1..Cn` e IDs de bloco, sem checkbox de aprovação; quando houver vários CTs para o mesmo critério, todos precisam passar na validação.
+7. **Validar a instância do template** — antes de mover para DEV, conferir que os seis arquivos existem, que os headings e blocos canônicos continuam presentes e que cada `C1..Cn` aparece na matriz de cobertura e nos CTs; a nota de validação deve conter um resultado para cada CT.
+8. **Planejar e executar** — quando a demanda estiver pronta, vincular o `PLAN-NNN` do repositório e seguir a esteira: `📥 Backlog → 🔍 Em análise → ⚙️ Em execução → 🧪 Em validação → ✅ Feito` — validação em `dev` (local) e, quando aplicável, `hml` (staging) e `prod`.
+9. **Sincronizar cada transição** — ao mudar de etapa, atualizar `status` e `etapa_atual` da demanda, a coluna do Board, o `00 README.md` da demanda, o épico e a execução DEV; em validação, manter também o registro QA vinculado.
+10. **✅ Feito** → move o card para `05 Arquivo/` e atualiza o status consolidado do épico.
 
 ## Melhoria × Bug
 

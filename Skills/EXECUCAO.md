@@ -11,12 +11,13 @@ Sem pré-condição, o item volta ou permanece em analise; não criar pasta de e
 ## Ciclo
 
 1. Criar 03 Trabalho/DEV/<projeto>/Execuções/<ID>/ com os modelos de Templates/Execução/.
-2. Registrar 01 - Análise.md: viabilidade, impacto, riscos e decisões técnicas da melhoria.
-3. Registrar 02 - Plano de execução.md e congelá-lo na aprovação. Para melhoria, apontar ao PLAN-NNN do repo, sem duplicá-lo.
-4. Implementar somente o escopo aprovado e registrar fatos, desvios e evidências em 03 - Implementação.md.
-5. Revisar em 04 - Code review.md: card → plano → código → CTs.
-6. Executar e marcar os CTs em `03 Trabalho/QA/<projeto>/Demandas/<tipo>/<ID>/03 - Casos de teste.md`; a execução DEV apenas referencia os CTs e registra evidências técnicas em `03 - Implementação.md`.
-7. Atualizar o README, registrar commit e mover card e pasta juntos para 05 Arquivo/<projeto>/<ID>/.
+2. Herdar o `epico` da demanda quando houver e manter o vínculo visível no README da execução.
+3. Registrar 01 - Análise.md: viabilidade, impacto, riscos e decisões técnicas da melhoria.
+4. Registrar 02 - Plano de execução.md e congelá-lo na aprovação. Para melhoria, apontar ao PLAN-NNN do repo, sem duplicá-lo.
+5. Implementar somente o escopo aprovado e registrar fatos, desvios e evidências em 03 - Implementação.md.
+6. Revisar em 04 - Code review.md: card → plano → código → CTs.
+7. Executar e marcar os CTs em `03 Trabalho/QA/<projeto>/Demandas/<tipo>/<ID>/03 - Casos de teste.md`; a execução DEV apenas referencia os CTs e registra evidências técnicas em `03 - Implementação.md`.
+8. Atualizar o README, o status consolidado do épico, registrar commit e mover card e pasta juntos para 05 Arquivo/<projeto>/<ID>/.
 
 ## Regras
 

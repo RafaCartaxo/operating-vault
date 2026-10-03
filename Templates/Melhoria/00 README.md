@@ -2,6 +2,7 @@
 
 > [!info]- Navegação QA/DEV
 > **Demanda:** [[01 - Demanda]]  
+> **Épico:** [[<EPICO>|<épico>]]
 > **Plano de teste:** [[02 - Plano de teste]]  
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  

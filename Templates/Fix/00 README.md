@@ -3,6 +3,7 @@ status: execucao
 tipo: bug
 etapa_atual: "DEV · Análise técnica"
 demanda: "<ID>"
+epico: ""
 commit: ""
 pontos: ""
 ---
@@ -11,6 +12,7 @@ pontos: ""
 
 > [!info]- Navegação QA/DEV
 > **Bug QA:** [[<CARD>|<ID> — <título>]]  
+> **Épico:** [[<EPICO>|<épico>]]
 > **Análise:** [[01 - Análise]]  
 > **Plano de correção:** [[02 - Plano de correção]]  
 > **Implementação:** [[03 - Implementação]]  

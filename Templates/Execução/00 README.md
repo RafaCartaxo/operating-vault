@@ -3,6 +3,7 @@ status: execucao
 tipo: melhoria
 etapa_atual: "DEV · Análise técnica"
 demanda: "<ID>"
+epico: ""
 plano: ""
 commit: ""
 pontos: ""
@@ -12,6 +13,7 @@ pontos: ""
 
 > [!info]- Navegação QA/DEV
 > **Demanda QA:** [[<DEMANDA>|<ID> — <título da demanda>]]  
+> **Épico:** [[<EPICO>|<épico>]]
 > **Análise:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/01 - Análise|01 - Análise]]  
 > **Plano:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/02 - Plano de execução|02 - Plano de execução]]  
 > **Plano técnico:** [[03 Trabalho/DEV/<projeto>/Planos/PLAN-NNN|PLAN-NNN — <título técnico>]]  

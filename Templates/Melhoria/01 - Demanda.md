@@ -9,6 +9,7 @@ execucao: ""
 ambiente: dev
 origem: repo
 projeto: ""
+epico: ""
 pai: ""
 data_inicio: ""
 data_fim: ""

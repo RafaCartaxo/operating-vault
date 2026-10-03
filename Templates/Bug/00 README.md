@@ -2,6 +2,7 @@
 
 > [!info]- Navegação QA/DEV
 > **Bug:** [[01 - Bug]]  
+> **Épico:** [[<EPICO>|<épico>]]
 > **Casos de teste:** [[02 - Casos de teste]]  
 > **Preparação Qase:** [[04 - Preparação Qase]]  
 > **Fix DEV:** [[03 Trabalho/DEV/<projeto>/Fixes/<ID>/00 README|Fix DEV]]

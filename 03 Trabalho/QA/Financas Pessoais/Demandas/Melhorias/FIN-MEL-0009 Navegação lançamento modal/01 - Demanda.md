@@ -9,6 +9,7 @@ execucao: "[[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0009/00 READM
 ambiente: dev
 origem: conversa
 projeto: financas-pessoais
+epico: "[[04 Projetos/Financas Pessoais/Epicos/FIN-EPIC-0001 Evolução lançamentos mobile/00 README|FIN-EPIC-0001 — Evolução da experiência de lançamentos mobile]]"
 pai: "[[FIN-MEL-0006 Navegação estilo aplicativo/01 - Demanda|FIN-MEL-0006 — Navegação estilo aplicativo]]"
 data_inicio: ""
 data_fim: ""

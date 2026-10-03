@@ -28,6 +28,7 @@ Criar um fluxo funcional para cadastrar uma despesa e consultá-la no mês corre
 - [[02 Roadmap|Roadmap]]
 - [[03 Decisões|Decisões do projeto]]
 - [[04 Fluxo de trabalho|Fluxo de trabalho entre os três espaços]]
+- [[Epicos/FIN-EPIC-0001 Evolução lançamentos mobile/00 README|Épico: Evolução da experiência de lançamentos mobile]]
 - [[01 Board/QA/BOARD QA — Financas Pessoais|Board QA]]
 - [[01 Board/DEV/BOARD DEV — Financas Pessoais|Board DEV]]
 
