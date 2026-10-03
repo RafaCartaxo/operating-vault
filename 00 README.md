@@ -11,6 +11,7 @@
 | [[Dashboard.md\|Dashboard]] | ★ **Central de trabalho** — entrada rápida e visão do fluxo |
 | [[01 Board/00 README\|01 Board]] | ★ **Boards por projeto** e visões operacionais |
 | [[01 Board/Processos/Fluxo QA DEV\|Fluxo QA ↔ DEV]] | Fluxograma e dependências entre as camadas |
+| [[01 Board/Processos/Fluxo geral de processos\|Fluxo geral de processos]] | Caminho universal da entrada ao arquivo |
 | [[01 Board/Processos/Fluxo geral de skills\|Fluxo geral de skills]] | Como agentes, skills e regras do vault se relacionam |
 | [[01 Board/Processos/Arquitetura operacional\|Arquitetura operacional]] | Cadeia universal: comando → skill → agente → template → processo → dados |
 | [[03 Trabalho/README\|03 Trabalho]] | **Fonte dos cards** — uma nota por demanda e execução |
