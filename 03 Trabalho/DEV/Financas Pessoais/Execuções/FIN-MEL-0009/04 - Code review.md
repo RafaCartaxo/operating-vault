@@ -10,6 +10,8 @@
 
 **Estado:** ✅ aprovado tecnicamente · aguardando validação QA
 
+> **Atualização 2026-10-03:** corrigido o comportamento do filtro mensal após revisão complementar. O salvamento de um lançamento com data fora do mês selecionado não altera mais o filtro ativo; a lista só é recarregada quando o lançamento pertence ao mês atualmente exibido.
+
 ---
 
 ## Checklist
@@ -26,7 +28,7 @@
 
 ## Achados
 
-- Nenhum.
+- **Corrigido antes da validação QA — C6/CT-006:** o fluxo alterava o filtro para o mês do lançamento salvo. A implementação agora preserva o mês ativo e mantém o registro fora da listagem até o usuário consultar o período correspondente.
 
 ---
 

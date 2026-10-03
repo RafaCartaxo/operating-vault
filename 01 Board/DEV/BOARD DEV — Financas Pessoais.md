@@ -20,8 +20,6 @@ kanban-plugin: board
 
 ## 🧪 Aguardando QA
 
-- [ ] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0010/00 README|FIN-MEL-0010 — Ação de novo lançamento mobile]]
-- [ ] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0009/00 README|FIN-MEL-0009 — Navegação do lançamento por modal]]
 
 ## ✅ Concluído
 
@@ -32,6 +30,8 @@ kanban-plugin: board
 - [x] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0004/00 README|FIN-MEL-0004 — Refinamentos responsivos dos campos concluído]]
 - [x] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0006/00 README|FIN-MEL-0006 — Navegação estilo aplicativo concluída]]
 - [x] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0005/00 README|FIN-MEL-0005 — Resumo mensal financeiro concluído]]
+- [x] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0009/00 README|FIN-MEL-0009 — Navegação do lançamento por modal concluída]]
+- [x] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0010/00 README|FIN-MEL-0010 — Ação de novo lançamento mobile concluída]]
 
 %% kanban:settings
 ```

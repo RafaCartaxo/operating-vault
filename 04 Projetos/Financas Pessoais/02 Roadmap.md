@@ -64,11 +64,11 @@ Evoluir a navegação entregue na FIN-MEL-0006: o Acompanhamento será a tela pr
 
 ### Épico em execução
 
-**[[Epicos/FIN-EPIC-0001 Evolução lançamentos mobile/00 README|FIN-EPIC-0001 — Evolução da experiência de lançamentos mobile]]** reúne a sequência `FIN-MEL-0009 → FIN-MEL-0010 → FIN-MEL-0011`. As duas primeiras implementações estão em validação QA; a `0011` permanece em QA antes de entrar em DEV.
+**[[Epicos/FIN-EPIC-0001 Evolução lançamentos mobile/00 README|FIN-EPIC-0001 — Evolução da experiência de lançamentos mobile]]** reúne a sequência `FIN-MEL-0009 → FIN-MEL-0010 → FIN-MEL-0011`. As duas primeiras demandas estão concluídas; a `0011` permanece em QA antes de entrar em DEV.
 
 - [x] Parcelas — FIN-MEL-0008 concluído com 8 CTs aprovados.
-- [ ] Navegação do lançamento por modal — FIN-MEL-0009 em validação QA, dependente da FIN-MEL-0006.
-- [ ] Ação de novo lançamento mobile — FIN-MEL-0010 em validação QA, complemento visual da FIN-MEL-0009.
+- [x] Navegação do lançamento por modal — FIN-MEL-0009 concluído com 10 CTs aprovados.
+- [x] Ação de novo lançamento mobile — FIN-MEL-0010 concluído com 5 CTs aprovados.
 - [ ] Organização da navbar mobile — FIN-MEL-0011 em análise, distribuição automática de destinos e ícones acessíveis.
 - [ ] Recorrências.
 - [ ] Contas fixas.
