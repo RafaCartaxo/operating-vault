@@ -1,7 +1,7 @@
 ---
 status: execucao
 tipo: melhoria
-etapa_atual: "DEV · Análise técnica"
+etapa_atual: "DEV · Code review"
 demanda: FIN-MEL-0008
 plano: ""
 commit: ""
@@ -51,9 +51,9 @@ pontos: ""
 
 | Etapa | Estado | Data |
 |---|---|---|
-| Análise | ⏳ | |
-| Plano de execução | ⏳ | |
-| Execução | ⏳ | |
+| Análise | ✅ | 2026-10-03 |
+| Plano de execução | ✅ | 2026-10-03 |
+| Execução | ✅ | 2026-10-03 |
 | Code review | ⏳ | |
 | Verificação (CTs) | ⏳ | |
 | Fechamento | ⏳ | |

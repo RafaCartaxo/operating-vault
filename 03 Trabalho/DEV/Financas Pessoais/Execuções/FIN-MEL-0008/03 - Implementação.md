@@ -14,16 +14,24 @@
 
 ## Rodadas
 
-### Rodada 1 — ⏳
+### Rodada 1 — ✅ concluída (2026-10-03)
 
-- O que foi implementado.
-- Desvio do plano, se houver, e decisão correspondente.
+- Adicionado vínculo de série no modelo e migration SQLite idempotente.
+- Implementada criação transacional de parcelas com distribuição em centavos.
+- Implementado ajuste de datas para o último dia do mês.
+- Adicionados endpoints para criar, editar e excluir séries.
+- Formulário React permite informar quantidade de parcelas e histórico exibe posição/total.
+- Lançamentos simples permanecem no fluxo existente.
+- Smoke API aprovado: R$ 100,00 em 3 parcelas gerou 3333, 3333 e 3334 centavos, nas datas 2026-01-31, 2026-02-28 e 2026-03-31.
 
 ---
 
 ## Evidências
 
 - Testes, gates, links de CI, screenshots ou evidência de ambiente.
+
+- Backend: go test ./... aprovado.
+- Frontend: npm test com 20 testes e npm run build aprovados.
 
 ---
 
@@ -40,6 +48,6 @@
 ## Verificação
 
 - [ ] CTs da demanda relacionados (fonte QA): [[03 Trabalho/QA/<projeto>/Demandas/<tipo>/<ID>/03 - Casos de teste|ver casos de teste]].
-- [ ] Gates aplicáveis do repositório verdes.
+- [x] Gates aplicáveis do repositório verdes.
 - [ ] Documentação sincronizada quando aplicável.
 - [ ] Commit registrado no README.
