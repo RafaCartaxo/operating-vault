@@ -6,7 +6,7 @@ escopo: operating-vault
 
 # Fluxo QA → DEV
 
-Esta página é a referência operacional para qualquer projeto dentro do Operating Vault. O arquivo [Fluxo QA DEV.excalidraw](Fluxo%20QA%20DEV.excalidraw) complementa esta visão com o desenho visual; esta nota define o contrato que deve ser seguido.
+Esta página é a referência operacional para qualquer projeto dentro do Operating Vault. O fluxograma Mermaid desta nota é a representação visual e textual oficial; esta nota define o contrato que deve ser seguido.
 
 ## Entrada em um chat novo
 
@@ -17,7 +17,7 @@ Depois do gate QA, o próximo responsável é `$dev-execution`. A troca é deter
 ## Visão geral
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[Entrada em chat novo] --> B[qa-first-delivery]
     B --> C[QA · Triagem]
     C --> D[Copiar template oficial]
@@ -25,18 +25,24 @@ flowchart LR
     E --> F[CTs + matriz de cobertura]
     F --> G{Pacote QA íntegro?}
     G -- Não --> C
-    G -- Sim --> H[Handoff para dev-execution]
-    H --> I[DEV · Análise]
-    I --> J[DEV · Plano congelado]
-    J --> K[DEV · Implementação]
-    K --> L[Testes técnicos + auditorias]
-    L --> M[DEV · Code review]
-    M --> N[Handoff para QA]
-    N --> O[QA · Execução dos CTs]
-    O --> P{Comportamento aprovado?}
-    P -- Não --> Q[Defeito/ajuste vinculado]
-    Q --> I
-    P -- Sim --> R[Concluído + arquivo]
+    G -- Sim --> H[QA_READY_FOR_DEV]
+    H --> I[dev-execution]
+    I --> J[DEV · Análise]
+    J --> K[DEV · Plano congelado]
+    K --> L[DEV · Implementação]
+    L --> M[Testes técnicos + auditorias]
+    M --> N[DEV · Code review]
+    N --> O{Escopo preservado?}
+    O -- Não --> P[QA · Reavaliar escopo]
+    P --> C
+    O -- Sim --> Q[DEV_READY_FOR_QA]
+    Q --> R[qa-first-delivery]
+    R --> S[QA · Execução dos CTs]
+    S --> T{CTs aprovados?}
+    T -- Não --> U[QA_REJECTED · Defeito/ajuste]
+    U --> I
+    T -- Sim --> V[QA_APPROVED]
+    V --> W[Concluído + arquivo]
 ```
 
 ## Responsabilidades
@@ -84,24 +90,22 @@ flowchart LR
 ## Fluxo entre pessoas e sistema
 
 ```mermaid
-sequenceDiagram
-    participant Pessoa as Pessoa/Produto
-    participant QA
-    participant DEV
-    participant Repo as Repositório
-    participant App as Aplicação
-    Pessoa->>QA: necessidade ou relato
-    QA->>QA: demanda, critérios e CTs
-    QA-->>DEV: pacote aprovado
-    DEV->>Repo: análise, plano e implementação
-    DEV->>App: testes técnicos e smoke
-    DEV-->>QA: evidências + code review
-    QA->>App: execução dos CTs
-    alt aprovado
-        QA->>Repo: validação, boards e fechamento
-    else reprovado
-        QA-->>DEV: defeito/ajuste vinculado
-    end
+flowchart TD
+    A[Pessoa / Produto] --> B[qa-first-delivery]
+    B --> C[Operating Vault · demanda + critérios + CTs]
+    C --> D{QA_READY_FOR_DEV?}
+    D -- Não --> B
+    D -- Sim --> E[dev-execution]
+    E --> F[Repositório / Aplicação · análise + implementação]
+    F --> G[Testes técnicos + code review]
+    G --> H{DEV_READY_FOR_QA?}
+    H -- Não --> E
+    H -- Sim --> I[qa-first-delivery · validação]
+    I --> J[Aplicação · execução dos CTs]
+    J --> K{CTs aprovados?}
+    K -- Não --> L[QA_REJECTED · defeito/ajuste]
+    L --> E
+    K -- Sim --> M[QA_APPROVED · boards + roadmap + fechamento]
 ```
 
 ## Skills associadas

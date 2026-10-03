@@ -13,29 +13,22 @@ Esta página explica como as duas skills se comunicam e quem assume cada etapa. 
 O usuário apresenta o trabalho. A etapa atual define a skill responsável e o próximo handoff. Não é necessário escolher manualmente a skill seguinte.
 
 ```mermaid
-sequenceDiagram
-    participant Pessoa as Pessoa/Produto
-    participant QA as QA First Delivery
-    participant OV as Operating Vault
-    participant DEV as DEV Execution
-    participant Repo as Repositório/App
-
-    Pessoa->>QA: necessidade, melhoria ou bug
-    QA->>OV: copia templates e cria pacote QA
-    QA->>OV: QA_READY_FOR_DEV
-    OV->>DEV: entrega critérios, CTs e links
-    DEV->>Repo: analisa, planeja e implementa
-    DEV->>OV: registra testes e code review
-    DEV->>OV: DEV_READY_FOR_QA
-    OV->>QA: entrega execução para validação
-    QA->>Repo: executa CTs funcionais
-    alt aprovado
-        QA->>OV: QA_APPROVED
-        OV->>OV: atualiza boards, roadmap e épico
-    else reprovado
-        QA->>OV: QA_REJECTED
-        OV->>DEV: devolve defeito/ajuste vinculado
-    end
+flowchart TD
+    A[Pessoa / Produto] --> B[qa-first-delivery]
+    B --> C[Operating Vault · pacote QA]
+    C --> D{QA_READY_FOR_DEV?}
+    D -- Não --> B
+    D -- Sim --> E[dev-execution]
+    E --> F[Repositório / Aplicação · execução técnica]
+    F --> G[Testes + code review]
+    G --> H{DEV_READY_FOR_QA?}
+    H -- Não --> E
+    H -- Sim --> I[qa-first-delivery · retorno QA]
+    I --> J[Execução dos CTs funcionais]
+    J --> K{Resultado aprovado?}
+    K -- Não --> L[QA_REJECTED · defeito/ajuste]
+    L --> E
+    K -- Sim --> M[QA_APPROVED · atualizar vault e concluir]
 ```
 
 ## Matriz de roteamento

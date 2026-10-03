@@ -13,7 +13,7 @@
 | [[01 Board/Boards Gerais/BOARD Nxgest\|BOARD Nxgest]] | Kanban operacional do Nxgest |
 | [[01 Board/QA/BOARD QA — Nxgest\|BOARD QA Nxgest]] | Fila QA do Nxgest |
 | [[01 Board/DEV/BOARD DEV — Nxgest\|BOARD DEV Nxgest]] | Fila DEV do Nxgest |
-| [[01 Board/Processos/Fluxo QA DEV.excalidraw\|Fluxo QA ↔ DEV]] | Diagrama visual das dependências entre as camadas |
+| [[01 Board/Processos/Fluxo QA DEV\|Fluxo QA ↔ DEV]] | Fluxograma e dependências entre as camadas |
 | [[03 Trabalho/QA/Nxgest/00 README.md\|03 Trabalho/QA/Nxgest]] | **Fonte dos cards** — uma nota por demanda (frontmatter + corpo) |
 | [[03 Trabalho/DEV/Nxgest/00 README.md\|03 Trabalho/DEV/Nxgest]] | **Trabalho do DEV** — `Fixes` para bugs e `Execuções` para melhorias |
 | [[03 Trabalho/README\|03 Trabalho]] | Índice global de QA e DEV por projeto |
