@@ -54,9 +54,16 @@ Implementação frontend concluída, code review aprovado e todos os 6 CTs aprov
 
 Manifest, ícones, service worker e cache do app shell implementados; validação técnica concluída.
 
+### Próxima melhoria em análise
+
+**FIN-MEL-0009 — Navegação do lançamento por modal**
+
+Evoluir a navegação entregue na FIN-MEL-0006: o Acompanhamento será a tela principal e o cadastro de despesa/receita será aberto por uma ação rápida em modal, preservando o formulário, validações, filtros e comportamento responsivo.
+
 ## Fase 3 — Cálculos
 
 - [ ] Parcelas — FIN-MEL-0008 em análise.
+- [ ] Navegação do lançamento por modal — FIN-MEL-0009 em análise, dependente da FIN-MEL-0006.
 - [ ] Recorrências.
 - [ ] Contas fixas.
 - [ ] Faturas.
