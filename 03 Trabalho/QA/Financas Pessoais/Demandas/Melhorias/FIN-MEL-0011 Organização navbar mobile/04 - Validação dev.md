@@ -6,7 +6,7 @@ versao: ""
 status: execucao
 responsavel: ""
 resultado: aguardando
-# Pontos da etapa de validação; substitua pelo valor planejado para esta etapa.
+# Pontos da etapa de validação: serão registrados após a execução dos CTs pelo QA.
 pontos: 0
 ct_resultados:
   ct_001: "⏳ Aguardando"

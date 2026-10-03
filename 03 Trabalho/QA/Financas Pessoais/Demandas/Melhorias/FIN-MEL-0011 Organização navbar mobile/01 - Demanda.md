@@ -1,8 +1,8 @@
 ---
 prioridade: media
-status: backlog
+status: analise
 tipo: melhoria
-etapa_atual: "QA · Triagem"
+etapa_atual: "QA · Análise da demanda"
 modulo: navegacao
 plano: "[[02 - Plano de teste]]"
 execucao: ""
@@ -32,7 +32,7 @@ pontos_alocados: 5
 > **Prioridade:** `INPUT[inlineSelect(option(baixa),option(media),option(alta)):prioridade]`  
 > **Ambiente:** `INPUT[inlineSelect(option(dev),option(hml),option(prod)):ambiente]`  
 > **Origem:** `INPUT[inlineSelect(option(repo),option(observado),option(conversa),option(validação)):origem]`<br>
-> **Projeto:** preencher `projeto` no frontmatter antes de roteiar a melhoria.
+> **Projeto:** `financas-pessoais`.
 
 
 > [!info] Status atual
@@ -43,7 +43,7 @@ pontos_alocados: 5
 ## Capacidade e esforço
 
 > [!tip]- Capacidade do ciclo
-> **Capacidade alocada:** preencher `pontos_alocados`.
+> **Capacidade alocada:** 5 pontos.
 > Exemplo: se houver 50 pontos disponíveis no ciclo, usar `pontos_alocados: 50`.
 >
 > ```dataviewjs
@@ -118,10 +118,10 @@ Será ajustada a estrutura visual da navbar para usar uma lista de destinos, íc
 
 ## Checklist de entrega ao DEV
 
-- [ ] Decisões e regras de negócio estão fechadas.
-- [ ] Escopo e fora de escopo estão claros.
-- [ ] Critérios de aceite são objetivos e testáveis.
-- [ ] Plano e casos de teste estão vinculados.
+- [x] Decisões e regras de negócio estão fechadas.
+- [x] Escopo e fora de escopo estão claros.
+- [x] Critérios de aceite são objetivos e testáveis.
+- [x] Plano e casos de teste estão vinculados.
 - [x] `pontos_alocados` foi preenchido.
 
 ---
