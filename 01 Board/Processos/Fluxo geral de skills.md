@@ -1,0 +1,75 @@
+---
+tipo: processo
+status: ativo
+escopo: operating-vault
+---
+
+# Fluxo geral de skills
+
+Esta página mostra como as skills do Operating Vault se relacionam. Ela complementa o [[Fluxo QA DEV|Fluxo QA → DEV]]: o fluxo QA/DEV define as grandes etapas; este mapa define qual regra especializada é usada dentro de cada etapa.
+
+## Princípio de roteamento
+
+`qa-first-delivery` e `dev-execution` são as skills orquestradoras do ciclo. As demais notas em `Skills/` são regras especializadas do vault: elas não precisam ser chamadas pelo usuário como comandos independentes. A etapa atual e o tipo de trabalho determinam quais regras devem ser consultadas.
+
+O fluxo é orientado por estado e artefatos. Uma palavra como “siga” pode indicar continuidade da conversa, mas não substitui o gate nem muda o responsável da etapa.
+
+## Mapa visual
+
+```mermaid
+flowchart TD
+    A[Entrada · ideia, melhoria, bug ou defeito] --> B[qa-first-delivery · orquestrar QA]
+    B --> C{Qual é o tipo?}
+    C -- Melhoria --> D[MELHORIA · regras do card e do ciclo]
+    C -- Bug observado --> E[BUG · confirmar, classificar e registrar]
+    C -- Defeito de CT --> E
+    D --> F[CASOS-DE-TESTE · criar CTs a partir do template]
+    E --> F
+    F --> G[ESCALA-DE-ESFORCO · pontuar antes de sair da triagem]
+    G --> H[QA · critérios, matriz, validação do pacote]
+    H --> I{QA_READY_FOR_DEV?}
+    I -- Não --> B
+    I -- Sim · melhoria --> J[dev-execution · orquestrar DEV]
+    I -- Sim · bug/defeito --> J
+    J --> K{Qual execução DEV?}
+    K -- Melhoria --> L[EXECUCAO · análise, plano, implementação e review]
+    K -- Bug/defeito --> M[FIX · análise da causa, correção, testes e review]
+    L --> N[DEV_READY_FOR_QA]
+    M --> N
+    N --> O[qa-first-delivery · validar CTs]
+    O --> P{CTs aprovados?}
+    P -- Não --> Q[BUG · defeito filho vinculado]
+    Q --> J
+    P -- Sim --> R[QA_APPROVED · fechar, atualizar boards e arquivar]
+```
+
+## Responsabilidade e próxima entrega
+
+| Skill/regra | Tipo | Entra quando | Produz | Entrega para |
+|---|---|---|---|---|
+| `qa-first-delivery` | Orquestradora QA | qualquer ideia, melhoria, bug ou retorno do DEV | pacote QA, gate e validação funcional | `dev-execution` ou fechamento |
+| `MELHORIA` | Regra de demanda | o trabalho funciona, mas pode melhorar | card de melhoria e regras do ciclo | `CASOS-DE-TESTE` e QA |
+| `BUG` | Regra de demanda | há comportamento incorreto ou CT reprovado | bug/defeito com reprodução, ambiente e critérios | `CASOS-DE-TESTE` e QA/DEV |
+| `CASOS-DE-TESTE` | Regra de cobertura | há critérios de aceite definidos | CTs, âncoras e matriz de cobertura | validação QA |
+| `ESCALA-DE-ESFORCO` | Regra de estimativa | item precisa sair da triagem | `pontos` e progresso derivado | demanda/execução |
+| `dev-execution` | Orquestradora DEV | `QA_READY_FOR_DEV` foi emitido | execução técnica e handoff DEV | `EXECUCAO`, `FIX` ou QA |
+| `EXECUCAO` | Regra de execução | handoff é uma melhoria aprovada | análise, plano, implementação e review | `DEV_READY_FOR_QA` |
+| `FIX` | Regra de correção | handoff é bug/defeito confirmado | causa, correção, testes e review | `DEV_READY_FOR_QA` |
+
+## Regras de chamada
+
+1. Uma entrada nova começa em `qa-first-delivery`; o usuário não precisa escolher a skill seguinte.
+2. `MELHORIA` ou `BUG` define o formato da demanda; não se misturam no mesmo card.
+3. `CASOS-DE-TESTE` é usado depois dos critérios e antes do `QA_READY_FOR_DEV`; não é uma etapa paralela ao QA.
+4. `ESCALA-DE-ESFORCO` é consultada antes de a demanda sair de `QA · Triagem`.
+5. `dev-execution` só assume depois de `QA_READY_FOR_DEV`.
+6. `EXECUCAO` atende melhorias; `FIX` atende bugs e defeitos. Ambos devolvem para QA, nunca aprovam funcionalmente.
+7. `QA_REJECTED` abre ou vincula um defeito em `BUG` e devolve o trabalho para `dev-execution`.
+8. `QA_APPROVED` encerra o ciclo e sincroniza demanda, execução, board, épico, roadmap e arquivo.
+
+## Relação com o fluxo QA/DEV
+
+- [[Fluxo QA DEV|Fluxo QA → DEV]] — estados, gates e handoffs principais.
+- [[Interação entre skills QA DEV|Interação entre skills QA ↔ DEV]] — contrato entre as duas skills orquestradoras.
+- [[Skills/README|Skills operacionais]] — índice das regras reutilizáveis.
+

@@ -47,7 +47,7 @@ Remover Novo lançamento da barra inferior mobile e apresentar a ação como bot
 
 ## Pronto quando
 
-- Critério da demanda: [[<DEMANDA>#C1|C1]].
+- Critério da demanda: [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0010 Ação novo lançamento mobile/01 - Demanda#^c1|C1]].
 - CTs do pacote QA cobertos e gates do repositório verdes.
 
 ### Testes desta etapa

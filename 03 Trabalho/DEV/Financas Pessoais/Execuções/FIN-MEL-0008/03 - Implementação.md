@@ -1,12 +1,12 @@
-# 03 - Implementação (<ID>)
+# 03 - Implementação (FIN-MEL-0008)
 
 > [!info]- Navegação QA/DEV
 > **README do card:** [[00 README|Abrir README do card]]  
-> **Execução:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/00 README|README da execução]]  
-> **Demanda QA:** [[<DEMANDA>|<ID> — <título da demanda>]]  
+> **Execução:** [[00 README|README da execução]]
+> **Demanda QA:** [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0008 Parcelas/01 - Demanda|FIN-MEL-0008 — Parcelas]]
 > **Plano:** [[02 - Plano de execução|02 - Plano de execução]]  
 > **Code review:** [[04 - Code review|04 - Code review]]  
-> **Validação QA:** [[<VALIDACAO>|Validação QA]]
+> **Validação QA:** [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0008 Parcelas/04 - Validação dev|Validação QA]]
 
 > Log datado do que foi realmente feito. O plano não é reescrito aqui; desvio vira decisão registrada.
 
@@ -47,7 +47,7 @@
 
 ## Verificação
 
-- [ ] CTs da demanda relacionados (fonte QA): [[03 Trabalho/QA/<projeto>/Demandas/<tipo>/<ID>/03 - Casos de teste|ver casos de teste]].
+- [x] CTs da demanda relacionados (fonte QA): [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0008 Parcelas/03 - Casos de teste|ver casos de teste]].
 - [x] Gates aplicáveis do repositório verdes.
-- [ ] Documentação sincronizada quando aplicável.
+- [x] Documentação sincronizada quando aplicável.
 - [ ] Commit registrado no README.

@@ -30,7 +30,7 @@ data_fim: 2026-10-03
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/00 README|Execução <ID>]]
+> **Execução DEV:** [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0008/00 README|Execução FIN-MEL-0008]]
 
 > [!settings]- Controle da validação
 > **Status:** `INPUT[inlineSelect(option(execucao),option(concluido)):status]`  
@@ -142,15 +142,15 @@ Use esta seção somente quando houver reteste após correção:
 
 ## Decisão
 
-**Resultado geral:** aguardando / aprovado / reprovado / aprovado com ressalvas
+**Resultado geral:** ✅ aprovado
 
 ---
 
 ## Checklist de encerramento QA
 
-- [ ] Todos os CTs executados ou com justificativa registrada.
-- [ ] Evidências e observações preenchidas quando necessário.
-- [ ] Bugs filhos vinculados na coluna **Defeito/Bug**.
-- [ ] Resultado geral definido.
-- [ ] Status da validação e da demanda atualizados.
-- [ ] Próximo passo registrado.
+- [x] Todos os CTs executados ou com justificativa registrada.
+- [x] Evidências e observações preenchidas quando necessário.
+- [x] Bugs filhos vinculados na coluna **Defeito/Bug**.
+- [x] Resultado geral definido.
+- [x] Status da validação e da demanda atualizados.
+- [x] Próximo passo registrado.

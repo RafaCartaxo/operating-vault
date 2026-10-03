@@ -10,7 +10,7 @@ qase_suite_id: ""
 casos_origem: ""
 validacao_origem: ""
 ---
-# Preparação Qase — <ID>
+# Preparação Qase — FIN-MEL-0008
 
 > **Posição no pacote:** melhoria → `05 - Preparação Qase.md`; bug → `04 - Preparação Qase.md`. O conteúdo deste modelo é o mesmo nos dois casos.
 

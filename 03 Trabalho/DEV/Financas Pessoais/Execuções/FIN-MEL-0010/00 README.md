@@ -64,7 +64,7 @@ pontos: ""
 
 ## Histórico
 
-- YYYY-MM-DD — pasta de execução criada.
+- 2026-10-03 — pasta de execução criada após aprovação do escopo QA.
 
 ---
 

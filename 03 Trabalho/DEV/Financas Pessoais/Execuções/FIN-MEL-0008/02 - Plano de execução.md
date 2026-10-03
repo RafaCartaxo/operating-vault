@@ -2,12 +2,12 @@
 
 > [!info]- Navegação QA/DEV
 > **README do card:** [[00 README|Abrir README do card]]  
-> **Execução:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/00 README|README da execução]]  
-> **Demanda QA:** [[<DEMANDA>|<ID> — <título da demanda>]]  
-> **Plano técnico:** [[03 Trabalho/DEV/<projeto>/Planos/PLAN-NNN|PLAN-NNN]]  
+> **Execução:** [[00 README|README da execução]]
+> **Demanda QA:** [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0008 Parcelas/01 - Demanda|FIN-MEL-0008 — Parcelas]]
+> **Plano técnico:** não aplicável; execução vinculada à demanda.
 > **Implementação:** [[03 - Implementação|03 - Implementação]]  
 > **Code review:** [[04 - Code review|04 - Code review]]  
-> **Validação QA:** [[<VALIDACAO>|Validação QA]]
+> **Validação QA:** [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0008 Parcelas/04 - Validação dev|Validação QA]]
 
 > Congelado na aprovação — alteração posterior vira decisão registrada em 03 - Implementação.md.
 
@@ -47,7 +47,7 @@ Fluxo completo para criar, consultar, editar e excluir séries parceladas.
 
 ## Pronto quando
 
-- Critério da demanda: [[<DEMANDA>#C1|C1]].
+- Critério da demanda: [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0008 Parcelas/01 - Demanda#^c1|C1]].
 - CTs do pacote QA cobertos e gates do repositório verdes.
 
 ### Testes desta etapa

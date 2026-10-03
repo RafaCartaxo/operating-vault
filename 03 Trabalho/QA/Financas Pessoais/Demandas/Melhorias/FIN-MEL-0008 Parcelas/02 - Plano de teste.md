@@ -1,6 +1,6 @@
 ---
 demanda: FIN-MEL-0008
-status: planejado
+status: concluido
 responsavel: ""
 pontos: ""
 ---
@@ -14,7 +14,7 @@ pontos: ""
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/00 README|Execução <ID>]]
+> **Execução DEV:** [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0008/00 README|Execução FIN-MEL-0008]]
 
 > [!settings]- Controle do plano de teste
 > **Status:** `INPUT[inlineSelect(option(planejado),option(execucao),option(concluido)):status]`

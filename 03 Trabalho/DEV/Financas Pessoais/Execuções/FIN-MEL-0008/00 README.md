@@ -1,7 +1,7 @@
 ---
-status: execucao
+status: concluido
 tipo: melhoria
-etapa_atual: "DEV · Code review"
+etapa_atual: "Concluído"
 demanda: FIN-MEL-0008
 plano: ""
 commit: ""
@@ -12,21 +12,21 @@ pontos: ""
 
 > [!info]- Navegação QA/DEV
 > **Demanda QA:** [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0008 Parcelas/01 - Demanda|FIN-MEL-0008 — Parcelas]]
-> **Análise:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/01 - Análise|01 - Análise]]  
-> **Plano:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/02 - Plano de execução|02 - Plano de execução]]  
+> **Análise:** [[01 - Análise|01 - Análise]]
+> **Plano:** [[02 - Plano de execução|02 - Plano de execução]]
 > **Plano técnico:** não aplicável; execução vinculada à demanda.
-> **Implementação:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/03 - Implementação|03 - Implementação]]  
-> **Code review:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/04 - Code review|04 - Code review]]
+> **Implementação:** [[03 - Implementação|03 - Implementação]]
+> **Code review:** [[04 - Code review|04 - Code review]]
 
 > [!settings]- Controle do card
 > **Status:** `INPUT[inlineSelect(option(backlog),option(analise),option(execucao),option(validacao),option(concluido)):status]`  
 > **Etapa atual:** `INPUT[inlineSelect(option(DEV · Análise técnica),option(DEV · Plano de execução),option(DEV · Implementação),option(DEV · Code review),option(QA · Validação),option(Concluído)):etapa_atual]`
 
 > [!info]- Cards relacionados
-> **Demanda QA:** [[<DEMANDA>|<ID> — <título da demanda>]]  
-> **Plano técnico:** [[03 Trabalho/DEV/<projeto>/Planos/PLAN-NNN|PLAN-NNN]]  
-> **Implementação:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/03 - Implementação|03 - Implementação]]  
-> **Code review:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/04 - Code review|04 - Code review]]  
+> **Demanda QA:** [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0008 Parcelas/01 - Demanda|FIN-MEL-0008 — Parcelas]]
+> **Plano técnico:** não aplicável; execução vinculada à demanda.
+> **Implementação:** [[03 - Implementação|03 - Implementação]]
+> **Code review:** [[04 - Code review|04 - Code review]]
 > **Validação QA:** [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0008 Parcelas/04 - Validação dev|Validação QA]]
 
 > [!tip]- Esforço
@@ -54,15 +54,15 @@ pontos: ""
 | Análise | ✅ | 2026-10-03 |
 | Plano de execução | ✅ | 2026-10-03 |
 | Execução | ✅ | 2026-10-03 |
-| Code review | ⏳ | |
-| Verificação (CTs) | ⏳ | |
-| Fechamento | ⏳ | |
+| Code review | ✅ | 2026-10-03 |
+| Verificação (CTs) | ✅ | 2026-10-03 |
+| Fechamento | ✅ | 2026-10-03 |
 
 ---
 
 ## Histórico
 
-- YYYY-MM-DD — pasta de execução criada.
+- 2026-10-03 — execução técnica revisada, CTs QA aprovados e demanda encerrada.
 
 ---
 

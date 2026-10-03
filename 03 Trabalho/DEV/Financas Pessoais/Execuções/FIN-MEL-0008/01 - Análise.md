@@ -2,12 +2,12 @@
 
 > [!info]- Navegação QA/DEV
 > **README do card:** [[00 README|Abrir README do card]]  
-> **Execução:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/00 README|README da execução]]  
-> **Demanda QA:** [[<DEMANDA>|<ID> — <título>]]  
+> **Execução:** [[00 README|README da execução]]
+> **Demanda QA:** [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0008 Parcelas/01 - Demanda|FIN-MEL-0008 — Parcelas]]
 > **Plano:** [[02 - Plano de execução|02 - Plano de execução]]  
 > **Implementação:** [[03 - Implementação|03 - Implementação]]  
 > **Code review:** [[04 - Code review|04 - Code review]]  
-> **Validação QA:** [[<VALIDACAO>|Validação QA]]
+> **Validação QA:** [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0008 Parcelas/04 - Validação dev|Validação QA]]
 
 ---
 
