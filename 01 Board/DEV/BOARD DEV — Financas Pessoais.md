@@ -17,17 +17,15 @@ kanban-plugin: board
 
 ## 🔍 Code review
 
-- [ ]
-- [ ] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0010/00 README|FIN-MEL-0010 — Ação de novo lançamento mobile]]
-- [x] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0008/00 README|FIN-MEL-0008 — Parcelas — concluído]]
-- [ ] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0009/00 README|FIN-MEL-0009 — Navegação do lançamento por modal]]
 
 ## 🧪 Aguardando QA
 
-- [ ]
+- [ ] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0010/00 README|FIN-MEL-0010 — Ação de novo lançamento mobile]]
+- [ ] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0009/00 README|FIN-MEL-0009 — Navegação do lançamento por modal]]
 
 ## ✅ Concluído
 
+- [x] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0008/00 README|FIN-MEL-0008 — Parcelas — concluído]]
 - [x] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0001/00 README|FIN-MEL-0001 — Cadastro mobile de nova despesa concluído]]
 - [x] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0002/00 README|FIN-MEL-0002 — Consultar lançamentos do mês concluído]]
 - [x] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0003/00 README|FIN-MEL-0003 — Editar e excluir lançamentos concluído]]
@@ -36,7 +34,7 @@ kanban-plugin: board
 - [x] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0005/00 README|FIN-MEL-0005 — Resumo mensal financeiro concluído]]
 
 %% kanban:settings
-```json
+```
 {"kanban-plugin":"board","list-collapse":[false,false,false,false,false,false]}
 ```
 %%

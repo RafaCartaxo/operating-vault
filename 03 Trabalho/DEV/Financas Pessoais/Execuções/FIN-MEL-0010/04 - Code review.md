@@ -8,19 +8,19 @@
 > **Implementação:** [[03 - Implementação|03 - Implementação]]  
 > **Validação QA:** [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0010 Ação novo lançamento mobile/04 - Validação dev|Validação QA]]
 
-**Estado:** 🔵 pronto para revisão
+**Estado:** ✅ aprovado tecnicamente · aguardando validação QA
 
 ---
 
 ## Checklist
 
-- [ ] O código respeita as convenções reais do repositório.
-- [ ] O diff está limitado ao escopo aprovado.
-- [ ] O plano foi seguido; desvios estão registrados na execução.
+- [x] O código respeita as convenções reais do repositório.
+- [x] O diff está limitado ao escopo aprovado.
+- [x] O plano foi seguido; desvios estão registrados na execução.
 - [x] Testes de regressão e gates aplicáveis estão verdes.
-- [ ] Critérios de aceite e CTs do pacote QA estão cobertos.
+- [ ] Critérios de aceite e CTs do pacote QA estão cobertos — execução funcional pendente no QA.
 - [x] Documentação foi sincronizada quando aplicável.
-- [ ] Não foram introduzidos segredos, dados sensíveis ou dependências desnecessárias.
+- [x] Não foram introduzidos segredos, dados sensíveis ou dependências desnecessárias.
 
 ---
 
@@ -32,5 +32,12 @@
 
 ## Decisão
 
-- [ ] Aprovar
+- [x] Aprovar tecnicamente e entregar para QA
 - [ ] Solicitar ajustes
+
+## Evidências da revisão
+
+- `npm test`: 20 testes aprovados.
+- `npm run build`: TypeScript e build Vite aprovados.
+- A implementação permanece dentro do escopo da demanda; botão flutuante e navbar foram ajustados sem alterar regras financeiras.
+- A aprovação funcional dos CTs permanece sob responsabilidade do QA.

@@ -1,9 +1,9 @@
 ---
 demanda: FIN-MEL-0010
-execucao: ""
+execucao: "[[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0010/00 README|Execução DEV]]"
 ambiente: dev
 versao: ""
-status: execucao
+status: validacao
 responsavel: ""
 resultado: aguardando
 # Pontos da etapa de validação; substitua pelo valor planejado para esta etapa.

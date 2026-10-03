@@ -1,7 +1,7 @@
 ---
-status: execucao
+status: validacao
 tipo: melhoria
-etapa_atual: "DEV · Code review"
+etapa_atual: "QA · Validação"
 demanda: FIN-MEL-0009
 plano: ""
 commit: ""
