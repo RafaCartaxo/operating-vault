@@ -18,7 +18,7 @@ kanban-plugin: board
 ## 🔍 Code review
 
 - [ ]
-- [ ] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0008/00 README|FIN-MEL-0008 — Parcelas]]
+- [x] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0008/00 README|FIN-MEL-0008 — Parcelas — concluído]]
 
 ## 🧪 Aguardando QA
 

@@ -1,6 +1,6 @@
 ---
 prioridade: media
-status: execucao
+status: concluido
 tipo: melhoria
 etapa_atual: "DEV · Code review"
 modulo: lancamentos
@@ -11,7 +11,7 @@ origem: conversa
 projeto: financas-pessoais
 pai: ""
 data_inicio: 2026-10-02
-data_fim: ""
+data_fim: 2026-10-03
 responsavel: ""
 pontos_alocados: 8
 ---
