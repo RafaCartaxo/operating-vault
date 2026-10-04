@@ -50,4 +50,31 @@ Em uma frase: a melhoria é tecnicamente viável, mas C5 exige uma decisão de p
 
 ## Decisão necessária antes do DEV
 
-O item deve voltar para QA · Análise para fechar a regra de C5 e atualizar CT-008 antes da implementação. Não há alteração de código nesta execução.
+## Arquitetura existente considerada
+
+- O backend usa `handler.go` para HTTP, `model.go` para tipos/validação e `repository.go` para SQLite; não há camada de serviço separada.
+- As migrations são embutidas por `database.go` e aplicadas na abertura do banco.
+- O frontend concentra a composição de tela em `App.tsx`, mantém contratos em `src/types.ts`, chamadas HTTP em `src/services/` e validações de formulário em `src/utils/validation.ts`.
+- O resumo mensal é calculado no frontend a partir do retorno de `GET /api/lancamentos?mes=AAAA-MM`.
+- O fluxo existente de parcelas usa série identificável, transação no repository e endpoints próprios; recorrências devem seguir o mesmo padrão sem reutilizar semântica de parcela.
+
+## Proposta técnica
+
+- Criar o domínio `internal/recorrencias` com modelo, validação, handler e repository próprios.
+- Persistir regras recorrentes em tabela própria, com descrição, valor em centavos, conta/cartão, início, término opcional, estado ativo e `incluida_na_fatura`.
+- Adicionar vínculo e competência às ocorrências persistidas em `lancamentos`, com índice único por regra e competência para garantir idempotência.
+- Gerar a ocorrência sob demanda quando o mês for consultado, dentro do backend, antes da listagem mensal.
+- Copiar `incluida_na_fatura` da regra para a ocorrência; ocorrências históricas não serão reescritas quando a regra for editada.
+- Expor CRUD de regras em `/api/recorrencias`; edição altera a regra e o encerramento define o término/estado sem apagar histórico.
+- Adicionar a tela de Recorrências ao `App.tsx`, usando services tipados, validação compartilhada e componentes/padrões visuais já existentes.
+- O resumo mensal deve excluir do saldo as ocorrências marcadas como incluídas na fatura, mas continuar exibindo-as na lista com indicação visual de controle.
+
+## Riscos e limites
+
+- Não será criado um módulo completo de faturas nesta melhoria; a marcação explícita é o contrato mínimo para C5.
+- A mudança deve preservar lançamentos e parcelas existentes, além da idempotência em consultas repetidas.
+- Migrations precisam ser compatíveis com bancos existentes e os fluxos Mermaid/documentação de API e dados devem ser atualizados junto com o código.
+
+## Decisão necessária antes do DEV
+
+Validar com QA a alteração observável do C5/CT-008 para explicitar a marcação `incluida_na_fatura`. Com essa decisão, o plano técnico pode ser congelado e a implementação full-stack iniciada.

@@ -15,32 +15,38 @@
 
 ## O quê
 
-Não há resultado técnico congelado. O plano está bloqueado até definir como a aplicação identifica uma cobrança recorrente já incluída em fatura.
+Resultado: regras recorrentes mensais persistidas e geradas de forma idempotente, com gestão no frontend, integração ao acompanhamento mensal e exclusão explícita das ocorrências marcadas como incluídas em fatura no cálculo do saldo.
 
 ---
 
 ## Vínculo e sequência
 
-- Dependência: decisão de produto sobre C5 e atualização do CT-008.
+- Dependência: decisão de produto sobre C5 e atualização do CT-008 para a marcação explícita de inclusão em fatura.
 
 ---
 
 ## Escopo aprovado
 
-- Nenhum arquivo deve ser alterado nesta etapa.
+- Backend: novo domínio/endpoints de recorrências, migration própria e extensão do retorno mensal.
+- Frontend: tipos, services, validação, tela/formulário de recorrências e resumo/lista mensal.
+- Documentação: API, modelo de dados e fluxos Mermaid.
 
 ---
 
 ## Decisões
 
-- Decisão técnica não tomada; DEV devolve a demanda para QA · Análise.
+- Recorrências ficam em entidade própria; ocorrências entram no fluxo mensal de `lancamentos`.
+- A unicidade será garantida por regra + competência no banco, não por deduplicação no frontend.
+- A regra de inclusão em fatura será explícita; não haverá heurística por valor, data ou descrição.
 
 ---
 
 ## Pronto quando
 
 - C5 e CT-008 revisados e aprovados pelo QA.
-- Modelo de fatura ou sinalização manual definido.
+- Migration aplicada em banco novo e banco existente.
+- APIs e UI cobrem cadastro, geração, edição, encerramento, controle de fatura e validações.
+- Testes técnicos verdes e 10 CTs disponíveis para execução funcional.
 
 ### Testes desta etapa
 
