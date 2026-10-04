@@ -1,11 +1,11 @@
 ---
 prioridade: media
-status: backlog
+status: analise
 tipo: melhoria
-etapa_atual: "QA · Triagem"
+etapa_atual: "QA · Análise da demanda"
 modulo: lancamentos
 plano: "[[02 - Plano de teste]]"
-execucao: ""
+execucao: "[[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0012/00 README|Execução técnica — bloqueada]]"
 ambiente: dev
 origem: observado
 projeto: financas-pessoais
@@ -26,7 +26,7 @@ pontos_alocados: 8
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** ainda não criada — aguarda aprovação do pacote QA.
+> **Execução DEV:** [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0012/00 README|Análise técnica bloqueada]]
 
 > [!settings]- Controle da demanda
 > **Prioridade:** `INPUT[inlineSelect(option(baixa),option(media),option(alta)):prioridade]`  
@@ -129,4 +129,4 @@ Cadastro da regra recorrente, geração mensal com série identificável, térmi
 
 ## Pendências de decisão
 
-- Nenhuma. A demanda permanece em `status: backlog` até a triagem formal do próximo ciclo.
+- **C5 / inclusão em fatura:** definir como o usuário informa ou como o sistema identifica que a cobrança recorrente já está incluída na fatura. A implementação não deve inferir isso por valor/data.
