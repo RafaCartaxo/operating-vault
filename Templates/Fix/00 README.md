@@ -55,3 +55,4 @@ pontos: ""
 - [ ] Implementação concluída
 - [ ] Code review aprovado
 - [ ] Validação QA concluída
+- [ ] Sincronização documental verificada: frontmatter, README, board, links, evidências, histórico e pendências

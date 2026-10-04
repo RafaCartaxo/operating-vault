@@ -36,14 +36,20 @@ flowchart TD
     O --> P{Escopo preservado?}
     P -- Não --> Q[QA · Reavaliar escopo]
     Q --> C
-    P -- Sim --> R[DEV_READY_FOR_QA]
-    R --> S[qa-first-delivery]
-    S --> T[QA · Execução dos CTs]
-    T --> U{CTs aprovados?}
-    U -- Não --> V[QA_REJECTED · Defeito/ajuste]
-    V --> J
-    U -- Sim --> W[QA_APPROVED]
-    W --> X[Concluído + arquivo]
+    P -- Sim --> R[Sincronizar artefatos DEV]
+    R --> S{Transição DEV sincronizada?}
+    S -- Não --> R
+    S -- Sim --> T[DEV_READY_FOR_QA]
+    T --> U[qa-first-delivery]
+    U --> V[QA · Execução dos CTs]
+    V --> W{CTs aprovados?}
+    W -- Não --> X[QA_REJECTED · Defeito/ajuste]
+    X --> J
+    W -- Sim --> Y[Sincronizar artefatos QA]
+    Y --> Z{Fechamento sincronizado?}
+    Z -- Não --> Y
+    Z -- Sim --> AA[QA_APPROVED]
+    AA --> AB[Concluído + arquivo]
 ```
 
 ## Responsabilidades
@@ -55,9 +61,10 @@ flowchart TD
 | Handoff | QA | pacote íntegro e aprovado | demanda pronta para DEV |
 | Análise e plano | DEV | pacote QA aprovado | decisão técnica e plano congelado |
 | Implementação | DEV | plano | código, testes e documentação |
-| Code review | DEV | implementação verificada | execução pronta para QA |
+| Code review | DEV | implementação verificada | execução pronta para sincronização |
+| Sincronização DEV | DEV | code review aprovado | README, board, status, links, evidências e handoff coerentes |
 | Validação funcional | QA | aplicação + CTs | aprovado, reprovado ou bloqueado |
-| Fechamento | QA + DEV | validação aprovada | boards, roadmap e arquivo sincronizados |
+| Sincronização QA/fechamento | QA + DEV | validação aprovada | boards, roadmap, arquivo, histórico e links sincronizados |
 
 ## Regras de passagem
 
@@ -68,7 +75,22 @@ flowchart TD
 5. O DEV não altera o contrato funcional para acomodar a implementação. Mudança de comportamento retorna para QA.
 6. Build verde e testes técnicos verdes não equivalem à aprovação funcional dos CTs.
 7. Toda transição atualiza frontmatter, README, board, roadmap e links relacionados.
-8. Falha de CT em DEV gera defeito/ajuste vinculado; não se apaga nem se reescreve o histórico da demanda pai.
+8. A sincronização documental é um gate: sem checklist concluído e coerência verificada, não se emite `DEV_READY_FOR_QA` nem `QA_APPROVED`.
+9. Falha de CT em DEV gera defeito/ajuste vinculado; não se apaga nem se reescreve o histórico da demanda pai.
+
+## Verificação de sincronização documental
+
+Antes de cada handoff ou fechamento, o responsável deve conferir:
+
+- frontmatter e etapa atual da demanda e da execução;
+- README e status atual;
+- board da camada correspondente;
+- links QA ↔ DEV, CTs, validação, evidências e épico/roadmap;
+- histórico, pendências, datas e resultado dos gates;
+- ausência de instruções ou placeholders obsoletos;
+- checklist de transição marcado somente após a conferência.
+
+Se qualquer item estiver divergente, registrar a pendência e manter a demanda na etapa atual. A implementação pode estar tecnicamente pronta, mas a transição não está concluída.
 
 ## Artefatos por etapa
 
@@ -100,14 +122,18 @@ flowchart TD
     D -- Sim --> E[dev-execution]
     E --> F[Repositório / Aplicação · análise + implementação]
     F --> G[Testes técnicos + code review]
-    G --> H{DEV_READY_FOR_QA?}
-    H -- Não --> E
-    H -- Sim --> I[qa-first-delivery · validação]
-    I --> J[Aplicação · execução dos CTs]
-    J --> K{CTs aprovados?}
-    K -- Não --> L[QA_REJECTED · defeito/ajuste]
-    L --> E
-    K -- Sim --> M[QA_APPROVED · boards + roadmap + fechamento]
+    G --> H[Sincronização documental DEV]
+    H --> I{DEV_READY_FOR_QA?}
+    I -- Não --> E
+    I -- Sim --> J[qa-first-delivery · validação]
+    J --> K[Aplicação · execução dos CTs]
+    K --> L{CTs aprovados?}
+    L -- Não --> M[QA_REJECTED · defeito/ajuste]
+    M --> E
+    L -- Sim --> N[Sincronização documental QA]
+    N --> O{QA_APPROVED?}
+    O -- Não --> J
+    O -- Sim --> P[boards + roadmap + fechamento]
 ```
 
 ## Skills associadas

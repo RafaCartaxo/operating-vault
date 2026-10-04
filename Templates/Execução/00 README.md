@@ -76,3 +76,4 @@ pontos: ""
 - [ ] Esta tabela atualizada
 - [ ] Bloco “Status atual” da demanda atualizado
 - [ ] Validação vinculada/atualizada quando aplicável
+- [ ] Sincronização documental verificada: frontmatter, README, board, links, evidências, histórico e pendências

@@ -140,3 +140,4 @@ Use esta seção somente quando houver reteste após correção:
 - [ ] Resultado geral definido.
 - [ ] Status da validação e da demanda atualizados.
 - [ ] Próximo passo registrado.
+- [ ] Sincronização documental verificada: frontmatter, README, board, links, evidências, histórico e pendências.
