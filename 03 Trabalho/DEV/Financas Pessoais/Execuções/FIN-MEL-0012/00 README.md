@@ -1,5 +1,5 @@
 ---
-status: analise
+status: execucao
 tipo: melhoria
 etapa_atual: "DEV · Análise técnica"
 demanda: FIN-MEL-0012
@@ -9,7 +9,7 @@ commit: ""
 pontos: ""
 ---
 
-# FIN-MEL-0012 — Execução técnica (bloqueada por decisão de produto)
+# FIN-MEL-0012 — Execução técnica
 
 
 > [!info]- Navegação QA/DEV
@@ -17,7 +17,7 @@ pontos: ""
 > **Épico:** não aplicável
 > **Análise:** [[01 - Análise|01 - Análise]]  
 > **Plano:** [[02 - Plano de execução|02 - Plano de execução]]  
-> **Plano técnico:** ainda não criado — decisão de produto pendente.  
+> **Plano técnico:** [[02 - Plano de execução|Plano de execução desta demanda]].
 > **Implementação:** [[03 - Implementação|03 - Implementação]]  
 > **Code review:** [[04 - Code review|04 - Code review]]
 
@@ -41,7 +41,7 @@ pontos: ""
 > dv.paragraph(`**Esforço desta etapa:** ${typeof atual === "number" ? atual : "a definir"} pontos · **Esforço total da execução DEV:** ${total} pontos`);
 > ```
 
-> A execução foi aberta para análise técnica, mas não pode avançar para implementação enquanto o comportamento de inclusão em fatura não estiver definido.
+> A execução está pronta para iniciar a implementação full-stack, com inclusão em fatura informada explicitamente na regra recorrente.
 
 ---
 

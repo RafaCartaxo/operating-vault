@@ -42,15 +42,9 @@ Em uma frase: a melhoria é tecnicamente viável, mas C5 exige uma decisão de p
 
 ---
 
-## Perguntas abertas
+## Decisões consolidadas
 
-- Como o usuário informa que a cobrança já está na fatura?
-- A fatura será cadastrada nesta demanda ou o C5 deve usar um campo manual por ocorrência (`incluida_na_fatura`)?
-- O saldo deve excluir somente ocorrências marcadas como incluídas ou toda recorrência vinculada a cartão?
-
-## Decisão necessária antes do DEV
-
-## Arquitetura existente considerada
+### Arquitetura existente considerada
 
 - O backend usa `handler.go` para HTTP, `model.go` para tipos/validação e `repository.go` para SQLite; não há camada de serviço separada.
 - As migrations são embutidas por `database.go` e aplicadas na abertura do banco.
@@ -75,6 +69,6 @@ Em uma frase: a melhoria é tecnicamente viável, mas C5 exige uma decisão de p
 - A mudança deve preservar lançamentos e parcelas existentes, além da idempotência em consultas repetidas.
 - Migrations precisam ser compatíveis com bancos existentes e os fluxos Mermaid/documentação de API e dados devem ser atualizados junto com o código.
 
-## Decisão necessária antes do DEV
+## Decisão técnica consolidada
 
-Validar com QA a alteração observável do C5/CT-008 para explicitar a marcação `incluida_na_fatura`. Com essa decisão, o plano técnico pode ser congelado e a implementação full-stack iniciada.
+QA aprovou a alteração observável do C5/CT-008: a marcação `incluida_na_fatura` é informada explicitamente na regra, copiada para as ocorrências e usada no cálculo mensal. O plano pode ser congelado e a implementação full-stack iniciada.

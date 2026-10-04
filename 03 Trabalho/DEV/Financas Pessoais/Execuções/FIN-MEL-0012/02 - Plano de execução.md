@@ -4,7 +4,7 @@
 > **README do card:** [[00 README|Abrir README do card]]  
 > **Execução:** [[00 README|README da execução]]  
 > **Demanda QA:** [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0012 Recorrências mensais/01 - Demanda|FIN-MEL-0012 — Recorrências mensais sem duplicidade]]  
-> **Plano técnico:** ainda não criado — decisão de produto pendente.  
+> **Plano técnico:** [[02 - Plano de execução|Plano de execução desta demanda]].
 > **Implementação:** [[03 - Implementação|03 - Implementação]]  
 > **Code review:** [[04 - Code review|04 - Code review]]  
 > **Validação QA:** [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0012 Recorrências mensais/04 - Validação dev|Validação QA]]
@@ -21,7 +21,7 @@ Resultado: regras recorrentes mensais persistidas e geradas de forma idempotente
 
 ## Vínculo e sequência
 
-- Dependência: decisão de produto sobre C5 e atualização do CT-008 para a marcação explícita de inclusão em fatura.
+- Decisão consolidada: C5/CT-008 usam a marcação explícita de inclusão em fatura.
 
 ---
 

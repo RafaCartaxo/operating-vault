@@ -239,11 +239,11 @@ pontos: ""
 >   link: "[[04 - Validação dev#Resultado dos casos de teste]]"
 > ```
 >
-> **Descrição:** confirma a separação entre exibição de controle e cálculo financeiro.
+> **Descrição:** confirma a separação entre exibição de controle e cálculo financeiro por meio da marcação explícita de inclusão na fatura.
 >
-> **Pré-condições:** recorrência vinculada a cartão e fatura contendo a mesma cobrança.
+> **Pré-condições:** regra recorrente vinculada a cartão, marcada como incluída na fatura, e fatura contendo a mesma cobrança.
 >
-> **Dado** a recorrência e a fatura do mesmo mês  
+> **Dado** uma ocorrência cuja regra está marcada como incluída na fatura
 > **Quando** consulto o mês  
 > **Então** a recorrência aparece para controle sem ser somada novamente ao saldo.
 >

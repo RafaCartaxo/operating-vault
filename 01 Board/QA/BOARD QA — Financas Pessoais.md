@@ -4,9 +4,9 @@ kanban-plugin: board
 
 ## 🔍 Análise da demanda
 
-- [ ] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0012 Recorrências mensais/00 README|FIN-MEL-0012 — Recorrências mensais sem duplicidade]]
-
 ## ⚙️ Em execução DEV
+
+- [ ] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0012/00 README|FIN-MEL-0012 — Recorrências mensais — execução DEV]]
 
 
 ## 🧪 Plano de teste

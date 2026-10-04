@@ -1,11 +1,11 @@
 ---
 prioridade: media
-status: analise
+status: execucao
 tipo: melhoria
-etapa_atual: "QA · Análise da demanda"
+etapa_atual: "DEV · Análise técnica"
 modulo: lancamentos
 plano: "[[02 - Plano de teste]]"
-execucao: "[[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0012/00 README|Execução técnica — bloqueada]]"
+execucao: "[[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0012/00 README|Execução técnica]]"
 ambiente: dev
 origem: observado
 projeto: financas-pessoais
@@ -90,7 +90,7 @@ Cadastro da regra recorrente, geração mensal com série identificável, térmi
 
 ## Escopo
 
-- Criar uma regra mensal com descrição, valor, cartão/conta, início e término opcional.
+- Criar uma regra mensal com descrição, valor, cartão/conta, início, término opcional e indicação explícita de inclusão na fatura.
 - Gerar uma ocorrência por mês, com vínculo à regra de origem.
 - Editar, encerrar e consultar ocorrências da regra.
 - Preservar o cálculo mensal sem dupla contagem de recorrentes já incluídos em faturas.
@@ -108,11 +108,11 @@ Cadastro da regra recorrente, geração mensal com série identificável, térmi
 
 ## Critérios de aceite
 
-- C1. O usuário cadastra uma despesa recorrente mensal com descrição, valor, cartão/conta, data inicial e término opcional. ^c1
+- C1. O usuário cadastra uma despesa recorrente mensal com descrição, valor, cartão/conta, data inicial, término opcional e indicação de inclusão na fatura. ^c1
 - C2. O sistema gera no máximo uma ocorrência por mês para cada regra ativa, preservando a série de origem e o valor configurado. ^c2
 - C3. Uma regra com data final deixa de gerar ocorrências após o mês final; uma regra sem data final permanece ativa. ^c3
 - C4. O usuário consegue editar ou encerrar a regra sem perder as ocorrências já geradas. ^c4
-- C5. Recorrente associado a fatura aparece para controle, mas não é somado novamente ao saldo quando a fatura já contém a cobrança. ^c5
+- C5. Quando a regra está marcada como incluída na fatura, a ocorrência aparece para controle, mas não é somada novamente ao saldo. ^c5
 - C6. Falhas de validação impedem a criação de regra incompleta ou com valor/data inválidos, sem criar ocorrência parcial. ^c6
 
 ---
@@ -129,4 +129,4 @@ Cadastro da regra recorrente, geração mensal com série identificável, térmi
 
 ## Pendências de decisão
 
-- **C5 / inclusão em fatura:** definir como o usuário informa ou como o sistema identifica que a cobrança recorrente já está incluída na fatura. A implementação não deve inferir isso por valor/data.
+- Nenhuma. A inclusão em fatura será informada explicitamente na regra; não haverá inferência por valor, data ou descrição.

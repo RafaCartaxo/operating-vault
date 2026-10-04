@@ -20,10 +20,10 @@
 
 - **Responsável pela execução:** QA/`qa-first-delivery`
 - **Data da última execução:** 2026-10-03
-- **Resultado do gate:** ✅ aprovado
+- **Resultado do gate:** ✅ aprovado para DEV
 - **Evidência:** 6 critérios, 10 CTs, 10 âncoras, matriz, plano e validação coerentes.
 
-O handoff para DEV permanece bloqueado até a aprovação funcional do pacote QA.
+O handoff para DEV está liberado. A aprovação funcional ocorrerá depois da implementação, na execução dos 10 CTs.
 
 > [!settings]- Controle do card
 > **Status:** `INPUT[inlineSelect(option(backlog),option(analise),option(execucao),option(validacao),option(concluido)):status]`  
