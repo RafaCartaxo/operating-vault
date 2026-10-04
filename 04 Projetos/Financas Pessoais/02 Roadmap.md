@@ -34,7 +34,7 @@ Usar `GET /api/lancamentos?mes=AAAA-MM` para exibir os lançamentos do mês na a
 
 Permitir corrigir ou remover registros já persistidos, preservando validações, confirmação de exclusão e consistência da lista mensal.
 
-### Ajuste responsivo em análise
+### Melhoria concluída
 
 **FIN-MEL-0004 — Refinamentos responsivos dos campos**
 
@@ -54,11 +54,11 @@ Implementação frontend concluída, code review aprovado e todos os 6 CTs aprov
 
 Manifest, ícones, service worker e cache do app shell implementados; validação técnica concluída.
 
-### Próxima melhoria em análise
+### Melhoria concluída
 
 **FIN-MEL-0009 — Navegação do lançamento por modal**
 
-Evoluir a navegação entregue na FIN-MEL-0006: o Acompanhamento será a tela principal e o cadastro de despesa/receita será aberto por uma ação rápida em modal, preservando o formulário, validações, filtros e comportamento responsivo.
+Evoluir a navegação entregue na FIN-MEL-0006: o Acompanhamento será a tela principal e o cadastro de despesa/receita será aberto por uma ação rápida em modal, preservando o formulário, validações, filtros e comportamento responsivo. Implementação, code review e validação concluídos.
 
 ## Fase 3 — Cálculos
 
