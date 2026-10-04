@@ -11,7 +11,7 @@ origem: observado
 projeto: financas-pessoais
 epico: ""
 pai: ""
-data_inicio: ""
+data_inicio: "2026-10-03"
 data_fim: ""
 responsavel: ""
 pontos_alocados: 8

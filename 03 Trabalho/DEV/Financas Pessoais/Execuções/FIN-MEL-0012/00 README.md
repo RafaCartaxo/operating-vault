@@ -72,8 +72,9 @@ pontos: ""
 
 ## Checklist de transição
 
-- [ ] Status da demanda atualizado
-- [ ] Card movido para a coluna correspondente no Board
-- [ ] Esta tabela atualizada
-- [ ] Bloco “Status atual” da demanda atualizado
-- [ ] Validação vinculada/atualizada quando aplicável
+- [x] Status da demanda atualizado
+- [x] Card movido para a coluna correspondente no Board
+- [x] Esta tabela atualizada
+- [x] Bloco “Status atual” da demanda atualizado
+- [x] Validação vinculada/atualizada quando aplicável
+- [x] Sincronização documental verificada: frontmatter, README, board, links, evidências, histórico e pendências

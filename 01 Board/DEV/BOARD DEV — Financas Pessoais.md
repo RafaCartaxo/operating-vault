@@ -19,8 +19,6 @@ kanban-plugin: board
 
 - [ ] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0012/00 README|FIN-MEL-0012 — Recorrências mensais — implementação e review aprovados]]
 
-## 🧪 Aguardando QA
-
 ## ✅ Concluído
 
 - [x] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0008/00 README|FIN-MEL-0008 — Parcelas — concluído]]
