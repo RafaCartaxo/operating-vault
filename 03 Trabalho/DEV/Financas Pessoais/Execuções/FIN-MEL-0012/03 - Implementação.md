@@ -14,31 +14,39 @@
 
 ## Rodadas
 
-### Rodada 1 — ⛔ não iniciada
+### Rodada 1 — ✅ concluída em 2026-10-04
 
-- Nenhum código alterado. A implementação está bloqueada pela decisão pendente de C5.
+- Backend: migration 003, entidade/repositório/rotas de recorrências e geração idempotente por competência.
+- Backend: ocorrências vinculadas a `recorrencia_id`, `recorrencia_competencia` e marcador explícito `incluida_na_fatura`.
+- Frontend: serviços tipados, tela de cadastro/edição/encerramento e navegação de Recorrências.
+- Frontend: recorrências incluídas na fatura permanecem visíveis, mas são excluídas do resumo financeiro.
+- Arquitetura: documentação de arquitetura, modelo, API e fluxos sincronizada.
+- Robustez: migrations executadas instrução a instrução, permitindo reabrir bases que já tenham uma coluna aplicada.
 
 ---
 
 ## Evidências
 
-- Testes, gates, links de CI, screenshots ou evidência de ambiente.
+- `npm test -- --run`: 23 testes aprovados.
+- `npm run build`: TypeScript e bundle Vite aprovados.
+- `GOCACHE=/tmp/financas-go-test-cache GOPATH=/tmp/financas-go-test-path go test ./...`: pacotes Go aprovados.
+- Gate QA da demanda: validador de pacote QA aprovado.
+- Smoke HTTP local não executado neste ambiente: o sandbox recusou abrir socket em `127.0.0.1:3300`; o servidor compilou normalmente.
 
 ---
 
 ## Testes da implementação
 
-- [ ] Unitários da regra/serviço alterado.
-- [ ] Testes de formulário/UI, quando houver interação.
-- [ ] Testes de API/repositório, quando houver contrato ou persistência.
-- [ ] Testes de regressão relacionados à demanda.
-- [ ] Registrar os caminhos dos arquivos de teste e o comando executado.
+- [x] Unitários da regra alterada (`backend/internal/recorrencias/model_test.go`).
+- [x] Testes de validação e resumo (`src/utils/validation.test.ts`, `src/utils/monthlySummary.test.ts`).
+- [x] Testes de regressão frontend e backend executados.
+- [x] Comandos e limitações registrados nas evidências.
 
 ---
 
 ## Verificação
 
-- [ ] CTs da demanda relacionados (fonte QA): [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0012 Recorrências mensais/03 - Casos de teste|ver casos de teste]].
-- [ ] Gates aplicáveis do repositório verdes.
-- [ ] Documentação sincronizada quando aplicável.
-- [ ] Commit registrado no README.
+- [ ] CTs funcionais da demanda: [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0012 Recorrências mensais/03 - Casos de teste|ver casos de teste]] — aguardando QA.
+- [x] Gates aplicáveis do repositório verdes.
+- [x] Documentação sincronizada.
+- [ ] Commit registrado no README — sem commit solicitado.

@@ -6,8 +6,6 @@ kanban-plugin: board
 
 ## ⚙️ Em execução DEV
 
-- [ ] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0012/00 README|FIN-MEL-0012 — Recorrências mensais — execução DEV]]
-
 
 ## 🧪 Plano de teste
 
@@ -16,6 +14,8 @@ kanban-plugin: board
 
 
 ## 🧪 Validação
+
+- [ ] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0012 Recorrências mensais/04 - Validação dev|FIN-MEL-0012 — executar 10 CTs funcionais]]
 
 ## ✅ Concluído
 

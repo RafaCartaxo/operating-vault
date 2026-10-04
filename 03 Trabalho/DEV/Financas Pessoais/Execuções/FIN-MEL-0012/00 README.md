@@ -1,10 +1,10 @@
 ---
-status: execucao
+status: validacao
 tipo: melhoria
-etapa_atual: "DEV · Análise técnica"
+etapa_atual: "QA · Validação"
 demanda: FIN-MEL-0012
 epico: ""
-plano: ""
+plano: "[[02 - Plano de execução|02 - Plano de execução]]"
 commit: ""
 pontos: ""
 ---
@@ -27,7 +27,7 @@ pontos: ""
 
 > [!info]- Cards relacionados
 > **Demanda QA:** [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0012 Recorrências mensais/01 - Demanda|FIN-MEL-0012]]  
-> **Plano técnico:** ainda não criado  
+> **Plano técnico:** [[02 - Plano de execução|Plano de execução]]
 > **Implementação:** [[03 - Implementação|03 - Implementação]]  
 > **Code review:** [[04 - Code review|04 - Code review]]  
 > **Validação QA:** [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0012 Recorrências mensais/04 - Validação dev|Validação QA]]
@@ -41,7 +41,7 @@ pontos: ""
 > dv.paragraph(`**Esforço desta etapa:** ${typeof atual === "number" ? atual : "a definir"} pontos · **Esforço total da execução DEV:** ${total} pontos`);
 > ```
 
-> A execução está pronta para iniciar a implementação full-stack, com inclusão em fatura informada explicitamente na regra recorrente.
+> A implementação full-stack foi concluída e passou pelos gates automatizados. A demanda está devolvida ao QA para execução dos 10 CTs funcionais.
 
 ---
 
@@ -54,10 +54,10 @@ pontos: ""
 
 | Etapa | Estado | Data |
 |---|---|---|
-| Análise | ⏳ | |
-| Plano de execução | ⏳ | |
-| Execução | ⏳ | |
-| Code review | ⏳ | |
+| Análise | ✅ | 2026-10-03 |
+| Plano de execução | ✅ | 2026-10-03 |
+| Execução | ✅ | 2026-10-04 |
+| Code review | ✅ | 2026-10-04 |
 | Verificação (CTs) | ⏳ | |
 | Fechamento | ⏳ | |
 
@@ -65,7 +65,8 @@ pontos: ""
 
 ## Histórico
 
-- YYYY-MM-DD — pasta de execução criada.
+- 2026-10-03 — pasta de execução criada e análise/plano registrados.
+- 2026-10-04 — implementação full-stack concluída; testes automatizados e code review aprovados; handoff para QA.
 
 ---
 

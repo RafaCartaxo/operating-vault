@@ -8,7 +8,7 @@
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** ainda não criada — demanda em triagem QA.
+> **Execução DEV:** [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0012/00 README|Execução técnica]] — implementação concluída, aguardando validação QA.
 
 ## Auditoria de integridade QA
 
@@ -19,11 +19,11 @@
 > ```
 
 - **Responsável pela execução:** QA/`qa-first-delivery`
-- **Data da última execução:** 2026-10-03
-- **Resultado do gate:** ✅ aprovado para DEV
+- **Data da última execução:** 2026-10-04
+- **Resultado do gate:** ✅ pacote íntegro após handoff DEV
 - **Evidência:** 6 critérios, 10 CTs, 10 âncoras, matriz, plano e validação coerentes.
 
-O handoff para DEV está liberado. A aprovação funcional ocorrerá depois da implementação, na execução dos 10 CTs.
+O handoff DEV foi concluído. A aprovação funcional permanece pendente da execução dos 10 CTs.
 
 > [!settings]- Controle do card
 > **Status:** `INPUT[inlineSelect(option(backlog),option(analise),option(execucao),option(validacao),option(concluido)):status]`  
@@ -35,7 +35,7 @@ O handoff para DEV está liberado. A aprovação funcional ocorrerá depois da i
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** ainda não criada — demanda em triagem QA.
+> **Execução DEV:** [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0012/00 README|Execução técnica]]
 
 > [!tip]- Esforço
 > ```dataviewjs

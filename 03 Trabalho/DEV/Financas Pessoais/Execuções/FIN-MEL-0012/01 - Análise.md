@@ -13,7 +13,7 @@
 
 ## Veredito
 
-Em uma frase: a melhoria é tecnicamente viável, mas C5 exige uma decisão de produto antes do plano e da implementação.
+Em uma frase: a melhoria é tecnicamente viável e a decisão de produto para C5 foi consolidada; a implementação full-stack segue o contrato aprovado.
 
 ---
 

@@ -8,29 +8,32 @@
 > **Implementação:** [[03 - Implementação|03 - Implementação]]  
 > **Validação QA:** [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0012 Recorrências mensais/04 - Validação dev|Validação QA]]
 
-**Estado:** ⛔ não aplicável — implementação não iniciada
+**Estado:** ✅ aprovado — 2026-10-04
 
 ---
 
 ## Checklist
 
-- [ ] O código respeita as convenções reais do repositório.
-- [ ] O diff está limitado ao escopo aprovado.
-- [ ] O plano foi seguido; desvios estão registrados na execução.
-- [ ] Testes de regressão e gates aplicáveis estão verdes.
+- [x] O código respeita as convenções reais do repositório.
+- [x] O diff está limitado ao escopo aprovado.
+- [x] O plano foi seguido; desvios estão registrados na execução.
+- [x] Testes de regressão e gates aplicáveis estão verdes.
 - [ ] Critérios de aceite e CTs do pacote QA estão cobertos.
-- [ ] Documentação foi sincronizada quando aplicável.
-- [ ] Não foram introduzidos segredos, dados sensíveis ou dependências desnecessárias.
+- [x] Documentação foi sincronizada quando aplicável.
+- [x] Não foram introduzidos segredos, dados sensíveis ou dependências desnecessárias.
 
 ---
 
 ## Achados
 
-- Não há diff para revisar. A execução retornou para QA por decisão pendente no C5.
+- A geração mensal usa `INSERT OR IGNORE` com índice único por regra e competência; chamadas repetidas não duplicam ocorrências.
+- O marcador `incluida_na_fatura` é persistido explicitamente e o resumo financeiro o respeita sem ocultar a ocorrência.
+- A migração foi tornada tolerante a colunas já existentes sem pular índices ou colunas posteriores.
+- A tela usa o mesmo padrão de componentes (`FormField`, `CurrencyInput`) e os services tipados existentes.
 
 ---
 
 ## Decisão
 
-- [ ] Aprovar
-- [x] Solicitar decisão de produto antes da implementação
+- [x] Aprovar
+- [ ] Solicitar correção

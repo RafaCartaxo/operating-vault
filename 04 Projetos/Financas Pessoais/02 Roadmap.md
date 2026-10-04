@@ -70,7 +70,7 @@ Evoluir a navegação entregue na FIN-MEL-0006: o Acompanhamento será a tela pr
 - [x] Navegação do lançamento por modal — FIN-MEL-0009 concluído com 10 CTs aprovados.
 - [x] Ação de novo lançamento mobile — FIN-MEL-0010 concluído com 5 CTs aprovados.
 - [x] Organização da navbar mobile — FIN-MEL-0011 concluído com 5 CTs aprovados.
-- [ ] Recorrências — FIN-MEL-0012 em execução DEV após QA aprovar a marcação explícita de inclusão em fatura.
+- [ ] Recorrências — FIN-MEL-0012 implementada e aguardando validação dos 10 CTs no QA.
 - [ ] Contas fixas.
 - [ ] Faturas.
 

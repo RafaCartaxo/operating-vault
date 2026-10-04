@@ -4,9 +4,6 @@ kanban-plugin: board
 
 ## 🔎 Análise técnica
 
-- [ ] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0012/00 README|FIN-MEL-0012 — Recorrências mensais]]
-- [ ]
-
 ## 📋 Plano de execução
 
 - [ ]
@@ -17,6 +14,10 @@ kanban-plugin: board
 
 ## 🔍 Code review
 
+
+## 🧪 Aguardando QA
+
+- [ ] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0012/00 README|FIN-MEL-0012 — Recorrências mensais — implementação e review aprovados]]
 
 ## 🧪 Aguardando QA
 
