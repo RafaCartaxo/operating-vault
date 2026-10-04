@@ -246,11 +246,11 @@ pontos: ""
 > **Dado** a recorrência e a fatura do mesmo mês  
 > **Quando** consulto o mês  
 > **Então** a recorrência aparece para controle sem ser somada novamente ao saldo.
-
+>
 > **Resultado esperado:** fatura descontada uma única vez.
-
+>
 > **Critérios cobertos:** [[01 - Demanda#^c5|C5]]
-
+>
 > **Tipo:** financeiro  
 > **Camada:** integração  
 > **Automação:** manual  
@@ -276,9 +276,9 @@ pontos: ""
 > **Então** o sistema exibe erro e não cria regra nem ocorrência.
 >
 > **Resultado esperado:** nenhum dado parcial é persistido.
-
+>
 > **Critérios cobertos:** [[01 - Demanda#^c6|C6]]
-
+>
 > **Tipo:** validação  
 > **Camada:** E2E/API  
 > **Automação:** manual  
