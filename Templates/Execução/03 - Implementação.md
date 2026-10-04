@@ -25,6 +25,16 @@
 
 - Testes, gates, links de CI, screenshots ou evidência de ambiente.
 
+### Ambiente e smoke check
+
+- **Backend:** `FINANCAS_ADDR=<host>:<porta>`
+- **Proxy frontend:** `VITE_API_PROXY_TARGET=http://localhost:<porta>`
+- **Frontend:** `:5173`
+- **Health check:** `GET http://localhost:<porta>/api/health`
+- **Resultado:** registrar resposta e qualquer limitação de ambiente.
+
+> A raiz `/` do backend não é uma página da aplicação; `404 page not found` nela é esperado. O smoke check deve usar `/api/health` ou um endpoint do contrato da demanda.
+
 ---
 
 ## Testes da implementação

@@ -22,6 +22,7 @@
 - Frontend: recorrências incluídas na fatura permanecem visíveis, mas são excluídas do resumo financeiro.
 - Arquitetura: documentação de arquitetura, modelo, API e fluxos sincronizada.
 - Robustez: migrations executadas instrução a instrução, permitindo reabrir bases que já tenham uma coluna aplicada.
+- Pós-review de ambiente: o proxy Vite deixou de assumir a porta 3000; `VITE_API_PROXY_TARGET` agora acompanha a porta efetiva do backend, evitando 404 quando o backend roda em 3001.
 
 ---
 
@@ -32,6 +33,7 @@
 - `GOCACHE=/tmp/financas-go-test-cache GOPATH=/tmp/financas-go-test-path go test ./...`: pacotes Go aprovados.
 - Gate QA da demanda: validador de pacote QA aprovado.
 - Smoke HTTP local não executado neste ambiente: o sandbox recusou abrir socket em `127.0.0.1:3300`; o servidor compilou normalmente.
+- A documentação e o template DEV agora exigem registrar porta do backend, destino do proxy e `GET /api/health`.
 
 ---
 

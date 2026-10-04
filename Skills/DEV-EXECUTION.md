@@ -19,7 +19,7 @@ O handoff é determinado pelo estado e pelos artefatos, não por uma palavra-cha
 3. Registrar análise técnica, impacto, arquitetura, riscos, dependências e decisões.
 4. Criar e congelar o plano de execução: arquivos, etapas, testes, documentação e fora de escopo.
 5. Implementar apenas o escopo aprovado, respeitando os padrões do projeto.
-6. Executar testes, build, lint, auditorias, smoke checks e auditoria documental quando aplicável.
+6. Executar testes, build, lint, auditorias, smoke checks e auditoria documental quando aplicável. Em aplicações com backend/frontend locais, registrar a porta efetiva do backend, `VITE_API_PROXY_TARGET`, porta do frontend e chamar `/api/health`; não usar a raiz `/` como health check.
 7. Registrar arquivos, comandos, resultados, limitações e desvios em `03 - Implementação.md`.
 8. Fazer code review cruzando card, critérios, plano, código, testes e documentação.
 9. Atualizar execução, README, board DEV, status e links; entregar para QA executar os CTs.

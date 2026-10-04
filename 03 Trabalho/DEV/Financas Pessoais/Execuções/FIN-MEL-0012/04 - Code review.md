@@ -30,6 +30,7 @@
 - O marcador `incluida_na_fatura` é persistido explicitamente e o resumo financeiro o respeita sem ocultar a ocorrência.
 - A migração foi tornada tolerante a colunas já existentes sem pular índices ou colunas posteriores.
 - A tela usa o mesmo padrão de componentes (`FormField`, `CurrencyInput`) e os services tipados existentes.
+- Correção adicional: o proxy frontend estava fixo em `localhost:3000`; passou a usar `VITE_API_PROXY_TARGET`, alinhando o ambiente com a porta efetiva do backend.
 
 ---
 
