@@ -10,6 +10,21 @@
 > **Preparação Qase:** [[05 - Preparação Qase]]  
 > **Execução DEV:** ainda não criada — demanda em triagem QA.
 
+## Auditoria de integridade QA
+
+> Executado antes do handoff para DEV:
+>
+> ```bash
+> python3 scripts/validar_pacote_qa.py "03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0012 Recorrências mensais"
+> ```
+
+- **Responsável pela execução:** QA/`qa-first-delivery`
+- **Data da última execução:** 2026-10-03
+- **Resultado do gate:** ✅ aprovado
+- **Evidência:** 6 critérios, 10 CTs, 10 âncoras, matriz, plano e validação coerentes.
+
+O handoff para DEV permanece bloqueado até a aprovação funcional do pacote QA.
+
 > [!settings]- Controle do card
 > **Status:** `INPUT[inlineSelect(option(backlog),option(analise),option(execucao),option(validacao),option(concluido)):status]`  
 > **Etapa atual:** `INPUT[inlineSelect(option(QA · Triagem),option(QA · Análise da demanda),option(QA · Plano de teste),option(QA · Casos de teste),option(DEV · Análise técnica),option(DEV · Plano de execução),option(DEV · Implementação),option(DEV · Code review),option(QA · Validação),option(Concluído)):etapa_atual]`

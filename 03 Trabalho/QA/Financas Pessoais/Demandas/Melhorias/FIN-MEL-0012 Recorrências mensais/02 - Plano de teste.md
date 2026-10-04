@@ -49,10 +49,14 @@ Defina apenas as camadas aplicáveis; não crie testes por obrigação quando n�
 |---|---|---|---|---|
 | [[03 - Casos de teste#^ct-001\|CT-001]] | Funcional | E2E | Manual | [[04 - Validação dev\|Registrar resultado]] |
 | [[03 - Casos de teste#^ct-002\|CT-002]] | Integração | E2E/API | Manual | [[04 - Validação dev\|Registrar resultado]] |
-| [[03 - Casos de teste#^ct-003\|CT-003]] | Funcional | E2E/API | Manual | [[04 - Validação dev\|Registrar resultado]] |
-| [[03 - Casos de teste#^ct-004\|CT-004]] | Regressão | E2E/API | Manual | [[04 - Validação dev\|Registrar resultado]] |
-| [[03 - Casos de teste#^ct-005\|CT-005]] | Financeiro | Integração | Manual | [[04 - Validação dev\|Registrar resultado]] |
-| [[03 - Casos de teste#^ct-006\|CT-006]] | Validação | E2E/API | Manual | [[04 - Validação dev\|Registrar resultado]] |
+| [[03 - Casos de teste#^ct-003\|CT-003]] | Idempotência | API | Manual | [[04 - Validação dev\|Registrar resultado]] |
+| [[03 - Casos de teste#^ct-004\|CT-004]] | Funcional | E2E/API | Manual | [[04 - Validação dev\|Registrar resultado]] |
+| [[03 - Casos de teste#^ct-005\|CT-005]] | Funcional | E2E/API | Manual | [[04 - Validação dev\|Registrar resultado]] |
+| [[03 - Casos de teste#^ct-006\|CT-006]] | Regressão | E2E/API | Manual | [[04 - Validação dev\|Registrar resultado]] |
+| [[03 - Casos de teste#^ct-007\|CT-007]] | Regressão | E2E/API | Manual | [[04 - Validação dev\|Registrar resultado]] |
+| [[03 - Casos de teste#^ct-008\|CT-008]] | Financeiro | Integração | Manual | [[04 - Validação dev\|Registrar resultado]] |
+| [[03 - Casos de teste#^ct-009\|CT-009]] | Validação | E2E/API | Manual | [[04 - Validação dev\|Registrar resultado]] |
+| [[03 - Casos de teste#^ct-010\|CT-010]] | Validação | E2E/API | Manual | [[04 - Validação dev\|Registrar resultado]] |
 
 > Exemplo: replique a linha para cada CT do pacote. O link do CT abre a prévia do cenário; o link de Validação leva à tabela onde o resultado e a evidência são registrados.
 
@@ -61,4 +65,4 @@ Defina apenas as camadas aplicáveis; não crie testes por obrigação quando n�
 ## Entrada e saída
 
 **Entrada:** aplicação disponível, regra recorrente mensal e faturas/lançamentos de teste.  
-**Saída:** 6 CTs executados com evidências e decisão QA registrada.
+**Saída:** 10 CTs executados com evidências e decisão QA registrada.

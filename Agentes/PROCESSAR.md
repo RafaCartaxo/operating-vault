@@ -70,7 +70,7 @@ relato
    Antes de concluir, comparar a instância com os templates: headings, callouts, blocos Dataview/Meta Bind, anchors, matriz de cobertura e tabela de resultados devem permanecer presentes. Conteúdo específico entra nos placeholders e seções de conteúdo; a estrutura não é reescrita.
 4. **Suspeita sem confirmação** → registra `❓` na daily, **não** cria card (regra do `Skills/BUG`).
 5. **Prontidão de melhoria**: antes de mover para `backlog`, conferir Problema, Objetivo, Decisões, Escopo, Fora de escopo, Regras, Critérios e CTs. Decisão pendente que mude comportamento, escopo ou aceite mantém `status: analise`; registrar a pergunta em `## Pendências de decisão`.
-6. **Gate de integridade**: não mover a melhoria para DEV se algum arquivo do pacote não seguir o template ou se houver critério sem CT, CT sem anchor ou CT sem campo correspondente na validação.
+6. **Gate de integridade**: executar `python3 scripts/validar_pacote_qa.py <pasta-da-demanda>` e não mover a melhoria para DEV se o comando falhar, se algum arquivo do pacote não seguir o template ou se houver critério sem CT, CT sem anchor ou CT sem campo correspondente na validação.
 7. **Registrar**: card no board (coluna 📥 Backlog) + entrada na daily.
 
 ## Resultado esperado

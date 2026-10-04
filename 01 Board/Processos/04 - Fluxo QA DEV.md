@@ -23,26 +23,27 @@ flowchart TD
     C --> D[Copiar template oficial]
     D --> E[Critérios de aceite]
     E --> F[CTs + matriz de cobertura]
-    F --> G{Pacote QA íntegro?}
-    G -- Não --> C
-    G -- Sim --> H[QA_READY_FOR_DEV]
-    H --> I[dev-execution]
-    I --> J[DEV · Análise]
-    J --> K[DEV · Plano congelado]
-    K --> L[DEV · Implementação]
-    L --> M[Testes técnicos + auditorias]
-    M --> N[DEV · Code review]
-    N --> O{Escopo preservado?}
-    O -- Não --> P[QA · Reavaliar escopo]
-    P --> C
-    O -- Sim --> Q[DEV_READY_FOR_QA]
-    Q --> R[qa-first-delivery]
-    R --> S[QA · Execução dos CTs]
-    S --> T{CTs aprovados?}
-    T -- Não --> U[QA_REJECTED · Defeito/ajuste]
-    U --> I
-    T -- Sim --> V[QA_APPROVED]
-    V --> W[Concluído + arquivo]
+    F --> G[Executar validador do pacote QA]
+    G --> H{Pacote QA íntegro?}
+    H -- Não --> C
+    H -- Sim --> I[QA_READY_FOR_DEV]
+    I --> J[dev-execution]
+    J --> K[DEV · Análise]
+    K --> L[DEV · Plano congelado]
+    L --> M[DEV · Implementação]
+    M --> N[Testes técnicos + auditorias]
+    N --> O[DEV · Code review]
+    O --> P{Escopo preservado?}
+    P -- Não --> Q[QA · Reavaliar escopo]
+    Q --> C
+    P -- Sim --> R[DEV_READY_FOR_QA]
+    R --> S[qa-first-delivery]
+    S --> T[QA · Execução dos CTs]
+    T --> U{CTs aprovados?}
+    U -- Não --> V[QA_REJECTED · Defeito/ajuste]
+    V --> J
+    U -- Sim --> W[QA_APPROVED]
+    W --> X[Concluído + arquivo]
 ```
 
 ## Responsabilidades
@@ -62,11 +63,12 @@ flowchart TD
 
 1. A pasta da demanda nasce copiando o template oficial; o template nunca é reconstruído manualmente.
 2. Cada critério `C1..Cn` tem pelo menos um CT e cada CT aponta para um critério.
-3. A execução DEV só nasce depois do gate QA; a pasta é criada copiando `Templates/Execução/`.
-4. O DEV não altera o contrato funcional para acomodar a implementação. Mudança de comportamento retorna para QA.
-5. Build verde e testes técnicos verdes não equivalem à aprovação funcional dos CTs.
-6. Toda transição atualiza frontmatter, README, board, roadmap e links relacionados.
-7. Falha de CT em DEV gera defeito/ajuste vinculado; não se apaga nem se reescreve o histórico da demanda pai.
+3. Antes do handoff, o QA/`qa-first-delivery` deve executar `python3 scripts/validar_pacote_qa.py <pasta-da-demanda>`; saída diferente de sucesso bloqueia o gate. Registrar o resultado resumido no `00 README.md` da demanda e manter a saída detalhada como evidência da execução.
+4. A execução DEV só nasce depois do gate QA; a pasta é criada copiando `Templates/Execução/`.
+5. O DEV não altera o contrato funcional para acomodar a implementação. Mudança de comportamento retorna para QA.
+6. Build verde e testes técnicos verdes não equivalem à aprovação funcional dos CTs.
+7. Toda transição atualiza frontmatter, README, board, roadmap e links relacionados.
+8. Falha de CT em DEV gera defeito/ajuste vinculado; não se apaga nem se reescreve o histórico da demanda pai.
 
 ## Artefatos por etapa
 

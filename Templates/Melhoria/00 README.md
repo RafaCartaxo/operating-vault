@@ -10,6 +10,21 @@
 > **Preparação Qase:** [[05 - Preparação Qase]]  
 > **Execução DEV:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/00 README|Execução DEV]]
 
+## Auditoria de integridade QA
+
+> Executar antes de mover o card para `QA_READY_FOR_DEV`:
+>
+> ```bash
+> python3 scripts/validar_pacote_qa.py "<pasta-da-demanda>"
+> ```
+
+- **Responsável pela execução:** QA/`qa-first-delivery`
+- **Data da última execução:** a registrar
+- **Resultado do gate:** aguardando
+- **Evidência detalhada:** saída do comando no registro da execução ou na daily relacionada.
+
+O handoff para DEV só é permitido com resultado `PACOTE QA APROVADO NO GATE DE INTEGRIDADE`.
+
 > [!settings]- Controle do card
 > **Status:** `INPUT[inlineSelect(option(backlog),option(analise),option(execucao),option(validacao),option(concluido)):status]`  
 > **Etapa atual:** `INPUT[inlineSelect(option(QA · Triagem),option(QA · Análise da demanda),option(QA · Plano de teste),option(QA · Casos de teste),option(DEV · Análise técnica),option(DEV · Plano de execução),option(DEV · Implementação),option(DEV · Code review),option(QA · Validação),option(Concluído)):etapa_atual]`
