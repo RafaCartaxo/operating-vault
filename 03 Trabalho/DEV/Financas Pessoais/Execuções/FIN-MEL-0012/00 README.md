@@ -1,7 +1,7 @@
 ---
-status: validacao
+status: execucao
 tipo: melhoria
-etapa_atual: "QA · Validação"
+etapa_atual: "DEV · Análise técnica"
 demanda: FIN-MEL-0012
 epico: ""
 plano: "[[02 - Plano de execução|02 - Plano de execução]]"
@@ -41,7 +41,7 @@ pontos: ""
 > dv.paragraph(`**Esforço desta etapa:** ${typeof atual === "number" ? atual : "a definir"} pontos · **Esforço total da execução DEV:** ${total} pontos`);
 > ```
 
-> A implementação full-stack foi concluída e passou pelos gates automatizados. A demanda está devolvida ao QA para execução dos 10 CTs funcionais.
+> A implementação inicial passou pelos gates automatizados, mas a validação funcional reprovou a geração mensal de recorrências. A correção está vinculada ao [[03 Trabalho/QA/Financas Pessoais/Demandas/Bugs/FIN-BUG-0001 Falha ao gerar recorrencias mensais/01 - Bug|FIN-BUG-0001]] e retorna ao DEV.
 
 ---
 

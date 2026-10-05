@@ -1,36 +1,36 @@
 ---
-demanda: ""
+demanda: "[[01 - Bug]]"
 execucao: ""
 ambiente: dev
 versao: ""
 status: execucao
 responsavel: ""
-resultado: aguardando
+resultado: reprovado
 # Pontos da etapa de validação; substitua pelo valor planejado para esta etapa.
 pontos: 0
 ct_resultados:
-  ct_001: "⏳ Aguardando"
-data_inicio: ""
+  ct_b01: "❌ Falhou"
+  ct_b02: "⏳ Aguardando"
+data_inicio: "2026-10-05"
 data_fim: ""
 ---
 
-# Validação — <ID>
+# Validação — FIN-BUG-0001
 
 > [!info]- Navegação QA
 > **README do card:** [[00 README|Abrir README do card]]  
 > **Demanda:** [[01 - Demanda]]  
-> **Plano de teste:** [[02 - Plano de teste]]  
-> **Casos de teste:** [[03 - Casos de teste]]  
-> **Validação:** [[04 - Validação dev]]  
-> **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/00 README|Execução <ID>]]
+> **Casos de teste:** [[02 - Casos de teste]]
+> **Validação:** [[03 - Validação dev]]
+> **Preparação Qase:** [[04 - Preparação Qase]]
+> **Fix DEV:** será criado após o gate QA deste defeito.
 
 > [!settings]- Controle da validação
 > **Status:** `INPUT[inlineSelect(option(execucao),option(concluido)):status]`  
 > **Resultado:** `INPUT[inlineSelect(option(aguardando),option(aprovado),option(reprovado),option(aprovado_com_ressalvas)):resultado]`  
 > **Ambiente:** `INPUT[inlineSelect(option(dev),option(hml),option(prod)):ambiente]`
 
-> Template canônico de validação QA para melhorias e bugs. Para Bugs, copie esta nota, renomeie para `03 - Validação dev.md` e troque os links/identificadores `CT-001` pelos CTs `CT-BNN` do bug.
+> Template canônico de validação QA adaptado para o defeito `FIN-BUG-0001`.
 
 > Registro da execução dos CTs e das evidências. Os cenários permanecem em `03 - Casos de teste.md`.
 
@@ -79,7 +79,8 @@ dv.list([
 
 | CT | Resultado | Evidência | Observação | Defeito/Bug | Pontos entregues |
 |---|---|---|---|---|---:|
-| [[03 - Casos de teste#^ct-001\|CT-001]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_001]` |  |  |  | `= choice(this.ct_resultados.ct_001 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
+| [[02 - Casos de teste#^ct-b01\|CT-B01]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_b01]` | `GET /api/lancamentos?mes=2026-10` retornou HTTP 500 | `database is locked (5) (SQLITE_BUSY)` reproduzido no backend | [[01 - Bug|FIN-BUG-0001]] | `= choice(this.ct_resultados.ct_b01 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
+| [[02 - Casos de teste#^ct-b02\|CT-B02]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_b02]` |  | aguardando correção do DEV |  | `= choice(this.ct_resultados.ct_b02 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
 
 > **Regra de esforço:** aprovado e falhou = 100% da parcela; em andamento = 25%; bloqueado = 50%; aguardando e não executado = 0%.
 
@@ -102,7 +103,7 @@ const tabela = Array.from(raiz.querySelectorAll("table")).find((item) => item.in
 if (tabela) {
   const pontosPorCT = totalCTs ? pontosEtapa / totalCTs : 0;
   Array.from(tabela.querySelectorAll("tbody tr")).forEach((linha, indice) => {
-    const chave = `ct_${String(indice + 1).padStart(3, "0")}`;
+    const chave = `ct_b${String(indice + 1).padStart(2, "0")}`;
     const celula = linha.lastElementChild;
     if (celula) {
       const pontos = pontosPorCT * pesoDoStatus(resultados[chave]);
@@ -128,16 +129,16 @@ Use esta seção somente quando houver reteste após correção:
 
 ## Decisão
 
-**Resultado geral:** aguardando / aprovado / reprovado / aprovado com ressalvas
+**Resultado geral:** reprovado — CT-B01 falhou e o defeito foi devolvido ao DEV.
 
 ---
 
 ## Checklist de encerramento QA
 
 - [ ] Todos os CTs executados ou com justificativa registrada.
-- [ ] Evidências e observações preenchidas quando necessário.
+- [x] Evidências e observações preenchidas quando necessário.
 - [ ] Bugs filhos vinculados na coluna **Defeito/Bug**.
-- [ ] Resultado geral definido.
-- [ ] Status da validação e da demanda atualizados.
-- [ ] Próximo passo registrado.
-- [ ] Sincronização documental verificada: frontmatter, README, board, links, evidências, histórico e pendências.
+- [x] Resultado geral definido.
+- [x] Status da validação e da demanda atualizados.
+- [x] Próximo passo registrado.
+- [x] Sincronização documental verificada: frontmatter, README, board, links, evidências, histórico e pendências.

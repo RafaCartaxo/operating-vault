@@ -59,7 +59,7 @@ Foram atualizados os documentos de arquitetura, modelo de dados, API, fluxos, am
 
 ## Observação funcional principal
 
-A criação de recorrência ainda não foi confirmada funcionalmente pelo navegador ou celular.
+A criação de recorrência foi confirmada, mas a consulta mensal que gera automaticamente suas ocorrências falhou durante a validação funcional.
 
 Foi observado o erro de interface:
 
@@ -75,7 +75,9 @@ Local: http://localhost:5174/
 Network: http://192.168.0.86:5174/
 ```
 
-O acesso continuava sendo feito em `5173`, enquanto outra instância estava em `5174`.
+Após a regularização do ambiente, o erro permaneceu reproduzível diretamente na API de lançamentos.
+
+O diagnóstico capturou `database is locked (5) (SQLITE_BUSY)` na função `EnsureMonth`: o backend mantém o cursor da consulta de recorrências aberto enquanto tenta inserir as ocorrências na mesma base SQLite.
 
 ## Estado do ambiente
 
@@ -144,7 +146,7 @@ O Vault descreve a separação `QA → DEV → QA`, mas alguns pontos não estav
 
 ## Situação da demanda
 
-A FIN-MEL-0012 está tecnicamente implementada, mas a validação funcional permanece pendente.
+A FIN-MEL-0012 está tecnicamente implementada, mas a validação funcional reprovou o CT-002. O defeito filho `FIN-BUG-0001` foi criado e a correção retornou ao DEV.
 
 Não registrar como aprovada funcionalmente até confirmar:
 

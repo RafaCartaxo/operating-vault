@@ -48,7 +48,7 @@
 
 ## Verificação
 
-- [ ] CTs funcionais da demanda: [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0012 Recorrências mensais/03 - Casos de teste|ver casos de teste]] — aguardando QA.
+- [ ] CTs funcionais da demanda: [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0012 Recorrências mensais/03 - Casos de teste|ver casos de teste]] — CT-002 reprovado; correção vinculada ao [[03 Trabalho/QA/Financas Pessoais/Demandas/Bugs/FIN-BUG-0001 Falha ao gerar recorrencias mensais/01 - Bug|FIN-BUG-0001]].
 - [x] Gates aplicáveis do repositório verdes.
 - [x] Documentação sincronizada.
 - [ ] Commit registrado no README — sem commit solicitado.

@@ -1,42 +1,40 @@
 ---
 demanda: "[[01 - Bug]]"
-status: planejado
-pontos: ""
+status: concluido
+pontos: 3
 ---
-# Casos de teste — <ID>
+# Casos de teste — FIN-BUG-0001
 
 > [!info]- Navegação QA/DEV
 > **README do card:** [[00 README|Abrir README do card]]  
 > **Bug:** [[01 - Bug]]  
 > **Casos de teste:** [[02 - Casos de teste]]  
-> **Fix DEV:** [[03 Trabalho/DEV/<projeto>/Fixes/<ID>/00 README|Fix DEV]]  
+> **Fix DEV:** será criado após o gate QA deste defeito.
 > **Preparação Qase:** [[04 - Preparação Qase]]  
-> **Validação QA:** [[03 Trabalho/QA/<projeto>/Demandas/Bugs/<ID>/03 - Validação dev|Validação QA]]
+> **Validação QA:** [[03 - Validação dev|Validação QA]]
 
 > [!settings]- Controle dos casos de teste
 > **Status:** `INPUT[inlineSelect(option(planejado),option(execucao),option(concluido)):status]`
 
 > Os cenários de reprodução e regressão vivem nesta nota. A validação registra resultado e evidência; não duplica os CTs.
 
-> [!example]- CT-B01 · Título claro do cenário
+> [!example]- CT-B01 · Carregar lançamentos com recorrência ativa
 >
 > ## Cenário
 >
-> **Descrição:** explique o comportamento incorreto que este caso reproduz ou protege contra regressão.
+> **Descrição:** reproduz o erro 500 ao consultar os lançamentos do mês com uma recorrência ativa.
 >
-> **Pré-condições:**
-> - Informe o estado necessário antes do teste.
-> - Inclua usuário, dados e ambiente quando forem relevantes.
+> **Pré-condições:** existe uma recorrência ativa no mês consultado e o backend está disponível.
 >
-> **Dado** que ...
-> **Quando** ...
-> **Então** ...
+> **Dado** uma recorrência ativa para outubro de 2026
+> **Quando** consulto `GET /api/lancamentos?mes=2026-10` ou abro Acompanhamento
+> **Então** a lista de lançamentos é carregada sem erro 500.
 >
-> **Resultado esperado:** descreva o comportamento correto após a correção.
+> **Resultado esperado:** os lançamentos do mês são retornados e a ocorrência recorrente é exibida.
 >
-> **Pós-condição:** registre como o sistema deve ficar depois do teste.
+> **Pós-condição:** consulta mensal concluída sem bloqueio do banco.
 >
-> **Critérios cobertos:** [[01 - Bug#^c2|C2]]
+> **Critérios cobertos:** [[01 - Bug#^c1|C1]]
 >
 > ---
 >
@@ -45,30 +43,28 @@ pontos: ""
 > **Tipo:** regressão  
 > **Camada:** UI/API  
 > **Automação:** manual  
-> **Execução:** planejado
+> **Execução:** reprovado na rodada inicial.
 
 ^ct-b01
 
 
-> [!example]- CT-B02 · Editar registro sem perder os dados existentes
+> [!example]- CT-B02 · Recalcular mês sem duplicar ocorrências
 >
 > ## Cenário
 >
-> **Descrição:** confirma que a correção mantém os dados já salvos ao editar o registro.
+> **Descrição:** protege a geração idempotente depois que a consulta mensal voltar a funcionar.
 >
-> **Pré-condições:**
-> - Existe um registro criado com os dados necessários.
-> - O usuário tem permissão para editá-lo.
+> **Pré-condições:** existe uma recorrência ativa e uma ocorrência já gerada para a competência.
 >
-> **Dado** um registro existente com dados preenchidos  
-> **Quando** altero apenas o campo relacionado ao bug e salvo  
-> **Então** a alteração é persistida sem apagar os demais dados.
+> **Dado** uma recorrência já processada no mês
+> **Quando** consulto novamente o mesmo mês
+> **Então** a lista carrega e não cria uma segunda ocorrência.
 >
-> **Resultado esperado:** o comportamento corrigido funciona e os dados não relacionados permanecem intactos.
+> **Resultado esperado:** permanece no máximo uma ocorrência por recorrência e competência.
 >
-> **Pós-condição:** registro atualizado e disponível para consulta.
+> **Pós-condição:** consulta repetida concluída sem duplicidade.
 >
-> **Critérios cobertos:** [[01 - Bug#^c1|C1]]
+> **Critérios cobertos:** [[01 - Bug#^c2|C2]]
 >
 > ---
 >

@@ -8,7 +8,7 @@
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0012/00 README|Execução técnica]] — implementação concluída, aguardando validação QA.
+> **Execução DEV:** [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0012/00 README|Execução técnica]] — correção devolvida ao DEV via [[03 Trabalho/QA/Financas Pessoais/Demandas/Bugs/FIN-BUG-0001 Falha ao gerar recorrencias mensais/01 - Bug|FIN-BUG-0001]].
 
 ## Auditoria de integridade QA
 
@@ -23,7 +23,7 @@
 - **Resultado do gate:** ✅ pacote íntegro após handoff DEV
 - **Evidência:** 6 critérios, 10 CTs, 10 âncoras, matriz, plano e validação coerentes.
 
-O handoff DEV foi concluído. A aprovação funcional permanece pendente da execução dos 10 CTs.
+O handoff inicial DEV foi concluído, mas a validação funcional reprovou a geração mensal de recorrências. A correção está vinculada ao `FIN-BUG-0001`; a aprovação funcional permanece pendente.
 
 > [!settings]- Controle do card
 > **Status:** `INPUT[inlineSelect(option(backlog),option(analise),option(execucao),option(validacao),option(concluido)):status]`  

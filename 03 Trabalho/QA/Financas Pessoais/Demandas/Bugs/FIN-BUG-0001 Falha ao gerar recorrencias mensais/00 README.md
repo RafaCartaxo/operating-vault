@@ -1,13 +1,13 @@
-# Template de Bug
+# FIN-BUG-0001 — Geração mensal de recorrências bloqueia lançamentos
 
 
 > [!info]- Navegação QA/DEV
-> **Bug:** [[01 - Bug]]  
-> **Épico:** [[<EPICO>|<épico>]]
-> **Casos de teste:** [[02 - Casos de teste]]  
-> **Preparação Qase:** [[04 - Preparação Qase]]  
-> **Fix DEV:** [[03 Trabalho/DEV/<projeto>/Fixes/<ID>/00 README|Fix DEV]]
-> **Validação QA:** [[03 - Validação dev|Validação QA]] — criada junto com o Bug, copiando `Templates/QA/04 - Validação dev.md` e renomeando para `03 - Validação dev.md`.
+> **Bug:** [[01 - Bug]]
+> **Demanda pai:** [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0012 Recorrências mensais/00 README|FIN-MEL-0012]]
+> **Casos de teste:** [[02 - Casos de teste]]
+> **Preparação Qase:** [[04 - Preparação Qase]]
+> **Fix DEV:** será criado após o gate QA deste defeito.
+> **Validação QA:** [[03 - Validação dev|Validação QA]]
 
 > [!settings]- Controle do card
 > **Status:** `INPUT[inlineSelect(option(backlog),option(analise),option(execucao),option(validacao),option(concluido)):status]`  
@@ -16,9 +16,9 @@
 > [!info]- Cards relacionados
 > **Bug:** [[01 - Bug]]  
 > **Casos de teste:** [[02 - Casos de teste]]  
-> **Validação:** [[03 - Validação dev]]  
-> **Preparação Qase:** [[04 - Preparação Qase]]  
-> **Fix DEV:** [[03 Trabalho/DEV/<projeto>/Fixes/<ID>/00 README|Fix <ID>]]
+> **Validação:** [[03 - Validação dev]]
+> **Preparação Qase:** [[04 - Preparação Qase]]
+> **Fix DEV:** será criado após o gate QA deste defeito.
 
 > [!tip]- Esforço
 > ```dataviewjs
@@ -38,13 +38,13 @@
 > const adicional = derivados.array().reduce((soma, pagina) => soma + (typeof pagina.pontos === "number" ? pagina.pontos : 0), 0);
 > const original = dv.pages('"' + dv.current().file.folder + '"').where(p => typeof p.pontos === "number").array().reduce((soma, pagina) => soma + Number(pagina.pontos), 0);
 > dv.table(["Defeito derivado", "Pontos"], derivados.map(p => [p.file.link, p.pontos ?? 0]));
-> dv.paragraph(`**${id || "<ID>"} — Retrabalho por defeitos derivados:** ${adicional} pontos (${derivados.length} defeitos)`);
+> dv.paragraph(`**${id || "FIN-BUG-0001"} — Retrabalho por defeitos derivados:** ${adicional} pontos (${derivados.length} defeitos)`);
 > ```
 
-Pacote QA para `<PROJ>-NNN`:
+Pacote QA para `FIN-BUG-0001`:
 
 ```text
-<PROJ>-NNN/
+FIN-BUG-0001/
 ├── 00 README.md
 ├── 01 - Bug.md
 ├── 02 - Casos de teste.md
@@ -52,7 +52,7 @@ Pacote QA para `<PROJ>-NNN`:
 └── 04 - Preparação Qase.md
 ```
 
-O arquivo de validação nasce junto com o Bug e é preenchido após o Fix DEV.
+O arquivo de validação nasceu junto com o Bug e será preenchido após o Fix DEV.
 
 ---
 

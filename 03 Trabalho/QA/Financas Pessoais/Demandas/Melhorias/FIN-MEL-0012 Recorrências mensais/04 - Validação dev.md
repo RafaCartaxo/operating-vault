@@ -5,12 +5,12 @@ ambiente: dev
 versao: ""
 status: execucao
 responsavel: ""
-resultado: aguardando
+resultado: reprovado
 # Pontos da etapa de validação: serão registrados após a execução dos CTs.
 pontos: 0
 ct_resultados:
   ct_001: "⏳ Aguardando"
-  ct_002: "⏳ Aguardando"
+  ct_002: "❌ Falhou"
   ct_003: "⏳ Aguardando"
   ct_004: "⏳ Aguardando"
   ct_005: "⏳ Aguardando"
@@ -19,7 +19,7 @@ ct_resultados:
   ct_008: "⏳ Aguardando"
   ct_009: "⏳ Aguardando"
   ct_010: "⏳ Aguardando"
-data_inicio: ""
+data_inicio: "2026-10-05"
 data_fim: ""
 ---
 
@@ -90,7 +90,7 @@ dv.list([
 |---|---|---|---|---|---:|
 | [[03 - Casos de teste#^ct-001\|CT-001]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_001]` |  |  |  | `= choice(this.ct_resultados.ct_001 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
 
-| [[03 - Casos de teste#^ct-002\|CT-002]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_002]` |  |  |  | `= choice(this.ct_resultados.ct_002 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
+| [[03 - Casos de teste#^ct-002\|CT-002]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_002]` | `GET /api/lancamentos?mes=2026-10` retornou HTTP 500 | geração mensal falha com `database is locked (5) (SQLITE_BUSY)` | [[03 Trabalho/QA/Financas Pessoais/Demandas/Bugs/FIN-BUG-0001 Falha ao gerar recorrencias mensais/01 - Bug|FIN-BUG-0001]] | `= choice(this.ct_resultados.ct_002 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
 | [[03 - Casos de teste#^ct-003\|CT-003]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_003]` |  |  |  | `= choice(this.ct_resultados.ct_003 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
 | [[03 - Casos de teste#^ct-004\|CT-004]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_004]` |  |  |  | `= choice(this.ct_resultados.ct_004 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
 | [[03 - Casos de teste#^ct-005\|CT-005]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_005]` |  |  |  | `= choice(this.ct_resultados.ct_005 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
@@ -147,15 +147,16 @@ Use esta seção somente quando houver reteste após correção:
 
 ## Decisão
 
-**Resultado geral:** aguardando execução dos CTs pelo QA
+**Resultado geral:** reprovado — CT-002 falhou; correção devolvida ao DEV via [[03 Trabalho/QA/Financas Pessoais/Demandas/Bugs/FIN-BUG-0001 Falha ao gerar recorrencias mensais/01 - Bug|FIN-BUG-0001]].
 
 ---
 
 ## Checklist de encerramento QA
 
 - [ ] Todos os CTs executados ou com justificativa registrada.
-- [ ] Evidências e observações preenchidas quando necessário.
-- [ ] Bugs filhos vinculados na coluna **Defeito/Bug**.
-- [ ] Resultado geral definido.
-- [ ] Status da validação e da demanda atualizados.
-- [ ] Próximo passo registrado.
+- [x] Evidências e observações preenchidas quando necessário.
+- [x] Bugs filhos vinculados na coluna **Defeito/Bug**.
+- [x] Resultado geral definido.
+- [x] Status da validação e da demanda atualizados.
+- [x] Próximo passo registrado.
+- [x] Sincronização documental verificada: frontmatter, README, board, links, evidências, histórico e pendências.
