@@ -70,7 +70,8 @@ Evoluir a navegação entregue na FIN-MEL-0006: o Acompanhamento será a tela pr
 - [x] Navegação do lançamento por modal — FIN-MEL-0009 concluído com 10 CTs aprovados.
 - [x] Ação de novo lançamento mobile — FIN-MEL-0010 concluído com 5 CTs aprovados.
 - [x] Organização da navbar mobile — FIN-MEL-0011 concluído com 5 CTs aprovados.
-- [ ] Recorrências — FIN-MEL-0012 implementada e aguardando validação dos 10 CTs no QA.
+- [ ] Recorrências — FIN-MEL-0012 com correção técnica FIN-FIX-0001 concluída; aguardando reteste dos 10 CTs no QA.
+- [ ] Evolução arquitetural — [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0013 Orquestração mensal em service/00 README|FIN-MEL-0013]] separa a orquestração mensal do handler HTTP em um service de aplicação.
 - [ ] Contas fixas.
 - [ ] Faturas.
 

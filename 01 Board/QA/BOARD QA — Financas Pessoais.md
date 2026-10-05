@@ -4,6 +4,8 @@ kanban-plugin: board
 
 ## 🔍 Análise da demanda
 
+- [ ] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0013 Orquestração mensal em service/00 README|FIN-MEL-0013 — orquestração mensal em service de aplicação]]
+
 ## ⚙️ Em execução DEV
 
 ## 🧪 Plano de teste
