@@ -5,11 +5,11 @@ ambiente: dev
 versao: ""
 status: execucao
 responsavel: ""
-resultado: reprovado
+resultado: aguardando
 # Pontos da etapa de validação; substitua pelo valor planejado para esta etapa.
 pontos: 0
 ct_resultados:
-  ct_b01: "❌ Falhou"
+  ct_b01: "⏳ Aguardando"
   ct_b02: "⏳ Aguardando"
 data_inicio: "2026-10-05"
 data_fim: ""
@@ -23,7 +23,7 @@ data_fim: ""
 > **Casos de teste:** [[02 - Casos de teste]]
 > **Validação:** [[03 - Validação dev]]
 > **Preparação Qase:** [[04 - Preparação Qase]]
-> **Fix DEV:** será criado após o gate QA deste defeito.
+> **Fix DEV:** [[03 Trabalho/DEV/Financas Pessoais/Fixes/FIN-FIX-0001/00 README|FIN-FIX-0001 — correção técnica concluída; aguardando reteste QA]]
 
 > [!settings]- Controle da validação
 > **Status:** `INPUT[inlineSelect(option(execucao),option(concluido)):status]`  
@@ -121,15 +121,15 @@ if (tabela) {
 
 Use esta seção somente quando houver reteste após correção:
 
-- **Rodada inicial:** registre o CT reprovado e o defeito aberto.
-- **Correção:** vincule o bug e o Fix DEV.
-- **Reteste:** registre o resultado final e a data.
+- **Rodada inicial — 2026-10-05:** CT-B01 falhou com HTTP 500 e `SQLITE_BUSY`.
+- **Correção — 2026-10-05:** [[03 Trabalho/DEV/Financas Pessoais/Fixes/FIN-FIX-0001/00 README|FIN-FIX-0001]] implementado e aprovado tecnicamente.
+- **Reteste:** aguardando execução do QA.
 
 ---
 
 ## Decisão
 
-**Resultado geral:** reprovado — CT-B01 falhou e o defeito foi devolvido ao DEV.
+**Resultado geral:** aguardando reteste QA após o FIN-FIX-0001.
 
 ---
 

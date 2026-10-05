@@ -9,7 +9,7 @@ pontos: 3
 > **README do card:** [[00 README|Abrir README do card]]  
 > **Bug:** [[01 - Bug]]  
 > **Casos de teste:** [[02 - Casos de teste]]  
-> **Fix DEV:** será criado após o gate QA deste defeito.
+> **Fix DEV:** [[03 Trabalho/DEV/Financas Pessoais/Fixes/FIN-FIX-0001/00 README|FIN-FIX-0001 — correção técnica concluída; aguardando QA]]
 > **Preparação Qase:** [[04 - Preparação Qase]]  
 > **Validação QA:** [[03 - Validação dev|Validação QA]]
 

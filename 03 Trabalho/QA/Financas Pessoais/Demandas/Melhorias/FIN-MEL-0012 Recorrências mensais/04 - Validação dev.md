@@ -5,12 +5,12 @@ ambiente: dev
 versao: ""
 status: execucao
 responsavel: ""
-resultado: reprovado
+resultado: aguardando
 # Pontos da etapa de validação: serão registrados após a execução dos CTs.
 pontos: 0
 ct_resultados:
   ct_001: "⏳ Aguardando"
-  ct_002: "❌ Falhou"
+  ct_002: "⏳ Aguardando"
   ct_003: "⏳ Aguardando"
   ct_004: "⏳ Aguardando"
   ct_005: "⏳ Aguardando"
@@ -139,15 +139,15 @@ if (tabela) {
 
 Use esta seção somente quando houver reteste após correção:
 
-- **Rodada inicial:** registre o CT reprovado e o defeito aberto.
-- **Correção:** vincule o bug e o Fix DEV.
-- **Reteste:** registre o resultado final e a data.
+- **Rodada inicial — 2026-10-05:** CT-002 falhou com HTTP 500 e `SQLITE_BUSY`; defeito `FIN-BUG-0001` aberto.
+- **Correção — 2026-10-05:** [[03 Trabalho/DEV/Financas Pessoais/Fixes/FIN-FIX-0001/00 README|FIN-FIX-0001]] implementado e aprovado tecnicamente.
+- **Reteste:** aguardando execução dos CTs afetados pelo QA.
 
 ---
 
 ## Decisão
 
-**Resultado geral:** reprovado — CT-002 falhou; correção devolvida ao DEV via [[03 Trabalho/QA/Financas Pessoais/Demandas/Bugs/FIN-BUG-0001 Falha ao gerar recorrencias mensais/01 - Bug|FIN-BUG-0001]].
+**Resultado geral:** aguardando reteste QA após o FIN-FIX-0001.
 
 ---
 

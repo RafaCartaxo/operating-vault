@@ -1,8 +1,8 @@
 ---
 prioridade: media
-status: execucao
+status: validacao
 tipo: melhoria
-etapa_atual: "DEV · Análise técnica"
+etapa_atual: "QA · Validação"
 modulo: lancamentos
 plano: "[[02 - Plano de teste]]"
 execucao: "[[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0012/00 README|Execução técnica]]"
@@ -26,7 +26,7 @@ pontos_alocados: 8
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0012/00 README|Correção devolvida ao DEV via FIN-BUG-0001]]
+> **Execução DEV:** [[03 Trabalho/DEV/Financas Pessoais/Fixes/FIN-FIX-0001/00 README|FIN-FIX-0001 concluído tecnicamente; aguardando reteste QA]]
 
 > [!settings]- Controle da demanda
 > **Prioridade:** `INPUT[inlineSelect(option(baixa),option(media),option(alta)):prioridade]`  
@@ -36,7 +36,7 @@ pontos_alocados: 8
 
 
 > [!info] Status atual
-> **Próximo passo:** corrigir o [[03 Trabalho/QA/Financas Pessoais/Demandas/Bugs/FIN-BUG-0001 Falha ao gerar recorrencias mensais/01 - Bug|FIN-BUG-0001]] e depois repetir os CTs afetados.
+> **Próximo passo:** repetir os CTs afetados e os cenários de regressão após o [[03 Trabalho/DEV/Financas Pessoais/Fixes/FIN-FIX-0001/00 README|FIN-FIX-0001]].
 
 ---
 

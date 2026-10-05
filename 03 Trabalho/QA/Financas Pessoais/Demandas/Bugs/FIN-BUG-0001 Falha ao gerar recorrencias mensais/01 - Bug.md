@@ -1,8 +1,8 @@
 ---
 prioridade: alta
-status: execucao
+status: validacao
 tipo: bug
-etapa_atual: "DEV · Análise técnica"
+etapa_atual: "QA · Validação"
 modulo: "Recorrências mensais"
 plano: ""
 execucao: ""
@@ -25,7 +25,7 @@ pontos_alocados: 3
 > **Demanda pai:** [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0012 Recorrências mensais/01 - Demanda|FIN-MEL-0012]]
 > **Casos de teste:** [[02 - Casos de teste]]  
 > **Preparação Qase:** [[04 - Preparação Qase]]  
-> **Fix DEV:** será criado após o gate QA deste defeito.
+> **Fix DEV:** [[03 Trabalho/DEV/Financas Pessoais/Fixes/FIN-FIX-0001/00 README|FIN-FIX-0001 — Liberar cursor antes de gerar recorrências]]
 > **Validação QA:** [[03 - Validação dev|Validação QA]]
 
 > [!settings]- Controle do bug

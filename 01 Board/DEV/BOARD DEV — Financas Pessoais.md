@@ -4,9 +4,6 @@ kanban-plugin: board
 
 ## 🔎 Análise técnica
 
-- [ ] [[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0012/00 README|FIN-MEL-0012 — analisar correção via FIN-BUG-0001]]
-- [ ] [[03 Trabalho/QA/Financas Pessoais/Demandas/Bugs/FIN-BUG-0001 Falha ao gerar recorrencias mensais/01 - Bug|FIN-BUG-0001 — corrigir bloqueio ao gerar recorrências mensais]]
-
 ## 📋 Plano de execução
 
 - [ ]
@@ -19,6 +16,8 @@ kanban-plugin: board
 
 
 ## 🧪 Aguardando QA
+
+- [ ] [[03 Trabalho/DEV/Financas Pessoais/Fixes/FIN-FIX-0001/00 README|FIN-FIX-0001 — correção técnica concluída; aguardando reteste QA]]
 
 ## ✅ Concluído
 

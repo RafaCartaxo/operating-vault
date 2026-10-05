@@ -1,7 +1,7 @@
 ---
-status: execucao
+status: validacao
 tipo: melhoria
-etapa_atual: "DEV · Análise técnica"
+etapa_atual: "QA · Validação"
 demanda: FIN-MEL-0012
 epico: ""
 plano: "[[02 - Plano de execução|02 - Plano de execução]]"

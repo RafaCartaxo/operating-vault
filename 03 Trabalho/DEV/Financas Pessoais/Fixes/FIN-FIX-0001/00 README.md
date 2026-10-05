@@ -1,7 +1,7 @@
 ---
-status: execucao
+status: validacao
 tipo: bug
-etapa_atual: "DEV · Implementação"
+etapa_atual: "QA · Validação"
 demanda: "FIN-BUG-0001"
 epico: ""
 commit: ""
