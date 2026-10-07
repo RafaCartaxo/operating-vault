@@ -17,7 +17,7 @@ kanban-plugin: board
 
 ## 🧪 Aguardando QA
 
-- [ ] [[03 Trabalho/DEV/Financas Pessoais/Fixes/FIN-FIX-0001/00 README|FIN-FIX-0001 — correção técnica concluída; aguardando reteste QA]]
+- [x] [[03 Trabalho/DEV/Financas Pessoais/Fixes/FIN-FIX-0001/00 README|FIN-FIX-0001 — correção de recorrências concluída e aprovada]]
 
 ## ✅ Concluído
 

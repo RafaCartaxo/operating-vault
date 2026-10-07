@@ -3,24 +3,24 @@ demanda: FIN-MEL-0012
 execucao: "[[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0012/00 README|Execução técnica]]"
 ambiente: dev
 versao: ""
-status: execucao
-responsavel: ""
-resultado: aguardando
+status: concluido
+responsavel: QA/qa-first-delivery
+resultado: aprovado
 # Pontos da etapa de validação: serão registrados após a execução dos CTs.
 pontos: 0
 ct_resultados:
-  ct_001: "⏳ Aguardando"
-  ct_002: "⏳ Aguardando"
-  ct_003: "⏳ Aguardando"
-  ct_004: "⏳ Aguardando"
-  ct_005: "⏳ Aguardando"
-  ct_006: "⏳ Aguardando"
-  ct_007: "⏳ Aguardando"
-  ct_008: "⏳ Aguardando"
-  ct_009: "⏳ Aguardando"
-  ct_010: "⏳ Aguardando"
+  ct_001: "✅ Aprovado"
+  ct_002: "✅ Aprovado"
+  ct_003: "✅ Aprovado"
+  ct_004: "✅ Aprovado"
+  ct_005: "✅ Aprovado"
+  ct_006: "✅ Aprovado"
+  ct_007: "✅ Aprovado"
+  ct_008: "✅ Aprovado"
+  ct_009: "✅ Aprovado"
+  ct_010: "✅ Aprovado"
 data_inicio: "2026-10-05"
-data_fim: ""
+data_fim: "2026-10-05"
 ---
 
 # Validação — FIN-MEL-0012
@@ -49,8 +49,8 @@ data_fim: ""
 
 ## Contexto
 
-- Ambiente:
-- Versão/build:
+- Ambiente: dev local
+- Versão/build: FIN-FIX-0001
 
 ---
 
@@ -90,7 +90,7 @@ dv.list([
 |---|---|---|---|---|---:|
 | [[03 - Casos de teste#^ct-001\|CT-001]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_001]` |  |  |  | `= choice(this.ct_resultados.ct_001 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
 
-| [[03 - Casos de teste#^ct-002\|CT-002]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_002]` | `GET /api/lancamentos?mes=2026-10` retornou HTTP 500 | geração mensal falha com `database is locked (5) (SQLITE_BUSY)` | [[03 Trabalho/QA/Financas Pessoais/Demandas/Bugs/FIN-BUG-0001 Falha ao gerar recorrencias mensais/01 - Bug|FIN-BUG-0001]] | `= choice(this.ct_resultados.ct_002 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
+| [[03 - Casos de teste#^ct-002\|CT-002]] | `✅ Aprovado` | `GET /api/lancamentos?mes=2026-10` retornou HTTP 200 após o fix | geração mensal aprovada sem `SQLITE_BUSY` | [[03 Trabalho/QA/Financas Pessoais/Demandas/Bugs/FIN-BUG-0001 Falha ao gerar recorrencias mensais/01 - Bug|FIN-BUG-0001]] | `= choice(this.ct_resultados.ct_002 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
 | [[03 - Casos de teste#^ct-003\|CT-003]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_003]` |  |  |  | `= choice(this.ct_resultados.ct_003 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
 | [[03 - Casos de teste#^ct-004\|CT-004]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_004]` |  |  |  | `= choice(this.ct_resultados.ct_004 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
 | [[03 - Casos de teste#^ct-005\|CT-005]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_005]` |  |  |  | `= choice(this.ct_resultados.ct_005 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
@@ -141,19 +141,19 @@ Use esta seção somente quando houver reteste após correção:
 
 - **Rodada inicial — 2026-10-05:** CT-002 falhou com HTTP 500 e `SQLITE_BUSY`; defeito `FIN-BUG-0001` aberto.
 - **Correção — 2026-10-05:** [[03 Trabalho/DEV/Financas Pessoais/Fixes/FIN-FIX-0001/00 README|FIN-FIX-0001]] implementado e aprovado tecnicamente.
-- **Reteste:** aguardando execução dos CTs afetados pelo QA.
+- **Reteste — 2026-10-05:** os 10 CTs foram aprovados após o FIN-FIX-0001.
 
 ---
 
 ## Decisão
 
-**Resultado geral:** aguardando reteste QA após o FIN-FIX-0001.
+**Resultado geral:** aprovado.
 
 ---
 
 ## Checklist de encerramento QA
 
-- [ ] Todos os CTs executados ou com justificativa registrada.
+- [x] Todos os CTs executados ou com justificativa registrada.
 - [x] Evidências e observações preenchidas quando necessário.
 - [x] Bugs filhos vinculados na coluna **Defeito/Bug**.
 - [x] Resultado geral definido.

@@ -16,7 +16,6 @@ kanban-plugin: board
 
 ## 🧪 Validação
 
-- [ ] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0012 Recorrências mensais/04 - Validação dev|FIN-MEL-0012 — retestar CTs após FIN-FIX-0001]]
 
 ## ✅ Concluído
 
@@ -31,6 +30,7 @@ kanban-plugin: board
 - [x] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0009 Navegação lançamento modal/00 README|FIN-MEL-0009 — todos os 10 CTs aprovados]]
 - [x] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0010 Ação novo lançamento mobile/00 README|FIN-MEL-0010 — todos os 5 CTs aprovados]]
 - [x] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0011 Organização navbar mobile/00 README|FIN-MEL-0011 — todos os 5 CTs aprovados]]
+- [x] [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0012 Recorrências mensais/00 README|FIN-MEL-0012 — todos os 10 CTs aprovados após FIN-FIX-0001]]
 
 %% kanban:settings
 ```

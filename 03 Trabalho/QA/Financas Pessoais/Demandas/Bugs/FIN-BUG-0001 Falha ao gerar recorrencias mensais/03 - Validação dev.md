@@ -3,16 +3,16 @@ demanda: "[[01 - Bug]]"
 execucao: ""
 ambiente: dev
 versao: ""
-status: execucao
+status: concluido
 responsavel: ""
-resultado: aguardando
+resultado: aprovado
 # Pontos da etapa de validação; substitua pelo valor planejado para esta etapa.
 pontos: 0
 ct_resultados:
-  ct_b01: "⏳ Aguardando"
-  ct_b02: "⏳ Aguardando"
+  ct_b01: "✅ Aprovado"
+  ct_b02: "✅ Aprovado"
 data_inicio: "2026-10-05"
-data_fim: ""
+data_fim: "2026-10-05"
 ---
 
 # Validação — FIN-BUG-0001
@@ -40,8 +40,8 @@ data_fim: ""
 
 ## Contexto
 
-- Ambiente:
-- Versão/build:
+- Ambiente: dev local
+- Versão/build: FIN-FIX-0001
 
 ---
 
@@ -79,8 +79,8 @@ dv.list([
 
 | CT | Resultado | Evidência | Observação | Defeito/Bug | Pontos entregues |
 |---|---|---|---|---|---:|
-| [[02 - Casos de teste#^ct-b01\|CT-B01]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_b01]` | `GET /api/lancamentos?mes=2026-10` retornou HTTP 500 | `database is locked (5) (SQLITE_BUSY)` reproduzido no backend | [[01 - Bug|FIN-BUG-0001]] | `= choice(this.ct_resultados.ct_b01 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
-| [[02 - Casos de teste#^ct-b02\|CT-B02]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_b02]` |  | aguardando correção do DEV |  | `= choice(this.ct_resultados.ct_b02 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
+| [[02 - Casos de teste#^ct-b01\|CT-B01]] | `✅ Aprovado` | consulta mensal retornou HTTP 200 após o fix | erro não reproduzido |  | `= choice(this.ct_resultados.ct_b01 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
+| [[02 - Casos de teste#^ct-b02\|CT-B02]] | `✅ Aprovado` | duas consultas consecutivas sem duplicidade | idempotência preservada |  | `= choice(this.ct_resultados.ct_b02 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
 
 > **Regra de esforço:** aprovado e falhou = 100% da parcela; em andamento = 25%; bloqueado = 50%; aguardando e não executado = 0%.
 
@@ -123,19 +123,19 @@ Use esta seção somente quando houver reteste após correção:
 
 - **Rodada inicial — 2026-10-05:** CT-B01 falhou com HTTP 500 e `SQLITE_BUSY`.
 - **Correção — 2026-10-05:** [[03 Trabalho/DEV/Financas Pessoais/Fixes/FIN-FIX-0001/00 README|FIN-FIX-0001]] implementado e aprovado tecnicamente.
-- **Reteste:** aguardando execução do QA.
+- **Reteste — 2026-10-05:** CT-B01 e CT-B02 aprovados após o FIN-FIX-0001.
 
 ---
 
 ## Decisão
 
-**Resultado geral:** aguardando reteste QA após o FIN-FIX-0001.
+**Resultado geral:** aprovado.
 
 ---
 
 ## Checklist de encerramento QA
 
-- [ ] Todos os CTs executados ou com justificativa registrada.
+- [x] Todos os CTs executados ou com justificativa registrada.
 - [x] Evidências e observações preenchidas quando necessário.
 - [ ] Bugs filhos vinculados na coluna **Defeito/Bug**.
 - [x] Resultado geral definido.

@@ -17,7 +17,7 @@
 - [x] Diff limitado ao escopo do fix.
 - [x] Causa e regressão cobertas.
 - [x] Gates aplicáveis verdes.
-- [ ] CTs QA cobertos — aguardando execução funcional.
+- [x] CTs QA cobertos — CT-B01 e CT-B02 aprovados.
 
 ---
 
@@ -25,4 +25,4 @@
 
 - O cursor de leitura era mantido aberto durante a escrita no SQLite.
 - A correção materializa as recorrências antes das inserções e preserva `INSERT OR IGNORE`.
-- Decisão: aprovado tecnicamente e devolvido ao QA para CT-B01/CT-B02.
+- Decisão: aprovado tecnicamente; CT-B01 e CT-B02 aprovados em QA.

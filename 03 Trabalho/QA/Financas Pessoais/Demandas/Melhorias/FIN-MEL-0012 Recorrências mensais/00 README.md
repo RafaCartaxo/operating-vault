@@ -19,11 +19,11 @@
 > ```
 
 - **Responsável pela execução:** QA/`qa-first-delivery`
-- **Data da última execução:** 2026-10-04
-- **Resultado do gate:** ✅ pacote íntegro após handoff DEV
-- **Evidência:** 6 critérios, 10 CTs, 10 âncoras, matriz, plano e validação coerentes.
+- **Data da última execução:** 2026-10-05
+- **Resultado do gate:** ✅ pacote íntegro e validação funcional aprovada
+- **Evidência:** 6 critérios, 10 CTs, 10 âncoras, matriz, plano e validação coerentes; 10 CTs aprovados após FIN-FIX-0001.
 
-O handoff inicial DEV foi concluído, mas a validação funcional reprovou a geração mensal de recorrências. A correção está vinculada ao `FIN-BUG-0001`; a aprovação funcional permanece pendente.
+O handoff inicial DEV encontrou o bug `FIN-BUG-0001`. O `FIN-FIX-0001` foi implementado, revisado e validado; a demanda está concluída.
 
 > [!settings]- Controle do card
 > **Status:** `INPUT[inlineSelect(option(backlog),option(analise),option(execucao),option(validacao),option(concluido)):status]`  

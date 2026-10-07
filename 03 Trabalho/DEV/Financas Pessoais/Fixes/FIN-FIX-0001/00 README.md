@@ -1,7 +1,7 @@
 ---
-status: validacao
+status: concluido
 tipo: bug
-etapa_atual: "QA · Validação"
+etapa_atual: "Concluído"
 demanda: "FIN-BUG-0001"
 epico: ""
 commit: ""
@@ -54,5 +54,5 @@ pontos: ""
 - [x] Plano de correção aprovado
 - [x] Implementação concluída
 - [x] Code review aprovado
-- [ ] Validação QA concluída
+- [x] Validação QA concluída — CT-B01 e CT-B02 aprovados.
 - [x] Sincronização documental verificada: frontmatter, README, board, links, evidências, histórico e pendências

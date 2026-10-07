@@ -6,7 +6,7 @@
 > **Demanda pai:** [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0012 Recorrências mensais/00 README|FIN-MEL-0012]]
 > **Casos de teste:** [[02 - Casos de teste]]
 > **Preparação Qase:** [[04 - Preparação Qase]]
-> **Fix DEV:** [[03 Trabalho/DEV/Financas Pessoais/Fixes/FIN-FIX-0001/00 README|FIN-FIX-0001 — correção técnica concluída; aguardando QA]]
+> **Fix DEV:** [[03 Trabalho/DEV/Financas Pessoais/Fixes/FIN-FIX-0001/00 README|FIN-FIX-0001 — correção concluída e aprovada em QA]]
 > **Validação QA:** [[03 - Validação dev|Validação QA]]
 
 > [!settings]- Controle do card

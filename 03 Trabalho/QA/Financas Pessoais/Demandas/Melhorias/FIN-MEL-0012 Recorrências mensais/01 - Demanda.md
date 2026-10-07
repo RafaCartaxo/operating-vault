@@ -1,8 +1,8 @@
 ---
 prioridade: media
-status: validacao
+status: concluido
 tipo: melhoria
-etapa_atual: "QA · Validação"
+etapa_atual: "Concluído"
 modulo: lancamentos
 plano: "[[02 - Plano de teste]]"
 execucao: "[[03 Trabalho/DEV/Financas Pessoais/Execuções/FIN-MEL-0012/00 README|Execução técnica]]"
@@ -12,7 +12,7 @@ projeto: financas-pessoais
 epico: ""
 pai: ""
 data_inicio: "2026-10-03"
-data_fim: ""
+data_fim: "2026-10-05"
 responsavel: ""
 pontos_alocados: 8
 ---
@@ -36,7 +36,7 @@ pontos_alocados: 8
 
 
 > [!info] Status atual
-> **Próximo passo:** repetir os CTs afetados e os cenários de regressão após o [[03 Trabalho/DEV/Financas Pessoais/Fixes/FIN-FIX-0001/00 README|FIN-FIX-0001]].
+> **Próximo passo:** capacidade concluída; seguir para a próxima demanda do roadmap.
 
 ---
 

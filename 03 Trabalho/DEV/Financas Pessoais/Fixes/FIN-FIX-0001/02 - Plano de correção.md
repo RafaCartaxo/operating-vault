@@ -36,7 +36,7 @@ Em uma frase: a consulta mensal volta a carregar lançamentos e gerar ocorrênci
 
 ## Pronto quando
 
-- [ ] CTs QA executados.
+- [x] CTs QA executados e aprovados.
 - [x] Regressão automatizada criada ou atualizada quando aplicável.
 - [x] Gates do repositório verdes.
 - [x] Code review aprovado.

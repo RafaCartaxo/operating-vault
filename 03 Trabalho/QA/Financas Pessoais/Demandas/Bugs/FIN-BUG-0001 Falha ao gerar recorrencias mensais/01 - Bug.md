@@ -1,8 +1,8 @@
 ---
 prioridade: alta
-status: validacao
+status: concluido
 tipo: bug
-etapa_atual: "QA · Validação"
+etapa_atual: "Concluído"
 modulo: "Recorrências mensais"
 plano: ""
 execucao: ""
@@ -12,7 +12,7 @@ projeto: "Financas Pessoais"
 epico: ""
 pai: "FIN-MEL-0012"
 data_inicio: "2026-10-05"
-data_fim: ""
+data_fim: "2026-10-05"
 responsavel: ""
 pontos_alocados: 3
 ---
@@ -25,7 +25,7 @@ pontos_alocados: 3
 > **Demanda pai:** [[03 Trabalho/QA/Financas Pessoais/Demandas/Melhorias/FIN-MEL-0012 Recorrências mensais/01 - Demanda|FIN-MEL-0012]]
 > **Casos de teste:** [[02 - Casos de teste]]  
 > **Preparação Qase:** [[04 - Preparação Qase]]  
-> **Fix DEV:** [[03 Trabalho/DEV/Financas Pessoais/Fixes/FIN-FIX-0001/00 README|FIN-FIX-0001 — Liberar cursor antes de gerar recorrências]]
+> **Fix DEV:** [[03 Trabalho/DEV/Financas Pessoais/Fixes/FIN-FIX-0001/00 README|FIN-FIX-0001 — correção concluída e aprovada em QA]]
 > **Validação QA:** [[03 - Validação dev|Validação QA]]
 
 > [!settings]- Controle do bug
