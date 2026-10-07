@@ -18,7 +18,7 @@
 > **Casos de teste:** [[02 - Casos de teste]]  
 > **Validação:** [[03 - Validação dev]]
 > **Preparação Qase:** [[04 - Preparação Qase]]
-> **Fix DEV:** [[03 Trabalho/DEV/Financas Pessoais/Fixes/FIN-FIX-0001/00 README|FIN-FIX-0001 — correção técnica concluída; aguardando QA]]
+> **Fix DEV:** [[03 Trabalho/DEV/Financas Pessoais/Fixes/FIN-FIX-0001/00 README|FIN-FIX-0001 — correção concluída e aprovada em QA]]
 
 > [!tip]- Esforço
 > ```dataviewjs
