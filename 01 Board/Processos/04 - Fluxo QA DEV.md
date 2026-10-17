@@ -12,6 +12,8 @@ Esta página é a referência operacional para qualquer projeto dentro do Operat
 
 Quando uma pessoa apresenta uma nova melhoria, bug ou necessidade, a skill `qa-first-delivery` é o ponto de entrada automático. Não é necessário explicar novamente o processo nem chamar a skill manualmente.
 
+Antes dela, vale a camada transversal [[Skills/documented-coherence/SKILL|Documented Coherence]]: consultar primeiro a fonte vigente, responder em formato padrão, decidir pelos pontos principais, documentar decisões novas, verificar contradições e encaminhar para a skill correta. Ela não altera este fluxo; apenas garante que ele seja aplicado com coerência documental.
+
 Depois do gate QA, o próximo responsável é `$dev-execution`. A troca é determinada pelos artefatos e pelo status da demanda, não por uma palavra-chave específica. Se o gate não estiver pronto, o fluxo permanece em QA.
 
 ## Visão geral

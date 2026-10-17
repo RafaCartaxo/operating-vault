@@ -10,6 +10,8 @@ Esta página mostra como as skills do Operating Vault se relacionam. Ela complem
 
 ## Princípio de roteamento
 
+`documented-coherence` é a camada transversal que antecede todas as demais: antes de qualquer skill, a IA consulta a fonte vigente (North Star primeiro), responde em formato padrão, decide pelos pontos principais, documenta decisões novas, verifica contradições e encaminha para a skill ou agente correto. Ela é agnóstica de projeto e não substitui as orquestradoras do ciclo.
+
 `qa-first-delivery` e `dev-execution` são as skills orquestradoras do ciclo. As demais notas em `Skills/` são regras especializadas do vault: elas não precisam ser chamadas pelo usuário como comandos independentes. A etapa atual e o tipo de trabalho determinam quais regras devem ser consultadas.
 
 O fluxo é orientado por estado e artefatos. Uma palavra como “siga” pode indicar continuidade da conversa, mas não substitui o gate nem muda o responsável da etapa.
@@ -80,6 +82,7 @@ flowchart TD
 
 | Skill/regra | Tipo | Entra quando | Produz | Entrega para |
 |---|---|---|---|---|
+| `documented-coherence` | Camada transversal | qualquer entrada, antes das demais | fonte, pontos principais, divergências e próximo responsável | skill ou agente correto do estado atual |
 | `qa-first-delivery` | Orquestradora QA | qualquer ideia, melhoria, bug ou retorno do DEV | pacote QA, gate e validação funcional | `dev-execution` ou fechamento |
 | `MELHORIA` | Regra de demanda | o trabalho funciona, mas pode melhorar | card de melhoria e regras do ciclo | `CASOS-DE-TESTE` e QA |
 | `BUG` | Regra de demanda | há comportamento incorreto ou CT reprovado | bug/defeito com reprodução, ambiente e critérios | `CASOS-DE-TESTE` e QA/DEV |

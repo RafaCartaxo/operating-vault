@@ -70,3 +70,7 @@ Antes de emitir qualquer evento de passagem, conferir:
 - nenhum texto de template ou instrução obsoleta contradizendo o estado atual.
 
 O responsável deve registrar a pendência quando a conferência falhar. Build, testes verdes ou CTs aprovados não substituem essa verificação.
+
+## Protocolo de conclusão entre agentes
+
+Quando agentes diferentes executam e orquestram (por exemplo, via painéis Herdr), o executor deve avisar o orquestrador no pane definido ao concluir — não apenas escrever no próprio painel. O aviso usa o formato da [[Skills/documented-coherence/SKILL|Documented Coherence]]: `STATUS`, `SKILL`, `FONTE`, `PONTOS_PRINCIPAIS`, `DIVERGENCIAS`, `ARQUIVOS`, `VALIDACOES`, `PENDENCIAS`, `PROXIMO_RESPONSAVEL`, com `STATUS` em `IN_PROGRESS`, `BLOCKED` ou `COMPLETED`. O orquestrador confirma o recebimento, verifica os artefatos e só então avança; sem confirmação, o handoff permanece pendente.

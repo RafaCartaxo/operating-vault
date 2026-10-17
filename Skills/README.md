@@ -2,6 +2,10 @@
 
 Estas notas são a fonte de verdade do processo do Operating Vault. Elas são escritas em Markdown para serem lidas por pessoas e por qualquer IA, independentemente do agente ou produto utilizado.
 
+## Camada transversal
+
+- [[Skills/documented-coherence/SKILL|Documented Coherence]] — camada transversal e agnóstica de projeto: consultar primeiro a fonte vigente, responder em formato padrão, decidir pelos pontos principais, documentar decisões novas, verificar contradições e encaminhar para a skill ou agente correto. Aplica-se antes de qualquer outra skill, em qualquer produto.
+
 ## Skills de fluxo
 
 - [[Skills/QA-FIRST-DELIVERY|QA First Delivery]] — transforma uma necessidade em demanda, critérios, CTs, cobertura e handoff aprovado.
