@@ -71,7 +71,7 @@ Os exemplos de ambiente permanecem inicialmente na raiz para preservar o onboard
 1. **NXG-MEL-0004 — README e mapa da raiz:** alteração documental isolada.
 2. **NXG-MEL-0005 — infraestrutura:** agrupar Dockerfile, Caddyfile e compose em `infra/` com paths validados. ✅ Concluído com ressalva (17/10) — infraestrutura movida localmente, nenhum deploy real ainda.
 3. **NXG-MEL-0006 — onboarding:** encapsular comandos docker de dev em scripts npm e atualizar README/08-SETUP-NOVA-MAQUINA.md para `infra/docker-compose.yml`. ✅ Concluído com ressalva (17/10) — arquivado em `05 Arquivo/Nxgest/Melhorias/NXG-MEL-0006/`.
-4. **NXG-MEL-0007 — agentes:** formalizar `product-planner`/`qa-reviewer` em `.opencode/agents/`. Pacote QA criado em 17/10, aguardando gate de integridade.
+4. **NXG-MEL-0007 — agentes:** formalizar `product-planner`/`qa-reviewer` em `.opencode/agents/`. Gate QA aprovado (`QA_READY_FOR_DEV`, 17/10) — execução DEV sendo aberta.
 5. **Renomeação local:** `nxgestao` → `nxgest`, registrada como decisão operacional, não como alteração do repositório.
 
 ## Riscos e controles

@@ -133,4 +133,3 @@ Entrega: os 2 arquivos de agente completos + um ajuste pontual em `AGENTS.md` (s
 
 - Gate QA aprovado e `QA_READY_FOR_DEV` já emitido (17/10/2026) — nenhuma pendência de validação de integridade.
 - Confirmar, na execução DEV, se `AGENTS.md` precisa mesmo de edição (C5) ou se a frase genérica já existente é suficiente.
-- Aguardar autorização explícita do Orquestrador para abrir a execução DEV — não criada nesta tarefa, por instrução.

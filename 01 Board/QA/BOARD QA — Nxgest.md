@@ -16,7 +16,7 @@ kanban-plugin: board
 
 ## 🧪 Casos de teste
 
-- [ ] 🟡 [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados/01 - Demanda|NXG-MEL-0007 — Agentes especializados]]
+- [x] 🟡 [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados/01 - Demanda|NXG-MEL-0007 — Agentes especializados]] — gate aprovado, execução DEV em andamento
 
 
 ## 🧪 Validação
