@@ -2,7 +2,7 @@
 status: execucao
 tipo: melhoria
 etapa_atual: "DEV · Code review"
-demanda: "[[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0006 Onboarding de ambientes/01 - Demanda|NXG-MEL-0006]]"
+demanda: "[[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0006/QA/NXG-MEL-0006 Onboarding de ambientes/01 - Demanda|NXG-MEL-0006]]"
 epico: NXG-EPIC-0001
 plano: "[[03 Trabalho/QA/Nxgest/Demandas/Planos/NXG-028 Governanca da reorganizacao do NX Gest|NXG-028]]"
 commit: ""
@@ -12,7 +12,7 @@ pontos: 10
 # NXG-MEL-0006 — Execução (onboarding de ambientes encapsulado em scripts npm)
 
 > [!info]- Navegação QA/DEV
-> **Demanda QA:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0006 Onboarding de ambientes/01 - Demanda|NXG-MEL-0006 — Onboarding de ambientes]]  
+> **Demanda QA:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0006/QA/NXG-MEL-0006 Onboarding de ambientes/01 - Demanda|NXG-MEL-0006 — Onboarding de ambientes]]  
 > **Épico:** [[04 Projetos/Nxgest/Epicos/NXG-EPIC-0001 Organizacao do NX Gest/00 README|NXG-EPIC-0001 — Organização do NX Gest]]
 > **Análise:** [[01 - Análise|01 - Análise]]  
 > **Plano:** [[02 - Plano de execução|02 - Plano de execução]]  
@@ -25,11 +25,11 @@ pontos: 10
 > **Etapa atual:** `INPUT[inlineSelect(option(DEV · Análise técnica),option(DEV · Plano de execução),option(DEV · Implementação),option(DEV · Code review),option(QA · Validação),option(Concluído)):etapa_atual]`
 
 > [!info]- Cards relacionados
-> **Demanda QA:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0006 Onboarding de ambientes/01 - Demanda|NXG-MEL-0006]]  
+> **Demanda QA:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0006/QA/NXG-MEL-0006 Onboarding de ambientes/01 - Demanda|NXG-MEL-0006]]  
 > **Plano técnico:** não se aplica  
 > **Implementação:** [[03 - Implementação|03 - Implementação]]  
 > **Code review:** [[04 - Code review|04 - Code review]]  
-> **Validação QA:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0006 Onboarding de ambientes/04 - Validação dev|Validação QA]]
+> **Validação QA:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0006/QA/NXG-MEL-0006 Onboarding de ambientes/04 - Validação dev|Validação QA]]
 
 > [!tip]- Esforço
 > ```dataviewjs
@@ -52,8 +52,8 @@ pontos: 10
 | Plano de execução | ✅ | 2026-10-17 |
 | Execução | ✅ | 2026-10-17 |
 | Code review | ✅ | 2026-10-17 |
-| Verificação (CTs) | ⏳ aguardando QA | |
-| Fechamento | ⏳ | |
+| Verificação (CTs) | ✅ aprovado com ressalva | 2026-10-17 |
+| Fechamento | ✅ | 2026-10-17 |
 
 ---
 
@@ -62,6 +62,7 @@ pontos: 10
 - 2026-10-17 — execução criada (sem pausa, logo após conclusão do NXG-MEL-0005).
 - 2026-10-17 — `package.json`/`README.md`/`08-SETUP-NOVA-MAQUINA.md` implementados; `db:up`/`db:ps` validados de verdade; `db:down` deliberadamente não executado (container de dev pré-existente do usuário). Code review aprovado. Handoff emitido: `DEV_READY_FOR_QA`.
 - 2026-10-17 — QA independente do Orquestrador encontrou referência residual em `08-SETUP-NOVA-MAQUINA.md` (checklist da seção 9). Corrigida, revalidada (`rg`, `git diff --check`, `package.json`). Handoff reemitido: `DEV_READY_FOR_QA`.
+- 2026-10-17 — QA aprovou com ressalva (limitação de permissão do socket Docker para reexecução independente, não um defeito). Lote concluído.
 
 ---
 

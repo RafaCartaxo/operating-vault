@@ -3,10 +3,10 @@
 > [!info]- Navegação QA/DEV
 > **README do card:** [[00 README|Abrir README do card]]  
 > **Execução:** [[00 README|README da execução]]  
-> **Demanda QA:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0006 Onboarding de ambientes/01 - Demanda|NXG-MEL-0006 — Onboarding de ambientes]]  
+> **Demanda QA:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0006/QA/NXG-MEL-0006 Onboarding de ambientes/01 - Demanda|NXG-MEL-0006 — Onboarding de ambientes]]  
 > **Plano:** [[02 - Plano de execução|02 - Plano de execução]]  
 > **Code review:** [[04 - Code review|04 - Code review]]  
-> **Validação QA:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0006 Onboarding de ambientes/04 - Validação dev|Validação QA]]
+> **Validação QA:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0006/QA/NXG-MEL-0006 Onboarding de ambientes/04 - Validação dev|Validação QA]]
 
 > Log datado do que foi realmente feito. O plano não é reescrito aqui; desvio vira decisão registrada.
 
@@ -68,7 +68,7 @@
 
 ## Verificação
 
-- [x] CTs da demanda relacionados: [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0006 Onboarding de ambientes/03 - Casos de teste|ver casos de teste]] — evidência técnica registrada acima; execução formal dos CTs é responsabilidade do QA.
+- [x] CTs da demanda relacionados: [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0006/QA/NXG-MEL-0006 Onboarding de ambientes/03 - Casos de teste|ver casos de teste]] — evidência técnica registrada acima; execução formal dos CTs é responsabilidade do QA.
 - [x] Gates aplicáveis verdes (`package.json` válido, `git diff --check` limpo, comando real funcionando).
 - [x] Documentação sincronizada (`README.md` e `08-SETUP-NOVA-MAQUINA.md` usam os novos comandos).
 - [ ] Commit registrado — não aplicável nesta etapa (sem git add/commit, por instrução).

@@ -43,8 +43,8 @@ Organizar o NX Gest segundo um padrão claro, reproduzível e fácil de clonar, 
 |---|---|---|---|
 | NXG-MEL-0004 | [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0004/QA/NXG-MEL-0004 README e mapa da raiz/00 README|README e mapa da raiz]] | primeiro lote documental | ✅ Concluído com ressalva |
 | NXG-MEL-0005 | [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0005 Infraestrutura em infra/01 - Demanda|Infraestrutura em infra/]] | infraestrutura em `infra/` | ✅ Concluído com ressalva |
-| NXG-MEL-0006 | [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0006 Onboarding de ambientes/01 - Demanda|Onboarding de ambientes]] | scripts e onboarding | 🔵 `DEV_READY_FOR_QA` — aguardando execução dos CTs |
-| NXG-MEL-0007 | a criar após aprovação do plano | agentes especializados | Opcional |
+| NXG-MEL-0006 | [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0006/QA/NXG-MEL-0006 Onboarding de ambientes/00 README|Onboarding de ambientes]] | scripts e onboarding | ✅ Concluído com ressalva |
+| NXG-MEL-0007 | [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados/01 - Demanda|Agentes especializados]] | agentes especializados | 🟡 Em análise QA (CTs criados) |
 
 ## Dependências
 
@@ -70,9 +70,9 @@ flowchart LR
 | Plano de governança | ✅ definido |
 | NXG-MEL-0004 | ✅ concluído com ressalva documental |
 | NXG-MEL-0005 | ✅ concluído com ressalva — QA independente aprovou (17/10) |
-| NXG-MEL-0006 | 🔵 `DEV_READY_FOR_QA` — implementado e revisado, aguardando QA |
-| NXG-MEL-0007 | ⏳ aguardando decisão de formalizar agentes |
-| Execução no NX Gest | ✅ documental (NXG-MEL-0004) e infraestrutura (NXG-MEL-0005) concluídos localmente · onboarding (NXG-MEL-0006) em execução · nenhum deploy real ainda |
+| NXG-MEL-0006 | ✅ concluído com ressalva (limitação de permissão Docker para reexecução, não defeito) |
+| NXG-MEL-0007 | 🟡 pacote QA criado (7 CTs), aguardando gate de integridade e autorização para DEV |
+| Execução no NX Gest | ✅ documental (NXG-MEL-0004), infraestrutura (NXG-MEL-0005) e onboarding (NXG-MEL-0006) concluídos localmente · nenhum deploy real ainda |
 
 ## Critério de conclusão
 

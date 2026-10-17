@@ -22,6 +22,7 @@ Cada entrega arquivada mantém o histórico separado por fluxo:
 - [[05 Arquivo/Nxgest/Melhorias/MEL-0002/QA/MEL-0002 Cliente Documento/00 README|MEL-0002 — Cliente Documento]]
 - [[05 Arquivo/Nxgest/Melhorias/MEL-0003/QA/MEL-0003 Expandir e recolher com chevron/00 README|MEL-0003 — Expandir e recolher com chevron]]
 - [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0004/QA/NXG-MEL-0004 README e mapa da raiz/00 README|NXG-MEL-0004 — README e mapa da raiz]]
+- [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0006/QA/NXG-MEL-0006 Onboarding de ambientes/00 README|NXG-MEL-0006 — Onboarding de ambientes]]
 
 ## Bugs arquivados
 

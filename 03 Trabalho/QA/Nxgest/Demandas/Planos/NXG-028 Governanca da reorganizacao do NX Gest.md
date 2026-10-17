@@ -69,9 +69,9 @@ Os exemplos de ambiente permanecem inicialmente na raiz para preservar o onboard
 ## Lotes governados
 
 1. **NXG-MEL-0004 — README e mapa da raiz:** alteração documental isolada.
-2. **NXG-MEL-0005 — infraestrutura:** agrupar Dockerfile, Caddyfile e compose em `infra/` com paths validados. Gate QA aprovado (`QA_READY_FOR_DEV`, 17/10) — execução real aguarda `NXG-MEL-0006` (regra de sequência).
-3. **NXG-MEL-0006 — onboarding:** encapsular comandos docker de dev em scripts npm e atualizar README/08-SETUP-NOVA-MAQUINA.md para `infra/docker-compose.yml`. Gate QA aprovado (`QA_READY_FOR_DEV`, 17/10) — aguardando autorização do Orquestrador para execução DEV.
-4. **NXG-MEL-0007 — agentes:** formalizar agentes de produto/QA apenas se a decisão for aprovada.
+2. **NXG-MEL-0005 — infraestrutura:** agrupar Dockerfile, Caddyfile e compose em `infra/` com paths validados. ✅ Concluído com ressalva (17/10) — infraestrutura movida localmente, nenhum deploy real ainda.
+3. **NXG-MEL-0006 — onboarding:** encapsular comandos docker de dev em scripts npm e atualizar README/08-SETUP-NOVA-MAQUINA.md para `infra/docker-compose.yml`. ✅ Concluído com ressalva (17/10) — arquivado em `05 Arquivo/Nxgest/Melhorias/NXG-MEL-0006/`.
+4. **NXG-MEL-0007 — agentes:** formalizar `product-planner`/`qa-reviewer` em `.opencode/agents/`. Pacote QA criado em 17/10, aguardando gate de integridade.
 5. **Renomeação local:** `nxgestao` → `nxgest`, registrada como decisão operacional, não como alteração do repositório.
 
 ## Riscos e controles
@@ -98,7 +98,7 @@ Os exemplos de ambiente permanecem inicialmente na raiz para preservar o onboard
 
 - Confirmar, no lote estrutural, a forma final de `infra/docker`, `infra/caddy` e exemplos de ambiente.
 - Definir quando o trabalho não commitado será preservado.
-- Decidir se agentes de produto/QA serão formalizados (`NXG-MEL-0007`).
+- Validar o gate de integridade de `NXG-MEL-0007` e decidir se/quando autorizar sua execução DEV.
 - Autorizar a execução DEV do `NXG-MEL-0005` somente após `NXG-MEL-0006` ter gate QA aprovado (regra de sequência).
 
 ## Definição de pronto

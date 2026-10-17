@@ -1,18 +1,18 @@
 ---
 prioridade: alta
-status: execucao
+status: concluido
 tipo: melhoria
-etapa_atual: "QA · Validação"
+etapa_atual: "Concluído"
 modulo: onboarding
 plano: "[[03 Trabalho/QA/Nxgest/Demandas/Planos/NXG-028 Governanca da reorganizacao do NX Gest|NXG-028]]"
-execucao: "[[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0006 Onboarding de ambientes/00 README|Execução NXG-MEL-0006]]"
+execucao: "[[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0006/DEV/NXG-MEL-0006/00 README|Execução NXG-MEL-0006]]"
 ambiente: dev
 origem: conversa
 projeto: nxgest
 epico: NXG-EPIC-0001
 pai: ""
 data_inicio: ""
-data_fim: ""
+data_fim: "2026-10-17"
 responsavel: ""
 pontos_alocados: 10
 ---
@@ -26,7 +26,7 @@ pontos_alocados: 10
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0006 Onboarding de ambientes/00 README|Execução NXG-MEL-0006]] — concluída, aguardando QA
+> **Execução DEV:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0006/DEV/NXG-MEL-0006/00 README|Execução NXG-MEL-0006]] — concluída, aguardando QA
 
 > [!settings]- Controle da demanda
 > **Prioridade:** `INPUT[inlineSelect(option(baixa),option(media),option(alta)):prioridade]`  
@@ -36,8 +36,8 @@ pontos_alocados: 10
 
 
 > [!info] Status atual
-> **Resultado:** `DEV_READY_FOR_QA` emitido em 17/10/2026 — implementação concluída, code review aprovado.
-> **Próximo passo:** QA executar os CTs C1–C7 e registrar o resultado em [[04 - Validação dev]].
+> **Resultado:** QA aprovado com ressalva (17/10/2026) — CTs C1–C7 atendidos. Ressalva de limitação de ambiente (permissão do socket Docker para reexecução independente), não um defeito — ver [[04 - Validação dev]].
+> **Próximo passo:** nenhum — lote concluído e arquivado.
 
 ---
 
@@ -133,6 +133,4 @@ Entrega: `package.json` com script(s) npm que sobem/derrubam o Postgres de desen
 
 ## Pendências de decisão
 
-- Gate QA aprovado e `QA_READY_FOR_DEV` já emitido (17/10/2026) — nenhuma pendência de validação de integridade.
-- Confirmar o nome exato do(s) script(s) npm (`db:up`/`db:down` como sugestão; nome final pode ser ajustado na execução DEV sem reabrir este pacote, desde que o comportamento seja preservado).
-- Aguardar autorização explícita do Orquestrador para abrir a execução DEV. Lembrete: `NXG-MEL-0005` só pode ser executado de fato depois deste lote ter gate QA aprovado — já cumprido.
+- Nenhuma. Lote concluído com ressalva em 17/10/2026 (ver [[04 - Validação dev]]).

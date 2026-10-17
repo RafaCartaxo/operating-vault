@@ -3,11 +3,11 @@
 > [!info]- Navegação QA/DEV
 > **README do card:** [[00 README|Abrir README do card]]  
 > **Execução:** [[00 README|README da execução]]  
-> **Demanda QA:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0006 Onboarding de ambientes/01 - Demanda|NXG-MEL-0006 — Onboarding de ambientes]]  
+> **Demanda QA:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0006/QA/NXG-MEL-0006 Onboarding de ambientes/01 - Demanda|NXG-MEL-0006 — Onboarding de ambientes]]  
 > **Plano técnico:** não se aplica — lote de organização, sem `PLAN-NNN` próprio  
 > **Implementação:** [[03 - Implementação|03 - Implementação]]  
 > **Code review:** [[04 - Code review|04 - Code review]]  
-> **Validação QA:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0006 Onboarding de ambientes/04 - Validação dev|Validação QA]]
+> **Validação QA:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0006/QA/NXG-MEL-0006 Onboarding de ambientes/04 - Validação dev|Validação QA]]
 
 > Congelado na aprovação — alteração posterior vira decisão registrada em 03 - Implementação.md.
 
@@ -43,7 +43,7 @@ Encapsular o comando de banco de desenvolvimento em scripts npm e atualizar `REA
 
 ## Pronto quando
 
-- Critérios da demanda: [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0006 Onboarding de ambientes/01 - Demanda#^c1|C1]] a [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0006 Onboarding de ambientes/01 - Demanda#^c7|C7]].
+- Critérios da demanda: [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0006/QA/NXG-MEL-0006 Onboarding de ambientes/01 - Demanda#^c1|C1]] a [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0006/QA/NXG-MEL-0006 Onboarding de ambientes/01 - Demanda#^c7|C7]].
 - `npm run db:up` sobe o Postgres de dev de verdade; `npm run db:ps` confirma saudável; `npm run db:down` derruba sem erro.
 - `git status -sb` mostra apenas os 3 arquivos deste escopo como novas alterações, sobre o baseline já atualizado pelo `NXG-MEL-0005`.
 
