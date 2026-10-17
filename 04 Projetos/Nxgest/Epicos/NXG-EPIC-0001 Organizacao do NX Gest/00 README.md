@@ -1,7 +1,7 @@
 ---
 id: NXG-EPIC-0001
 tipo: epico
-status: analise
+status: execucao
 projeto: nxgest
 prioridade: alta
 data_inicio: 2026-10-17
@@ -41,7 +41,7 @@ Organizar o NX Gest segundo um padrão claro, reproduzível e fácil de clonar, 
 
 | ID | Demanda | Relação | Estado |
 |---|---|---|---|
-| MEL-0004 | [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/MEL-0004 README e mapa da raiz/00 README|README e mapa da raiz]] | primeiro lote documental | Em análise |
+| MEL-0004 | [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/MEL-0004 README e mapa da raiz/00 README|README e mapa da raiz]] | primeiro lote documental | ✅ Concluído com ressalva |
 | MEL-0005 | a criar após aprovação do plano | infraestrutura em `infra/` | Backlog |
 | MEL-0006 | a criar após aprovação do plano | scripts e onboarding | Backlog |
 | MEL-0007 | a criar após aprovação do plano | agentes especializados | Opcional |
@@ -66,10 +66,10 @@ flowchart LR
 | Gate | Situação |
 |---|---|
 | Escopo do épico | ✅ definido |
-| Plano de governança | ✅ em criação |
-| MEL-0004 | 🟡 em análise QA |
+| Plano de governança | ✅ definido |
+| MEL-0004 | ✅ concluído com ressalva documental |
 | Lotes estruturais | ⏳ aguardando decisões e gate QA |
-| Execução no NX Gest | ⏳ não iniciada |
+| Execução no NX Gest | ✅ lote documental concluído |
 
 ## Critério de conclusão
 

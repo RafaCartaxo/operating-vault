@@ -1,7 +1,7 @@
 ---
-status: execucao
+status: concluido
 tipo: melhoria
-etapa_atual: "DEV · Análise técnica"
+etapa_atual: "Concluído"
 demanda: "[[03 Trabalho/QA/Nxgest/Demandas/Melhorias/MEL-0004 README e mapa da raiz/01 - Demanda|MEL-0004]]"
 epico: NXG-EPIC-0001
 plano: "[[03 Trabalho/QA/Nxgest/Demandas/Planos/NXG-028 Governanca da reorganizacao do NX Gest|NXG-028]]"
@@ -41,7 +41,7 @@ pontos: 0
 > dv.paragraph(`**Esforço desta etapa:** ${typeof atual === "number" ? atual : "a definir"} pontos · **Esforço total da execução DEV:** ${total} pontos`);
 > ```
 
-> Resumo humano do comportamento entregue e do motivo.
+> O README raiz do NX Gest agora representa `.github/` e `.opencode/` no mapa de estrutura, sem alterar código, infraestrutura ou os 36 arquivos de trabalho em andamento. Pronto para validação funcional do QA.
 
 ---
 
@@ -54,26 +54,28 @@ pontos: 0
 
 | Etapa | Estado | Data |
 |---|---|---|
-| Análise | ⏳ | |
-| Plano de execução | ⏳ | |
-| Execução | ⏳ | |
-| Code review | ⏳ | |
-| Verificação (CTs) | ⏳ | |
-| Fechamento | ⏳ | |
+| Análise | ✅ | 2026-10-17 |
+| Plano de execução | ✅ | 2026-10-17 |
+| Execução | ✅ | 2026-10-17 |
+| Code review | ✅ | 2026-10-17 |
+| Verificação (CTs) | ✅ aprovado com ressalva | 2026-10-17 |
+| Fechamento | ✅ | 2026-10-17 |
 
 ---
 
 ## Histórico
 
 - 2026-10-17 — execução criada após gate `QA_READY_FOR_DEV`.
+- 2026-10-17 — README raiz atualizado (seção Estrutura), auditorias executadas, code review aprovado. Handoff emitido: `DEV_READY_FOR_QA`.
+- 2026-10-17 — QA executou CT-001..CT-004 e aprovou o lote com ressalva sobre 2 links preexistentes fora do escopo.
 
 ---
 
 ## Checklist de transição
 
-- [ ] Status da demanda atualizado
-- [ ] Card movido para a coluna correspondente no Board
-- [ ] Esta tabela atualizada
-- [ ] Bloco “Status atual” da demanda atualizado
-- [ ] Validação vinculada/atualizada quando aplicável
-- [ ] Sincronização documental verificada: frontmatter, README, board, links, evidências, histórico e pendências
+- [x] Status da demanda atualizado — `status: concluido` / `etapa_atual: "Concluído"` em `01 - Demanda.md`, confirmado pelo QA
+- [x] Card movido para a coluna correspondente no Board QA — encerramento sincronizado pelo QA
+- [x] Esta tabela atualizada
+- [x] Bloco "Status atual" da demanda — atualizado para `Concluído` após aprovação QA
+- [x] Validação vinculada/atualizada: QA aprovado com ressalva
+- [x] Sincronização documental verificada: frontmatter, README, boards, links, evidências e histórico estão coerentes

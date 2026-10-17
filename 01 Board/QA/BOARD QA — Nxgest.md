@@ -21,9 +21,9 @@ kanban-plugin: board
 ## 🧪 Validação
 
 
-
 ## ✅ Concluído
 
+- [x] ✅ [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/MEL-0004 README e mapa da raiz/01 - Demanda|MEL-0004 — README e mapa da raiz]] — aprovado com ressalva
 
 
 

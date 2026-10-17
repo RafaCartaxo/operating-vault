@@ -14,38 +14,58 @@
 
 ## Rodadas
 
-### Rodada 1 — ⏳ aguardando implementação
+### Rodada 1 — ✅ concluída (2026-10-17)
 
-- A registrar após o Executor atualizar o README.
-- Qualquer desvio do plano deverá ser registrado antes de prosseguir.
+- Registrado `git status -sb` antes de editar: 26 modificados + 10 untracked pré-existentes, nenhum deles tocado.
+- Editada exclusivamente a seção `## Estrutura` de `README.md`: acrescentadas as linhas `.github/` (Workflows de CI/CD) e `.opencode/` (Agentes especializados), sem remover ou alterar as 4 linhas existentes (`src/`, `frontend/`, `docs/`, `scripts/`).
+- Não foi necessário documentar `infra/` (fora de escopo — lote futuro, ainda não existe no repositório).
+- Nenhum desvio do plano. Escopo executado exatamente como congelado em `02 - Plano de execução.md`.
 
 ---
 
 ## Evidências
 
-- Diff do README, auditorias documentais e status do Git.
+### Diff aplicado (arquivo único: `README.md`)
+
+```diff
+@@ -17,6 +17,8 @@ src/                          — Backend (Express API)
+ frontend/                     — Frontend (React SPA)
+ docs/                         — Documentação completa do projeto
+ scripts/                      — Scripts utilitários
++.github/                      — Workflows de CI/CD (GitHub Actions)
++.opencode/                    — Agentes especializados (ver .opencode/agents/)
+ ```
+```
+
+### Comandos executados e resultados
+
+| Comando | Resultado |
+|---|---|
+| `git status -sb` (antes) | 26 modificados + 10 untracked pré-existentes (baseline registrado) |
+| `git diff -- README.md` | Diff isolado, 2 linhas adicionadas, nenhuma removida |
+| `git diff --check` | Exit code 0 — sem conflitos nem espaço em branco problemático |
+| `git status -sb` (depois) | Idêntico ao baseline + `M README.md`; nenhum outro arquivo tocado |
+| `npm run audit:links` | 2 erro(s) — **ambos em `PLAN-088`/`PLAN-089` (untracked, fora de escopo deste lote)**, nenhum atribuível ao `README.md`; 5 warn(s) de arquivos órfãos pré-existentes, também fora de escopo |
+| `npm run docs:audit` | ✅ Nenhuma divergência encontrada (74 rotas = 74 endpoints = 74 UCs/CTs = 74 requests; 29 rotas front = 29 telas) |
 
 ### Ambiente e smoke check
 
-- **Ambiente:** não aplicável; lote exclusivamente documental.
-- **Resultado:** registrar auditorias de links e documentação.
-
-> A raiz `/` do backend não é uma página da aplicação; `404 page not found` nela é esperado. O smoke check deve usar `/api/health` ou um endpoint do contrato da demanda.
+- **Ambiente:** não aplicável — lote exclusivamente documental, sem alteração de código/execução.
 
 ---
 
 ## Testes da implementação
 
-- [ ] Auditoria de links executada.
-- [ ] Auditoria documental executada.
-- [ ] Diff limitado ao README autorizado.
-- [ ] Registrar os comandos e resultados.
+- [x] Auditoria de links executada (`npm run audit:links`) — 0 erros atribuíveis ao README; os 2 erros encontrados pertencem a `PLAN-088`/`PLAN-089` (trabalho não commitado pré-existente, fora do escopo do MEL-0004).
+- [x] Auditoria documental executada (`npm run docs:audit`) — 0 divergências.
+- [x] Diff limitado ao README autorizado — confirmado via `git status -sb` e `git diff`.
+- [x] Comandos e resultados registrados acima.
 
 ---
 
 ## Verificação
 
-- [ ] CTs da demanda relacionados: [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/MEL-0004 README e mapa da raiz/03 - Casos de teste|ver casos de teste]].
-- [ ] Gates aplicáveis do repositório verdes.
-- [ ] Documentação sincronizada quando aplicável.
-- [ ] Commit registrado no README, se houver commit autorizado.
+- [x] CTs da demanda relacionados: [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/MEL-0004 README e mapa da raiz/03 - Casos de teste|ver casos de teste]] — CT-001 a CT-004 têm evidência técnica registrada acima (execução formal dos CTs continua sendo responsabilidade do QA, não do DEV).
+- [x] Gates aplicáveis do repositório verdes (`audit:links` sem erro atribuível ao lote; `docs:audit` limpo).
+- [x] Documentação sincronizada (README reflete `.github/` e `.opencode/`).
+- [ ] Commit registrado no README — **não aplicável nesta etapa**: commit não autorizado neste handoff (instrução explícita do Orquestrador: não commitar nesta etapa).

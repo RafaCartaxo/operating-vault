@@ -1,8 +1,8 @@
 ---
 prioridade: media
-status: execucao
+status: concluido
 tipo: melhoria
-etapa_atual: "DEV · Análise técnica"
+etapa_atual: "Concluído"
 modulo: organizacao-repositorio
 plano: "[[03 Trabalho/QA/Nxgest/Demandas/Planos/NXG-028 Governanca da reorganizacao do NX Gest|NXG-028]]"
 execucao: "[[03 Trabalho/DEV/Nxgest/Execuções/MEL-0004 README e mapa da raiz/00 README|Execução MEL-0004]]"
@@ -26,7 +26,7 @@ pontos_alocados: 0
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** ainda não criada — aguarda gate QA
+> **Execução DEV:** [[03 Trabalho/DEV/Nxgest/Execuções/MEL-0004 README e mapa da raiz/00 README|Execução MEL-0004]]
 
 > [!settings]- Controle da demanda
 > **Prioridade:** `INPUT[inlineSelect(option(baixa),option(media),option(alta)):prioridade]`  
@@ -36,7 +36,7 @@ pontos_alocados: 0
 
 
 > [!info] Status atual
-> **Próximo passo:** registrar a próxima ação objetiva.
+> **Resultado:** QA aprovado com ressalva documental sobre links preexistentes fora do escopo.
 
 ---
 
@@ -116,14 +116,14 @@ Atualizar exclusivamente a seção de estrutura do README raiz e suas referênci
 
 ## Checklist de entrega ao DEV
 
-- [ ] Decisões e regras de negócio estão fechadas.
-- [ ] Escopo e fora de escopo estão claros.
-- [ ] Critérios de aceite são objetivos e testáveis.
-- [ ] Plano e casos de teste estão vinculados.
+- [x] Decisões e regras de negócio estão fechadas.
+- [x] Escopo e fora de escopo estão claros.
+- [x] Critérios de aceite são objetivos e testáveis.
+- [x] Plano e casos de teste estão vinculados.
 - [x] `pontos_alocados` foi preenchido.
 
 ---
 
 ## Pendências de decisão
 
-- Validar o pacote QA e decidir se o lote pode avançar para DEV.
+- QA executado e aprovado com ressalva; lote concluído.

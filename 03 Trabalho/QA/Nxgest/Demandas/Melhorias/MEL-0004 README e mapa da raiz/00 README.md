@@ -8,7 +8,7 @@
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** ainda não criada — aguarda gate QA
+> **Execução DEV:** [[03 Trabalho/DEV/Nxgest/Execuções/MEL-0004 README e mapa da raiz/00 README|Execução MEL-0004]] — concluída
 
 ## Auditoria de integridade QA
 
@@ -20,7 +20,7 @@
 
 - **Responsável pela execução:** QA/`qa-first-delivery`
 - **Data da última execução:** 2026-10-17
-- **Resultado do gate:** PACOTE QA APROVADO NO GATE DE INTEGRIDADE — QA_READY_FOR_DEV
+- **Resultado do gate:** PACOTE QA APROVADO NO GATE DE INTEGRIDADE — lote concluído, validação funcional aprovada com ressalva (ver [[04 - Validação dev]]).
 - **Evidência detalhada:** `python3 scripts/validar_pacote_qa.py "03 Trabalho/QA/Nxgest/Demandas/Melhorias/MEL-0004 README e mapa da raiz"` — arquivos, critérios, CTs, âncoras, matriz e validação coerentes.
 
 O handoff para DEV só é permitido com resultado `PACOTE QA APROVADO NO GATE DE INTEGRIDADE`.
@@ -35,7 +35,7 @@ O handoff para DEV só é permitido com resultado `PACOTE QA APROVADO NO GATE DE
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** ainda não criada — aguarda gate QA
+> **Execução DEV:** [[03 Trabalho/DEV/Nxgest/Execuções/MEL-0004 README e mapa da raiz/00 README|Execução MEL-0004]] — concluída
 
 > [!tip]- Esforço
 > ```dataviewjs

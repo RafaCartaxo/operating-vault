@@ -6,7 +6,6 @@ kanban-plugin: board
 
 ## 📥 Backlog
 
-- [ ] 🔴 [[04 Projetos/Nxgest/Epicos/NXG-EPIC-0001 Organizacao do NX Gest/00 README|NXG-EPIC-0001 Organização do NX Gest]]
 - [ ] 🔴 [[NXG-008 PLAN-081 — navegação escalável]]
 - [ ] 🔴 [[03 Trabalho/QA/Nxgest/Demandas/Planos/NXG-027 Estrutura QA e fluxo de qualidade.md|NXG-027 Estrutura QA e fluxo de qualidade]]
 - [ ] 🟡 [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-001 Excluir gasto/01 - Bug|NXG-001 Excluir gasto (GastoList órfão)]]
@@ -41,6 +40,7 @@ kanban-plugin: board
 
 ## ⚙️ Em execução
 
+- [ ] 🔴 [[04 Projetos/Nxgest/Epicos/NXG-EPIC-0001 Organizacao do NX Gest/00 README|NXG-EPIC-0001 Organização do NX Gest]]
 
 
 ## 🧪 Em validação
