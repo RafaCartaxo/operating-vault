@@ -1,11 +1,11 @@
 ---
 prioridade: media
-status: analise
+status: validacao
 tipo: melhoria
-etapa_atual: "QA · Casos de teste"
+etapa_atual: "QA · Validação"
 modulo: agentes
 plano: "[[03 Trabalho/QA/Nxgest/Demandas/Planos/NXG-028 Governanca da reorganizacao do NX Gest|NXG-028]]"
-execucao: ""
+execucao: "[[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0007 Agentes neutros/00 README|Execução NXG-MEL-0007]]"
 ambiente: dev
 origem: conversa
 projeto: nxgest
@@ -26,7 +26,7 @@ pontos_alocados: 10
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** ainda não criada — aguarda novo gate QA. A execução anterior (escopo OpenCode) foi marcada obsoleta: [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0007 Agentes especializados/00 README|ver execução obsoleta]]
+> **Execução DEV:** [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0007 Agentes neutros/00 README|NXG-MEL-0007 Agentes neutros]] — `DEV_READY_FOR_QA`. A execução anterior (escopo OpenCode) permanece obsoleta: [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0007 Agentes especializados/00 README|ver execução obsoleta]]
 
 > [!settings]- Controle da demanda
 > **Prioridade:** `INPUT[inlineSelect(option(baixa),option(media),option(alta)):prioridade]`  
@@ -36,8 +36,8 @@ pontos_alocados: 10
 
 
 > [!info] Status atual
-> **Resultado:** pacote QA revisado para a arquitetura neutra de agentes — aguardando nova execução do gate de integridade e aprovação do Orquestrador.
-> **Próximo passo:** manter em `QA · Casos de teste` até o novo `validar_pacote_qa.py` ser executado e o pacote ser aprovado; só então considerar `QA_READY_FOR_DEV`.
+> **Resultado:** implementação DEV concluída (`agents/` canônico, 4 contratos neutros, `.opencode/` removido) — `DEV_READY_FOR_QA` enviado ao Orquestrador.
+> **Próximo passo:** QA executar CT-001 a CT-007 em `04 - Validação dev.md`. Nenhum CT foi aprovado pela própria implementação.
 
 ---
 

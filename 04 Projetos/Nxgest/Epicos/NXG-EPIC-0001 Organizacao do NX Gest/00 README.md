@@ -44,7 +44,7 @@ Organizar o NX Gest segundo um padrão claro, reproduzível e fácil de clonar, 
 | NXG-MEL-0004 | [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0004/QA/NXG-MEL-0004 README e mapa da raiz/00 README|README e mapa da raiz]] | primeiro lote documental | ✅ Concluído com ressalva |
 | NXG-MEL-0005 | [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0005 Infraestrutura em infra/01 - Demanda|Infraestrutura em infra/]] | infraestrutura em `infra/` | ✅ Concluído com ressalva |
 | NXG-MEL-0006 | [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0006/QA/NXG-MEL-0006 Onboarding de ambientes/00 README|Onboarding de ambientes]] | scripts e onboarding | ✅ Concluído com ressalva |
-| NXG-MEL-0007 | [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados/01 - Demanda|Agentes especializados]] | agentes especializados | 🔁 Em revisão de QA — arquitetura neutra |
+| NXG-MEL-0007 | [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados/01 - Demanda|Agentes especializados]] | agentes especializados | 🟣 `DEV_READY_FOR_QA` — implementação neutra concluída, aguardando QA |
 
 ## Dependências
 
@@ -59,7 +59,7 @@ flowchart LR
     A[NXG-028\nGovernança] --> B[NXG-MEL-0004\nREADME]
     B --> C[NXG-MEL-0005\ninfra/]
     C --> D[NXG-MEL-0006\nOnboarding]
-    D --> E[NXG-MEL-0007\nAgentes]
+    D --> E[NXG-MEL-0007\nAgentes — DEV_READY_FOR_QA]
 ```
 
 ## Status consolidado
@@ -71,8 +71,8 @@ flowchart LR
 | NXG-MEL-0004 | ✅ concluído com ressalva documental |
 | NXG-MEL-0005 | ✅ concluído com ressalva — QA independente aprovou (17/10) |
 | NXG-MEL-0006 | ✅ concluído com ressalva (limitação de permissão Docker para reexecução, não defeito) |
-| NXG-MEL-0007 | 🔁 pacote QA em revisão (fonte canônica neutra em `agents/`) — gate anterior invalidado, execução DEV anterior marcada obsoleta, aguardando novo `QA_READY_FOR_DEV` |
-| Execução no NX Gest | ✅ documental (NXG-MEL-0004), infraestrutura (NXG-MEL-0005) e onboarding (NXG-MEL-0006) concluídos localmente · nenhum deploy real ainda |
+| NXG-MEL-0007 | 🟣 `DEV_READY_FOR_QA` (17/10) — `agents/` canônico + 4 contratos neutros criados, `.opencode/` removido; execução anterior (escopo OpenCode) permanece obsoleta; aguardando QA executar CT-001 a CT-007 |
+| Execução no NX Gest | ✅ documental (NXG-MEL-0004), infraestrutura (NXG-MEL-0005) e onboarding (NXG-MEL-0006) concluídos localmente · agentes (NXG-MEL-0007) implementados, aguardando validação QA · nenhum deploy real ainda |
 
 ## Critério de conclusão
 
