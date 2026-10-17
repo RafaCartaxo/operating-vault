@@ -36,7 +36,8 @@ pontos_alocados: 10
 
 
 > [!info] Status atual
-> **Próximo passo:** executar o gate de integridade QA (`validar_pacote_qa.py`) e, se aprovado, aguardar autorização do Orquestrador para abrir a execução DEV. A execução real do `NXG-MEL-0005` depende deste lote estar com gate aprovado (regra de sequência do NXG-028).
+> **Resultado:** gate de integridade QA aprovado — `QA_READY_FOR_DEV` emitido em 17/10/2026.
+> **Próximo passo:** aguardar autorização do Orquestrador para abrir a execução DEV. A execução real do `NXG-MEL-0005` depende deste lote ter o gate aprovado — já cumprido.
 
 ---
 
@@ -132,6 +133,6 @@ Entrega: `package.json` com script(s) npm que sobem/derrubam o Postgres de desen
 
 ## Pendências de decisão
 
-- Executar `python3 scripts/validar_pacote_qa.py` neste pacote e registrar o resultado no `00 README.md` antes de qualquer handoff `QA_READY_FOR_DEV`.
+- Gate QA aprovado e `QA_READY_FOR_DEV` já emitido (17/10/2026) — nenhuma pendência de validação de integridade.
 - Confirmar o nome exato do(s) script(s) npm (`db:up`/`db:down` como sugestão; nome final pode ser ajustado na execução DEV sem reabrir este pacote, desde que o comportamento seja preservado).
-- Aguardar autorização explícita do Orquestrador para abrir a execução DEV — não criada nesta tarefa, por instrução. Lembrete: `NXG-MEL-0005` só pode ser executado de fato depois deste lote ter gate QA aprovado (regra de sequência).
+- Aguardar autorização explícita do Orquestrador para abrir a execução DEV. Lembrete: `NXG-MEL-0005` só pode ser executado de fato depois deste lote ter gate QA aprovado — já cumprido.

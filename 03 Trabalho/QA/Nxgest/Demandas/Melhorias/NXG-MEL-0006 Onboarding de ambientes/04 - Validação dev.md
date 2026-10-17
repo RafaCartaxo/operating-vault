@@ -131,7 +131,7 @@ Use esta seção somente quando houver reteste após correção:
 
 ## Decisão
 
-**Resultado geral:** aguardando — execução DEV ainda não criada; nenhuma mudança foi aplicada ao repositório NX Gest nesta etapa de QA.
+**Resultado geral:** aguardando — CTs aguardam execução, pois a execução DEV ainda não foi criada. **Gate de integridade QA aprovado** (`QA_READY_FOR_DEV`, 17/10/2026): o pacote está pronto para DEV; nenhuma mudança foi aplicada ao repositório NX Gest nesta etapa de QA.
 
 ---
 
