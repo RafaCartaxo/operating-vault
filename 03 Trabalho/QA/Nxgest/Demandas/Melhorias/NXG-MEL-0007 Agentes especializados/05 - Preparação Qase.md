@@ -19,13 +19,13 @@ validacao_origem: "[[04 - Validação dev]]"
 
 | CT | Título | Tipo | Camada | Automação |
 |---|---|---|---|---|
-| CT-001 | product-planner.md criado no padrão correto | funcional | manual | manual |
-| CT-002 | qa-reviewer.md criado no padrão correto | funcional | manual | manual |
-| CT-003 | Permissões escopadas corretamente | funcional | manual | manual |
-| CT-004 | Nenhuma duplicação de AGENTS.md | regressão | manual | manual |
-| CT-005 | AGENTS.md coerente com os novos agentes | regressão | manual | manual |
-| CT-006 | Código, infra e ambiente intocados | regressão | manual | manual |
-| CT-007 | Links do pacote resolvem e repositório intacto nesta etapa de QA | regressão | manual | automatizado |
+| CT-001 | AGENTS.md permanece contrato global após a migração | regressão | manual | manual |
+| CT-002 | agents/ canônico com README índice e os 4 contratos | funcional | manual | manual |
+| CT-003 | Contratos neutros, sem frontmatter nem schema de plataforma | funcional | manual | manual |
+| CT-004 | Inventário de referências ativas e remoção de .opencode sem resíduo | regressão | manual | manual |
+| CT-005 | Documentação ativa planejada para ficar coerente com agents/ | regressão | manual | manual |
+| CT-006 | Código, infra, ambiente e trabalho protegido intocados | regressão | manual | manual |
+| CT-007 | Pacote QA íntegro e validador oficial aprovado | regressão | manual | automatizado |
 
 ## Checklist de envio
 

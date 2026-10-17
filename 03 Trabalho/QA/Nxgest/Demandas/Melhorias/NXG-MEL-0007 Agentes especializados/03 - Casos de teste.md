@@ -14,7 +14,7 @@ pontos: 6
 > **Plano de teste:** [[02 - Plano de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** ainda não criada — aguarda gate QA
+> **Execução DEV:** ainda não criada — aguarda novo gate QA
 
 > [!settings]- Controle dos casos de teste
 > **Status:** `INPUT[inlineSelect(option(planejado),option(execucao),option(concluido)):status]`
@@ -37,7 +37,7 @@ pontos: 6
 
 Use esta matriz para verificar a cobertura sem abrir a demanda. Atualize-a ao criar ou alterar CTs.
 
-> [!example]- CT-001 · product-planner.md criado no padrão correto
+> [!example]- CT-001 · AGENTS.md permanece contrato global após a migração
 >
 > ```meta-bind-button
 > style: primary
@@ -49,18 +49,18 @@ Use esta matriz para verificar a cobertura sem abrir a demanda. Atualize-a ao cr
 >
 > ## Cenário
 >
-> **Descrição:** confirma que `.opencode/agents/product-planner.md` existe com `description`, `mode: subagent` e `permission` escopada, no mesmo formato estrutural dos agentes existentes.
+> **Descrição:** confirma que `AGENTS.md` continua sendo o contrato global único na raiz, sem duplicar o conteúdo dos contratos de `agents/`.
 >
 > **Pré-condições:**
-> - Lote de execução DEV aplicado no repositório de teste.
+> - Lote de execução DEV aplicado no repositório de teste (futuro), com `agents/` já criado.
 >
-> **Dado** `.opencode/agents/product-planner.md` após o lote  
-> **Quando** comparo seu frontmatter e estrutura (Contexto/Tarefas suportadas/Regras) com `docs-sync.md` e `ops-runner.md`  
-> **Então** o arquivo segue o mesmo padrão, com `description`, `mode: subagent` e `permission` preenchidos.
+> **Dado** `AGENTS.md` após o lote  
+> **Quando** comparo seu conteúdo com os 4 contratos em `agents/`  
+> **Então** `AGENTS.md` permanece o contrato global único, sem repetir regras específicas de cada agente, apenas referenciando `agents/README.md`.
 >
-> **Resultado esperado:** agente de produto formalizado e consistente com o padrão do projeto.
+> **Resultado esperado:** uma única fonte de verdade para regras globais e outra para contratos de agente, sem sobreposição.
 >
-> **Pós-condição:** novo agente disponível em `.opencode/agents/`.
+> **Pós-condição:** nenhuma duplicação entre `AGENTS.md` e `agents/`.
 >
 > **Critérios cobertos:** [[01 - Demanda#^c1|C1]]
 >
@@ -68,14 +68,14 @@ Use esta matriz para verificar a cobertura sem abrir a demanda. Atualize-a ao cr
 >
 > **Informações do CT**
 >
-> **Tipo:** funcional  
+> **Tipo:** regressão  
 > **Camada:** manual  
 > **Automação:** manual  
 > **Execução:** planejado
 
 ^ct-001
 
-> [!example]- CT-002 · qa-reviewer.md criado no padrão correto
+> [!example]- CT-002 · agents/ canônico com README índice e os 4 contratos
 >
 > ```meta-bind-button
 > style: primary
@@ -87,18 +87,18 @@ Use esta matriz para verificar a cobertura sem abrir a demanda. Atualize-a ao cr
 >
 > ## Cenário
 >
-> **Descrição:** confirma que `.opencode/agents/qa-reviewer.md` existe com `description`, `mode: subagent` e `permission` somente leitura.
+> **Descrição:** confirma que `agents/` existe na raiz com `agents/README.md` como índice, listando `docs-sync.md`, `ops-runner.md`, `product-planner.md` e `qa-reviewer.md`.
 >
 > **Pré-condições:**
 > - Lote de execução DEV aplicado no repositório de teste.
 >
-> **Dado** `.opencode/agents/qa-reviewer.md` após o lote  
-> **Quando** comparo seu frontmatter e estrutura com o padrão existente  
-> **Então** o arquivo segue o mesmo padrão, com `edit: deny` e `write: deny`.
+> **Dado** o diretório `agents/` após o lote  
+> **Quando** leio `agents/README.md` e os 4 arquivos de contrato  
+> **Então** `agents/README.md` referencia os 4 contratos e cada um existe no diretório, sem depender de `.opencode/`.
 >
-> **Resultado esperado:** agente de QA formalizado, somente leitura.
+> **Resultado esperado:** `agents/` é a fonte canônica única de contratos de agente do NX Gest.
 >
-> **Pós-condição:** novo agente disponível em `.opencode/agents/`.
+> **Pós-condição:** os 4 contratos disponíveis fora de qualquer pasta específica de plataforma.
 >
 > **Critérios cobertos:** [[01 - Demanda#^c2|C2]]
 >
@@ -113,7 +113,7 @@ Use esta matriz para verificar a cobertura sem abrir a demanda. Atualize-a ao cr
 
 ^ct-002
 
-> [!example]- CT-003 · Permissões escopadas corretamente
+> [!example]- CT-003 · Contratos neutros, sem frontmatter nem schema de plataforma
 >
 > ```meta-bind-button
 > style: primary
@@ -125,18 +125,18 @@ Use esta matriz para verificar a cobertura sem abrir a demanda. Atualize-a ao cr
 >
 > ## Cenário
 >
-> **Descrição:** confirma que nenhum dos 2 agentes tem permissão mais ampla do que o necessário para seu propósito.
+> **Descrição:** confirma que `docs-sync.md`, `ops-runner.md`, `product-planner.md` e `qa-reviewer.md` descrevem identidade, responsabilidade, entradas/saídas, regras, limites, protocolo e critérios de conclusão, sem frontmatter nem schema de permissão de nenhuma plataforma.
 >
 > **Pré-condições:**
-> - Os 2 agentes já criados.
+> - Os 4 contratos já migrados/criados em `agents/`.
 >
-> **Dado** o bloco `permission` de `product-planner.md` e `qa-reviewer.md`  
-> **Quando** comparo com o propósito declarado de cada um (planejamento vs. revisão)  
-> **Então** `product-planner` tem escrita restrita a `docs/plans/**` e `qa-reviewer` não tem `edit`/`write` em nenhum caminho.
+> **Dado** o conteúdo de cada um dos 4 contratos  
+> **Quando** verifico a presença de frontmatter YAML ou de chaves no formato OpenCode (`mode`, `permission`, `description` estruturado)  
+> **Então** nenhum dos 4 contratos usa esse formato — todos descrevem o agente em linguagem neutra, sem metadados de plataforma.
 >
-> **Resultado esperado:** permissões mínimas necessárias, sem excesso.
+> **Resultado esperado:** contratos reutilizáveis por qualquer ferramenta/agente, sem acoplamento ao OpenCode, ao Claude Code ou ao Codex.
 >
-> **Pós-condição:** nenhum agente com acesso de escrita amplo ou irrestrito.
+> **Pós-condição:** nenhum contrato depende de uma plataforma específica para ser interpretado ou aplicado.
 >
 > **Critérios cobertos:** [[01 - Demanda#^c3|C3]]
 >
@@ -151,7 +151,7 @@ Use esta matriz para verificar a cobertura sem abrir a demanda. Atualize-a ao cr
 
 ^ct-003
 
-> [!example]- CT-004 · Nenhuma duplicação de AGENTS.md
+> [!example]- CT-004 · Inventário de referências ativas e remoção de .opencode sem resíduo
 >
 > ```meta-bind-button
 > style: primary
@@ -163,18 +163,19 @@ Use esta matriz para verificar a cobertura sem abrir a demanda. Atualize-a ao cr
 >
 > ## Cenário
 >
-> **Descrição:** confirma que nenhum dos 2 agentes repete o contexto geral do projeto (stack, produção, comandos) já descrito em `AGENTS.md`.
+> **Descrição:** confirma que o plano cobre a remoção futura de `.opencode/` e que todas as referências estruturais ativas foram inventariadas, sem incluir registros históricos de changelog.
 >
 > **Pré-condições:**
-> - Os 2 agentes já criados; `AGENTS.md` revisado.
+> - Inventário de referências registrado na demanda/`NXG-028`.
+> - `.opencode/` ainda não removido (a remoção é escopo de uma etapa DEV futura).
 >
-> **Dado** o conteúdo de `product-planner.md` e `qa-reviewer.md`  
-> **Quando** comparo com as seções de `AGENTS.md` (projeto, produção, comandos)  
-> **Então** nenhum dos 2 agentes duplica esse conteúdo — cada um só documenta seu próprio escopo.
+> **Dado** o inventário de referências ativas (`README.md`, `AGENTS.md`, `docs/skills/SKILL-009-documentation-sync.md`, `docs/plans/PLAN-084-organizacao-repositorio.md`, `.dockerignore`)  
+> **Quando** comparo com uma nova busca por `.opencode/agents` no repositório  
+> **Então** todas as referências ativas constam no inventário e nenhuma delas é um registro histórico de `docs/UPDATES.md` (que permanece intocado).
 >
-> **Resultado esperado:** uma única fonte de verdade por tipo de informação, como já praticado por `docs-sync.md`/`ops-runner.md`.
+> **Resultado esperado:** plano de remoção completo, sem referência esquecida no momento da implementação.
 >
-> **Pós-condição:** nenhuma divergência entre `AGENTS.md` e os novos agentes.
+> **Pós-condição:** lista de referências pronta para a implementação DEV atualizar.
 >
 > **Critérios cobertos:** [[01 - Demanda#^c4|C4]]
 >
@@ -189,7 +190,7 @@ Use esta matriz para verificar a cobertura sem abrir a demanda. Atualize-a ao cr
 
 ^ct-004
 
-> [!example]- CT-005 · AGENTS.md coerente com os novos agentes
+> [!example]- CT-005 · Documentação ativa planejada para ficar coerente com agents/
 >
 > ```meta-bind-button
 > style: primary
@@ -201,18 +202,18 @@ Use esta matriz para verificar a cobertura sem abrir a demanda. Atualize-a ao cr
 >
 > ## Cenário
 >
-> **Descrição:** confirma que `AGENTS.md` continua correto após o lote, com ou sem edição.
+> **Descrição:** confirma que `README.md`, `AGENTS.md`, `SKILL-009` e `PLAN-084` estão identificados como pendência de atualização na implementação DEV, e que nenhum deles foi editado nesta revisão de QA.
 >
 > **Pré-condições:**
-> - Decisão tomada na execução DEV sobre editar ou não `AGENTS.md`.
+> - Inventário do CT-004 disponível.
 >
-> **Dado** `AGENTS.md` após o lote  
-> **Quando** leio a seção "Agentes do projeto"  
-> **Então** a referência a `.opencode/agents/` continua válida e não detalha regras internas dos agentes específicos.
+> **Dado** o estado atual de `README.md`, `AGENTS.md`, `docs/skills/SKILL-009-documentation-sync.md` e `docs/plans/PLAN-084-organizacao-repositorio.md` no repositório NX Gest  
+> **Quando** comparo com o que a demanda registra como pendente de atualização  
+> **Então** nenhum desses arquivos foi alterado nesta revisão de QA, e todos constam como pendência explícita da implementação DEV futura.
 >
-> **Resultado esperado:** `AGENTS.md` permanece o contrato global único, sem redundância.
+> **Resultado esperado:** nenhuma mudança prematura na documentação do repositório.
 >
-> **Pós-condição:** nenhuma contradição entre `AGENTS.md` e os agentes específicos.
+> **Pós-condição:** documentação do repositório idêntica ao estado anterior a esta revisão.
 >
 > **Critérios cobertos:** [[01 - Demanda#^c5|C5]]
 >
@@ -227,7 +228,7 @@ Use esta matriz para verificar a cobertura sem abrir a demanda. Atualize-a ao cr
 
 ^ct-005
 
-> [!example]- CT-006 · Código, infra e ambiente intocados
+> [!example]- CT-006 · Código, infra, ambiente e trabalho protegido intocados
 >
 > ```meta-bind-button
 > style: primary
@@ -239,18 +240,18 @@ Use esta matriz para verificar a cobertura sem abrir a demanda. Atualize-a ao cr
 >
 > ## Cenário
 >
-> **Descrição:** confirma que o lote não altera `src/`, `frontend/`, `infra/`, `.env` ou scripts de deploy.
+> **Descrição:** confirma que esta revisão do pacote QA não altera `src/`, `frontend/`, `infra/`, `.env`, scripts de deploy nem o trabalho protegido em andamento.
 >
 > **Pré-condições:**
-> - Estado Git inicial registrado.
+> - Estado Git inicial do NX Gest registrado antes da revisão.
 >
-> **Dado** o diff do NXG-MEL-0007  
-> **Quando** reviso os arquivos alterados  
-> **Então** somente `.opencode/agents/{product-planner,qa-reviewer}.md` e, no máximo, `AGENTS.md` aparecem no escopo.
+> **Dado** o `git status -sb` do NX Gest antes e depois desta revisão de QA  
+> **Quando** comparo os dois estados  
+> **Então** nenhum arquivo de código, infraestrutura, ambiente, deploy ou trabalho protegido aparece como alterado.
 >
-> **Resultado esperado:** nenhuma alteração fora da documentação/contratos de agente aprovados.
+> **Resultado esperado:** nenhuma alteração fora do pacote QA do vault nesta etapa.
 >
-> **Pós-condição:** `infra/`, código e ambiente permanecem exatamente como estavam após o `NXG-MEL-0006`.
+> **Pós-condição:** repositório NX Gest idêntico ao estado anterior a esta revisão.
 >
 > **Critérios cobertos:** [[01 - Demanda#^c6|C6]]
 >
@@ -265,7 +266,7 @@ Use esta matriz para verificar a cobertura sem abrir a demanda. Atualize-a ao cr
 
 ^ct-006
 
-> [!example]- CT-007 · Links do pacote resolvem e repositório intacto nesta etapa de QA
+> [!example]- CT-007 · Pacote QA íntegro e validador oficial aprovado
 >
 > ```meta-bind-button
 > style: primary
@@ -277,18 +278,18 @@ Use esta matriz para verificar a cobertura sem abrir a demanda. Atualize-a ao cr
 >
 > ## Cenário
 >
-> **Descrição:** confirma que os links internos do pacote QA resolvem e que a criação deste pacote não alterou o repositório NX Gest.
+> **Descrição:** confirma que os links internos do pacote resolvem, a estrutura segue literalmente os templates oficiais e o validador oficial aprova o pacote.
 >
 > **Pré-condições:**
-> - Nenhuma execução DEV foi aberta para este lote.
+> - Pacote QA revisado completo (`00` a `05`).
 >
-> **Dado** o pacote QA `NXG-MEL-0007` e o repositório NX Gest no momento de sua criação  
-> **Quando** executo `python3 scripts/validar_pacote_qa.py` e `git status -sb` no NX Gest  
-> **Então** o pacote é aprovado no gate de integridade e o repositório está idêntico ao estado protegido anterior.
+> **Dado** o pacote `NXG-MEL-0007` revisado  
+> **Quando** executo `python3 scripts/validar_pacote_qa.py "03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados"`  
+> **Então** o resultado é `PACOTE QA APROVADO NO GATE DE INTEGRIDADE`, sem placeholders e com todos os links resolvendo.
 >
-> **Resultado esperado:** pacote íntegro, repositório intacto até a execução DEV ser autorizada.
+> **Resultado esperado:** pacote estruturalmente íntegro antes de qualquer novo `QA_READY_FOR_DEV`.
 >
-> **Pós-condição:** nenhuma alteração prematura no NX Gest.
+> **Pós-condição:** pacote pronto para uma nova decisão de gate pelo Orquestrador.
 >
 > **Critérios cobertos:** [[01 - Demanda#^c7|C7]]
 >

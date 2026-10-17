@@ -14,25 +14,26 @@ pontos: 2
 
 ## Objetivo
 
-Confirmar que `product-planner.md` e `qa-reviewer.md` existem com permissões escopadas corretas, não duplicam `AGENTS.md`, e que a documentação (`AGENTS.md` e links do pacote) permanece coerente — sem nenhuma mudança em código, infraestrutura ou ambiente.
+Confirmar que a governança de agentes do NX Gest passou a depender de uma fonte canônica neutra (`AGENTS.md` + `agents/`), com os 4 contratos (`docs-sync.md`, `ops-runner.md`, `product-planner.md`, `qa-reviewer.md`) livres de frontmatter/schema do OpenCode, e que o plano de remoção futura de `.opencode/` cobre todas as referências estruturais ativas — tudo isso nesta etapa apenas como revisão do pacote QA, sem nenhuma mudança no repositório NX Gest.
 
 ## Riscos e escopo
 
-O risco principal é um dos agentes receber permissão mais ampla do que o necessário (ex.: `qa-reviewer` com `write: allow`) ou duplicar conteúdo já coberto por `AGENTS.md`, gerando duas fontes de verdade divergentes. A validação compara cada agente novo com o padrão já estabelecido por `docs-sync.md`/`ops-runner.md`.
+O risco principal é o pacote continuar amarrado à estrutura antiga (`.opencode/agents/` como fonte canônica, schema de permissão do OpenCode) ou deixar de cobrir alguma referência ativa (`README.md`, `AGENTS.md`, `SKILL-009`, `PLAN-084`, `.dockerignore`), produzindo um gate aprovado que não reflete a decisão real do Orquestrador. A validação compara cada critério da demanda com a arquitetura-alvo registrada no handoff e em `NXG-028`.
 
 ## Estratégia de teste
 
-- **Documental/estrutural:** leitura dos 2 arquivos de agente e comparação com o padrão existente (CT-001, CT-002).
-- **Escopo de permissão:** inspeção do frontmatter `permission` de cada agente (CT-003).
-- **Ausência de duplicação:** comparação textual com `AGENTS.md` (CT-004).
-- **Documentação:** leitura de `AGENTS.md` (CT-005).
-- **Regressão:** `git status` do NX Gest para confirmar nenhuma mudança de código/infra/ambiente (CT-006, CT-007).
+- **Documental/estrutural:** leitura da demanda, de `NXG-028`, do épico e do Board QA, confirmando a arquitetura-alvo (CT-001, CT-002).
+- **Conteúdo dos contratos:** inspeção da definição esperada de cada contrato neutro, sem frontmatter/schema de plataforma (CT-003).
+- **Inventário de referências:** busca por `.opencode/agents` no repositório e comparação com a lista registrada na demanda (CT-004).
+- **Coerência documental planejada:** confirmação de que `README.md`/`AGENTS.md`/`SKILL-009`/`PLAN-084` estão listados para atualização futura, e não alterados agora (CT-005).
+- **Regressão:** `git status -sb` do NX Gest para confirmar nenhuma mudança de código/infra/ambiente (CT-006).
+- **Integridade do pacote:** validador oficial + checagem de links e aninhamento dos CTs (CT-007).
 
 ## Matriz de cobertura
 
 | CT | Tipo | Camada | Automação | Validação |
 |---|---|---|---|---|
-| [[03 - Casos de teste#^ct-001\|CT-001]] | funcional | manual | manual | [[04 - Validação dev#Resultado dos casos de teste\|Registrar resultado]] |
+| [[03 - Casos de teste#^ct-001\|CT-001]] | regressão | manual | manual | [[04 - Validação dev#Resultado dos casos de teste\|Registrar resultado]] |
 | [[03 - Casos de teste#^ct-002\|CT-002]] | funcional | manual | manual | [[04 - Validação dev#Resultado dos casos de teste\|Registrar resultado]] |
 | [[03 - Casos de teste#^ct-003\|CT-003]] | funcional | manual | manual | [[04 - Validação dev#Resultado dos casos de teste\|Registrar resultado]] |
 | [[03 - Casos de teste#^ct-004\|CT-004]] | regressão | manual | manual | [[04 - Validação dev#Resultado dos casos de teste\|Registrar resultado]] |
@@ -42,5 +43,5 @@ O risco principal é um dos agentes receber permissão mais ampla do que o neces
 
 ## Entrada e saída
 
-**Entrada:** `AGENTS.md`, `.opencode/agents/{docs-sync,ops-runner}.md` atuais (padrão de referência).
-**Saída:** `.opencode/agents/{product-planner,qa-reviewer}.md` criados, `AGENTS.md` sincronizado se necessário, nenhuma mudança fora do escopo.
+**Entrada:** `AGENTS.md`, `.opencode/agents/{docs-sync,ops-runner}.md` atuais, `NXG-028`, épico e Board QA (arquitetura-alvo registrada).
+**Saída:** pacote QA revisado e aprovado no gate de integridade, `NXG-028`/épico/Board QA sincronizados, execução DEV anterior marcada obsoleta — nenhuma mudança no repositório NX Gest nesta etapa.

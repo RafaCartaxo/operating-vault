@@ -37,7 +37,7 @@ data_fim: ""
 
 ## Contexto
 
-- Ambiente: a definir (execução DEV ainda não criada)
+- Ambiente: a definir (execução DEV ainda não criada — pacote revisado para a arquitetura neutra de agentes, aguardando novo gate QA)
 - Versão/build: não aplicável até a execução DEV existir
 
 ---
@@ -131,7 +131,7 @@ Use esta seção somente quando houver reteste após correção:
 
 ## Decisão
 
-**Resultado geral:** aguardando — execução DEV ainda não criada; nenhuma mudança foi aplicada ao repositório NX Gest nesta etapa de QA.
+**Resultado geral:** aguardando — pacote revisado para a arquitetura neutra de agentes (`agents/` + `AGENTS.md`), execução DEV ainda não criada (a anterior, de escopo OpenCode, foi marcada obsoleta); nenhuma mudança foi aplicada ao repositório NX Gest nesta etapa de QA.
 
 ---
 

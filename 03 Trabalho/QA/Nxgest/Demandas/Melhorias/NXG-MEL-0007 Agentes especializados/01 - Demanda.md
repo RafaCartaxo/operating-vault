@@ -1,8 +1,8 @@
 ---
 prioridade: media
-status: execucao
+status: analise
 tipo: melhoria
-etapa_atual: "DEV · Análise técnica"
+etapa_atual: "QA · Casos de teste"
 modulo: agentes
 plano: "[[03 Trabalho/QA/Nxgest/Demandas/Planos/NXG-028 Governanca da reorganizacao do NX Gest|NXG-028]]"
 execucao: ""
@@ -26,7 +26,7 @@ pontos_alocados: 10
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** ainda não criada — gate QA aprovado (`QA_READY_FOR_DEV`), execução sendo aberta nesta tarefa
+> **Execução DEV:** ainda não criada — aguarda novo gate QA. A execução anterior (escopo OpenCode) foi marcada obsoleta: [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0007 Agentes especializados/00 README|ver execução obsoleta]]
 
 > [!settings]- Controle da demanda
 > **Prioridade:** `INPUT[inlineSelect(option(baixa),option(media),option(alta)):prioridade]`  
@@ -36,15 +36,15 @@ pontos_alocados: 10
 
 
 > [!info] Status atual
-> **Resultado:** gate de integridade QA aprovado — `QA_READY_FOR_DEV` emitido em 17/10/2026.
-> **Próximo passo:** execução DEV sendo aberta nesta tarefa, com autorização explícita do Orquestrador.
+> **Resultado:** pacote QA revisado para a arquitetura neutra de agentes — aguardando nova execução do gate de integridade e aprovação do Orquestrador.
+> **Próximo passo:** manter em `QA · Casos de teste` até o novo `validar_pacote_qa.py` ser executado e o pacote ser aprovado; só então considerar `QA_READY_FOR_DEV`.
 
 ---
 
 ## Capacidade e esforço
 
 > [!tip]- Capacidade do ciclo
-> **Capacidade alocada:** 10 pontos (~< 2h), estimado para criar 2 arquivos de agente + 1 ajuste pontual em `AGENTS.md`, sem tocar código, infraestrutura ou ambiente.
+> **Capacidade alocada:** 10 pontos (~< 2h) para esta revisão do pacote QA (demanda, plano, CTs, validação, Qase) e atualização de NXG-028/épico/board. A criação real de `agents/`, a migração dos 4 contratos e a remoção de `.opencode/` são escopo de uma implementação DEV futura e serão reestimadas quando essa execução for aberta.
 >
 > ```dataviewjs
 > const id = (dv.current().file.path.match(/(?:[A-Z]{2,8}-)?MEL-\d+/) || [""])[0];
@@ -65,57 +65,74 @@ pontos_alocados: 10
 
 ## Problema / contexto
 
-O NX Gest hoje tem 2 agentes especializados em `.opencode/agents/` (`docs-sync.md` — documentação, e `ops-runner.md` — operação/produção), cada um com permissões escopadas ao seu propósito. Falta um agente de **produto** (planejamento de features/planos, espelhando SKILL-003/SKILL-004) e um agente de **QA/qualidade** (revisão, espelhando SKILL-005/006/007/008) — hoje essas atividades só existem como skills de documentação (`docs/skills/`), sem um subagente dedicado com permissões próprias no runtime.
+O NX Gest hoje tem 2 agentes especializados em `.opencode/agents/` (`docs-sync.md` — documentação, e `ops-runner.md` — operação/produção), cada um com o frontmatter e o schema de permissão específicos do OpenCode (`mode`, `permission`). Falta um agente de **produto** (planejamento de features/planos) e um agente de **QA/qualidade** (revisão). Além disso, amarrar toda a governança de agentes a `.opencode/agents/` torna o NX Gest dependente de uma única plataforma: os mesmos contratos não podem ser reaproveitados por outra ferramenta (Claude Code, Codex, etc.) sem reescrevê-los do zero.
 
 ---
 
 ## Objetivo
 
-Formalizar `.opencode/agents/product-planner.md` e `.opencode/agents/qa-reviewer.md`, cada um com permissões escopadas ao seu propósito, seguindo exatamente o mesmo padrão estrutural de `docs-sync.md`/`ops-runner.md` (frontmatter `description`/`mode`/`permission`, corpo com Contexto/Tarefas suportadas/Regras), sem duplicar o conteúdo de `AGENTS.md`.
+Tornar a governança de agentes do NX Gest independente de plataforma:
+
+```text
+AGENTS.md                 contrato global na raiz
+agents/
+  README.md               índice e regras de uso
+  docs-sync.md            contrato neutro de documentação
+  ops-runner.md           contrato neutro de operação
+  product-planner.md      escrita somente em docs/plans/**
+  qa-reviewer.md          somente leitura e revisão
+```
+
+`AGENTS.md` continua sendo o contrato global único na raiz. `agents/` passa a ser a fonte canônica neutra, com `agents/README.md` como índice e os 4 contratos descritos por identidade, responsabilidade, entradas/saídas, regras, limites, protocolo e critérios de conclusão — sem frontmatter nem schema de permissão de nenhuma plataforma. `.opencode/agents/` deixa de ser a fonte canônica; `.opencode/` só sai do repositório em uma etapa DEV futura, com um gate QA próprio aprovado especificamente para essa remoção. Adaptadores específicos de plataforma, se algum dia forem necessários, ficam fora do repositório ou em integrações separadas — nunca como fonte canônica.
 
 ### Entrega desta capacidade
 
-Entrega: os 2 arquivos de agente completos + um ajuste pontual em `AGENTS.md` (seção "Agentes do projeto") caso os critérios de ausência de duplicação exijam uma referência explícita aos 2 novos nomes. Fica fora: qualquer mudança de comportamento de código, infraestrutura, scripts de deploy ou ambiente.
+Nesta etapa (revisão de QA), a entrega é **exclusivamente** o pacote QA revisado (`01` a `05` + `00 README`), mais a atualização de `NXG-028`, do épico e do Board QA, e a marcação de obsolescência da execução DEV anterior. Fica fora desta entrega — é escopo de uma implementação DEV futura, autorizada somente após um novo `QA_READY_FOR_DEV`: criar `agents/`, migrar/escrever os 4 contratos, remover `.opencode/` e atualizar `AGENTS.md`, `README.md`, `docs/skills/SKILL-009-documentation-sync.md` e `docs/plans/PLAN-084-organizacao-repositorio.md` no repositório.
 
 ---
 
 ## Decisões de produto
 
-- `product-planner`: planejamento de features e planos (`PLAN-NNN`), espelhando `SKILL-003 — Feature Planner` e `SKILL-004 — Vertical Slice Builder`. Permissão de escrita escopada a `docs/plans/**`; leitura ampla; sem acesso a `webfetch`/`websearch` (mesmo padrão dos 2 agentes existentes).
-- `qa-reviewer`: revisão de qualidade e CTs, espelhando `SKILL-005 — Code Reviewer`, `SKILL-006 — Bug Investigator`, `SKILL-007 — UX Reviewer` e `SKILL-008 — Release Reviewer`. Somente leitura (sem `edit`/`write`), com `bash` liberado para auditorias e testes (`npm run docs:audit`, `audit:links`, `test`) e `ask` para o restante.
-- Nenhum dos dois agentes repete o contexto geral do projeto (stack, produção, comandos) já descrito em `AGENTS.md` — cada um só documenta seu próprio escopo e remete a `AGENTS.md`/`docs/skills/` para o resto, seguindo o princípio já usado por `docs-sync.md`/`ops-runner.md`.
-- `AGENTS.md` permanece o contrato global único; não recebe o detalhamento operacional dos novos agentes, só uma referência (já existe a frase "Subagentes customizados (se existirem) ficam em `.opencode/agents/`" — avaliar na execução DEV se basta ou se precisa nomear os agentes explicitamente).
-- Este lote não altera código, infraestrutura, `.env` ou scripts de deploy — e não é aplicado ao repositório NX Gest nesta etapa de QA.
+- `AGENTS.md` permanece o contrato global único na raiz — nenhuma mudança de papel.
+- `agents/` na raiz é a fonte canônica neutra; `agents/README.md` funciona como índice, listando os 4 contratos e as regras de uso de cada um.
+- `docs-sync.md` e `ops-runner.md` são migrados/reproduzidos como contratos neutros em `agents/` (mesmo propósito e escopo de hoje, sem frontmatter/`permission` do OpenCode); `product-planner.md` e `qa-reviewer.md` nascem diretamente neutros em `agents/`. Nenhum dos 4 depende de OpenCode, Claude ou Codex para ser lido ou aplicado.
+- `product-planner`: planejamento de features e planos (`PLAN-NNN`); leitura ampla e escrita documentada como exclusiva de `docs/plans/**` — descrita como regra do contrato, não como schema de permissão de uma plataforma.
+- `qa-reviewer`: revisão de qualidade e CTs; somente leitura e reporte, sem autoridade para aprovar o próprio CT que revisou.
+- Contratos/adaptadores específicos de uma plataforma, se necessários no futuro, ficam fora do repositório ou em integrações separadas — nunca substituem a fonte canônica em `agents/`.
+- `.opencode/` só sai do repositório em uma etapa DEV futura, com gate QA próprio para essa remoção; esta revisão **não** autoriza a remoção agora.
+- Referências ativas a `.opencode/agents` — `README.md`, `AGENTS.md`, `docs/skills/SKILL-009-documentation-sync.md`, `docs/plans/PLAN-084-organizacao-repositorio.md`, `.dockerignore` — são atualizadas na implementação DEV, não nesta revisão. `docs/UPDATES.md` é histórico (changelog) e não é alterado.
+- Este lote de revisão não altera código, infraestrutura, `.env` ou scripts de deploy, e não é aplicado ao repositório NX Gest nesta etapa de QA.
 
 ---
 
 ## Escopo
 
-- Criar `.opencode/agents/product-planner.md` com frontmatter (`description`, `mode: subagent`, `permission` escopada) e corpo (Contexto, Tarefas suportadas, Regras).
-- Criar `.opencode/agents/qa-reviewer.md` com a mesma estrutura, permissões read-only.
-- Revisar `AGENTS.md` e atualizar a seção "Agentes do projeto" somente se necessário para evitar ambiguidade (sem duplicar regras).
-- Validar que nenhum dos 2 agentes duplica conteúdo de `AGENTS.md`, `docs-sync.md` ou `ops-runner.md`.
+- Reescrever `01 - Demanda.md`, `02 - Plano de teste.md`, `03 - Casos de teste.md`, `04 - Validação dev.md`, `05 - Preparação Qase.md` e `00 README.md` do pacote `NXG-MEL-0007` para a arquitetura neutra de agentes.
+- Atualizar `NXG-028` (lote 4, decisões de organização, arquitetura-alvo), o épico `NXG-EPIC-0001` (escopo, demandas vinculadas, status consolidado) e o Board QA (nota do card).
+- Marcar a execução DEV anterior (`03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0007 Agentes especializados/`) como obsoleta/substituída, sem apagar ou mover a pasta.
+- Executar o validador oficial (`scripts/validar_pacote_qa.py`) e auditar links internos, placeholders e aninhamento dos CTs.
 
 ---
 
 ## Fora de escopo
 
-- Alterar código em `src/`/`frontend/`, infraestrutura (`infra/`), `.env` ou scripts de deploy.
-- Implementar a lógica/comportamento real dos agentes além da definição declarativa (frontmatter + instruções em Markdown) — não há código executável a escrever.
-- Criar execução DEV nesta tarefa — só a criação do pacote QA.
-- Aplicar qualquer mudança no repositório NX Gest nesta etapa de QA.
+- Criar `agents/` no repositório NX Gest.
+- Remover `.opencode/` do repositório.
+- Editar `AGENTS.md`, `README.md`, `docs/skills/SKILL-009-documentation-sync.md`, `docs/plans/PLAN-084-organizacao-repositorio.md`, `.dockerignore` ou qualquer arquivo de código, infraestrutura, ambiente ou deploy.
+- Reescrever `docs/UPDATES.md` (registro histórico).
+- Criar uma nova execução DEV ou emitir `QA_READY_FOR_DEV` nesta etapa.
 
 ---
 
 ## Critérios de aceite
 
-- C1. `.opencode/agents/product-planner.md` existe, com `description`, `mode: subagent` e `permission` escopada (leitura ampla, escrita restrita a `docs/plans/**`, sem `webfetch`/`websearch`), seguindo o mesmo formato estrutural de `docs-sync.md`/`ops-runner.md`. ^c1
-- C2. `.opencode/agents/qa-reviewer.md` existe, com `description`, `mode: subagent` e `permission` somente leitura (`edit: deny`, `write: deny`, `bash` liberado só para auditorias/testes). ^c2
-- C3. As permissões de cada agente são coerentes com seu propósito declarado (nenhum dos dois tem permissão mais ampla do que o necessário). ^c3
-- C4. Nenhum dos 2 agentes duplica o conteúdo de `AGENTS.md` (contexto do projeto, produção, comandos gerais) — cada um só documenta seu próprio escopo. ^c4
-- C5. `AGENTS.md` continua coerente com os novos agentes (referência à pasta `.opencode/agents/`, sem detalhar regras internas de cada um). ^c5
-- C6. Nenhuma alteração em código, `infra/`, `.env` ou scripts de deploy. ^c6
-- C7. Todos os links internos do pacote QA resolvem; nenhuma mudança é aplicada ao repositório NX Gest nesta etapa de criação do pacote QA. ^c7
+- C1. `AGENTS.md` permanece o contrato global único na raiz do repositório, sem perder esse papel na nova arquitetura. ^c1
+- C2. `agents/` passa a ser a fonte canônica neutra na raiz, com `agents/README.md` como índice, contendo `docs-sync.md`, `ops-runner.md`, `product-planner.md` e `qa-reviewer.md`. ^c2
+- C3. Os 4 contratos descrevem identidade, responsabilidade, entradas/saídas, regras, limites, protocolo e critérios de conclusão, sem depender de frontmatter ou de qualquer schema de permissão específico do OpenCode (ou de outra plataforma). ^c3
+- C4. A migração/remoção futura de `.opencode/` e a atualização de todas as referências estruturais ativas estão cobertas por um inventário explícito (`README.md`, `AGENTS.md`, `docs/skills/SKILL-009-documentation-sync.md`, `docs/plans/PLAN-084-organizacao-repositorio.md`, `.dockerignore`); changelogs históricos (`docs/UPDATES.md`) não precisam ser reescritos. ^c4
+- C5. `README.md`, `AGENTS.md`, `SKILL-009` e `PLAN-084` ficam identificados como documentação ativa a tornar coerente com `agents/` — essa atualização é registrada como escopo da implementação DEV futura, não executada agora no repositório. ^c5
+- C6. Nenhuma alteração em código, `frontend/`, `infra/`, `.env`, scripts de deploy ou no trabalho protegido em andamento. ^c6
+- C7. Todos os links internos do pacote QA resolvem, a estrutura segue literalmente os templates oficiais, e o validador (`scripts/validar_pacote_qa.py`) aprova o pacote. ^c7
 
 ---
 
@@ -131,5 +148,4 @@ Entrega: os 2 arquivos de agente completos + um ajuste pontual em `AGENTS.md` (s
 
 ## Pendências de decisão
 
-- Gate QA aprovado e `QA_READY_FOR_DEV` já emitido (17/10/2026) — nenhuma pendência de validação de integridade.
-- Confirmar, na execução DEV, se `AGENTS.md` precisa mesmo de edição (C5) ou se a frase genérica já existente é suficiente.
+- Nenhuma pendência de decisão de produto. A liberação para `QA_READY_FOR_DEV` depende de uma nova execução de `python3 scripts/validar_pacote_qa.py "03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados"` e da aprovação formal do Orquestrador — nenhuma execução DEV está autorizada antes disso.

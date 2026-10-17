@@ -1,5 +1,8 @@
 # 01 - Análise (NXG-MEL-0007)
 
+> [!danger] OBSOLETA — escopo antigo OpenCode, não autorizada para execução
+> Esta análise documenta a tentativa anterior de criar `.opencode/agents/product-planner.md`/`qa-reviewer.md` com schema de permissão do OpenCode. Esse escopo foi superado pela decisão do Orquestrador (governança de agentes independente de plataforma, fonte canônica em `agents/`). Conteúdo preservado como registro histórico — ver [[00 README|00 README]] para o estado atual.
+
 > [!info]- Navegação QA/DEV
 > **README do card:** [[00 README|Abrir README do card]]  
 > **Execução:** [[00 README|README da execução]]  

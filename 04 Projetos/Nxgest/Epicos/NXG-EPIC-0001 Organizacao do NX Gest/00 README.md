@@ -26,7 +26,7 @@ Organizar o NX Gest segundo um padrão claro, reproduzível e fácil de clonar, 
 - Atualizar o mapa documental da raiz.
 - Agrupar infraestrutura em `infra/` quando os caminhos e validações estiverem preparados.
 - Organizar comandos e onboarding de ambientes.
-- Manter `AGENTS.md` como contrato global e `.opencode/agents/` como agentes especializados.
+- Manter `AGENTS.md` como contrato global e migrar a governança de agentes especializados para uma fonte canônica neutra em `agents/`, independente de plataforma (OpenCode, Claude Code, Codex).
 - Consolidar o padrão de nomenclatura `nxgest`.
 - Validar clone limpo, build, testes, documentação e compatibilidade de staging/produção.
 
@@ -44,7 +44,7 @@ Organizar o NX Gest segundo um padrão claro, reproduzível e fácil de clonar, 
 | NXG-MEL-0004 | [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0004/QA/NXG-MEL-0004 README e mapa da raiz/00 README|README e mapa da raiz]] | primeiro lote documental | ✅ Concluído com ressalva |
 | NXG-MEL-0005 | [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0005 Infraestrutura em infra/01 - Demanda|Infraestrutura em infra/]] | infraestrutura em `infra/` | ✅ Concluído com ressalva |
 | NXG-MEL-0006 | [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0006/QA/NXG-MEL-0006 Onboarding de ambientes/00 README|Onboarding de ambientes]] | scripts e onboarding | ✅ Concluído com ressalva |
-| NXG-MEL-0007 | [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados/01 - Demanda|Agentes especializados]] | agentes especializados | 🔵 Execução DEV em andamento |
+| NXG-MEL-0007 | [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados/01 - Demanda|Agentes especializados]] | agentes especializados | 🔁 Em revisão de QA — arquitetura neutra |
 
 ## Dependências
 
@@ -71,7 +71,7 @@ flowchart LR
 | NXG-MEL-0004 | ✅ concluído com ressalva documental |
 | NXG-MEL-0005 | ✅ concluído com ressalva — QA independente aprovou (17/10) |
 | NXG-MEL-0006 | ✅ concluído com ressalva (limitação de permissão Docker para reexecução, não defeito) |
-| NXG-MEL-0007 | 🔵 gate aprovado (`QA_READY_FOR_DEV`), execução DEV em andamento |
+| NXG-MEL-0007 | 🔁 pacote QA em revisão (fonte canônica neutra em `agents/`) — gate anterior invalidado, execução DEV anterior marcada obsoleta, aguardando novo `QA_READY_FOR_DEV` |
 | Execução no NX Gest | ✅ documental (NXG-MEL-0004), infraestrutura (NXG-MEL-0005) e onboarding (NXG-MEL-0006) concluídos localmente · nenhum deploy real ainda |
 
 ## Critério de conclusão
