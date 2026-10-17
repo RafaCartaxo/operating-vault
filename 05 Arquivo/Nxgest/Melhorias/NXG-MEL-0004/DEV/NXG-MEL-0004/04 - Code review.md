@@ -3,10 +3,10 @@
 > [!info]- Navegação QA/DEV
 > **README do card:** [[00 README|Abrir README do card]]  
 > **Execução:** [[00 README|README da execução]]  
-> **Demanda QA:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0004 README e mapa da raiz/01 - Demanda|NXG-MEL-0004 — README e mapa da raiz]]  
+> **Demanda QA:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0004/QA/NXG-MEL-0004 README e mapa da raiz/01 - Demanda|NXG-MEL-0004 — README e mapa da raiz]]  
 > **Plano:** [[02 - Plano de execução|02 - Plano de execução]]  
 > **Implementação:** [[03 - Implementação|03 - Implementação]]  
-> **Validação QA:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0004 README e mapa da raiz/04 - Validação dev|Validação QA]]
+> **Validação QA:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0004/QA/NXG-MEL-0004 README e mapa da raiz/04 - Validação dev|Validação QA]]
 
 **Estado:** ✅ revisado (2026-10-17)
 

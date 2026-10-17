@@ -2,7 +2,7 @@
 status: concluido
 tipo: melhoria
 etapa_atual: "Concluído"
-demanda: "[[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0004 README e mapa da raiz/01 - Demanda|NXG-MEL-0004]]"
+demanda: "[[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0004/QA/NXG-MEL-0004 README e mapa da raiz/01 - Demanda|NXG-MEL-0004]]"
 epico: NXG-EPIC-0001
 plano: "[[03 Trabalho/QA/Nxgest/Demandas/Planos/NXG-028 Governanca da reorganizacao do NX Gest|NXG-028]]"
 commit: ""
@@ -13,7 +13,7 @@ pontos: 0
 
 
 > [!info]- Navegação QA/DEV
-> **Demanda QA:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0004 README e mapa da raiz/01 - Demanda|NXG-MEL-0004 — README e mapa da raiz]]  
+> **Demanda QA:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0004/QA/NXG-MEL-0004 README e mapa da raiz/01 - Demanda|NXG-MEL-0004 — README e mapa da raiz]]  
 > **Épico:** [[04 Projetos/Nxgest/Epicos/NXG-EPIC-0001 Organizacao do NX Gest/00 README|NXG-EPIC-0001 — Organização do NX Gest]]
 > **Análise:** [[01 - Análise|01 - Análise]]  
 > **Plano:** [[02 - Plano de execução|02 - Plano de execução]]  
@@ -26,11 +26,11 @@ pontos: 0
 > **Etapa atual:** `INPUT[inlineSelect(option(DEV · Análise técnica),option(DEV · Plano de execução),option(DEV · Implementação),option(DEV · Code review),option(QA · Validação),option(Concluído)):etapa_atual]`
 
 > [!info]- Cards relacionados
-> **Demanda QA:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0004 README e mapa da raiz/01 - Demanda|NXG-MEL-0004 — README e mapa da raiz]]  
+> **Demanda QA:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0004/QA/NXG-MEL-0004 README e mapa da raiz/01 - Demanda|NXG-MEL-0004 — README e mapa da raiz]]  
 > **Plano técnico:** [[03 Trabalho/QA/Nxgest/Demandas/Planos/NXG-028 Governanca da reorganizacao do NX Gest|NXG-028]]  
 > **Implementação:** [[03 - Implementação|03 - Implementação]]  
 > **Code review:** [[04 - Code review|04 - Code review]]  
-> **Validação QA:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0004 README e mapa da raiz/04 - Validação dev|Validação QA]]
+> **Validação QA:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0004/QA/NXG-MEL-0004 README e mapa da raiz/04 - Validação dev|Validação QA]]
 
 > [!tip]- Esforço
 > ```dataviewjs

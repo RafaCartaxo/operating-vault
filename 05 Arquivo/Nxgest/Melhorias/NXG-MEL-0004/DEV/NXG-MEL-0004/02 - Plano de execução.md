@@ -3,11 +3,11 @@
 > [!info]- Navegação QA/DEV
 > **README do card:** [[00 README|Abrir README do card]]  
 > **Execução:** [[00 README|README da execução]]  
-> **Demanda QA:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0004 README e mapa da raiz/01 - Demanda|NXG-MEL-0004 — README e mapa da raiz]]  
+> **Demanda QA:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0004/QA/NXG-MEL-0004 README e mapa da raiz/01 - Demanda|NXG-MEL-0004 — README e mapa da raiz]]  
 > **Plano técnico:** [[03 Trabalho/QA/Nxgest/Demandas/Planos/NXG-028 Governanca da reorganizacao do NX Gest|NXG-028]]  
 > **Implementação:** [[03 - Implementação|03 - Implementação]]  
 > **Code review:** [[04 - Code review|04 - Code review]]  
-> **Validação QA:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0004 README e mapa da raiz/04 - Validação dev|Validação QA]]
+> **Validação QA:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0004/QA/NXG-MEL-0004 README e mapa da raiz/04 - Validação dev|Validação QA]]
 
 > Congelado na aprovação — alteração posterior vira decisão registrada em 03 - Implementação.md.
 
@@ -41,7 +41,7 @@ Atualizar o mapa estrutural do README raiz para refletir a estrutura real do rep
 
 ## Pronto quando
 
-- Critérios da demanda: C1–C4 em [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0004 README e mapa da raiz/01 - Demanda|NXG-MEL-0004]].
+- Critérios da demanda: C1–C4 em [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0004/QA/NXG-MEL-0004 README e mapa da raiz/01 - Demanda|NXG-MEL-0004]].
 - CTs do pacote QA cobertos e gates do repositório verdes.
 
 ### Testes desta etapa

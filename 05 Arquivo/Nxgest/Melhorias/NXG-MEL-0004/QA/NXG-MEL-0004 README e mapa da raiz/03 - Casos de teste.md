@@ -14,7 +14,7 @@ pontos: 0
 > **Plano de teste:** [[02 - Plano de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0004 README e mapa da raiz/00 README|Execução NXG-MEL-0004]]
+> **Execução DEV:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0004/DEV/NXG-MEL-0004/00 README|Execução NXG-MEL-0004]]
 
 > [!settings]- Controle dos casos de teste
 > **Status:** `INPUT[inlineSelect(option(planejado),option(execucao),option(concluido)):status]`

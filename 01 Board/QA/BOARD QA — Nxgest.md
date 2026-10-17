@@ -16,6 +16,7 @@ kanban-plugin: board
 
 ## 🧪 Casos de teste
 
+- [ ] 🟡 [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0005 Infraestrutura em infra/01 - Demanda|NXG-MEL-0005 — Infraestrutura em infra/]]
 
 
 ## 🧪 Validação
@@ -23,7 +24,7 @@ kanban-plugin: board
 
 ## ✅ Concluído
 
-- [x] ✅ [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0004 README e mapa da raiz/01 - Demanda|NXG-MEL-0004 — README e mapa da raiz]] — aprovado com ressalva
+- [x] ✅ [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0004/QA/NXG-MEL-0004 README e mapa da raiz/01 - Demanda|NXG-MEL-0004 — README e mapa da raiz]] — aprovado com ressalva
 
 
 

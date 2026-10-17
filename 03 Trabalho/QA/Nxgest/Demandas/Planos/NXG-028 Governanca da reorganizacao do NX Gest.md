@@ -68,7 +68,7 @@ Os exemplos de ambiente permanecem inicialmente na raiz para preservar o onboard
 ## Lotes governados
 
 1. **NXG-MEL-0004 — README e mapa da raiz:** alteração documental isolada.
-2. **MEL-0005 — infraestrutura:** agrupar Dockerfile, Caddyfile e compose em `infra/` com paths validados.
+2. **NXG-MEL-0005 — infraestrutura:** agrupar Dockerfile, Caddyfile e compose em `infra/` com paths validados. Pacote QA criado em 17/10, aguardando gate de integridade e autorização para execução DEV.
 3. **MEL-0006 — onboarding:** encapsular comandos de ambiente e atualizar setup de clone.
 4. **MEL-0007 — agentes:** formalizar agentes de produto/QA apenas se a decisão for aprovada.
 5. **Renomeação local:** `nxgestao` → `nxgest`, registrada como decisão operacional, não como alteração do repositório.
