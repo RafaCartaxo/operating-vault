@@ -1,6 +1,6 @@
 ---
 demanda: "[[01 - Demanda]]"
-execucao: "[[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0007 Agentes especializados/00 README|Execução NXG-MEL-0007]]"
+execucao: ""
 ambiente: dev
 versao: ""
 status: planejado
