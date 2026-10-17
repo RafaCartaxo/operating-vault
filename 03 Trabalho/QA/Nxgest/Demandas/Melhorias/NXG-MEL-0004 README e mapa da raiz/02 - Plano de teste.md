@@ -5,7 +5,7 @@ responsavel: qa-first-delivery
 pontos: 0
 ---
 
-# Plano de teste — MEL-0004
+# Plano de teste — NXG-MEL-0004
 
 > [!info]- Navegação QA
 > **Demanda:** [[01 - Demanda]]
@@ -38,4 +38,4 @@ O risco principal é documentar uma estrutura futura como se já existisse. O te
 ## Entrada e saída
 
 **Entrada:** README raiz e árvore real do repositório.
-**Saída:** README atualizado, auditado e coerente com MEL-0004.
+**Saída:** README atualizado, auditado e coerente com NXG-MEL-0004.

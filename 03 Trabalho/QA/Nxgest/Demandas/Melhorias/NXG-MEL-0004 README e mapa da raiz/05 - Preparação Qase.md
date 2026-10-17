@@ -11,7 +11,7 @@ casos_origem: "[[03 - Casos de teste]]"
 validacao_origem: "[[04 - Validação dev]]"
 ---
 
-# Preparação Qase — MEL-0004
+# Preparação Qase — NXG-MEL-0004
 
 > Esta demanda é documental e manual. A preparação Qase permanece em rascunho até decisão de automação ou envio.
 

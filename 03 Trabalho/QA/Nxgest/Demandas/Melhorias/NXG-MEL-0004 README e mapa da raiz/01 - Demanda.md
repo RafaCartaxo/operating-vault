@@ -5,7 +5,7 @@ tipo: melhoria
 etapa_atual: "Concluído"
 modulo: organizacao-repositorio
 plano: "[[03 Trabalho/QA/Nxgest/Demandas/Planos/NXG-028 Governanca da reorganizacao do NX Gest|NXG-028]]"
-execucao: "[[03 Trabalho/DEV/Nxgest/Execuções/MEL-0004 README e mapa da raiz/00 README|Execução MEL-0004]]"
+execucao: "[[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0004 README e mapa da raiz/00 README|Execução NXG-MEL-0004]]"
 ambiente: dev
 origem: repo
 projeto: nxgest
@@ -17,7 +17,7 @@ responsavel: ""
 pontos_alocados: 0
 ---
 
-# MEL-0004 — README e mapa da raiz do NX Gest
+# NXG-MEL-0004 — README e mapa da raiz do NX Gest
 
 > [!info]- Navegação QA/DEV
 > **README do card:** [[00 README|Abrir README do card]]  
@@ -26,7 +26,7 @@ pontos_alocados: 0
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** [[03 Trabalho/DEV/Nxgest/Execuções/MEL-0004 README e mapa da raiz/00 README|Execução MEL-0004]]
+> **Execução DEV:** [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0004 README e mapa da raiz/00 README|Execução NXG-MEL-0004]]
 
 > [!settings]- Controle da demanda
 > **Prioridade:** `INPUT[inlineSelect(option(baixa),option(media),option(alta)):prioridade]`  

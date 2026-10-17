@@ -1,6 +1,6 @@
 ---
 demanda: "[[01 - Demanda]]"
-execucao: "[[03 Trabalho/DEV/Nxgest/Execuções/MEL-0004 README e mapa da raiz/00 README|Execução MEL-0004]]"
+execucao: "[[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0004 README e mapa da raiz/00 README|Execução NXG-MEL-0004]]"
 ambiente: dev
 versao: ""
 status: concluido
@@ -16,7 +16,7 @@ data_inicio: "2026-10-17"
 data_fim: "2026-10-17"
 ---
 
-# Validação — MEL-0004
+# Validação — NXG-MEL-0004
 
 > [!info]- Navegação QA
 > **Demanda:** [[01 - Demanda]]  
@@ -43,7 +43,7 @@ data_fim: "2026-10-17"
 
 **Resultado geral:** ✅ Aprovado com ressalvas
 
-> Ressalva: o `audit:links` permanece com 2 erros preexistentes em PLAN-088/PLAN-089, ambos fora do escopo e presentes antes do MEL-0004. Não há erro novo atribuível ao README.
+> Ressalva: o `audit:links` permanece com 2 erros preexistentes em PLAN-088/PLAN-089, ambos fora do escopo e presentes antes do NXG-MEL-0004. Não há erro novo atribuível ao README.
 
 ## Checklist de encerramento QA
 

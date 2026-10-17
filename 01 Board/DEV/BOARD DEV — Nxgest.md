@@ -24,7 +24,7 @@ kanban-plugin: board
 
 ## ✅ Concluído
 
-- [x] ✅ [[03 Trabalho/DEV/Nxgest/Execuções/MEL-0004 README e mapa da raiz/00 README|MEL-0004 — README e mapa da raiz]] — QA aprovado com ressalva
+- [x] ✅ [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0004 README e mapa da raiz/00 README|NXG-MEL-0004 — README e mapa da raiz]] — QA aprovado com ressalva
 
 %% kanban:settings
 ```

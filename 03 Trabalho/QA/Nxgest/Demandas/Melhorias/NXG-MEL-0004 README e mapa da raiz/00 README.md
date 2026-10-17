@@ -1,4 +1,4 @@
-# MEL-0004 — README e mapa da raiz do NX Gest
+# NXG-MEL-0004 — README e mapa da raiz do NX Gest
 
 
 > [!info]- Navegação QA/DEV
@@ -8,20 +8,20 @@
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** [[03 Trabalho/DEV/Nxgest/Execuções/MEL-0004 README e mapa da raiz/00 README|Execução MEL-0004]] — concluída
+> **Execução DEV:** [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0004 README e mapa da raiz/00 README|Execução NXG-MEL-0004]] — concluída
 
 ## Auditoria de integridade QA
 
 > Executar antes de mover o card para `QA_READY_FOR_DEV`:
 >
 > ```bash
-> python3 scripts/validar_pacote_qa.py "03 Trabalho/QA/Nxgest/Demandas/Melhorias/MEL-0004 README e mapa da raiz"
+> python3 scripts/validar_pacote_qa.py "03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0004 README e mapa da raiz"
 > ```
 
 - **Responsável pela execução:** QA/`qa-first-delivery`
 - **Data da última execução:** 2026-10-17
 - **Resultado do gate:** PACOTE QA APROVADO NO GATE DE INTEGRIDADE — lote concluído, validação funcional aprovada com ressalva (ver [[04 - Validação dev]]).
-- **Evidência detalhada:** `python3 scripts/validar_pacote_qa.py "03 Trabalho/QA/Nxgest/Demandas/Melhorias/MEL-0004 README e mapa da raiz"` — arquivos, critérios, CTs, âncoras, matriz e validação coerentes.
+- **Evidência detalhada:** `python3 scripts/validar_pacote_qa.py "03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0004 README e mapa da raiz"` — arquivos, critérios, CTs, âncoras, matriz e validação coerentes.
 
 O handoff para DEV só é permitido com resultado `PACOTE QA APROVADO NO GATE DE INTEGRIDADE`.
 
@@ -35,7 +35,7 @@ O handoff para DEV só é permitido com resultado `PACOTE QA APROVADO NO GATE DE
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** [[03 Trabalho/DEV/Nxgest/Execuções/MEL-0004 README e mapa da raiz/00 README|Execução MEL-0004]] — concluída
+> **Execução DEV:** [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0004 README e mapa da raiz/00 README|Execução NXG-MEL-0004]] — concluída
 
 > [!tip]- Esforço
 > ```dataviewjs
@@ -55,13 +55,13 @@ O handoff para DEV só é permitido com resultado `PACOTE QA APROVADO NO GATE DE
 > const adicional = defeitos.array().reduce((soma, pagina) => soma + (typeof pagina.pontos === "number" ? pagina.pontos : 0), 0);
 > const original = dv.pages().where(p => id && p.file.path.includes(id) && typeof p.pontos === "number").array().reduce((soma, pagina) => soma + Number(pagina.pontos), 0);
 > dv.table(["Defeito filho", "Pontos"], defeitos.map(p => [p.file.link, p.pontos ?? 0]));
-> dv.paragraph(`**${id || "MEL-0004"} — Retrabalho por defeitos filhos:** ${adicional} pontos (${defeitos.length} defeitos)`);
+> dv.paragraph(`**${id || "NXG-MEL-0004"} — Retrabalho por defeitos filhos:** ${adicional} pontos (${defeitos.length} defeitos)`);
 > ```
 
-Pacote QA para `MEL-0004`:
+Pacote QA para `NXG-MEL-0004`:
 
 ```text
-MEL-0004/
+NXG-MEL-0004/
 ├── 00 README.md
 ├── 01 - Demanda.md
 ├── 02 - Plano de teste.md
