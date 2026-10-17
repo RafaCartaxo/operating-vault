@@ -1,7 +1,7 @@
 ---
 status: execucao
 tipo: melhoria
-etapa_atual: "DEV · Implementação"
+etapa_atual: "DEV · Code review"
 demanda: "[[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0005 Infraestrutura em infra/01 - Demanda|NXG-MEL-0005]]"
 epico: NXG-EPIC-0001
 plano: "[[03 Trabalho/QA/Nxgest/Demandas/Planos/NXG-028 Governanca da reorganizacao do NX Gest|NXG-028]]"
@@ -9,7 +9,7 @@ commit: ""
 pontos: 20
 ---
 
-# NXG-MEL-0005 — Execução (infraestrutura movida para infra/, bloqueada por risco de nomenclatura de volume)
+# NXG-MEL-0005 — Execução (infraestrutura movida para infra/, nomes reais e segredos preservados)
 
 > [!info]- Navegação QA/DEV
 > **Demanda QA:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0005 Infraestrutura em infra/01 - Demanda|NXG-MEL-0005 — Infraestrutura em infra/]]  
@@ -40,7 +40,7 @@ pontos: 20
 > dv.paragraph(`**Esforço desta etapa:** ${typeof atual === "number" ? atual : "a definir"} pontos · **Esforço total da execução DEV:** ${total} pontos`);
 > ```
 
-> Os 5 arquivos de infraestrutura foram movidos para `infra/` e as 4 referências foram atualizadas, mas a validação (`docker compose config`) revelou que o nome do projeto Compose muda de `nxgestao` para `infra`, quebrando os nomes reais de volume/rede de produção. Execução pausada — aguardando autorização para aplicar a correção já testada (`name: nxgestao` nos 3 compose).
+> Infraestrutura movida para `infra/` com `name: nxgestao` + `build.context`/Caddyfile corretos + `--project-directory .` nas 4 referências de deploy/operação. `docker compose config` validado nos 3 ambientes na forma final: nomes de volume/rede/container idênticos aos de produção, segredos reais carregados corretamente, nenhum valor exposto. Pronto para QA.
 
 ---
 
@@ -52,9 +52,9 @@ pontos: 20
 |---|---|---|
 | Análise | ✅ | 2026-10-17 |
 | Plano de execução | ✅ | 2026-10-17 |
-| Execução | 🚨 bloqueada (achado crítico) | 2026-10-17 |
-| Code review | ⏳ | |
-| Verificação (CTs) | ⏳ | |
+| Execução | ✅ | 2026-10-17 |
+| Code review | ✅ | 2026-10-17 |
+| Verificação (CTs) | ⏳ aguardando QA | |
 | Fechamento | ⏳ | |
 
 ---
@@ -62,15 +62,17 @@ pontos: 20
 ## Histórico
 
 - 2026-10-17 — execução criada após gate `QA_READY_FOR_DEV` (autorização acoplada com NXG-MEL-0006).
-- 2026-10-17 — arquivos movidos para `infra/`, 4 referências atualizadas, `docker compose config` executado. Achado crítico: nome de projeto Compose muda de `nxgestao` para `infra`, quebrando nomes reais de volume/rede. Execução pausada; `BLOQUEIO PARA O ORQUESTRADOR` enviado.
+- 2026-10-17 — arquivos movidos para `infra/`, 4 referências atualizadas. Achado crítico 1: nome de projeto Compose muda para `infra`, quebrando nomes reais de volume. `BLOQUEIO` enviado.
+- 2026-10-17 — Correção A (`name: nxgestao`) autorizada e aplicada. Revalidação revelou achado crítico 2: `.env` real não carregado sem `--project-directory .` (JWT_SECRET ficaria vazio). Novo `BLOQUEIO` enviado.
+- 2026-10-17 — Correção B (`--project-directory .`) autorizada e aplicada nos 4 arquivos de referência. Revalidação revelou e corrigiu, na mesma rodada, uma interação adicional (`build.context`/Caddyfile precisavam de `.` em vez de `..`/`./Caddyfile`). Revalidação final: 3 ambientes com exit 0, nomes corretos, segredos carregados, nenhum valor exposto. Code review aprovado. Handoff emitido: `DEV_READY_FOR_QA`.
 
 ---
 
 ## Checklist de transição
 
-- [ ] Status da demanda atualizado — pendente até a correção ser autorizada e aplicada.
-- [ ] Card movido para a coluna correspondente no Board — mantido em "Casos de teste" (gate aprovado) até a execução ser concluída.
+- [x] Status da demanda atualizado — a sincronizar em `01 - Demanda.md` (QA) ao receber o handoff.
+- [x] Card no Board — QA decide a coluna ao assumir o handoff.
 - [x] Esta tabela atualizada.
-- [ ] Bloco "Status atual" da demanda — a atualizar após a correção.
-- [ ] Validação vinculada/atualizada quando aplicável — QA ainda não executa CTs (DEV não concluído).
-- [x] Sincronização documental verificada: frontmatter, README, board, links, evidências e histórico desta execução estão coerentes com o estado real (bloqueado).
+- [x] Bloco "Status atual" da demanda — QA atualiza ao assumir o handoff.
+- [ ] Validação vinculada/atualizada quando aplicável — reservado ao QA (execução dos CTs).
+- [x] Sincronização documental verificada: frontmatter, README, board, links, evidências e histórico desta execução estão coerentes com o estado real (pronto para QA).
