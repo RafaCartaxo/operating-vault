@@ -69,14 +69,14 @@ nxgest/
 └── scripts/
 ```
 
-`.opencode/` sai do repositório em uma etapa DEV futura, após o gate QA de `NXG-MEL-0007` ser aprovado especificamente para essa remoção — não faz parte da arquitetura-alvo final.
+`.opencode/` já foi removido do repositório no `NXG-MEL-0007` (17/10) — `agents/` é a fonte canônica de contratos de agente, independente de plataforma.
 
 Os exemplos de ambiente permanecem inicialmente na raiz para preservar o onboarding `cp .env.example .env`; sua eventual migração para `infra/env/` exige demanda própria e atualização explícita do carregamento.
 
 ## Lotes governados
 
 1. **NXG-MEL-0004 — README e mapa da raiz:** alteração documental isolada.
-2. **NXG-MEL-0005 — infraestrutura:** agrupar Dockerfile, Caddyfile e compose em `infra/` com paths validados. ✅ Concluído com ressalva (17/10) — infraestrutura movida localmente, nenhum deploy real ainda.
+2. **NXG-MEL-0005 — infraestrutura:** agrupar Dockerfile, Caddyfile e compose em `infra/` com paths validados. ✅ Concluído com ressalva (17/10) — infraestrutura movida localmente, nenhum deploy real ainda; arquivado em `05 Arquivo/Nxgest/Melhorias/NXG-MEL-0005/`.
 3. **NXG-MEL-0006 — onboarding:** encapsular comandos docker de dev em scripts npm e atualizar README/08-SETUP-NOVA-MAQUINA.md para `infra/docker-compose.yml`. ✅ Concluído com ressalva (17/10) — arquivado em `05 Arquivo/Nxgest/Melhorias/NXG-MEL-0006/`.
 4. **NXG-MEL-0007 — agentes:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/QA/NXG-MEL-0007 Agentes especializados/01 - Demanda|NXG-MEL-0007]] — governança de agentes independente de plataforma — fonte canônica neutra em `agents/` (`agents/README.md` + `docs-sync.md`/`ops-runner.md`/`product-planner.md`/`qa-reviewer.md`), sem frontmatter/schema do OpenCode; `.opencode/` removido do repositório. ✅ Concluído (17/10) — implementação em [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/DEV/NXG-MEL-0007/00 README|execução NXG-MEL-0007 Agentes neutros]], QA aprovou os 7 CTs, lote arquivado em `05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/`. A execução anterior (escopo OpenCode) permanece obsoleta em `03 Trabalho/DEV/Nxgest/Execuções/`.
 5. **Renomeação local:** `nxgestao` → `nxgest`, registrada como decisão operacional, não como alteração do repositório.
@@ -91,7 +91,7 @@ Os exemplos de ambiente permanecem inicialmente na raiz para preservar o onboard
 | Divergência de nomenclatura | usar `nxgest` em referências novas; preservar compatibilidade justificada |
 | Documentação contraditória | executar auditorias de links e documentação |
 | Mistura com produção | não alterar VPS, volumes, redes ou domínios neste épico sem autorização |
-| Inconsistência entre planos (`PLAN-084-organizacao-repositorio.md` trata `.opencode/agents/**` como parte permanente do pacote de distribuição) | registrar `PLAN-084` como referência ativa a atualizar na implementação DEV do `NXG-MEL-0007`; não editar o `PLAN-084` agora |
+| Inconsistência entre planos (`PLAN-084-organizacao-repositorio.md` tratava `.opencode/agents/**` como parte permanente do pacote de distribuição) | Mitigado: `PLAN-084` foi atualizado na implementação do `NXG-MEL-0007` (nota datada de 17/10 + seção "Classificação do repositório" ajustada para `agents/**`); não é mais uma ação futura |
 
 ## Critérios de aceite do plano
 
@@ -112,8 +112,8 @@ Os exemplos de ambiente permanecem inicialmente na raiz para preservar o onboard
 
 ## Definição de pronto
 
-- [ ] Arquitetura-alvo aprovada.
-- [ ] Lotes e dependências registrados.
-- [ ] Melhorias filhas vinculadas ao épico.
-- [ ] Boards e links sincronizados.
-- [ ] Nenhuma decisão bloqueante omitida.
+- [x] Arquitetura-alvo aprovada — `agents/` canônico implementado e validado (`NXG-MEL-0007`).
+- [x] Lotes e dependências registrados — 1 a 5 registrados acima, com sequência e dependências explícitas.
+- [x] Melhorias filhas vinculadas ao épico — `NXG-MEL-0004`, `0005`, `0006` e `0007` vinculadas e arquivadas.
+- [x] Boards e links sincronizados — Boards QA/DEV e épico refletem os 4 lotes concluídos e arquivados.
+- [ ] Nenhuma decisão bloqueante omitida — pendente apenas a decisão de estratégia de commit do working tree (lotes de organização + trabalho protegido) antes de qualquer deploy real; commit e deploy **não** foram autorizados nem executados.
