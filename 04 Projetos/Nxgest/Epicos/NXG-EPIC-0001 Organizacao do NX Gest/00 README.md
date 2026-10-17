@@ -42,8 +42,8 @@ Organizar o NX Gest segundo um padrão claro, reproduzível e fácil de clonar, 
 | ID | Demanda | Relação | Estado |
 |---|---|---|---|
 | NXG-MEL-0004 | [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0004/QA/NXG-MEL-0004 README e mapa da raiz/00 README|README e mapa da raiz]] | primeiro lote documental | ✅ Concluído com ressalva |
-| NXG-MEL-0005 | [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0005 Infraestrutura em infra/01 - Demanda|Infraestrutura em infra/]] | infraestrutura em `infra/` | ✅ Gate aprovado — `QA_READY_FOR_DEV` (execução aguarda NXG-MEL-0006) |
-| NXG-MEL-0006 | [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0006 Onboarding de ambientes/01 - Demanda|Onboarding de ambientes]] | scripts e onboarding | ✅ Gate aprovado — `QA_READY_FOR_DEV` (execução não autorizada) |
+| NXG-MEL-0005 | [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0005 Infraestrutura em infra/01 - Demanda|Infraestrutura em infra/]] | infraestrutura em `infra/` | ✅ Concluído com ressalva |
+| NXG-MEL-0006 | [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0006 Onboarding de ambientes/01 - Demanda|Onboarding de ambientes]] | scripts e onboarding | 🔵 `DEV_READY_FOR_QA` — aguardando execução dos CTs |
 | NXG-MEL-0007 | a criar após aprovação do plano | agentes especializados | Opcional |
 
 ## Dependências
@@ -69,10 +69,10 @@ flowchart LR
 | Escopo do épico | ✅ definido |
 | Plano de governança | ✅ definido |
 | NXG-MEL-0004 | ✅ concluído com ressalva documental |
-| NXG-MEL-0005 | ✅ gate aprovado (`QA_READY_FOR_DEV`) · execução aguarda NXG-MEL-0006 |
-| NXG-MEL-0006 | ✅ gate aprovado (`QA_READY_FOR_DEV`, 7 CTs) · execução ainda não autorizada |
+| NXG-MEL-0005 | ✅ concluído com ressalva — QA independente aprovou (17/10) |
+| NXG-MEL-0006 | 🔵 `DEV_READY_FOR_QA` — implementado e revisado, aguardando QA |
 | NXG-MEL-0007 | ⏳ aguardando decisão de formalizar agentes |
-| Execução no NX Gest | ✅ lote documental (NXG-MEL-0004) concluído · infraestrutura e onboarding ainda não aplicados |
+| Execução no NX Gest | ✅ documental (NXG-MEL-0004) e infraestrutura (NXG-MEL-0005) concluídos localmente · onboarding (NXG-MEL-0006) em execução · nenhum deploy real ainda |
 
 ## Critério de conclusão
 

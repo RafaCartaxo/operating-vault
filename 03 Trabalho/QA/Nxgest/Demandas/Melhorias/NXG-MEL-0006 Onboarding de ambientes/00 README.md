@@ -8,7 +8,7 @@
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** ainda não criada — gate QA aprovado (`QA_READY_FOR_DEV`), aguardando autorização do Orquestrador
+> **Execução DEV:** [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0006 Onboarding de ambientes/00 README|Execução NXG-MEL-0006]] — concluída, aguardando QA
 
 ## Auditoria de integridade QA
 
@@ -35,7 +35,7 @@ O gate está aprovado e o pacote está pronto para DEV. A execução DEV ainda *
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** ainda não criada — gate QA aprovado (`QA_READY_FOR_DEV`), aguardando autorização do Orquestrador
+> **Execução DEV:** [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0006 Onboarding de ambientes/00 README|Execução NXG-MEL-0006]] — concluída, aguardando QA
 
 > [!tip]- Esforço
 > ```dataviewjs

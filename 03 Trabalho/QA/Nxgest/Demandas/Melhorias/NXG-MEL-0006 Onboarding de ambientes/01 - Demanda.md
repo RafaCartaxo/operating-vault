@@ -1,11 +1,11 @@
 ---
 prioridade: alta
-status: analise
+status: execucao
 tipo: melhoria
-etapa_atual: "QA · Casos de teste"
+etapa_atual: "QA · Validação"
 modulo: onboarding
 plano: "[[03 Trabalho/QA/Nxgest/Demandas/Planos/NXG-028 Governanca da reorganizacao do NX Gest|NXG-028]]"
-execucao: ""
+execucao: "[[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0006 Onboarding de ambientes/00 README|Execução NXG-MEL-0006]]"
 ambiente: dev
 origem: conversa
 projeto: nxgest
@@ -26,7 +26,7 @@ pontos_alocados: 10
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** ainda não criada — gate QA aprovado (`QA_READY_FOR_DEV`), aguardando autorização do Orquestrador
+> **Execução DEV:** [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0006 Onboarding de ambientes/00 README|Execução NXG-MEL-0006]] — concluída, aguardando QA
 
 > [!settings]- Controle da demanda
 > **Prioridade:** `INPUT[inlineSelect(option(baixa),option(media),option(alta)):prioridade]`  
@@ -36,8 +36,8 @@ pontos_alocados: 10
 
 
 > [!info] Status atual
-> **Resultado:** gate de integridade QA aprovado — `QA_READY_FOR_DEV` emitido em 17/10/2026.
-> **Próximo passo:** aguardar autorização do Orquestrador para abrir a execução DEV. A execução real do `NXG-MEL-0005` depende deste lote ter o gate aprovado — já cumprido.
+> **Resultado:** `DEV_READY_FOR_QA` emitido em 17/10/2026 — implementação concluída, code review aprovado.
+> **Próximo passo:** QA executar os CTs C1–C7 e registrar o resultado em [[04 - Validação dev]].
 
 ---
 

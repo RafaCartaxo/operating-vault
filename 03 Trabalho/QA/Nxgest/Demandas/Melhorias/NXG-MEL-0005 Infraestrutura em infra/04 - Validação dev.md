@@ -1,22 +1,22 @@
 ---
 demanda: "[[01 - Demanda]]"
-execucao: ""
+execucao: "[[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0005 Infraestrutura em infra/00 README|Execução NXG-MEL-0005]]"
 ambiente: dev
 versao: ""
-status: planejado
+status: concluido
 responsavel: qa-first-delivery
-resultado: aguardando
+resultado: aprovado_com_ressalvas
 pontos: 5
 ct_resultados:
-  ct_001: "⏳ Aguardando"
-  ct_002: "⏳ Aguardando"
-  ct_003: "⏳ Aguardando"
-  ct_004: "⏳ Aguardando"
-  ct_005: "⏳ Aguardando"
-  ct_006: "⏳ Aguardando"
-  ct_007: "⏳ Aguardando"
-data_inicio: ""
-data_fim: ""
+  ct_001: "✅ Aprovado"
+  ct_002: "✅ Aprovado"
+  ct_003: "✅ Aprovado"
+  ct_004: "✅ Aprovado"
+  ct_005: "✅ Aprovado"
+  ct_006: "✅ Aprovado"
+  ct_007: "✅ Aprovado"
+data_inicio: "2026-10-17"
+data_fim: "2026-10-17"
 ---
 
 # Validação — NXG-MEL-0005
@@ -31,14 +31,14 @@ data_fim: ""
 > **Resultado:** `INPUT[inlineSelect(option(aguardando),option(aprovado),option(reprovado),option(aprovado_com_ressalvas)):resultado]`  
 > **Ambiente:** `INPUT[inlineSelect(option(dev),option(hml),option(prod)):ambiente]`
 
-> Registro da execução dos CTs e das evidências, a preencher após a execução DEV ser autorizada e concluída. Os cenários permanecem em `03 - Casos de teste.md`.
+> Registro da execução dos CTs e das evidências. Os cenários permanecem em `03 - Casos de teste.md`.
 
 ---
 
 ## Contexto
 
-- Ambiente: a definir (execução DEV ainda não criada)
-- Versão/build: não aplicável até a execução DEV existir
+- Ambiente: dev/repositório local (forma final de invocação idêntica à usada pelos scripts/documentação de staging/produção, sem deploy real)
+- Versão/build: não aplicável — lote de infraestrutura, sem alteração de código de aplicação
 
 ---
 
@@ -76,17 +76,15 @@ dv.list([
 
 | CT | Resultado | Evidência | Observação | Defeito/Bug | Pontos entregues |
 |---|---|---|---|---|---:|
-| [[03 - Casos de teste#^ct-001\|CT-001]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_001]` |  |  |  | `= choice(this.ct_resultados.ct_001 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
-| [[03 - Casos de teste#^ct-002\|CT-002]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_002]` |  |  |  | `= choice(this.ct_resultados.ct_002 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
-| [[03 - Casos de teste#^ct-003\|CT-003]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_003]` |  |  |  | `= choice(this.ct_resultados.ct_003 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
-| [[03 - Casos de teste#^ct-004\|CT-004]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_004]` |  |  |  | `= choice(this.ct_resultados.ct_004 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
-| [[03 - Casos de teste#^ct-005\|CT-005]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_005]` |  |  |  | `= choice(this.ct_resultados.ct_005 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
-| [[03 - Casos de teste#^ct-006\|CT-006]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_006]` |  |  |  | `= choice(this.ct_resultados.ct_006 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
-| [[03 - Casos de teste#^ct-007\|CT-007]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_007]` |  |  |  | `= choice(this.ct_resultados.ct_007 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
+| [[03 - Casos de teste#^ct-001\|CT-001]] | ✅ Aprovado | `infra/{Dockerfile,Caddyfile,docker-compose.yml,docker-compose.staging.yml,docker-compose.prod.yml}` presentes; nenhum dos 5 remanescente na raiz | — |  | 0.71 |
+| [[03 - Casos de teste#^ct-002\|CT-002]] | ✅ Aprovado | `docker compose --project-directory . -f infra/docker-compose.{yml,staging.yml,prod.yml} config` — exit 0 nos 3 | — |  | 0.71 |
+| [[03 - Casos de teste#^ct-003\|CT-003]] | ✅ Aprovado | `scripts/deploy.sh` e `scripts/deploy-staging.sh` apontam para `infra/docker-compose.{prod,staging}.yml` com `--project-directory .` | — |  | 0.71 |
+| [[03 - Casos de teste#^ct-004\|CT-004]] | ✅ Aprovado | `.opencode/agents/ops-runner.md` e `docs/engineering/06-PRODUCAO.md` (6 ocorrências reais, corrigida a contagem de 5→6) sem caminho desatualizado | — |  | 0.71 |
+| [[03 - Casos de teste#^ct-005\|CT-005]] | ✅ Aprovado | Config resolvida: `name: nxgestao`; volumes `nxgestao_nxgestao_data`/`nxgestao_nxgestao_pgdata`/`nxgestao_nxgestao_staging_data`/`nxgestao_nxgestao_staging_pgdata`; rede `nxgestao_net`; containers `nxgest-postgres`/`nxgest-pg-dev`/`staging-app`/`staging-pg` — idênticos a `docs/STATUS.md` | — |  | 0.71 |
+| [[03 - Casos de teste#^ct-006\|CT-006]] | ✅ Aprovado | `.env.example`, `.env.production.example`, `.env.staging.example` continuam na raiz | — |  | 0.71 |
+| [[03 - Casos de teste#^ct-007\|CT-007]] | ✅ Aprovado | `git status -sb` idêntico ao baseline protegido (27 modificados + 10 untracked intactos); nenhum valor de segredo impresso/registrado em nenhuma rodada; nenhum deploy real executado | **Ressalva fora de escopo registrada na Decisão** |  | 0.71 |
 
 > **Regra de esforço:** aprovado e falhou = 100% da parcela; em andamento = 25%; bloqueado = 50%; aguardando e não executado = 0%.
-
-> **Pontos entregues:** a coluna é calculada automaticamente conforme o status de cada CT.
 
 ```dataviewjs
 const pagina = dv.current() ?? {};
@@ -119,28 +117,32 @@ if (tabela) {
 
 ---
 
+## Evidências adicionais (verificação técnica, QA independente do Orquestrador)
+
+- `git diff --check` — exit 0 (sem conflito nem espaço em branco problemático).
+- Sintaxe dos scripts — `bash -n scripts/deploy.sh` e `bash -n scripts/deploy-staging.sh` — ambos OK.
+- `git diff scripts/deploy-staging.sh` — confirma que o diff deste lote altera **somente** a linha `COMPOSE="-f docker-compose.staging.yml"` → `COMPOSE="--project-directory . -f infra/docker-compose.staging.yml"`; nenhuma outra linha do script foi tocada.
+
+---
+
 ## Histórico de validação
 
-Use esta seção somente quando houver reteste após correção:
-
-- **Rodada inicial:** registre o CT reprovado e o defeito aberto.
-- **Correção:** vincule o bug e o Fix DEV.
-- **Reteste:** registre o resultado final e a data.
+Nenhum reteste necessário — todos os CTs aprovados na primeira execução formal (após as correções já aplicadas e documentadas em `03 - Implementação.md` da execução DEV).
 
 ---
 
 ## Decisão
 
-**Resultado geral:** aguardando — execução DEV ainda não criada; nenhuma mudança foi aplicada ao repositório NX Gest nesta etapa de QA.
+**Resultado geral:** ✅ Aprovado com ressalvas.
 
----
+> **Ressalva (fora de escopo, não corrigir nesta demanda):** `scripts/deploy-staging.sh` já continha, antes deste lote, a linha `MAIL_FROM_NAME=NX Gest` sem aspas dentro do heredoc que gera `.env.staging`. Confirmado por `git diff scripts/deploy-staging.sh` que o diff deste lote altera **apenas** a linha `COMPOSE=...` — esse trecho não foi introduzido nem tocado pelo `NXG-MEL-0005` e não deve ser corrigido nesta demanda (pertence a outro escopo).
 
 ## Checklist de encerramento QA
 
-- [ ] Todos os CTs executados ou com justificativa registrada.
-- [ ] Evidências e observações preenchidas quando necessário.
-- [ ] Bugs filhos vinculados na coluna **Defeito/Bug**.
-- [ ] Resultado geral definido.
-- [ ] Status da validação e da demanda atualizados.
-- [ ] Próximo passo registrado.
-- [ ] Sincronização documental verificada: frontmatter, README, board, links, evidências, histórico e pendências.
+- [x] Todos os CTs executados (CT-001 a CT-007, todos aprovados).
+- [x] Evidências e observações preenchidas.
+- [x] Nenhum bug filho aberto (nenhum CT reprovado).
+- [x] Resultado geral definido: aprovado com ressalvas.
+- [x] Status da validação e da demanda atualizados.
+- [x] Próximo passo registrado: lote concluído; iniciar `NXG-MEL-0006` (já autorizado, sem pausa).
+- [x] Sincronização documental verificada: frontmatter, README, board, links, evidências, histórico e pendências.

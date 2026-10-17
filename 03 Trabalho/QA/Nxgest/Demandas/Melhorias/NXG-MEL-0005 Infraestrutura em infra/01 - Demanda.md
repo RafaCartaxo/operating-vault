@@ -1,18 +1,18 @@
 ---
 prioridade: alta
-status: analise
+status: concluido
 tipo: melhoria
-etapa_atual: "QA · Casos de teste"
+etapa_atual: "Concluído"
 modulo: infraestrutura
 plano: "[[03 Trabalho/QA/Nxgest/Demandas/Planos/NXG-028 Governanca da reorganizacao do NX Gest|NXG-028]]"
-execucao: ""
+execucao: "[[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0005 Infraestrutura em infra/00 README|Execução NXG-MEL-0005]]"
 ambiente: dev
 origem: conversa
 projeto: nxgest
 epico: NXG-EPIC-0001
 pai: ""
 data_inicio: ""
-data_fim: ""
+data_fim: "2026-10-17"
 responsavel: ""
 pontos_alocados: 20
 ---
@@ -26,7 +26,7 @@ pontos_alocados: 20
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** ainda não criada — gate QA aprovado (`QA_READY_FOR_DEV`), aguardando NXG-MEL-0006 (regra de sequência do NXG-028)
+> **Execução DEV:** [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0005 Infraestrutura em infra/00 README|Execução NXG-MEL-0005]] — concluída
 
 > [!settings]- Controle da demanda
 > **Prioridade:** `INPUT[inlineSelect(option(baixa),option(media),option(alta)):prioridade]`  
@@ -36,8 +36,8 @@ pontos_alocados: 20
 
 
 > [!info] Status atual
-> **Resultado:** gate de integridade QA aprovado — `QA_READY_FOR_DEV` emitido em 17/10/2026.
-> **Próximo passo:** aguardar `NXG-MEL-0006` ser criado e ter seu gate QA aprovado (regra de sequência do NXG-028) antes de abrir a execução DEV deste lote.
+> **Resultado:** QA aprovado com ressalva (17/10/2026) — CTs C1–C7 atendidos. Ressalva fora de escopo registrada em [[04 - Validação dev]] (não corrigir nesta demanda).
+> **Próximo passo:** nenhum — lote concluído. `NXG-MEL-0006` segue em execução (regra de sequência do NXG-028 cumprida).
 
 ---
 
@@ -132,5 +132,4 @@ Entrega: os 5 arquivos fisicamente em `infra/`, com `scripts/deploy.sh`, `script
 
 ## Pendências de decisão
 
-- Gate QA aprovado e `QA_READY_FOR_DEV` já emitido (17/10/2026) — nenhuma pendência de validação de integridade.
-- Aguardar `NXG-MEL-0006` ser criado e ter seu gate QA aprovado (regra de sequência do NXG-028) antes de abrir a execução DEV deste lote.
+- Nenhuma. Lote concluído com ressalva em 17/10/2026 (ver [[04 - Validação dev]]).

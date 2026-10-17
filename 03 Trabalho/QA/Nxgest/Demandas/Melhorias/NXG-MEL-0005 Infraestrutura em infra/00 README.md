@@ -8,7 +8,7 @@
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** ainda não criada — gate QA aprovado (`QA_READY_FOR_DEV`), aguardando NXG-MEL-0006 ser criado e aprovado (regra de sequência do NXG-028) antes de qualquer execução real
+> **Execução DEV:** [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0005 Infraestrutura em infra/00 README|Execução NXG-MEL-0005]] — concluída, QA aprovado com ressalva
 
 ## Auditoria de integridade QA
 
@@ -20,10 +20,10 @@
 
 - **Responsável pela execução:** QA/`qa-first-delivery`
 - **Data da última execução:** 2026-10-17
-- **Resultado do gate:** PACOTE QA APROVADO NO GATE DE INTEGRIDADE — `QA_READY_FOR_DEV` emitido em 17/10/2026 pelo Orquestrador.
+- **Resultado do gate:** PACOTE QA APROVADO NO GATE DE INTEGRIDADE — `QA_READY_FOR_DEV` emitido em 17/10/2026; execução DEV concluída e **QA independente do Orquestrador aprovou com ressalva** em 17/10/2026 (ver [[04 - Validação dev]]).
 - **Evidência detalhada:** `python3 scripts/validar_pacote_qa.py "03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0005 Infraestrutura em infra"` — arquivos, critérios, CTs, âncoras, matriz e validação coerentes.
 
-O gate está aprovado, mas a execução DEV **não** foi criada nesta tarefa: a regra de sequência definida no NXG-028 exige que `NXG-MEL-0006` esteja criado e com gate QA aprovado antes de qualquer execução real do NXG-MEL-0005.
+Lote concluído. A ressalva registrada (pré-existente em `scripts/deploy-staging.sh`, fora do escopo deste lote) não bloqueia o fechamento — ver [[04 - Validação dev]].
 
 > [!settings]- Controle do card
 > **Status:** `INPUT[inlineSelect(option(backlog),option(analise),option(execucao),option(validacao),option(concluido)):status]`  
