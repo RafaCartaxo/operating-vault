@@ -5,7 +5,7 @@ tipo: melhoria
 etapa_atual: "Concluído"
 modulo: infraestrutura
 plano: "[[03 Trabalho/QA/Nxgest/Demandas/Planos/NXG-028 Governanca da reorganizacao do NX Gest|NXG-028]]"
-execucao: "[[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0005 Infraestrutura em infra/00 README|Execução NXG-MEL-0005]]"
+execucao: "[[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0005/DEV/NXG-MEL-0005/00 README|Execução NXG-MEL-0005]]"
 ambiente: dev
 origem: conversa
 projeto: nxgest
@@ -26,7 +26,7 @@ pontos_alocados: 20
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0005 Infraestrutura em infra/00 README|Execução NXG-MEL-0005]] — concluída
+> **Execução DEV:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0005/DEV/NXG-MEL-0005/00 README|Execução NXG-MEL-0005]] — concluída
 
 > [!settings]- Controle da demanda
 > **Prioridade:** `INPUT[inlineSelect(option(baixa),option(media),option(alta)):prioridade]`  

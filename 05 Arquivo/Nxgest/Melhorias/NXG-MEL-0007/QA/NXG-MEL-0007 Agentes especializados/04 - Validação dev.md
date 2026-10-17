@@ -1,22 +1,22 @@
 ---
 demanda: "[[01 - Demanda]]"
-execucao: ""
+execucao: "[[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/DEV/NXG-MEL-0007/00 README|Execução NXG-MEL-0007]]"
 ambiente: dev
 versao: ""
-status: planejado
+status: concluido
 responsavel: qa-first-delivery
-resultado: aguardando
+resultado: aprovado
 pontos: 2
 ct_resultados:
-  ct_001: "⏳ Aguardando"
-  ct_002: "⏳ Aguardando"
-  ct_003: "⏳ Aguardando"
-  ct_004: "⏳ Aguardando"
-  ct_005: "⏳ Aguardando"
-  ct_006: "⏳ Aguardando"
-  ct_007: "⏳ Aguardando"
-data_inicio: ""
-data_fim: ""
+  ct_001: "✅ Aprovado"
+  ct_002: "✅ Aprovado"
+  ct_003: "✅ Aprovado"
+  ct_004: "✅ Aprovado"
+  ct_005: "✅ Aprovado"
+  ct_006: "✅ Aprovado"
+  ct_007: "✅ Aprovado"
+data_inicio: "2026-10-17"
+data_fim: "2026-10-17"
 ---
 
 # Validação — NXG-MEL-0007
@@ -37,8 +37,22 @@ data_fim: ""
 
 ## Contexto
 
-- Ambiente: a definir (execução DEV ainda não criada — pacote revisado para a arquitetura neutra de agentes, aguardando novo gate QA)
-- Versão/build: não aplicável até a execução DEV existir
+- Ambiente: dev (repositório local do NX Gest)
+- Versão/build: não aplicável — lote documental/estrutural, sem build de código
+
+---
+
+## Execução dos CTs (17/10/2026)
+
+- **CT-001 · AGENTS.md permanece contrato global** — ✅ Aprovado. `AGENTS.md` (seção "Agentes do projeto") referencia `agents/README.md`, sem repetir o conteúdo dos 4 contratos.
+- **CT-002 · agents/ canônico com README índice e os 4 contratos** — ✅ Aprovado. `agents/` existe na raiz com `README.md` + `docs-sync.md` + `ops-runner.md` + `product-planner.md` + `qa-reviewer.md`; o índice referencia os 4.
+- **CT-003 · Contratos neutros, sem frontmatter nem schema de plataforma** — ✅ Aprovado. Nenhum dos 4 arquivos tem frontmatter YAML ou chaves `mode`/`permission`; `product-planner.md` declara escrita exclusiva em `docs/plans/**`; `qa-reviewer.md` declara ser somente leitura.
+- **CT-004 · Inventário de referências ativas e remoção de .opencode sem resíduo** — ✅ Aprovado. `.opencode/` confirmado removido (`test -d .opencode` → não existe). Busca por `.opencode` no repositório (excluindo `node_modules`/`.git`) encontra só 3 ocorrências: `docs/UPDATES.md` (histórico), `docs/engineering/tasks/2026-08-10/CHECKLIST.md` (checklist datado de tarefa já concluída em 10/08, mesma natureza histórica) e a nota nova em `docs/plans/PLAN-084-organizacao-repositorio.md` (explica a própria mudança). Nenhuma referência ativa residual.
+- **CT-005 · Documentação ativa coerente com agents/** — ✅ Aprovado. `README.md` (Estrutura + link para `AGENTS.md`/`agents/README.md`), `AGENTS.md`, `docs/skills/SKILL-009-documentation-sync.md` e `docs/plans/PLAN-084-organizacao-repositorio.md` atualizados e coerentes com a arquitetura neutra.
+- **CT-006 · Código, infra, ambiente e trabalho protegido intocados** — ✅ Aprovado. `git status -sb` do NX Gest, comparado com o baseline anterior ao `DEV_READY_FOR_QA`, é idêntico: só os arquivos do escopo autorizado mudaram; os 27 modificados + 10 untracked de trabalho protegido (`PLAN-088`/`PLAN-089` e demais) permanecem intocados.
+- **CT-007 · Pacote QA íntegro e validador oficial aprovado** — ✅ Aprovado. `python3 scripts/validar_pacote_qa.py` → `PACOTE QA APROVADO NO GATE DE INTEGRIDADE`; zero placeholders; links internos do pacote resolvendo.
+
+**Nota de execução:** CT-004 e CT-005 foram redigidos durante a revisão do pacote QA, antes da implementação DEV (quando `.opencode/` "ainda não" tinha sido removido). Nesta execução funcional, pós-`DEV_READY_FOR_QA`, avaliei o resultado contra o critério reafirmado pelo Orquestrador na autorização desta etapa (C4: `.opencode/` não existe, referências ativas atualizadas, histórico preservado; C5: README/AGENTS/SKILL-009/PLAN-084/.dockerignore refletem a arquitetura neutra) — não alterei o texto dos CTs.
 
 ---
 
@@ -131,16 +145,16 @@ Use esta seção somente quando houver reteste após correção:
 
 ## Decisão
 
-**Resultado geral:** aguardando — pacote revisado para a arquitetura neutra de agentes (`agents/` + `AGENTS.md`), execução DEV ainda não criada (a anterior, de escopo OpenCode, foi marcada obsoleta); nenhuma mudança foi aplicada ao repositório NX Gest nesta etapa de QA.
+**Resultado geral:** aprovado — os 7 CTs foram executados e aprovados contra a implementação real do NX Gest (`agents/` canônico, 4 contratos neutros, `.opencode/` removido, documentação ativa coerente). Nenhum defeito encontrado. Nenhuma correção foi aplicada pelo QA — a implementação foi avaliada como está.
 
 ---
 
 ## Checklist de encerramento QA
 
-- [ ] Todos os CTs executados ou com justificativa registrada.
-- [ ] Evidências e observações preenchidas quando necessário.
-- [ ] Bugs filhos vinculados na coluna **Defeito/Bug**.
-- [ ] Resultado geral definido.
-- [ ] Status da validação e da demanda atualizados.
-- [ ] Próximo passo registrado.
-- [ ] Sincronização documental verificada: frontmatter, README, board, links, evidências, histórico e pendências.
+- [x] Todos os CTs executados ou com justificativa registrada.
+- [x] Evidências e observações preenchidas quando necessário (ver "Execução dos CTs" acima).
+- [x] Bugs filhos vinculados na coluna **Defeito/Bug** — não aplicável, nenhum defeito encontrado.
+- [x] Resultado geral definido.
+- [x] Status da validação e da demanda atualizados.
+- [x] Próximo passo registrado (arquivamento do pacote QA/DEV).
+- [x] Sincronização documental verificada: frontmatter, README, board, links, evidências, histórico e pendências.

@@ -3,11 +3,11 @@
 > [!info]- Navegação QA/DEV
 > **README do card:** [[00 README|Abrir README do card]]  
 > **Execução:** [[00 README|README da execução]]  
-> **Demanda QA:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0005 Infraestrutura em infra/01 - Demanda|NXG-MEL-0005 — Infraestrutura em infra/]]  
+> **Demanda QA:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0005/QA/NXG-MEL-0005 Infraestrutura em infra/01 - Demanda|NXG-MEL-0005 — Infraestrutura em infra/]]  
 > **Plano técnico:** não se aplica — lote de organização, sem `PLAN-NNN` próprio no repositório  
 > **Implementação:** [[03 - Implementação|03 - Implementação]]  
 > **Code review:** [[04 - Code review|04 - Code review]]  
-> **Validação QA:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0005 Infraestrutura em infra/04 - Validação dev|Validação QA]]
+> **Validação QA:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0005/QA/NXG-MEL-0005 Infraestrutura em infra/04 - Validação dev|Validação QA]]
 
 > Congelado na aprovação — alteração posterior vira decisão registrada em 03 - Implementação.md.
 
@@ -50,7 +50,7 @@ Agrupar `Dockerfile`, `Caddyfile` e os 3 `docker-compose.{yml,staging.yml,prod.y
 
 ## Pronto quando
 
-- Critérios da demanda: [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0005 Infraestrutura em infra/01 - Demanda#^c1|C1]] a [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0005 Infraestrutura em infra/01 - Demanda#^c7|C7]].
+- Critérios da demanda: [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0005/QA/NXG-MEL-0005 Infraestrutura em infra/01 - Demanda#^c1|C1]] a [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0005/QA/NXG-MEL-0005 Infraestrutura em infra/01 - Demanda#^c7|C7]].
 - `docker compose -f infra/docker-compose.yml config`, `-f infra/docker-compose.staging.yml config` e `-f infra/docker-compose.prod.yml config` validam sem erro.
 - `git status -sb` mostra apenas os arquivos deste escopo como novas alterações, sobre o baseline protegido.
 

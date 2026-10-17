@@ -284,7 +284,7 @@ Use esta matriz para verificar a cobertura sem abrir a demanda. Atualize-a ao cr
 > - Pacote QA revisado completo (`00` a `05`).
 >
 > **Dado** o pacote `NXG-MEL-0007` revisado  
-> **Quando** executo `python3 scripts/validar_pacote_qa.py "03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados"`  
+> **Quando** executo `python3 scripts/validar_pacote_qa.py "05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/QA/NXG-MEL-0007 Agentes especializados"`  
 > **Então** o resultado é `PACOTE QA APROVADO NO GATE DE INTEGRIDADE`, sem placeholders e com todos os links resolvendo.
 >
 > **Resultado esperado:** pacote estruturalmente íntegro antes de qualquer novo `QA_READY_FOR_DEV`.

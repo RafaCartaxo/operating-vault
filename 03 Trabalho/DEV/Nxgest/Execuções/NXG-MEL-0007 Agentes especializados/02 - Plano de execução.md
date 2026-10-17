@@ -6,11 +6,11 @@
 > [!info]- Navegação QA/DEV
 > **README do card:** [[00 README|Abrir README do card]]  
 > **Execução:** [[00 README|README da execução]]  
-> **Demanda QA:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados/01 - Demanda|NXG-MEL-0007 — Agentes especializados]]  
+> **Demanda QA:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/QA/NXG-MEL-0007 Agentes especializados/01 - Demanda|NXG-MEL-0007 — Agentes especializados]]  
 > **Plano técnico:** não se aplica — lote de organização, sem `PLAN-NNN` próprio  
 > **Implementação:** [[03 - Implementação|03 - Implementação]]  
 > **Code review:** [[04 - Code review|04 - Code review]]  
-> **Validação QA:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados/04 - Validação dev|Validação QA]]
+> **Validação QA:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/QA/NXG-MEL-0007 Agentes especializados/04 - Validação dev|Validação QA]]
 
 > Congelado na aprovação — alteração posterior vira decisão registrada em 03 - Implementação.md.
 
@@ -47,7 +47,7 @@ Criar `.opencode/agents/product-planner.md` e `.opencode/agents/qa-reviewer.md`,
 
 ## Pronto quando
 
-- Critérios da demanda: [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados/01 - Demanda#^c1|C1]] a [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados/01 - Demanda#^c7|C7]].
+- Critérios da demanda: [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/QA/NXG-MEL-0007 Agentes especializados/01 - Demanda#^c1|C1]] a [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/QA/NXG-MEL-0007 Agentes especializados/01 - Demanda#^c7|C7]].
 - Os 2 arquivos de agente existem, com permissão sintaticamente correta (conforme a fonte oficial) e sem duplicar `AGENTS.md`/os 2 agentes existentes.
 - `git status -sb` mostra apenas os 2 arquivos novos como alteração, sobre o baseline protegido.
 

@@ -8,22 +8,22 @@
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0007 Agentes neutros/00 README|NXG-MEL-0007 Agentes neutros]] — `DEV_READY_FOR_QA`, implementação concluída, aguardando o QA executar CT-001 a CT-007. A execução anterior (escopo OpenCode) permanece obsoleta: [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0007 Agentes especializados/00 README|ver execução obsoleta]]
+> **Execução DEV:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/DEV/NXG-MEL-0007/00 README|NXG-MEL-0007 Agentes neutros]] — QA aprovou os 7 CTs, lote concluído. A execução anterior (escopo OpenCode) permanece obsoleta: [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0007 Agentes especializados/00 README|ver execução obsoleta]]
 
 ## Auditoria de integridade QA
 
 > Executar antes de mover o card para `QA_READY_FOR_DEV`:
 >
 > ```bash
-> python3 scripts/validar_pacote_qa.py "03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados"
+> python3 scripts/validar_pacote_qa.py "05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/QA/NXG-MEL-0007 Agentes especializados"
 > ```
 
 - **Responsável pela execução:** QA/`qa-first-delivery`
 - **Data da última execução:** 17/10/2026 (pacote reescrito para a arquitetura neutra de agentes) — `PACOTE QA APROVADO NO GATE DE INTEGRIDADE`.
-- **Resultado do gate:** `QA_READY_FOR_DEV` emitido em 17/10/2026. Implementação DEV concluída (`agents/` canônico + 4 contratos neutros + remoção de `.opencode/`) e recebida como `DEV_READY_FOR_QA`. Aguardando o QA executar CT-001 a CT-007 em `04 - Validação dev.md` — nenhum CT foi aprovado pela própria implementação.
-- **Evidência detalhada:** `python3 scripts/validar_pacote_qa.py "03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados"` — PACOTE QA APROVADO NO GATE DE INTEGRIDADE.
+- **Resultado do gate:** `QA_READY_FOR_DEV` emitido em 17/10/2026; `DEV_READY_FOR_QA` recebido no mesmo dia; QA executou e aprovou os 7 CTs (ver [[04 - Validação dev]]). Lote concluído.
+- **Evidência detalhada:** `python3 scripts/validar_pacote_qa.py "05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/QA/NXG-MEL-0007 Agentes especializados"` — PACOTE QA APROVADO NO GATE DE INTEGRIDADE.
 
-O pacote foi revisado e aprovado para a arquitetura neutra de agentes (`agents/` na raiz + `AGENTS.md`, sem dependência de OpenCode/Claude/Codex). A implementação DEV foi concluída e está pronta para o QA executar os CTs.
+O pacote foi revisado, implementado e validado para a arquitetura neutra de agentes (`agents/` na raiz + `AGENTS.md`, sem dependência de OpenCode/Claude/Codex). QA aprovou os 7 CTs; nenhum defeito encontrado.
 
 > [!settings]- Controle do card
 > **Status:** `INPUT[inlineSelect(option(backlog),option(analise),option(execucao),option(validacao),option(concluido)):status]`  
@@ -35,7 +35,7 @@ O pacote foi revisado e aprovado para a arquitetura neutra de agentes (`agents/`
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0007 Agentes neutros/00 README|NXG-MEL-0007 Agentes neutros]] — `DEV_READY_FOR_QA`, aguardando o QA executar CT-001 a CT-007. A execução anterior (escopo OpenCode) permanece obsoleta: [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0007 Agentes especializados/00 README|ver execução obsoleta]]
+> **Execução DEV:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/DEV/NXG-MEL-0007/00 README|NXG-MEL-0007 Agentes neutros]] — QA aprovou os 7 CTs, lote concluído. A execução anterior (escopo OpenCode) permanece obsoleta: [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0007 Agentes especializados/00 README|ver execução obsoleta]]
 
 > [!tip]- Esforço
 > ```dataviewjs

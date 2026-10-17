@@ -3,7 +3,7 @@ status: execucao
 tipo: melhoria
 etapa_atual: "DEV · Análise técnica"
 obsoleta: true
-demanda: "[[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados/01 - Demanda|NXG-MEL-0007]]"
+demanda: "[[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/QA/NXG-MEL-0007 Agentes especializados/01 - Demanda|NXG-MEL-0007]]"
 epico: "[[04 Projetos/Nxgest/Epicos/NXG-EPIC-0001 Organizacao do NX Gest/00 README|NXG-EPIC-0001]]"
 plano: "[[03 Trabalho/QA/Nxgest/Demandas/Planos/NXG-028 Governanca da reorganizacao do NX Gest|NXG-028]]"
 commit: ""
@@ -20,7 +20,7 @@ pontos: ""
 > - A execução DEV correta para `NXG-MEL-0007` (fonte neutra em `agents/`, sem frontmatter/schema de plataforma) só será criada, a partir dos templates oficiais, depois de um **novo** `QA_READY_FOR_DEV` aprovado pelo Orquestrador para o pacote QA revisado.
 
 > [!info]- Navegação QA/DEV
-> **Demanda QA:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados/01 - Demanda|NXG-MEL-0007 — Agentes especializados]]  
+> **Demanda QA:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/QA/NXG-MEL-0007 Agentes especializados/01 - Demanda|NXG-MEL-0007 — Agentes especializados]]  
 > **Épico:** [[04 Projetos/Nxgest/Epicos/NXG-EPIC-0001 Organizacao do NX Gest/00 README|NXG-EPIC-0001 — Organização do NX Gest]]
 > **Análise:** [[01 - Análise|01 - Análise]]  
 > **Plano:** [[02 - Plano de execução|02 - Plano de execução]]  
@@ -32,10 +32,10 @@ pontos: ""
 > **Etapa atual:** `INPUT[inlineSelect(option(DEV · Análise técnica),option(DEV · Plano de execução),option(DEV · Implementação),option(DEV · Code review),option(QA · Validação),option(Concluído)):etapa_atual]`
 
 > [!info]- Cards relacionados
-> **Demanda QA:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados/01 - Demanda|NXG-MEL-0007 — Agentes especializados]]  
+> **Demanda QA:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/QA/NXG-MEL-0007 Agentes especializados/01 - Demanda|NXG-MEL-0007 — Agentes especializados]]  
 > **Implementação:** [[03 - Implementação|03 - Implementação]]  
 > **Code review:** [[04 - Code review|04 - Code review]]  
-> **Validação QA:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados/04 - Validação dev|Validação QA]]
+> **Validação QA:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/QA/NXG-MEL-0007 Agentes especializados/04 - Validação dev|Validação QA]]
 
 > [!tip]- Esforço
 > ```dataviewjs

@@ -3,11 +3,11 @@
 > [!info]- Navegação QA/DEV
 > **README do card:** [[00 README|Abrir README do card]]  
 > **Execução:** [[00 README|README da execução]]  
-> **Demanda QA:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados/01 - Demanda|NXG-MEL-0007 — Agentes especializados]]  
+> **Demanda QA:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/QA/NXG-MEL-0007 Agentes especializados/01 - Demanda|NXG-MEL-0007 — Agentes especializados]]  
 > **Plano técnico:** não se aplica — lote de organização, sem `PLAN-NNN` próprio  
 > **Implementação:** [[03 - Implementação|03 - Implementação]]  
 > **Code review:** [[04 - Code review|04 - Code review]]  
-> **Validação QA:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados/04 - Validação dev|Validação QA]]
+> **Validação QA:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/QA/NXG-MEL-0007 Agentes especializados/04 - Validação dev|Validação QA]]
 
 > Congelado na aprovação — alteração posterior vira decisão registrada em 03 - Implementação.md.
 
@@ -56,7 +56,7 @@ Criar `agents/` na raiz do repositório como fonte canônica neutra de contratos
 
 ## Pronto quando
 
-- Critérios da demanda: [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados/01 - Demanda#^c1|C1]] a [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados/01 - Demanda#^c7|C7]].
+- Critérios da demanda: [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/QA/NXG-MEL-0007 Agentes especializados/01 - Demanda#^c1|C1]] a [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/QA/NXG-MEL-0007 Agentes especializados/01 - Demanda#^c7|C7]].
 - `agents/README.md` e os 4 contratos existem, neutros, sem frontmatter/schema de plataforma.
 - `AGENTS.md` e `README.md` apontam para `agents/`.
 - `.opencode/` foi removido; nenhuma referência ativa residual a `.opencode/agents` permanece (exceto `docs/UPDATES.md`, histórico).

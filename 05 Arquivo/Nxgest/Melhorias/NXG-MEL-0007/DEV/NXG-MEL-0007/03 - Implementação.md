@@ -3,10 +3,10 @@
 > [!info]- Navegação QA/DEV
 > **README do card:** [[00 README|Abrir README do card]]  
 > **Execução:** [[00 README|README da execução]]  
-> **Demanda QA:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados/01 - Demanda|NXG-MEL-0007 — Agentes especializados]]  
+> **Demanda QA:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/QA/NXG-MEL-0007 Agentes especializados/01 - Demanda|NXG-MEL-0007 — Agentes especializados]]  
 > **Plano:** [[02 - Plano de execução|02 - Plano de execução]]  
 > **Code review:** [[04 - Code review|04 - Code review]]  
-> **Validação QA:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados/04 - Validação dev|Validação QA]]
+> **Validação QA:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/QA/NXG-MEL-0007 Agentes especializados/04 - Validação dev|Validação QA]]
 
 > Log datado do que foi realmente feito. O plano não é reescrito aqui; desvio vira decisão registrada.
 
@@ -38,7 +38,7 @@
 - Busca por placeholders (`<ID>`, `TODO`, `FIXME`) em `agents/*.md` → nenhuma ocorrência.
 - Busca por frontmatter YAML (`---` na primeira linha) em `agents/*.md` → nenhuma ocorrência.
 - Busca por `.opencode` em todo o repositório (excluindo `node_modules`/`.git`) → só 3 ocorrências: `docs/UPDATES.md` (histórico, changelog, não editado), `docs/engineering/tasks/2026-08-10/CHECKLIST.md` (checklist datado de uma tarefa já concluída em 10/08, mesma natureza de registro histórico — não editado) e a nota nova adicionada em `docs/plans/PLAN-084-organizacao-repositorio.md` (explica a própria mudança). Nenhuma referência ativa residual.
-- `python3 scripts/validar_pacote_qa.py "03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados"` (vault) → `PACOTE QA APROVADO NO GATE DE INTEGRIDADE`.
+- `python3 scripts/validar_pacote_qa.py "05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/QA/NXG-MEL-0007 Agentes especializados"` (vault) → `PACOTE QA APROVADO NO GATE DE INTEGRIDADE`.
 
 ### Ambiente e smoke check
 
@@ -56,7 +56,7 @@
 
 ## Verificação
 
-- [ ] CTs da demanda relacionados (fonte QA): [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados/03 - Casos de teste|ver casos de teste]] — **execução dos CTs é responsabilidade do QA**, não desta implementação.
+- [ ] CTs da demanda relacionados (fonte QA): [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/QA/NXG-MEL-0007 Agentes especializados/03 - Casos de teste|ver casos de teste]] — **execução dos CTs é responsabilidade do QA**, não desta implementação.
 - [x] Gates aplicáveis do repositório verdes (`git diff --check` limpo; sem gates de build/teste aplicáveis a este lote documental).
 - [ ] Documentação sincronizada quando aplicável — `README.md`/`AGENTS.md`/`SKILL-009`/`PLAN-084`/`.dockerignore` sincronizados; `NXG-028`, o épico e os Boards QA/DEV **não** foram sincronizados nesta rodada (fora do escopo explicitamente autorizado — ver ressalva no `DEV_READY_FOR_QA`).
 - [x] Commit registrado no README — **não aplicável**: nenhum commit foi criado (nenhum comando `git add`/`commit` foi executado, conforme instrução).

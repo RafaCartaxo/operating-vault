@@ -2,7 +2,7 @@
 status: execucao
 tipo: melhoria
 etapa_atual: "DEV · Code review"
-demanda: "[[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0005 Infraestrutura em infra/01 - Demanda|NXG-MEL-0005]]"
+demanda: "[[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0005/QA/NXG-MEL-0005 Infraestrutura em infra/01 - Demanda|NXG-MEL-0005]]"
 epico: NXG-EPIC-0001
 plano: "[[03 Trabalho/QA/Nxgest/Demandas/Planos/NXG-028 Governanca da reorganizacao do NX Gest|NXG-028]]"
 commit: ""
@@ -12,7 +12,7 @@ pontos: 20
 # NXG-MEL-0005 — Execução (infraestrutura movida para infra/, nomes reais e segredos preservados)
 
 > [!info]- Navegação QA/DEV
-> **Demanda QA:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0005 Infraestrutura em infra/01 - Demanda|NXG-MEL-0005 — Infraestrutura em infra/]]  
+> **Demanda QA:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0005/QA/NXG-MEL-0005 Infraestrutura em infra/01 - Demanda|NXG-MEL-0005 — Infraestrutura em infra/]]  
 > **Épico:** [[04 Projetos/Nxgest/Epicos/NXG-EPIC-0001 Organizacao do NX Gest/00 README|NXG-EPIC-0001 — Organização do NX Gest]]
 > **Análise:** [[01 - Análise|01 - Análise]]  
 > **Plano:** [[02 - Plano de execução|02 - Plano de execução]]  
@@ -25,11 +25,11 @@ pontos: 20
 > **Etapa atual:** `INPUT[inlineSelect(option(DEV · Análise técnica),option(DEV · Plano de execução),option(DEV · Implementação),option(DEV · Code review),option(QA · Validação),option(Concluído)):etapa_atual]`
 
 > [!info]- Cards relacionados
-> **Demanda QA:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0005 Infraestrutura em infra/01 - Demanda|NXG-MEL-0005]]  
+> **Demanda QA:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0005/QA/NXG-MEL-0005 Infraestrutura em infra/01 - Demanda|NXG-MEL-0005]]  
 > **Plano técnico:** não se aplica  
 > **Implementação:** [[03 - Implementação|03 - Implementação]]  
 > **Code review:** [[04 - Code review|04 - Code review]]  
-> **Validação QA:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0005 Infraestrutura em infra/04 - Validação dev|Validação QA]]
+> **Validação QA:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0005/QA/NXG-MEL-0005 Infraestrutura em infra/04 - Validação dev|Validação QA]]
 
 > [!tip]- Esforço
 > ```dataviewjs

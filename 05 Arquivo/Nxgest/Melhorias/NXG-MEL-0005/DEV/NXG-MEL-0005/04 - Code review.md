@@ -3,10 +3,10 @@
 > [!info]- Navegação QA/DEV
 > **README do card:** [[00 README|Abrir README do card]]  
 > **Execução:** [[00 README|README da execução]]  
-> **Demanda QA:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0005 Infraestrutura em infra/01 - Demanda|NXG-MEL-0005 — Infraestrutura em infra/]]  
+> **Demanda QA:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0005/QA/NXG-MEL-0005 Infraestrutura em infra/01 - Demanda|NXG-MEL-0005 — Infraestrutura em infra/]]  
 > **Plano:** [[02 - Plano de execução|02 - Plano de execução]]  
 > **Implementação:** [[03 - Implementação|03 - Implementação]]  
-> **Validação QA:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0005 Infraestrutura em infra/04 - Validação dev|Validação QA]]
+> **Validação QA:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0005/QA/NXG-MEL-0005 Infraestrutura em infra/04 - Validação dev|Validação QA]]
 
 **Estado:** ✅ revisado (2026-10-17)
 

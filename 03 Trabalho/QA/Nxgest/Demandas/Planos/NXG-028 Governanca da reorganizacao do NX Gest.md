@@ -78,7 +78,7 @@ Os exemplos de ambiente permanecem inicialmente na raiz para preservar o onboard
 1. **NXG-MEL-0004 — README e mapa da raiz:** alteração documental isolada.
 2. **NXG-MEL-0005 — infraestrutura:** agrupar Dockerfile, Caddyfile e compose em `infra/` com paths validados. ✅ Concluído com ressalva (17/10) — infraestrutura movida localmente, nenhum deploy real ainda.
 3. **NXG-MEL-0006 — onboarding:** encapsular comandos docker de dev em scripts npm e atualizar README/08-SETUP-NOVA-MAQUINA.md para `infra/docker-compose.yml`. ✅ Concluído com ressalva (17/10) — arquivado em `05 Arquivo/Nxgest/Melhorias/NXG-MEL-0006/`.
-4. **NXG-MEL-0007 — agentes:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados/01 - Demanda|NXG-MEL-0007]] — governança de agentes independente de plataforma — fonte canônica neutra em `agents/` (`agents/README.md` + `docs-sync.md`/`ops-runner.md`/`product-planner.md`/`qa-reviewer.md`), sem frontmatter/schema do OpenCode; `.opencode/` removido do repositório. 🟣 `DEV_READY_FOR_QA` (17/10) — implementação neutra concluída em [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0007 Agentes neutros/00 README|execução NXG-MEL-0007 Agentes neutros]], aguardando QA executar CT-001 a CT-007. A execução anterior (escopo OpenCode) permanece obsoleta.
+4. **NXG-MEL-0007 — agentes:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/QA/NXG-MEL-0007 Agentes especializados/01 - Demanda|NXG-MEL-0007]] — governança de agentes independente de plataforma — fonte canônica neutra em `agents/` (`agents/README.md` + `docs-sync.md`/`ops-runner.md`/`product-planner.md`/`qa-reviewer.md`), sem frontmatter/schema do OpenCode; `.opencode/` removido do repositório. ✅ Concluído (17/10) — implementação em [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/DEV/NXG-MEL-0007/00 README|execução NXG-MEL-0007 Agentes neutros]], QA aprovou os 7 CTs, lote arquivado em `05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/`. A execução anterior (escopo OpenCode) permanece obsoleta em `03 Trabalho/DEV/Nxgest/Execuções/`.
 5. **Renomeação local:** `nxgestao` → `nxgest`, registrada como decisão operacional, não como alteração do repositório.
 
 ## Riscos e controles
@@ -106,8 +106,8 @@ Os exemplos de ambiente permanecem inicialmente na raiz para preservar o onboard
 
 - Confirmar, no lote estrutural, a forma final de `infra/docker`, `infra/caddy` e exemplos de ambiente.
 - Definir quando o trabalho não commitado será preservado.
-- Validar o novo gate de integridade de `NXG-MEL-0007` (arquitetura neutra de agentes) e decidir se/quando autorizar sua execução DEV.
-- `PLAN-084-organizacao-repositorio.md` trata `.opencode/agents/**` como parte permanente do pacote de distribuição — será atualizado na implementação DEV do `NXG-MEL-0007`, não nesta revisão.
+- ~~Validar o novo gate de integridade de `NXG-MEL-0007` e decidir se/quando autorizar sua execução DEV.~~ Resolvida: gate aprovado, execução DEV concluída, QA aprovou os 7 CTs, lote arquivado (17/10).
+- ~~`PLAN-084-organizacao-repositorio.md` trata `.opencode/agents/**` como parte permanente do pacote de distribuição.~~ Resolvida: `PLAN-084` atualizado na implementação DEV do `NXG-MEL-0007` (nota datada + classificação do repositório ajustada para `agents/**`).
 - Autorizar a execução DEV do `NXG-MEL-0005` somente após `NXG-MEL-0006` ter gate QA aprovado (regra de sequência).
 
 ## Definição de pronto

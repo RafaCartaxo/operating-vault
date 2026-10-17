@@ -1,11 +1,11 @@
 ---
 prioridade: media
-status: validacao
+status: concluido
 tipo: melhoria
-etapa_atual: "QA · Validação"
+etapa_atual: "Concluído"
 modulo: agentes
 plano: "[[03 Trabalho/QA/Nxgest/Demandas/Planos/NXG-028 Governanca da reorganizacao do NX Gest|NXG-028]]"
-execucao: "[[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0007 Agentes neutros/00 README|Execução NXG-MEL-0007]]"
+execucao: "[[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/DEV/NXG-MEL-0007/00 README|Execução NXG-MEL-0007]]"
 ambiente: dev
 origem: conversa
 projeto: nxgest
@@ -26,7 +26,7 @@ pontos_alocados: 10
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0007 Agentes neutros/00 README|NXG-MEL-0007 Agentes neutros]] — `DEV_READY_FOR_QA`. A execução anterior (escopo OpenCode) permanece obsoleta: [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0007 Agentes especializados/00 README|ver execução obsoleta]]
+> **Execução DEV:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/DEV/NXG-MEL-0007/00 README|NXG-MEL-0007 Agentes neutros]] — QA aprovado, lote concluído. A execução anterior (escopo OpenCode) permanece obsoleta: [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0007 Agentes especializados/00 README|ver execução obsoleta]]
 
 > [!settings]- Controle da demanda
 > **Prioridade:** `INPUT[inlineSelect(option(baixa),option(media),option(alta)):prioridade]`  
@@ -36,8 +36,8 @@ pontos_alocados: 10
 
 
 > [!info] Status atual
-> **Resultado:** implementação DEV concluída (`agents/` canônico, 4 contratos neutros, `.opencode/` removido) — `DEV_READY_FOR_QA` enviado ao Orquestrador.
-> **Próximo passo:** QA executar CT-001 a CT-007 em `04 - Validação dev.md`. Nenhum CT foi aprovado pela própria implementação.
+> **Resultado:** QA aprovou os 7 CTs (`04 - Validação dev.md`) — `agents/` canônico, 4 contratos neutros, `.opencode/` removido, documentação ativa coerente. Nenhum defeito encontrado.
+> **Próximo passo:** arquivar o pacote QA e a execução DEV em `05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/`.
 
 ---
 
@@ -148,4 +148,4 @@ Nesta etapa (revisão de QA), a entrega é **exclusivamente** o pacote QA revisa
 
 ## Pendências de decisão
 
-- Nenhuma pendência de decisão de produto. A liberação para `QA_READY_FOR_DEV` depende de uma nova execução de `python3 scripts/validar_pacote_qa.py "03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados"` e da aprovação formal do Orquestrador — nenhuma execução DEV está autorizada antes disso.
+- Nenhuma pendência de decisão de produto. A liberação para `QA_READY_FOR_DEV` depende de uma nova execução de `python3 scripts/validar_pacote_qa.py "05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/QA/NXG-MEL-0007 Agentes especializados"` e da aprovação formal do Orquestrador — nenhuma execução DEV está autorizada antes disso.

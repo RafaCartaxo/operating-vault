@@ -16,7 +16,6 @@ kanban-plugin: board
 
 ## 🧪 Casos de teste
 
-- [x] 🟡 [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados/01 - Demanda|NXG-MEL-0007 — Agentes especializados]] — pacote em revisão (arquitetura neutra de agentes), aguardando novo gate QA
 
 
 ## 🧪 Validação
@@ -26,8 +25,9 @@ kanban-plugin: board
 ## ✅ Concluído
 
 - [x] ✅ [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0004/QA/NXG-MEL-0004 README e mapa da raiz/01 - Demanda|NXG-MEL-0004 — README e mapa da raiz]] — aprovado com ressalva
-- [x] ✅ [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0005 Infraestrutura em infra/01 - Demanda|NXG-MEL-0005 — Infraestrutura em infra/]] — aprovado com ressalva
+- [x] ✅ [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0005/QA/NXG-MEL-0005 Infraestrutura em infra/01 - Demanda|NXG-MEL-0005 — Infraestrutura em infra/]] — aprovado com ressalva
 - [x] ✅ [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0006/QA/NXG-MEL-0006 Onboarding de ambientes/01 - Demanda|NXG-MEL-0006 — Onboarding de ambientes]] — aprovado com ressalva
+- [x] ✅ [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/QA/NXG-MEL-0007 Agentes especializados/01 - Demanda|NXG-MEL-0007 — Agentes especializados]] — aprovado (7/7 CTs), agentes neutros em `agents/`
 
 
 

@@ -8,20 +8,20 @@
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0005 Infraestrutura em infra/00 README|Execução NXG-MEL-0005]] — concluída, QA aprovado com ressalva
+> **Execução DEV:** [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0005/DEV/NXG-MEL-0005/00 README|Execução NXG-MEL-0005]] — concluída, QA aprovado com ressalva
 
 ## Auditoria de integridade QA
 
 > Executar antes de mover o card para `QA_READY_FOR_DEV`:
 >
 > ```bash
-> python3 scripts/validar_pacote_qa.py "03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0005 Infraestrutura em infra"
+> python3 scripts/validar_pacote_qa.py "05 Arquivo/Nxgest/Melhorias/NXG-MEL-0005/QA/NXG-MEL-0005 Infraestrutura em infra"
 > ```
 
 - **Responsável pela execução:** QA/`qa-first-delivery`
 - **Data da última execução:** 2026-10-17
 - **Resultado do gate:** PACOTE QA APROVADO NO GATE DE INTEGRIDADE — `QA_READY_FOR_DEV` emitido em 17/10/2026; execução DEV concluída e **QA independente do Orquestrador aprovou com ressalva** em 17/10/2026 (ver [[04 - Validação dev]]).
-- **Evidência detalhada:** `python3 scripts/validar_pacote_qa.py "03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0005 Infraestrutura em infra"` — arquivos, critérios, CTs, âncoras, matriz e validação coerentes.
+- **Evidência detalhada:** `python3 scripts/validar_pacote_qa.py "05 Arquivo/Nxgest/Melhorias/NXG-MEL-0005/QA/NXG-MEL-0005 Infraestrutura em infra"` — arquivos, critérios, CTs, âncoras, matriz e validação coerentes.
 
 Lote concluído. A ressalva registrada (pré-existente em `scripts/deploy-staging.sh`, fora do escopo deste lote) não bloqueia o fechamento — ver [[04 - Validação dev]].
 

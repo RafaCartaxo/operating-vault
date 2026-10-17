@@ -35,7 +35,7 @@ Os CTs devem preservar literalmente o template oficial: callouts recolhíveis, t
 Ao finalizar esta fase, executar:
 
 ```bash
-python3 scripts/validar_pacote_qa.py "03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0007 Agentes especializados"
+python3 scripts/validar_pacote_qa.py "05 Arquivo/Nxgest/Melhorias/NXG-MEL-0007/QA/NXG-MEL-0007 Agentes especializados"
 ```
 
 ## Critérios do pacote revisado
