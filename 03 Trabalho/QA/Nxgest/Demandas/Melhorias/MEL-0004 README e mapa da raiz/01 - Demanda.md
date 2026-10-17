@@ -1,23 +1,23 @@
 ---
 prioridade: media
-status: backlog
+status: execucao
 tipo: melhoria
-etapa_atual: "QA · Triagem"
-modulo: ""
-plano: ""
-execucao: ""
+etapa_atual: "DEV · Análise técnica"
+modulo: organizacao-repositorio
+plano: "[[03 Trabalho/QA/Nxgest/Demandas/Planos/NXG-028 Governanca da reorganizacao do NX Gest|NXG-028]]"
+execucao: "[[03 Trabalho/DEV/Nxgest/Execuções/MEL-0004 README e mapa da raiz/00 README|Execução MEL-0004]]"
 ambiente: dev
 origem: repo
-projeto: ""
-epico: ""
+projeto: nxgest
+epico: NXG-EPIC-0001
 pai: ""
 data_inicio: ""
 data_fim: ""
 responsavel: ""
-pontos_alocados: ""
+pontos_alocados: 0
 ---
 
-# <PROJ>-MEL-NNNN — <título curto orientado ao resultado>
+# MEL-0004 — README e mapa da raiz do NX Gest
 
 > [!info]- Navegação QA/DEV
 > **README do card:** [[00 README|Abrir README do card]]  
@@ -26,13 +26,13 @@ pontos_alocados: ""
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/00 README|Execução DEV]]
+> **Execução DEV:** ainda não criada — aguarda gate QA
 
 > [!settings]- Controle da demanda
 > **Prioridade:** `INPUT[inlineSelect(option(baixa),option(media),option(alta)):prioridade]`  
 > **Ambiente:** `INPUT[inlineSelect(option(dev),option(hml),option(prod)):ambiente]`  
 > **Origem:** `INPUT[inlineSelect(option(repo),option(observado),option(conversa),option(validação)):origem]`<br>
-> **Projeto:** preencher `projeto` no frontmatter antes de roteiar a melhoria.
+> **Projeto:** `nxgest`
 
 
 > [!info] Status atual
@@ -65,41 +65,52 @@ pontos_alocados: ""
 
 ## Problema / contexto
 
-Que dificuldade existe hoje, para quem e em qual situação?
+O NX Gest funciona, mas o mapa visual da raiz não representa toda a estrutura mantida pelo projeto. Isso reduz a clareza para quem clona o repositório ou consulta a documentação de entrada.
 
 ---
 
 ## Objetivo
 
-Qual resultado observável esta melhoria deve gerar?
+O README raiz deve apresentar uma visão completa e coerente da estrutura oficial do repositório, incluindo `.github/` e `.opencode/`, sem sugerir movimentações que não foram aprovadas.
 
 ### Entrega desta capacidade
 
-Descreva o que será entregue dentro dos pontos alocados. O que ficar fora permanece para um próximo ciclo.
+Atualizar exclusivamente a seção de estrutura do README raiz e suas referências diretamente afetadas. A organização física de `infra/`, ambientes, agentes e diretório local será tratada em demandas filhas próprias.
 
 ---
 
 ## Decisões de produto
 
-- Decisão já tomada, com regra clara.
+- `nxgest` é o nome canônico do produto e do repositório.
+- A raiz mantém arquivos exigidos por ferramentas e pontos de entrada do projeto.
+- Este lote é documental e não altera código, infraestrutura ou nomes de arquivos.
 
 ---
 
 ## Escopo
 
-- O que esta entrega inclui.
+- Revisar o mapa de diretórios do README raiz.
+- Incluir `.github/`, `.opencode/`, `docs/`, `scripts/`, `src/` e `frontend/` quando aplicável.
+- Garantir que o texto não contradiga o plano NXG-028.
 
 ---
 
 ## Fora de escopo
 
-- O que não será feito agora.
+- Mover Dockerfile, Caddyfile ou compose files.
+- Mover arquivos `.env` ou alterar carregamento de ambientes.
+- Criar ou reorganizar agentes.
+- Renomear a pasta local `nxgestao`.
+- Alterar código ou infraestrutura do NX Gest.
 
 ---
 
 ## Critérios de aceite
 
-- C1. Resultado observável e testável. ^c1
+- C1. O README raiz representa a estrutura real e oficial do repositório, incluindo `.github/` e `.opencode/`, sem listar diretórios inexistentes. ^c1
+- C2. Todos os links e caminhos documentais afetados continuam resolvendo após a alteração. ^c2
+- C3. A atualização não altera código, configuração de ambiente, Docker, agentes ou infraestrutura. ^c3
+- C4. A nomenclatura nova usa `nxgest`; ocorrências de `nxgestao` permanecem apenas quando forem compatibilidade de infraestrutura ou histórico. ^c4
 
 ---
 
@@ -109,10 +120,10 @@ Descreva o que será entregue dentro dos pontos alocados. O que ficar fora perma
 - [ ] Escopo e fora de escopo estão claros.
 - [ ] Critérios de aceite são objetivos e testáveis.
 - [ ] Plano e casos de teste estão vinculados.
-- [ ] `pontos_alocados` foi preenchido.
+- [x] `pontos_alocados` foi preenchido.
 
 ---
 
 ## Pendências de decisão
 
-- Nenhuma. Se houver pendência, manter `status: analise`.
+- Validar o pacote QA e decidir se o lote pode avançar para DEV.

@@ -1,27 +1,27 @@
-# Template de Melhoria
+# MEL-0004 — README e mapa da raiz do NX Gest
 
 
 > [!info]- Navegação QA/DEV
 > **Demanda:** [[01 - Demanda]]  
-> **Épico:** [[<EPICO>|<épico>]]
+> **Épico:** [[04 Projetos/Nxgest/Epicos/NXG-EPIC-0001 Organizacao do NX Gest/00 README|NXG-EPIC-0001 — Organização do NX Gest]]
 > **Plano de teste:** [[02 - Plano de teste]]  
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/00 README|Execução DEV]]
+> **Execução DEV:** ainda não criada — aguarda gate QA
 
 ## Auditoria de integridade QA
 
 > Executar antes de mover o card para `QA_READY_FOR_DEV`:
 >
 > ```bash
-> python3 scripts/validar_pacote_qa.py "<pasta-da-demanda>"
+> python3 scripts/validar_pacote_qa.py "03 Trabalho/QA/Nxgest/Demandas/Melhorias/MEL-0004 README e mapa da raiz"
 > ```
 
 - **Responsável pela execução:** QA/`qa-first-delivery`
-- **Data da última execução:** a registrar
-- **Resultado do gate:** aguardando
-- **Evidência detalhada:** saída do comando no registro da execução ou na daily relacionada.
+- **Data da última execução:** 2026-10-17
+- **Resultado do gate:** PACOTE QA APROVADO NO GATE DE INTEGRIDADE — QA_READY_FOR_DEV
+- **Evidência detalhada:** `python3 scripts/validar_pacote_qa.py "03 Trabalho/QA/Nxgest/Demandas/Melhorias/MEL-0004 README e mapa da raiz"` — arquivos, critérios, CTs, âncoras, matriz e validação coerentes.
 
 O handoff para DEV só é permitido com resultado `PACOTE QA APROVADO NO GATE DE INTEGRIDADE`.
 
@@ -35,7 +35,7 @@ O handoff para DEV só é permitido com resultado `PACOTE QA APROVADO NO GATE DE
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/00 README|Execução DEV]]
+> **Execução DEV:** ainda não criada — aguarda gate QA
 
 > [!tip]- Esforço
 > ```dataviewjs
@@ -55,13 +55,13 @@ O handoff para DEV só é permitido com resultado `PACOTE QA APROVADO NO GATE DE
 > const adicional = defeitos.array().reduce((soma, pagina) => soma + (typeof pagina.pontos === "number" ? pagina.pontos : 0), 0);
 > const original = dv.pages().where(p => id && p.file.path.includes(id) && typeof p.pontos === "number").array().reduce((soma, pagina) => soma + Number(pagina.pontos), 0);
 > dv.table(["Defeito filho", "Pontos"], defeitos.map(p => [p.file.link, p.pontos ?? 0]));
-> dv.paragraph(`**${id || "<ID>"} — Retrabalho por defeitos filhos:** ${adicional} pontos (${defeitos.length} defeitos)`);
+> dv.paragraph(`**${id || "MEL-0004"} — Retrabalho por defeitos filhos:** ${adicional} pontos (${defeitos.length} defeitos)`);
 > ```
 
-Pacote QA para `<PROJ>-MEL-NNNN`:
+Pacote QA para `MEL-0004`:
 
 ```text
-<PROJ>-MEL-NNNN/
+MEL-0004/
 ├── 00 README.md
 ├── 01 - Demanda.md
 ├── 02 - Plano de teste.md

@@ -1,56 +1,41 @@
 ---
-demanda: ""
+demanda: "[[01 - Demanda]]"
 status: planejado
-responsavel: ""
-pontos: ""
+responsavel: qa-first-delivery
+pontos: 0
 ---
 
-# Plano de teste — <ID>
+# Plano de teste — MEL-0004
 
 > [!info]- Navegação QA
-> **README do card:** [[00 README|Abrir README do card]]  
-> **Demanda:** [[01 - Demanda]]  
-> **Plano de teste:** [[02 - Plano de teste]]  
-> **Casos de teste:** [[03 - Casos de teste]]  
-> **Validação:** [[04 - Validação dev]]  
-> **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** [[03 Trabalho/DEV/<projeto>/Execuções/<ID>/00 README|Execução <ID>]]
-
-> [!settings]- Controle do plano de teste
-> **Status:** `INPUT[inlineSelect(option(planejado),option(execucao),option(concluido)):status]`
-
----
+> **Demanda:** [[01 - Demanda]]
+> **Casos de teste:** [[03 - Casos de teste]]
+> **Validação:** [[04 - Validação dev]]
 
 ## Objetivo
 
----
+Confirmar que o mapa estrutural do README representa o estado real do NX Gest, mantém links válidos e não amplia o lote para código ou infraestrutura.
 
 ## Riscos e escopo
 
----
+O risco principal é documentar uma estrutura futura como se já existisse. O teste compara o README com a raiz real e com o escopo aprovado no NXG-028.
 
 ## Estratégia de teste
 
-- **Unitário:** regras e serviços isolados.
-- **API/repositório:** contrato, validações e persistência.
-- **UI/E2E:** comportamento do usuário e integração entre campos/telas.
-- **Regressão:** fluxos existentes afetados pela mudança.
-
-Defina apenas as camadas aplicáveis; não crie testes por obrigação quando não houver risco naquela camada.
-
----
+- Auditoria documental e de links.
+- Revisão do diff para confirmar escopo.
+- Verificação de nomenclatura canônica.
 
 ## Matriz de cobertura
 
 | CT | Tipo | Camada | Automação | Validação |
 |---|---|---|---|---|
-| [[03 - Casos de teste#^ct-001\|CT-001]] | Regressão | UI/API | Automatizado + manual | [[04 - Validação dev\|Registrar resultado]] |
-
-> Exemplo: replique a linha para cada CT do pacote. O link do CT abre a prévia do cenário; o link de Validação leva à tabela onde o resultado e a evidência são registrados.
-
----
+| [[03 - Casos de teste#^ct-001\|CT-001]] | funcional | manual | manual | [[04 - Validação dev#Resultado dos casos de teste|Registrar resultado]] |
+| [[03 - Casos de teste#^ct-002\|CT-002]] | regressão | manual | automatizado | [[04 - Validação dev#Resultado dos casos de teste|Registrar resultado]] |
+| [[03 - Casos de teste#^ct-003\|CT-003]] | regressão | manual | manual | [[04 - Validação dev#Resultado dos casos de teste|Registrar resultado]] |
+| [[03 - Casos de teste#^ct-004\|CT-004]] | funcional | manual | manual | [[04 - Validação dev#Resultado dos casos de teste|Registrar resultado]] |
 
 ## Entrada e saída
 
-**Entrada:**  
-**Saída:**
+**Entrada:** README raiz e árvore real do repositório.
+**Saída:** README atualizado, auditado e coerente com MEL-0004.
