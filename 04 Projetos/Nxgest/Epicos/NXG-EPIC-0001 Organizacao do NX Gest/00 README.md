@@ -42,14 +42,15 @@ Organizar o NX Gest segundo um padrão claro, reproduzível e fácil de clonar, 
 | ID | Demanda | Relação | Estado |
 |---|---|---|---|
 | NXG-MEL-0004 | [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0004/QA/NXG-MEL-0004 README e mapa da raiz/00 README|README e mapa da raiz]] | primeiro lote documental | ✅ Concluído com ressalva |
-| NXG-MEL-0005 | [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0005 Infraestrutura em infra/01 - Demanda|Infraestrutura em infra/]] | infraestrutura em `infra/` | 🟡 Em análise QA (CTs criados, aguardando gate) |
-| MEL-0006 | a criar após aprovação do plano | scripts e onboarding | Backlog |
-| MEL-0007 | a criar após aprovação do plano | agentes especializados | Opcional |
+| NXG-MEL-0005 | [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0005 Infraestrutura em infra/01 - Demanda|Infraestrutura em infra/]] | infraestrutura em `infra/` | ✅ Gate aprovado — `QA_READY_FOR_DEV` (execução aguarda NXG-MEL-0006) |
+| NXG-MEL-0006 | [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0006 Onboarding de ambientes/01 - Demanda|Onboarding de ambientes]] | scripts e onboarding | 🟡 Em análise QA (CTs criados, gate aprovado) |
+| NXG-MEL-0007 | a criar após aprovação do plano | agentes especializados | Opcional |
 
 ## Dependências
 
 - [[03 Trabalho/QA/Nxgest/Demandas/Planos/NXG-028 Governanca da reorganizacao do NX Gest|NXG-028 — Governança da reorganização do NX Gest]] define decisões e lotes.
 - O trabalho não commitado do repositório deve ser preservado antes de lotes estruturais.
+- Regra de sequência: nenhuma execução real do `NXG-MEL-0005` ocorre antes de `NXG-MEL-0006` estar criado e com gate QA aprovado (evita quebrar o onboarding de desenvolvimento entre os dois lotes).
 
 ## Fluxo do épico
 
@@ -57,8 +58,8 @@ Organizar o NX Gest segundo um padrão claro, reproduzível e fácil de clonar, 
 flowchart LR
     A[NXG-028\nGovernança] --> B[NXG-MEL-0004\nREADME]
     B --> C[NXG-MEL-0005\ninfra/]
-    C --> D[MEL-0006\nOnboarding]
-    D --> E[MEL-0007\nAgentes]
+    C --> D[NXG-MEL-0006\nOnboarding]
+    D --> E[NXG-MEL-0007\nAgentes]
 ```
 
 ## Status consolidado
@@ -68,9 +69,10 @@ flowchart LR
 | Escopo do épico | ✅ definido |
 | Plano de governança | ✅ definido |
 | NXG-MEL-0004 | ✅ concluído com ressalva documental |
-| NXG-MEL-0005 | 🟡 pacote QA criado (7 CTs), aguardando gate de integridade e autorização para DEV |
-| Lotes estruturais restantes (MEL-0006/0007) | ⏳ aguardando decisões |
-| Execução no NX Gest | ✅ lote documental (NXG-MEL-0004) concluído · infraestrutura ainda não aplicada |
+| NXG-MEL-0005 | ✅ gate aprovado (`QA_READY_FOR_DEV`) · execução aguarda NXG-MEL-0006 |
+| NXG-MEL-0006 | ✅ gate aprovado (`QA_READY_FOR_DEV`, 7 CTs) · execução ainda não autorizada |
+| NXG-MEL-0007 | ⏳ aguardando decisão de formalizar agentes |
+| Execução no NX Gest | ✅ lote documental (NXG-MEL-0004) concluído · infraestrutura e onboarding ainda não aplicados |
 
 ## Critério de conclusão
 

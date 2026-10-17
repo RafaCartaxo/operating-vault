@@ -26,7 +26,7 @@ pontos_alocados: 20
 > **Casos de teste:** [[03 - Casos de teste]]  
 > **Validação:** [[04 - Validação dev]]  
 > **Preparação Qase:** [[05 - Preparação Qase]]  
-> **Execução DEV:** ainda não criada — aguarda gate QA
+> **Execução DEV:** ainda não criada — gate QA aprovado (`QA_READY_FOR_DEV`), aguardando NXG-MEL-0006 (regra de sequência do NXG-028)
 
 > [!settings]- Controle da demanda
 > **Prioridade:** `INPUT[inlineSelect(option(baixa),option(media),option(alta)):prioridade]`  
@@ -36,7 +36,8 @@ pontos_alocados: 20
 
 
 > [!info] Status atual
-> **Próximo passo:** executar o gate de integridade QA (`validar_pacote_qa.py`) e, se aprovado, aguardar autorização do Orquestrador para abrir a execução DEV.
+> **Resultado:** gate de integridade QA aprovado — `QA_READY_FOR_DEV` emitido em 17/10/2026.
+> **Próximo passo:** aguardar `NXG-MEL-0006` ser criado e ter seu gate QA aprovado (regra de sequência do NXG-028) antes de abrir a execução DEV deste lote.
 
 ---
 
@@ -74,7 +75,7 @@ Agrupar `Dockerfile`, `Caddyfile` e os 3 `docker-compose.{yml,staging.yml,prod.y
 
 ### Entrega desta capacidade
 
-Entrega: os 5 arquivos fisicamente em `infra/`, com `scripts/deploy.sh`, `scripts/deploy-staging.sh`, `.opencode/agents/ops-runner.md` e `docs/engineering/06-PRODUCAO.md` atualizados para o novo caminho. Fica fora desta entrega: qualquer mudança no comando de onboarding de desenvolvimento (`docker compose up -d postgres` no README/`08-SETUP-NOVA-MAQUINA.md`) — isso é escopo do próximo lote (`MEL-0006 — onboarding`, conforme NXG-028), para não acoplar as duas mudanças num único diff.
+Entrega: os 5 arquivos fisicamente em `infra/`, com `scripts/deploy.sh`, `scripts/deploy-staging.sh`, `.opencode/agents/ops-runner.md` e `docs/engineering/06-PRODUCAO.md` atualizados para o novo caminho. Fica fora desta entrega: qualquer mudança no comando de onboarding de desenvolvimento (`docker compose up -d postgres` no README/`08-SETUP-NOVA-MAQUINA.md`) — isso é escopo do próximo lote (`NXG-MEL-0006 — onboarding`, conforme NXG-028), para não acoplar as duas mudanças num único diff.
 
 ---
 
@@ -98,10 +99,10 @@ Entrega: os 5 arquivos fisicamente em `infra/`, com `scripts/deploy.sh`, `script
 
 ## Fora de escopo
 
-- Alterar o comando de onboarding de desenvolvimento (`README.md`/`08-SETUP-NOVA-MAQUINA.md`) — fica para `MEL-0006`.
+- Alterar o comando de onboarding de desenvolvimento (`README.md`/`08-SETUP-NOVA-MAQUINA.md`) — fica para `NXG-MEL-0006`.
 - Mover `.env`, `.env.example` ou qualquer variante de ambiente.
 - Renomear volumes, redes, containers ou qualquer recurso real de staging/produção.
-- Criar ou reorganizar agentes (`MEL-0007`).
+- Criar ou reorganizar agentes (`NXG-MEL-0007`).
 - Executar deploy real em staging ou produção.
 - Aplicar qualquer mudança no repositório NX Gest nesta etapa — isso só ocorre na execução DEV, após gate QA aprovado e autorização explícita.
 
@@ -131,5 +132,5 @@ Entrega: os 5 arquivos fisicamente em `infra/`, com `scripts/deploy.sh`, `script
 
 ## Pendências de decisão
 
-- Executar `python3 scripts/validar_pacote_qa.py` neste pacote e registrar o resultado no `00 README.md` antes de qualquer handoff `QA_READY_FOR_DEV`.
-- Aguardar autorização explícita do Orquestrador para abrir a execução DEV (`03 Trabalho/DEV/Nxgest/Execuções/`) — não criada nesta tarefa, por instrução.
+- Gate QA aprovado e `QA_READY_FOR_DEV` já emitido (17/10/2026) — nenhuma pendência de validação de integridade.
+- Aguardar `NXG-MEL-0006` ser criado e ter seu gate QA aprovado (regra de sequência do NXG-028) antes de abrir a execução DEV deste lote.

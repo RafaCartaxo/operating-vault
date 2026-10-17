@@ -16,7 +16,8 @@ kanban-plugin: board
 
 ## 🧪 Casos de teste
 
-- [ ] 🟡 [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0005 Infraestrutura em infra/01 - Demanda|NXG-MEL-0005 — Infraestrutura em infra/]]
+- [x] 🟡 [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0005 Infraestrutura em infra/01 - Demanda|NXG-MEL-0005 — Infraestrutura em infra/]] — gate aprovado, execução aguarda NXG-MEL-0006
+- [x] 🟡 [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0006 Onboarding de ambientes/01 - Demanda|NXG-MEL-0006 — Onboarding de ambientes]] — gate aprovado, execução não autorizada
 
 
 ## 🧪 Validação

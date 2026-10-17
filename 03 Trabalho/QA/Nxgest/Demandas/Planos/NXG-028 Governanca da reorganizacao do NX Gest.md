@@ -42,6 +42,7 @@ Definir e governar uma arquitetura organizacional clara para o NX Gest, permitin
 - A infraestrutura pode ser agrupada em `infra/` quando o lote tiver paths, scripts e validações atualizados.
 - Volumes, redes, domínios e diretórios reais de staging/produção não serão renomeados automaticamente.
 - Nenhum lote estrutural deve absorver silenciosamente os 26 arquivos modificados e 10 untracked existentes no repositório.
+- Regra de sequência: nenhuma execução real do `NXG-MEL-0005` ocorre antes de `NXG-MEL-0006` estar criado e com gate QA aprovado — evita que o comando de onboarding (`docker compose up -d postgres`) fique quebrado entre os dois lotes.
 
 ## Arquitetura-alvo conceitual
 
@@ -68,9 +69,9 @@ Os exemplos de ambiente permanecem inicialmente na raiz para preservar o onboard
 ## Lotes governados
 
 1. **NXG-MEL-0004 — README e mapa da raiz:** alteração documental isolada.
-2. **NXG-MEL-0005 — infraestrutura:** agrupar Dockerfile, Caddyfile e compose em `infra/` com paths validados. Pacote QA criado em 17/10, aguardando gate de integridade e autorização para execução DEV.
-3. **MEL-0006 — onboarding:** encapsular comandos de ambiente e atualizar setup de clone.
-4. **MEL-0007 — agentes:** formalizar agentes de produto/QA apenas se a decisão for aprovada.
+2. **NXG-MEL-0005 — infraestrutura:** agrupar Dockerfile, Caddyfile e compose em `infra/` com paths validados. Gate QA aprovado (`QA_READY_FOR_DEV`, 17/10) — execução real aguarda `NXG-MEL-0006` (regra de sequência).
+3. **NXG-MEL-0006 — onboarding:** encapsular comandos docker de dev em scripts npm e atualizar README/08-SETUP-NOVA-MAQUINA.md para `infra/docker-compose.yml`. Pacote QA criado em 17/10, aguardando gate de integridade.
+4. **NXG-MEL-0007 — agentes:** formalizar agentes de produto/QA apenas se a decisão for aprovada.
 5. **Renomeação local:** `nxgestao` → `nxgest`, registrada como decisão operacional, não como alteração do repositório.
 
 ## Riscos e controles
@@ -97,7 +98,8 @@ Os exemplos de ambiente permanecem inicialmente na raiz para preservar o onboard
 
 - Confirmar, no lote estrutural, a forma final de `infra/docker`, `infra/caddy` e exemplos de ambiente.
 - Definir quando o trabalho não commitado será preservado.
-- Decidir se agentes de produto/QA serão formalizados.
+- Decidir se agentes de produto/QA serão formalizados (`NXG-MEL-0007`).
+- Autorizar a execução DEV do `NXG-MEL-0005` somente após `NXG-MEL-0006` ter gate QA aprovado (regra de sequência).
 
 ## Definição de pronto
 
