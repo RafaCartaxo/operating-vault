@@ -40,7 +40,7 @@ pontos_alocados: 8
 
 > [!tip]- Capacidade do ciclo
 > Preencha apenas `pontos_alocados` no frontmatter com a capacidade reservada para este bug.
-> 
+>
 > Exemplo: se houver 50 pontos disponíveis no ciclo, use `pontos_alocados: 50`.
 
 ```dataviewjs
