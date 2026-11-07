@@ -24,6 +24,10 @@ kanban-plugin: board
 
 ## ✅ Concluído
 
+- [x] ✅ [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0008/DEV/NXG-MEL-0008/00 README|NXG-MEL-0008 — Consolidação de ambientes]] — QA aprovado com ressalvas
+- [x] ✅ [[05 Arquivo/Nxgest/Bugs/NXG-029/DEV/NXG-029/00 README|NXG-029 — Staging com espaços]] — QA aprovado
+- [x] ✅ [[05 Arquivo/Nxgest/Bugs/NXG-030/DEV/NXG-030/00 README|NXG-030 — Proteção do smoke]] — QA aprovado
+
 - [x] ✅ [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0004/DEV/NXG-MEL-0004/00 README|NXG-MEL-0004 — README e mapa da raiz]] — QA aprovado com ressalva
 - [x] ✅ [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0005/DEV/NXG-MEL-0005/00 README|NXG-MEL-0005 — Infraestrutura em infra/]] — QA aprovado com ressalva
 - [x] ✅ [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0006/DEV/NXG-MEL-0006/00 README|NXG-MEL-0006 — Onboarding de ambientes]] — QA aprovado com ressalva

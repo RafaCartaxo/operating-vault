@@ -22,7 +22,14 @@ kanban-plugin: board
 
 
 
+
+
+
 ## ✅ Concluído
+
+- [x] ✅ [[05 Arquivo/Nxgest/Bugs/NXG-030/QA/NXG-030 Smoke protege banco e interpreta opcoes/00 README|NXG-030 Smoke protege banco e interpreta opcoes]] — QA aprovado
+- [x] ✅ [[05 Arquivo/Nxgest/Bugs/NXG-029/QA/NXG-029 Staging carrega valores com espacos/00 README|NXG-029 Staging carrega valores com espacos]] — QA aprovado
+- [x] ✅ [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0008/QA/NXG-MEL-0008 Consolidacao de ambientes e portabilidade/00 README|NXG-MEL-0008 Consolidacao de ambientes e portabilidade]] — QA aprovado com ressalvas
 
 - [x] ✅ [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0004/QA/NXG-MEL-0004 README e mapa da raiz/01 - Demanda|NXG-MEL-0004 — README e mapa da raiz]] — aprovado com ressalva
 - [x] ✅ [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0005/QA/NXG-MEL-0005 Infraestrutura em infra/01 - Demanda|NXG-MEL-0005 — Infraestrutura em infra/]] — aprovado com ressalva

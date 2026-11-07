@@ -77,3 +77,13 @@ flowchart LR
 ## Critério de conclusão
 
 O épico será concluído quando as demandas vinculadas tiverem critérios aprovados, implementações revisadas, CTs executados, documentação sincronizada e nenhuma pendência bloqueante, sem exigir alteração não autorizada da infraestrutura real.
+
+- [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0008/QA/NXG-MEL-0008 Consolidacao de ambientes e portabilidade/00 README|NXG-MEL-0008 Consolidacao de ambientes e portabilidade]] — pacote complementar concluído e arquivado após QA independente.
+
+- [[05 Arquivo/Nxgest/Bugs/NXG-029/QA/NXG-029 Staging carrega valores com espacos/00 README|NXG-029 Staging carrega valores com espacos]] — pacote complementar concluído e arquivado após QA independente.
+
+- [[05 Arquivo/Nxgest/Bugs/NXG-030/QA/NXG-030 Smoke protege banco e interpreta opcoes/00 README|NXG-030 Smoke protege banco e interpreta opcoes]] — pacote complementar concluído e arquivado após QA independente.
+
+## Parecer final — 2026-11-07
+
+[[04 Projetos/Nxgest/Epicos/NXG-EPIC-0001 Organizacao do NX Gest/01 Parecer final|Parecer técnico e evidências]]: consolidação local validada; 13 CTs aprovados, com ressalvas não bloqueantes. Pacotes complementares concluídos e arquivados. O épico permanece `execucao`, aguardando decisão do usuário. Nenhum push/deploy foi realizado.

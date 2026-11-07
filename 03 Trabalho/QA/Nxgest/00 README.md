@@ -47,3 +47,9 @@ Os quatro arquivos não são obrigatórios desde o primeiro dia; eles são criad
 **Regra de templates:** cada artefato deve ser copiado do template correspondente e apenas preenchido. Não reconstruir a estrutura manualmente; isso evita divergências e retrabalho.
 
 Modelos: [[Templates/Bug/00 README|Bug]] · [[Templates/Melhoria/00 README|Melhoria]] · [[Templates/QA/00 README|QA]]
+
+- [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0008/QA/NXG-MEL-0008 Consolidacao de ambientes e portabilidade/00 README|NXG-MEL-0008 Consolidacao de ambientes e portabilidade]] — consolidação autorizada em 2026-11-07.
+
+- [[05 Arquivo/Nxgest/Bugs/NXG-029/QA/NXG-029 Staging carrega valores com espacos/00 README|NXG-029 Staging carrega valores com espacos]] — consolidação autorizada em 2026-11-07.
+
+- [[05 Arquivo/Nxgest/Bugs/NXG-030/QA/NXG-030 Smoke protege banco e interpreta opcoes/00 README|NXG-030 Smoke protege banco e interpreta opcoes]] — consolidação autorizada em 2026-11-07.
