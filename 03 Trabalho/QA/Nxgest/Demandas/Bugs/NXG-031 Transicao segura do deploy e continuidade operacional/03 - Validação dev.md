@@ -35,7 +35,7 @@ data_fim: ""
 > **Resultado:** `INPUT[inlineSelect(option(aguardando),option(aprovado),option(reprovado),option(aprovado_com_ressalvas)):resultado]`  
 > **Ambiente:** `INPUT[inlineSelect(option(dev),option(hml),option(prod)):ambiente]`
 
-> Template canônico de validação QA para melhorias e bugs. Para Bugs, copie esta nota, renomeie para `03 - Validação dev.md` e troque os links/identificadores `CT-001` pelos CTs `CT-BNN` do bug.
+> Validação derivada do template canônico QA, adaptada para os seis CTs do bug NXG-031.
 
 > Registro da execução dos CTs e das evidências. Os cenários permanecem em `02 - Casos de teste.md`.
 
@@ -129,17 +129,13 @@ if (tabela) {
 
 ## Histórico de validação
 
-Use esta seção somente quando houver reteste após correção:
-
-- **Rodada inicial:** registre o CT reprovado e o defeito aberto.
-- **Correção:** vincule o bug e o Fix DEV.
-- **Reteste:** registre o resultado final e a data.
+- 2026-11-10: preparação dos seis cenários; aguardando DEV_READY_FOR_QA. Sem teste real em VPS.
 
 ---
 
 ## Decisão
 
-**Resultado geral:** aguardando / aprovado / reprovado / aprovado com ressalvas
+**Resultado geral:** aguardando implementação e validação independente.
 
 ---
 

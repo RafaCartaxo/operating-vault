@@ -20,6 +20,8 @@ kanban-plugin: board
 
 ## 🧪 Aguardando QA
 
+- [ ] [[03 Trabalho/DEV/Nxgest/Fixes/NXG-031/00 README|NXG-031 — Transição segura do deploy]] — aguardando QA independente
+
 
 
 ## ✅ Concluído

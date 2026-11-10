@@ -48,7 +48,7 @@ projeto: nxgest
 > dv.paragraph(`**${id || "NXG-031"} — Retrabalho por defeitos derivados:** ${adicional} pontos (${derivados.length} defeitos)`);
 > ```
 
-Pacote QA para `NXG-031`:
+Pacote QA para `NXG-031` (cinco notas):
 
 ```text
 NXG-031/

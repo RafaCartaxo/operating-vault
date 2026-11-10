@@ -31,7 +31,7 @@ pontos_alocados: 13
 > **Prioridade:** `INPUT[inlineSelect(option(baixa),option(media),option(alta)):prioridade]`  
 > **Ambiente:** `INPUT[inlineSelect(option(dev),option(hml),option(prod)):ambiente]`  
 > **Origem:** `INPUT[inlineSelect(option(repo),option(observado),option(conversa),option(validação)):origem]`<br>
-> **Projeto:** preencher `projeto` no frontmatter antes de roteiar o bug.
+> **Projeto:** `nxgest`.
 
 
 ---
@@ -39,9 +39,9 @@ pontos_alocados: 13
 ## Capacidade e esforço
 
 > [!tip]- Capacidade do ciclo
-> Preencha apenas `pontos_alocados` no frontmatter com a capacidade reservada para este bug.
+> Capacidade reservada: 13 pontos de planejamento.
 > 
-> Exemplo: se houver 50 pontos disponíveis no ciclo, use `pontos_alocados: 50`.
+> Distribuição DEV a registrar no Fix, QA 6 pontos entre casos e validação.
 
 ```dataviewjs
 const projeto = String(dv.current().projeto || "").toUpperCase();
