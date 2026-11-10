@@ -20,6 +20,8 @@ kanban-plugin: board
 
 ## 🧪 Validação
 
+- [ ] [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-031 Transicao segura do deploy e continuidade operacional/00 README|NXG-031 — Transição segura do deploy]] — QA_READY_FOR_DEV
+
 
 
 

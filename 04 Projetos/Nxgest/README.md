@@ -12,3 +12,7 @@ Projeto cadastrado no Operating Vault.
 | Épicos | [[04 Projetos/Nxgest/Epicos/00 README\|Épicos Nxgest]] |
 
 Os IDs históricos `NXG-NNN` e `MEL-NNNN` são preservados.
+
+## Correção pré-publicação ativa
+
+- [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-031 Transicao segura do deploy e continuidade operacional/00 README|NXG-031 — Transição segura do deploy e continuidade operacional]] — seis CTs; sem push/deploy; não reabre o épico encerrado.
