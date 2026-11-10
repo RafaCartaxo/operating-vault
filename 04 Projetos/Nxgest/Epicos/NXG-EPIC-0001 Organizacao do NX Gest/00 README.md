@@ -1,12 +1,12 @@
 ---
 id: NXG-EPIC-0001
 tipo: epico
-status: execucao
+status: concluido
 projeto: nxgest
 prioridade: alta
 data_inicio: 2026-10-17
-data_fim: ""
-responsavel: ""
+data_fim: "2026-11-10"
+responsavel: "NX Gest · QA e Coordenação"
 ---
 
 # NXG-EPIC-0001 — Organização do NX Gest
@@ -86,4 +86,14 @@ O épico será concluído quando as demandas vinculadas tiverem critérios aprov
 
 ## Parecer final — 2026-11-07
 
-[[04 Projetos/Nxgest/Epicos/NXG-EPIC-0001 Organizacao do NX Gest/01 Parecer final|Parecer técnico e evidências]]: consolidação local validada; 13 CTs aprovados, com ressalvas não bloqueantes. Pacotes complementares concluídos e arquivados. O épico permanece `execucao`, aguardando decisão do usuário. Nenhum push/deploy foi realizado.
+[[04 Projetos/Nxgest/Epicos/NXG-EPIC-0001 Organizacao do NX Gest/01 Parecer final|Parecer técnico e evidências]]: consolidação local validada; 13 CTs aprovados, com ressalvas não bloqueantes. Pacotes complementares concluídos e arquivados. O usuário aprovou o encerramento em 2026-11-07; épico `concluido`. Nenhum push/deploy foi realizado.
+
+## Encerramento autorizado — 2026-11-07
+
+O usuário aceitou o parecer e determinou: “Finalizemos a demanda”, confirmando entendimento do plano. Encerramento da organização local autorizado em 2026-11-07, reconfirmado e formalizado nos registros em 2026-11-10. Não há impedimento técnico identificado no ambiente validado. Ressalvas documentais e de abrangência de teste permanecem registradas, com encaminhamentos próprios. A decisão não autoriza push/deploy nem encerra os trabalhos separados de ícones/Qase.
+
+Evidência consolidada: [[04 Projetos/Nxgest/Epicos/NXG-EPIC-0001 Organizacao do NX Gest/01 Parecer final|Parecer aceito]]. Revisão de código mantida em `c7b65c8`; repositório limpo. Todos os pacotes vinculados concluídos e arquivados. Publicação remota é uma etapa separada.
+
+## Conferência de encerramento — 2026-11-10
+
+Aceite do usuário reconfirmado e registro concluído nesta data. HEAD permanece `c7b65c8ddd85efde4db7f075ca03d95a7c6c5c38`; árvore de código limpa e sem alteração desde a revisão validada. Não foi necessário repetir testes para esta atualização exclusivamente documental. Nenhum impedimento novo identificado; publicação segue fora do escopo.

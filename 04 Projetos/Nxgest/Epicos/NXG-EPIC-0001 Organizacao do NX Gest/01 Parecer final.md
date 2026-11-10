@@ -1,14 +1,16 @@
 ---
 projeto: nxgest
 epico: NXG-EPIC-0001
-status: aguardando_decisao
+status: aceito
+data_aceite: 2026-11-07
+data_encerramento: 2026-11-10
 responsavel: "NX Gest · QA e Coordenação"
 data: 2026-11-07
 ---
 
 # Parecer final — organização e portabilidade do NX Gest
 
-**Parecer técnico: favorável à conclusão local, com ressalvas documentadas e sem pendência técnica bloqueante identificada no ambiente validado. O épico permanece em execução para a decisão do usuário.**
+**Parecer técnico: favorável à conclusão local, com ressalvas documentadas e sem pendência técnica bloqueante identificada no ambiente validado. O usuário aceitou o parecer e autorizou o encerramento do épico em 2026-11-07.**
 
 ## Resultado entregue
 
@@ -43,7 +45,7 @@ Ambiente executado: Linux local, Node 20.20.2, npm 10.8.2, Docker Compose 5.3.1.
 - [[05 Arquivo/Nxgest/Bugs/NXG-029/QA/NXG-029 Staging carrega valores com espacos/00 README|NXG-029 Staging carrega valores com espacos]] — QA independente aprovado.
 - [[05 Arquivo/Nxgest/Bugs/NXG-030/QA/NXG-030 Smoke protege banco e interpreta opcoes/00 README|NXG-030 Smoke protege banco e interpreta opcoes]] — QA independente aprovado.
 
-Treze CTs aprovados: oito de consolidação, dois de staging e três de smoke. Pacotes QA/DEV arquivados juntos; boards e governança sincronizados. A aprovação dos pacotes não encerra o épico.
+Treze CTs aprovados: oito de consolidação, dois de staging e três de smoke. Pacotes QA/DEV arquivados juntos; boards e governança sincronizados. A aprovação dos pacotes foi seguida do aceite do usuário e encerramento do épico em 2026-11-07.
 
 ## Trabalho preservado e commits
 
@@ -70,6 +72,6 @@ git -C nxgest remote set-url origin https://github.com/RafaCartaxo/nxgest.git
 
 Depois, seguir o README versionado para os pré-requisitos e setup. Bundle não é outro repositório oficial; é um transporte local da revisão validada.
 
-## Decisão reservada ao usuário
+## Decisão do usuário — 2026-11-07
 
-Aceitar este parecer e decidir o encerramento do NXG-EPIC-0001. Push/deploy permanecem proibidos; eventual publicação precisa ser planejada/autorizada separadamente.
+O usuário aceitou o parecer e determinou: “Finalizemos a demanda”, confirmando entendimento do plano. Encerramento da organização local autorizado em 2026-11-07, reconfirmado e formalizado nos registros em 2026-11-10. Não há impedimento técnico identificado no ambiente validado. Ressalvas documentais e de abrangência de teste permanecem registradas, com encaminhamentos próprios. A decisão não autoriza push/deploy nem encerra os trabalhos separados de ícones/Qase.

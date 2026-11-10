@@ -83,4 +83,4 @@ Cada CT usa um callout recolhível com identificador (`^ct-b01`). A nota de vali
 
 ## Resultado final QA
 
-QA_APPROVED — todos os CTs aprovados. [[06 - Evidências QA|Resultados e limites]]. Épico permanece em execução aguardando parecer final ao usuário.
+QA_APPROVED — todos os CTs aprovados. [[06 - Evidências QA|Resultados e limites]]. Épico encerrado em 2026-11-10 após aceite do usuário; evidências anteriores preservadas.

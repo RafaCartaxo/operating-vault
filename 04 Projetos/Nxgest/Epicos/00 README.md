@@ -4,4 +4,4 @@
 
 | Épico | Objetivo | Status |
 |---|---|---|
-| [[NXG-EPIC-0001 Organizacao do NX Gest/00 README|NXG-EPIC-0001 — Organização do NX Gest]] | Padronizar raiz, infraestrutura, ambientes, agentes e onboarding | Em execução |
+| [[NXG-EPIC-0001 Organizacao do NX Gest/00 README|NXG-EPIC-0001 — Organização do NX Gest]] | Padronizar raiz, infraestrutura, ambientes, agentes e onboarding | Concluído em 2026-11-10 — parecer aceito |

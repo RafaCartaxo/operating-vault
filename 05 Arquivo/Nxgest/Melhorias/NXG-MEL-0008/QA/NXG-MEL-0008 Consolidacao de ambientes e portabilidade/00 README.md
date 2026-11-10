@@ -92,4 +92,4 @@ NXG-MEL-0008/
 
 ## Resultado final QA
 
-QA_APPROVED com ressalvas não bloqueantes de documentação/abrangência do teste. [[06 - Evidências QA|Resultados e limites]]. Épico permanece em execução aguardando parecer final ao usuário.
+QA_APPROVED com ressalvas não bloqueantes de documentação/abrangência do teste. [[06 - Evidências QA|Resultados e limites]]. Épico encerrado em 2026-11-10 após aceite do usuário; evidências anteriores preservadas.

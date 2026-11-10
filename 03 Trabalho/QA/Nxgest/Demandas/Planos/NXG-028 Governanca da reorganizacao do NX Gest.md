@@ -1,6 +1,6 @@
 ---
 prioridade: alta
-status: validacao
+status: concluido
 modulo: processo
 plano: ""
 execucao: ""
@@ -10,8 +10,8 @@ projeto: nxgest
 epico: NXG-EPIC-0001
 pai: ""
 data_inicio: "2026-10-17"
-data_fim: ""
-responsavel: ""
+data_fim: "2026-11-10"
+responsavel: "NX Gest · QA e Coordenação"
 ---
 
 # NXG-028 — Governança da reorganização do NX Gest
@@ -137,4 +137,14 @@ O usuário autorizou avançar até o parecer final, com decisões e delegação;
 
 ## Resultado da consolidação — 2026-11-07
 
-Parecer técnico favorável local, com limites registrados em [[04 Projetos/Nxgest/Epicos/NXG-EPIC-0001 Organizacao do NX Gest/01 Parecer final|Parecer final]]. Repo definitivo `nxgest/`, HEAD `c7b65c8ddd85efde4db7f075ca03d95a7c6c5c38`; working tree limpo, sete commits locais além de origin/main. Pacotes NXG-MEL-0008/NXG-029/NXG-030 aprovados e arquivados; treze CTs. Rename preservou identidade do diretório e metadados do env real sem ler valores. Recursos temporários removidos; original saudável. Plano em validação final do usuário, épico em execução.
+Parecer técnico favorável local, com limites registrados em [[04 Projetos/Nxgest/Epicos/NXG-EPIC-0001 Organizacao do NX Gest/01 Parecer final|Parecer final]]. Repo definitivo `nxgest/`, HEAD `c7b65c8ddd85efde4db7f075ca03d95a7c6c5c38`; working tree limpo, sete commits locais além de origin/main. Pacotes NXG-MEL-0008/NXG-029/NXG-030 aprovados e arquivados; treze CTs. Rename preservou identidade do diretório e metadados do env real sem ler valores. Recursos temporários removidos; original saudável. Plano e épico concluídos após aceite do usuário em 2026-11-07.
+
+## Aceite e encerramento — 2026-11-07
+
+O usuário aceitou o parecer e determinou: “Finalizemos a demanda”, confirmando entendimento do plano. Encerramento da organização local autorizado em 2026-11-07, reconfirmado e formalizado nos registros em 2026-11-10. Não há impedimento técnico identificado no ambiente validado. Ressalvas documentais e de abrangência de teste permanecem registradas, com encaminhamentos próprios. A decisão não autoriza push/deploy nem encerra os trabalhos separados de ícones/Qase.
+
+Governança concluída. Não há decisão bloqueante pendente nesta demanda. Publicação e implantação dependem de autorização separada.
+
+## Conferência de encerramento — 2026-11-10
+
+Aceite do usuário reconfirmado e registro concluído nesta data. HEAD permanece `c7b65c8ddd85efde4db7f075ca03d95a7c6c5c38`; árvore de código limpa e sem alteração desde a revisão validada. Não foi necessário repetir testes para esta atualização exclusivamente documental. Nenhum impedimento novo identificado; publicação segue fora do escopo.
