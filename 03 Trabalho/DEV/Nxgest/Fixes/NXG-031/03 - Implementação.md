@@ -34,3 +34,7 @@ Workflows de staging/prod adquirem lock e buscam SHA alvo; scripts/deploy-bootst
 
 ---
 
+
+## Complemento QA — recuperação legada e GPG
+
+`npm run test:deploy`: 11/11. A recuperação usa controlador por SHA e lock, requer backup, verifica layout e limpeza, recusa conflitos e não executa o deploy legado. Testes extraíram o comando do runbook e verificaram envs sintéticos e recusa em caso de falha. Trata-se exclusivamente de recuperação de checkout: não há prova de rollback do serviço ou operação em host real. GPG usa `pipefail`, `umask 077` e extração em diretório temporário `700`; teste com dois homes sintéticos cobre colisão e falha de descriptografia. Referência detalhada: `.maestro/nxgest-team/NXG-031-DEV-RESULTADO.md`. QA mantém os seis CTs para validação independente.
