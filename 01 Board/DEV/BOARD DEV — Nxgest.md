@@ -20,6 +20,8 @@ kanban-plugin: board
 
 ## 🧪 Aguardando QA
 
+- [ ] [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0009/00 README|NXG-MEL-0009 — Backup recuperável e rollback]] — DEV_READY_FOR_QA, validação independente pendente
+
 
 
 

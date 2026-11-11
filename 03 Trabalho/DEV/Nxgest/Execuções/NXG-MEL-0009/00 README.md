@@ -1,7 +1,7 @@
 ---
-status: execucao
+status: validacao
 tipo: melhoria
-etapa_atual: "DEV · Análise técnica"
+etapa_atual: "QA · Validação"
 demanda: "NXG-MEL-0009"
 epico: ""
 plano: ""
@@ -38,7 +38,7 @@ pontos: ""
 > dv.paragraph(`**Esforço desta etapa:** ${typeof atual === "number" ? atual : "a definir"} pontos · **Esforço total da execução DEV:** ${total} pontos`);
 > ```
 
-> Resumo humano do comportamento entregue e do motivo.
+Backup associado de banco e anexos, preservação de imagem e preflight de rollback com evidências; testes locais exclusivamente sintéticos e validação funcional independente pendente.
 
 ---
 
@@ -47,30 +47,22 @@ pontos: ""
 
 ## Status
 
-> Ao avançar uma etapa, atualize sempre os quatro pontos relacionados: propriedade `status` da demanda, coluna no Board, esta tabela e o registro de validação quando a etapa for QA.
-
 | Etapa | Estado | Data |
 |---|---|---|
-| Análise | ⏳ | |
-| Plano de execução | ⏳ | |
-| Execução | ⏳ | |
-| Code review | ⏳ | |
-| Verificação (CTs) | ⏳ | |
-| Fechamento | ⏳ | |
-
----
+| Análise | Concluída | 2026-11-11 |
+| Plano de execução | Concluído | 2026-11-11 |
+| Execução | Concluída localmente | 2026-11-11 |
+| Code review | Concluído com ressalvas | 2026-11-11 |
+| Verificação (CTs) | Aguardando QA independente | — |
+| Fechamento | Pendente | — |
 
 ## Histórico
 
-- YYYY-MM-DD — pasta de execução criada.
-
----
+- 2026-11-11 — Implementação local e evidências DEV; DEV_READY_FOR_QA. Nenhum CT funcional aprovado.
 
 ## Checklist de transição
 
-- [ ] Status da demanda atualizado
-- [ ] Card movido para a coluna correspondente no Board
-- [ ] Esta tabela atualizada
-- [ ] Bloco “Status atual” da demanda atualizado
-- [ ] Validação vinculada/atualizada quando aplicável
-- [ ] Sincronização documental verificada: frontmatter, README, board, links, evidências, histórico e pendências
+- [x] Board DEV e registro DEV atualizados; demanda e board QA permanecem sob controle da Coordenação/QA.
+- [x] Análise, plano, implementação, revisão e limitações vinculados.
+- [x] Testes sintéticos, desvio de interceptação e pendências registrados.
+- [ ] Validação funcional e fechamento: responsabilidade QA, ainda pendentes.
