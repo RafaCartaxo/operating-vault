@@ -64,3 +64,7 @@ A Coordenação relata SSH zero e sete campos validados, incluindo versão de se
 ## Reteste QA política — 2026-11-11
 
 QA_REJECTED: a política controla imagem/major antes do runner na fronteira acordada, mas `rehearsal-postgres.check.mjs` remove recursivamente `.maestro` do diretório corrente. Sonda em snapshot isolado reproduziu remoção de sentinela sintética; 4/4 e 11/11 testes passaram. Ver `.maestro/nxgest-team/CT011-NOVA-BASELINE-PARECER-QA.md`. Nenhum dado real removido; ensaio real/CT-N04 não autorizado e pai NO-GO.
+
+## Reteste cleanup — 2026-11-11
+
+Achado anterior resolvido no snapshot: sentinela e política sintéticas preservadas em bytes, estrutura e modos; 4/4 e 11/11 testes dublados sob guardas. Apto para Coordenação apresentar pedido único condicionado de ensaio PG sintético; autorização deve abranger explicitamente recursos Docker locais fora do workspace e cleanup próprio. CT-N04 real permanece bloqueado; origem nova e gates operacionais ainda pendentes. Detalhes: `.maestro/nxgest-team/CT011-NOVA-BASELINE-PARECER-QA.md`.
