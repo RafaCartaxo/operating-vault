@@ -31,3 +31,7 @@ A revisão identificou necessidade de serializar staging e produção por lock c
 ## Complemento QA — recuperação legada e GPG
 
 `npm run test:deploy`: 11/11. A recuperação usa controlador por SHA e lock, requer backup, verifica layout e limpeza, recusa conflitos e não executa o deploy legado. Testes extraíram o comando do runbook e verificaram envs sintéticos e recusa em caso de falha. Trata-se exclusivamente de recuperação de checkout: não há prova de rollback do serviço ou operação em host real. GPG usa `pipefail`, `umask 077` e extração em diretório temporário `700`; teste com dois homes sintéticos cobre colisão e falha de descriptografia. Referência detalhada: `.maestro/nxgest-team/NXG-031-DEV-RESULTADO.md`. QA mantém os seis CTs para validação independente.
+
+## Complemento QA — fixture sem histórico
+
+`npm run test:deploy` passou 12/12 após substituir a leitura do commit histórico por fixture legada autocontida com sentinela. A suíte passou novamente em Git sintético sem o objeto `9bff3f7`, com ausência confirmada por `git cat-file`; os testes verificam que o script antigo não é executado na transição e recuperação, e um teste positivo confirma a sentinela em fixture com Docker dublado. Não representa execução real do GitHub Actions. Ver `.maestro/nxgest-team/NXG-031-DEV-RESULTADO.md`.

@@ -1,7 +1,7 @@
 ---
-status: execucao
+status: concluido
 tipo: bug
-etapa_atual: "DEV · Análise técnica"
+etapa_atual: "Concluído"
 projeto: nxgest
 ---
 
@@ -68,4 +68,8 @@ Cada CT usa um callout recolhível com identificador (`^ct-b01`). A nota de vali
 
 ## Handoff vigente
 
-QA_READY_FOR_DEV — seis CTs cobrindo C1–C5. Fonte: [[01 - Bug]]. Correção autorizada, sem commits/push/deploy ou acesso operacional real. QA mantém seus registros; DEV mantém Fix e board DEV. Épico anterior concluído permanece referência histórica.
+QA_APPROVED — seis CTs aprovados cobrindo C1–C5; limites e evidências em [[06 - Evidências QA]]. Fonte: [[01 - Bug]]. Correção autorizada, sem commits/push/deploy ou acesso operacional real. QA mantém seus registros; DEV mantém Fix e board DEV. Épico anterior concluído permanece referência histórica.
+
+## Próximo encaminhamento
+
+Correção local concluída sem commit/push/deploy. Pré-publicação real permanece separada: host/checkout/envs/backup recuperável, plano de rollback do serviço, DNS/TLS e e-mail. Recuperação do checkout legado não é rollback de aplicação.

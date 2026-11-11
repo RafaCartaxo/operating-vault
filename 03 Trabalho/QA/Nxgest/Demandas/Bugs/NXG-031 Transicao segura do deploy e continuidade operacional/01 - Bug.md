@@ -1,8 +1,8 @@
 ---
 prioridade: alta
-status: execucao
+status: concluido
 tipo: bug
-etapa_atual: "DEV · Análise técnica"
+etapa_atual: "Concluído"
 modulo: infra
 plano: ""
 execucao: "[[03 Trabalho/DEV/Nxgest/Fixes/NXG-031/00 README]]"
@@ -12,7 +12,7 @@ projeto: nxgest
 epico: ""
 pai: ""
 data_inicio: 2026-11-10
-data_fim: ""
+data_fim: 2026-11-10
 responsavel: QA e Coordenação
 pontos_alocados: 13
 ---
@@ -114,3 +114,7 @@ Atualização repetível e verificável sem depender de script antigo carregado,
 - Base: c7b65c8; remote base de referência 9bff3f7.
 - Handoff: QA_READY_FOR_DEV; implementação autorizada pelo pedido direto de correção. Sem commit/push/deploy.
 - 2026-11-10: critérios e CTs preparados; DEV recebe execução, QA mantém validação independente.
+
+## Resultado QA
+
+QA_APPROVED para o escopo local, com ressalvas de abrangência e pré-publicação. Seis CTs aprovados; [[03 - Validação dev]] e [[06 - Evidências QA]]. Nenhum commit, push ou deploy nesta rodada. Épico histórico permanece concluído.

@@ -13,6 +13,6 @@ Projeto cadastrado no Operating Vault.
 
 Os IDs históricos `NXG-NNN` e `MEL-NNNN` são preservados.
 
-## Correção pré-publicação ativa
+## Correção pré-publicação
 
-- [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-031 Transicao segura do deploy e continuidade operacional/00 README|NXG-031 — Transição segura do deploy e continuidade operacional]] — seis CTs; sem push/deploy; não reabre o épico encerrado.
+- [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-031 Transicao segura do deploy e continuidade operacional/00 README|NXG-031 — Transição segura do deploy e continuidade operacional]] — seis CTs aprovados, ressalvas operacionais registradas; sem commit/push/deploy; não reabre o épico encerrado.

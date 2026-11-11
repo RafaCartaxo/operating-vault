@@ -1,6 +1,6 @@
 ---
 demanda: "[[01 - Bug]]"
-status: planejado
+status: concluido
 pontos: 3
 ---
 # Casos de teste — NXG-031
@@ -54,7 +54,7 @@ pontos: 3
 > **Tipo:** regressão  
 > **Camada:** infra  
 > **Automação:** ambos  
-> **Execução:** planejado
+> **Execução:** aprovado — ver validação QA
 
 ^ct-b01
 
@@ -86,7 +86,7 @@ pontos: 3
 > **Tipo:** regressão  
 > **Camada:** infra  
 > **Automação:** ambos  
-> **Execução:** planejado
+> **Execução:** aprovado — ver validação QA
 
 ^ct-b02
 
@@ -118,7 +118,7 @@ pontos: 3
 > **Tipo:** regressão  
 > **Camada:** infra  
 > **Automação:** ambos  
-> **Execução:** planejado
+> **Execução:** aprovado — ver validação QA
 
 ^ct-b03
 
@@ -150,7 +150,7 @@ pontos: 3
 > **Tipo:** regressão  
 > **Camada:** infra  
 > **Automação:** ambos  
-> **Execução:** planejado
+> **Execução:** aprovado — ver validação QA
 
 ^ct-b04
 
@@ -182,7 +182,7 @@ pontos: 3
 > **Tipo:** regressão  
 > **Camada:** infra  
 > **Automação:** ambos  
-> **Execução:** planejado
+> **Execução:** aprovado — ver validação QA
 
 ^ct-b05
 
@@ -214,7 +214,7 @@ pontos: 3
 > **Tipo:** regressão  
 > **Camada:** infra  
 > **Automação:** ambos  
-> **Execução:** planejado
+> **Execução:** aprovado — ver validação QA
 
 ^ct-b06
 

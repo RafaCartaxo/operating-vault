@@ -20,7 +20,6 @@ kanban-plugin: board
 
 ## 🧪 Validação
 
-- [ ] [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-031 Transicao segura do deploy e continuidade operacional/00 README|NXG-031 — Transição segura do deploy]] — QA_READY_FOR_DEV
 
 
 
@@ -28,6 +27,8 @@ kanban-plugin: board
 
 
 ## ✅ Concluído
+
+- [x] [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-031 Transicao segura do deploy e continuidade operacional/00 README|NXG-031 — Transição segura do deploy]] — QA aprovado com ressalvas operacionais
 
 - [x] ✅ [[05 Arquivo/Nxgest/Bugs/NXG-030/QA/NXG-030 Smoke protege banco e interpreta opcoes/00 README|NXG-030 Smoke protege banco e interpreta opcoes]] — QA aprovado
 - [x] ✅ [[05 Arquivo/Nxgest/Bugs/NXG-029/QA/NXG-029 Staging carrega valores com espacos/00 README|NXG-029 Staging carrega valores com espacos]] — QA aprovado

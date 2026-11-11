@@ -13,17 +13,25 @@ Validação independente sobre working tree de `nxgest/`, base `c7b65c8ddd85efde
 
 `npm run test:deploy` aprovado; cenário usa repositórios Git sintéticos, remoto local e Docker/curl dublados, executa o corpo SSH extraído dos workflows. O bootstrap vem do alvo antes do checkout; script/helper e Compose em infra são usados. Harness independente `check-bootstrap.py` também comprovou transição, SHA exato e envs byte a byte intactos. `bootstrap-independent.json`: sete verificações aprovadas.
 
+^ev-b01
+
 ## CT-B02 — Falhas de fetch e ref
 
 Suíte de deploy confirmou ref inexistente e remoto indisponível, sem alteração de HEAD/env e sem chamada Docker. Ref antiga sem bootstrap é recusada sem executar script legado. Não houve fetch operacional nem atualização do servidor.
+
+^ev-b02
 
 ## CT-B03 — Preservação de trabalho
 
 Suíte de deploy confirmou recusa de alteração rastreada, arquivo novo e arquivo ignorado em conflito. Conteúdo, HEAD e envs de fixtures preservados; texto privado sintético não aparece nos logs. Harness independente confirmou recusa de trabalho rastreado/novo e bloqueio concorrente.
 
+^ev-b03
+
 ## CT-B04 — Env, repetição e manual
 
 Execução repetida e comando manual usam o alvo e preservam `.env` e `.env.staging` sintéticos, incluindo `MAIL_FROM_NAME="NX Gest"`. O teste de segurança do parser também passou; conteúdo é lido como dado. Nenhum env real foi lido ou modificado.
+
+^ev-b04
 
 ## CT-B05 — Gates, backup, concorrência e recuperação
 
@@ -31,15 +39,19 @@ Suíte final: falta/falha de backup interrompe antes de Docker; falta ou falha d
 
 O complemento de recuperação executa o comando extraído do runbook com Git/backup sintéticos: só recupera arquivos do checkout antigo, exige backup e preserva alterações/envs/ignorados. Não opera serviços e não demonstra rollback de aplicação. A aprovação local deste CT não autoriza nem certifica publicação real.
 
+^ev-b05
+
 ## CT-B06 — Continuidade e transporte
 
 Teste extrai o procedimento do guia e usa GPG real com senha sintética e homes distintos. Conferiu arquivo cifrado 600, diretório de extração privado 700, arquivos finais 600/diretórios 700, recusa de colisão e de descriptografia inválida sem instalar conteúdo no destino. O guia separa dev local de acesso operacional; runbook identifica confirmação pendente de Cloudflare e seus limites. Nenhum segredo real foi transportado.
+
+^ev-b06
 
 ## Regressão e verificações
 
 - `npm test`: 46 arquivos / 215 testes aprovados; log `vitest.log`.
 - `npm run test:safety`: 9/9 aprovados; log `safety.log`.
-- Suíte de transição inicialmente 9/9 (`test-deploy.log`); complemento final 11/11 com o objeto histórico artificialmente indisponível (`no-history.log`). Essa execução usa wrapper Git que recusa somente o acesso ao commit antigo; todas as outras operações usam Git real em fixtures. Não equivale a CI remoto executado.
+- Suíte de transição inicialmente 9/9 (`test-deploy.log`); complemento 11/11 com o objeto histórico artificialmente indisponível (`no-history.log`); versão final autocontida 12/12 (`test-deploy-final.log`), incluindo a prova de funcionamento da sentinela. Essa execução usa wrapper Git que recusa somente o acesso ao commit antigo; todas as outras operações usam Git real em fixtures. Não equivale a CI remoto executado.
 - Build e check-dist: aprovados, quatro assets presentes (`build.log`).
 - Docs, links, UI, estilos, módulos, sintaxe Bash e diff: exit 0, logs `*-final.log`. Dois YAMLs carregaram sintaticamente por PyYAML.
 - Links: zero erros; cinco avisos históricos de órfãos já aceitos, sem nova divergência.
@@ -51,3 +63,7 @@ Nenhum SSH, VPS, Cloudflare, Docker real, segredo, push ou deploy nesta execuç�
 ## Parecer
 
 Os seis cenários locais têm evidência aprovada. Ressalvas de abrangência e pré-publicação acima permanecem; não constituem autorização de deploy. A correção de transição local é revisável no working tree; o épico de organização anterior permanece concluído e separado.
+
+## Estado do vault
+
+O histórico observado inclui commits automáticos `vault backup` de RafaCartaxo durante a execução. QA/DEV não executaram commit/push nesta rodada; a automação pessoal do vault é externa a esta correção e não foi alterada. O repositório do produto permanece em c7b65c8 com mudanças locais não commitadas.

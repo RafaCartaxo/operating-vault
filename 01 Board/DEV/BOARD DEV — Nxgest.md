@@ -20,11 +20,12 @@ kanban-plugin: board
 
 ## 🧪 Aguardando QA
 
-- [ ] [[03 Trabalho/DEV/Nxgest/Fixes/NXG-031/00 README|NXG-031 — Transição segura do deploy]] — aguardando QA independente
 
 
 
 ## ✅ Concluído
+
+- [x] [[03 Trabalho/DEV/Nxgest/Fixes/NXG-031/00 README|NXG-031 — Transição segura do deploy]] — QA aprovado com ressalvas operacionais
 
 - [x] ✅ [[05 Arquivo/Nxgest/Melhorias/NXG-MEL-0008/DEV/NXG-MEL-0008/00 README|NXG-MEL-0008 — Consolidação de ambientes]] — QA aprovado com ressalvas
 - [x] ✅ [[05 Arquivo/Nxgest/Bugs/NXG-029/DEV/NXG-029/00 README|NXG-029 — Staging com espaços]] — QA aprovado

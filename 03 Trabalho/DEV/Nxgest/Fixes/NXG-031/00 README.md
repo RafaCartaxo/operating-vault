@@ -1,7 +1,7 @@
 ---
-status: validacao
+status: concluido
 tipo: bug
-etapa_atual: "QA · Validação"
+etapa_atual: "Concluído"
 demanda: "NXG-031"
 epico: ""
 commit: ""
@@ -56,3 +56,7 @@ DEV_READY_FOR_QA — revisão técnica concluída em fixtures; QA independente e
 - [x] Code review aprovado
 - [ ] Validação QA concluída
 - [x] Sincronização documental verificada: frontmatter, README, board, links, evidências, histórico e pendências
+
+## Parecer independente QA — 2026-11-10
+
+QA_APPROVED para correção local com ressalvas operacionais. Seis CTs aprovados; [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-031 Transicao segura do deploy e continuidade operacional/03 - Validação dev|Validação]] e [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-031 Transicao segura do deploy e continuidade operacional/06 - Evidências QA|Evidências]]. Sem commit/push/deploy. A recuperação do checkout não garante rollback do serviço.
