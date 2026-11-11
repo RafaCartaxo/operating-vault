@@ -2,22 +2,22 @@
 demanda: "[[01 - Bug]]"
 execucao: ""
 ambiente: dev
-versao: ""
+versao: "c7b65c8 + working tree reteste"
 status: execucao
 responsavel: "NX Gest · QA"
 resultado: aguardando
 # Pontos da etapa de validação; substitua pelo valor planejado para esta etapa.
 pontos: 0
 ct_resultados:
-  ct_001: "⏳ Aguardando"
-  ct_002: "⏳ Aguardando"
-  ct_003: "⏳ Aguardando"
-  ct_004: "⏳ Aguardando"
-  ct_005: "⏳ Aguardando"
-  ct_006: "⏳ Aguardando"
-  ct_007: "⏳ Aguardando"
-  ct_008: "⏳ Aguardando"
-data_inicio: ""
+  ct_001: "✅ Aprovado"
+  ct_002: "✅ Aprovado"
+  ct_003: "✅ Aprovado"
+  ct_004: "✅ Aprovado"
+  ct_005: "✅ Aprovado"
+  ct_006: "✅ Aprovado"
+  ct_007: "✅ Aprovado"
+  ct_008: "✅ Aprovado"
+data_inicio: 2026-11-11
 data_fim: ""
 ---
 
@@ -48,7 +48,7 @@ data_fim: ""
 ## Contexto
 
 - Ambiente: fixtures/dublês; isolamento e interceptação a confirmar antes de executar.
-- Versão: aguardando implementação; 8 CTs planejados, nenhum executado.
+- Versão: c7b65c8 + delta dos Fixes no working tree; 8 CTs aprovados no escopo sintético; sem execução operacional real.
 
 ---
 
@@ -86,14 +86,14 @@ dv.list([
 
 | CT | Resultado | Evidência | Observação | Defeito/Bug | Pontos entregues |
 |---|---|---|---|---|---:|
-| [[02 - Casos de teste#^ct-b01\|CT-B01]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_001]` |  |  |  | `= choice(this.ct_resultados.ct_001 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
-| [[02 - Casos de teste#^ct-b02\|CT-B02]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_002]` |  |  |  | `= choice(this.ct_resultados.ct_002 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
-| [[02 - Casos de teste#^ct-b03\|CT-B03]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_003]` |  |  |  | `= choice(this.ct_resultados.ct_003 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
-| [[02 - Casos de teste#^ct-b04\|CT-B04]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_004]` |  |  |  | `= choice(this.ct_resultados.ct_004 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
-| [[02 - Casos de teste#^ct-b05\|CT-B05]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_005]` |  |  |  | `= choice(this.ct_resultados.ct_005 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
-| [[02 - Casos de teste#^ct-b06\|CT-B06]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_006]` |  |  |  | `= choice(this.ct_resultados.ct_006 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
-| [[02 - Casos de teste#^ct-b07\|CT-B07]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_007]` |  |  |  | `= choice(this.ct_resultados.ct_007 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
-| [[02 - Casos de teste#^ct-b08\|CT-B08]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_008]` |  |  |  | `= choice(this.ct_resultados.ct_008 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
+| [[02 - Casos de teste#^ct-b01\|CT-B01]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_001]` | [[06 - Evidências QA#^ev-b01\|Evidência]] | Schema desconhecido/incompatível e ausência são recusados ou mantidos em NO-GO — case-06 e revisão preflight. | — | `= choice(this.ct_resultados.ct_001 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
+| [[02 - Casos de teste#^ct-b02\|CT-B02]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_002]` | [[06 - Evidências QA#^ev-b02\|Evidência]] | Schema estruturado contraditório com hash recalculado é recusado — case-06. | — | `= choice(this.ct_resultados.ct_002 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
+| [[02 - Casos de teste#^ct-b03\|CT-B03]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_003]` | [[06 - Evidências QA#^ev-b03\|Evidência]] | Comparação sintética detecta SHA/imagem divergentes e não libera produção — case-13; preflight real permanece NO-GO. | — | `= choice(this.ct_resultados.ct_003 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
+| [[02 - Casos de teste#^ct-b04\|CT-B04]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_004]` | [[06 - Evidências QA#^ev-b04\|Evidência]] | Montagem/runtime divergente e prova de configuração ausente bloqueiam; sem validação real — case-06 e revisão. | — | `= choice(this.ct_resultados.ct_004 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
+| [[02 - Casos de teste#^ct-b05\|CT-B05]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_005]` | [[06 - Evidências QA#^ev-b05\|Evidência]] | Health negativo/timeout e integridade não declarada falham; mesmo health positivo permanece NO-GO sem SHA efetivo/integridade verificáveis — case-07. | — | `= choice(this.ct_resultados.ct_005 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
+| [[02 - Casos de teste#^ct-b06\|CT-B06]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_006]` | [[06 - Evidências QA#^ev-b06\|Evidência]] | Revisão humana não substituída por fixture; guardas de subprocessos e isolamento verificados — resultados.json e runbooks. | — | `= choice(this.ct_resultados.ct_006 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
+| [[02 - Casos de teste#^ct-b07\|CT-B07]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_007]` | [[06 - Evidências QA#^ev-b07\|Evidência]] | Fonte real ausente leva a NO-GO, comparação sintética não é autoridade operacional — case-06 e case-13. | — | `= choice(this.ct_resultados.ct_007 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
+| [[02 - Casos de teste#^ct-b08\|CT-B08]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_008]` | [[06 - Evidências QA#^ev-b08\|Evidência]] | Bundle divergente é recusado por comparador sintético; retorno operacional mantém NO-GO — independente-3 e case-07. | — | `= choice(this.ct_resultados.ct_008 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
 
 > **Regra de esforço:** aprovado e falhou = 100% da parcela; em andamento = 25%; bloqueado = 50%; aguardando e não executado = 0%.
 
@@ -132,6 +132,8 @@ if (tabela) {
 
 ## Histórico de validação
 
+- 2026-11-11: reteste independente, 8/8 aprovados em escopo sintético. O desvio histórico do CLI Docker permanece registrado no pai; não foi apagado por esta rodada.
+
 Use esta seção somente quando houver reteste após correção:
 
 - **Rodada inicial:** registre o CT reprovado e o defeito aberto.
@@ -142,16 +144,16 @@ Use esta seção somente quando houver reteste após correção:
 
 ## Decisão
 
-**Resultado geral:** aguardando correção e reteste independente.
+**Resultado geral:** 8/8 CTs passaram em fixtures. Gate QA final aguarda sincronização das notas Fix DEV; sem go operacional. Ver [[06 - Evidências QA]].
 
 ---
 
 ## Checklist de encerramento QA
 
-- [ ] Todos os CTs executados ou com justificativa registrada.
-- [ ] Evidências e observações preenchidas quando necessário.
+- [x] Todos os CTs executados ou com justificativa registrada.
+- [x] Evidências e observações preenchidas quando necessário.
 - [ ] Bugs filhos vinculados na coluna **Defeito/Bug**.
-- [ ] Resultado geral definido.
+- [x] Resultado da rodada definido; gate final aguarda sincronização.
 - [ ] Status da validação e da demanda atualizados.
-- [ ] Próximo passo registrado.
+- [x] Próximo passo registrado: Coordenação solicitar sincronização DEV.
 - [ ] Sincronização documental verificada: frontmatter, README, board, links, evidências, histórico e pendências.

@@ -20,11 +20,11 @@ kanban-plugin: board
 
 ## 🧪 Aguardando QA
 
-- [ ] [[03 Trabalho/DEV/Nxgest/Fixes/NXG-032/00 README|NXG-032 — Consistencia semantica entre banco e anexos nao demonstrada]] — DEV_READY_FOR_QA
-- [ ] [[03 Trabalho/DEV/Nxgest/Fixes/NXG-033/00 README|NXG-033 — Declaracoes inconsistentes passam no preflight de rollback]] — DEV_READY_FOR_QA
-- [ ] [[03 Trabalho/DEV/Nxgest/Fixes/NXG-034/00 README|NXG-034 — Copia offsite legada sinaliza sucesso sem arquivos]] — DEV_READY_FOR_QA
+- [ ] [[03 Trabalho/DEV/Nxgest/Fixes/NXG-032/00 README|NXG-032 — Consistencia semantica entre banco e anexos nao demonstrada]] — QA aprovado em fixtures; sincronização do Fix pelo DEV pendente
+- [ ] [[03 Trabalho/DEV/Nxgest/Fixes/NXG-033/00 README|NXG-033 — Declaracoes inconsistentes passam no preflight de rollback]] — QA aprovado em fixtures; sincronização do Fix pelo DEV pendente
+- [ ] [[03 Trabalho/DEV/Nxgest/Fixes/NXG-034/00 README|NXG-034 — Copia offsite legada sinaliza sucesso sem arquivos]] — QA aprovado em fixtures; sincronização do Fix pelo DEV pendente
 
-- [ ] [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0009/00 README|NXG-MEL-0009 — Backup recuperável e rollback]] — DEV_READY_FOR_QA, validação independente pendente
+- [ ] [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0009/00 README|NXG-MEL-0009 — Backup recuperável e rollback]] — QA_REJECTED/no-go; CT-011/013 bloqueados, NXG-035 em triagem
 
 
 

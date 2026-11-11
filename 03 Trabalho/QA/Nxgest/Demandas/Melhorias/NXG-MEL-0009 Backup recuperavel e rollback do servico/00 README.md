@@ -90,3 +90,11 @@ QA_REJECTED: 8 CTs aprovados localmente, 3 falharam e 3 bloqueados. Consultar [[
 ## Retrabalho preparado — 2026-11-11
 
 NXG-032/033/034: QA_READY_FOR_DEV, 4 critérios e 8 CTs por pacote; Coordenação encaminha. O QA_REJECTED da demanda pai permanece vigente e a violação anterior de isolamento não é apagada por testes futuros.
+
+## Reteste QA — 2026-11-11
+
+Filhos 032/033/034: 24 CTs passaram em fixtures, com sincronização dos Fixes DEV pendente; pai permanece QA_REJECTED/no-go, 12 CTs aprovados e CT-011/013 bloqueados. NXG-035 em triagem; [[08 - Evidências reteste QA]].
+
+## Preparação NXG-035 — 2026-11-11
+
+Gate QA_READY_FOR_DEV, cinco critérios e sete CTs. Coordenação encaminha ao DEV; MEL-0009 continua QA_REJECTED/NO-GO.

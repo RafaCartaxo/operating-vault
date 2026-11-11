@@ -144,3 +144,11 @@ QA_REJECTED: CT-005/009/012 falharam; CT-003/011/013 bloqueados. Consultar [[04 
 ## Preparação dos defeitos filhos — 2026-11-11
 
 NXG-032, NXG-033 e NXG-034 têm gate QA_READY_FOR_DEV com quatro critérios e oito CTs planejados cada. A Coordenação fará o encaminhamento; nenhum CT de correção foi executado. O parecer da rodada pai permanece QA_REJECTED até reteste independente, incluindo CT-003/011 e decisão sobre o histórico de CT-013.
+
+## Reteste — 2026-11-11
+
+Filhos NXG-032/033/034: 24 CTs passaram no escopo sintético; gates finais aguardam sincronização dos Fixes DEV. CT-003/005/009/012 retestados localmente; CT-011/013 permanecem bloqueados. NXG-035 (suíte de correções ausente dos gates CI/CD) registrado em triagem. QA_REJECTED/no-go permanece; [[08 - Evidências reteste QA]].
+
+## Gate do defeito NXG-035 — 2026-11-11
+
+NXG-035 preparado com cinco critérios e sete CTs; QA_READY_FOR_DEV para encaminhamento pela Coordenação. Nenhum teste de correção ou workflow real executado nesta triagem. O pai permanece QA_REJECTED/NO-GO; CT-011 e CT-013 continuam bloqueados, o histórico anterior não é apagado.

@@ -1,18 +1,20 @@
 # 04 - Code review (NXG-034 — Copia offsite legada sinaliza sucesso sem arquivos)
 
 > [!info]- Navegação QA/DEV
-> **Bug QA:** [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-034 Copia offsite legada sinaliza sucesso sem arquivos/01 - Bug|Bug e critérios]]  
-> **Casos QA:** [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-034 Copia offsite legada sinaliza sucesso sem arquivos/02 - Casos de teste|8 CTs]]  
-> **Gate QA:** [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-034 Copia offsite legada sinaliza sucesso sem arquivos/05 - Gate de integridade QA|QA_READY_FOR_DEV]]  
+> **Bug QA:** [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-034 Copia offsite legada sinaliza sucesso sem arquivos/01 - Bug|Bug e critérios]]<br>
+> **Casos QA:** [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-034 Copia offsite legada sinaliza sucesso sem arquivos/02 - Casos de teste|8 CTs]]<br>
+> **Gate QA:** [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-034 Copia offsite legada sinaliza sucesso sem arquivos/05 - Gate de integridade QA|QA_READY_FOR_DEV]]<br>
+> **Reteste:** [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-034 Copia offsite legada sinaliza sucesso sem arquivos/06 - Evidências QA|Evidências do reteste QA]] · [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-034 Copia offsite legada sinaliza sucesso sem arquivos/03 - Validação dev|Validação QA]]<br>
 > **Fix:** [[00 README|README]] · [[01 - Análise|Análise]] · [[02 - Plano de correção|Plano]] · [[03 - Implementação|Implementação]] · [[04 - Code review|Revisão]]
 
-**Estado:** revisão técnica local; aguardando QA independente.
+**Estado:** revisão técnica local concluída; reteste QA sintético registrado com ressalvas, gate final pendente.
 
 ## Checklist
 
 - [x] Escopo, gate QA e regressões conferidos.
 - [x] Isolamento e limites documentados; nenhum recurso real acionado nesta rodada.
-- [ ] CTs funcionais e aprovação QA ainda pendentes.
+- [x] QA registrou 8/8 CTs aprovados apenas no escopo sintético, com ressalvas: [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-034 Copia offsite legada sinaliza sucesso sem arquivos/06 - Evidências QA|Evidências do reteste QA]].
+- [ ] Gate final e decisão QA pendentes.
 
 ## Achados
 
@@ -20,4 +22,4 @@ Nenhuma conexão ou transferência real foi feita; autenticação de origem, rec
 
 ## Decisão
 
-Entregar para revisão QA como `DEV_READY_FOR_QA`, sem go operacional, aprovação funcional ou fechamento.
+Coordenação pode encaminhar a finalização ao QA; sem gate final, go operacional ou fechamento. O pai segue QA_REJECTED/no-go, CT-011 e CT-013 bloqueados e [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-035 Suite de correcoes ausente dos gates automatizados/01 - Bug|NXG-035]] em triagem. O desvio histórico do CLI Docker permanece registrado.

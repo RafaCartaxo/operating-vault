@@ -1,8 +1,8 @@
 ---
 prioridade: alta
-status: execucao
+status: validacao
 tipo: bug
-etapa_atual: "DEV · Análise técnica"
+etapa_atual: "QA · Validação"
 modulo: infra
 plano: ""
 execucao: ""
@@ -115,3 +115,7 @@ Produzir e validar ensaio sintético que confronte referências de banco e anexo
 ## Histórico de preparação
 
 2026-11-11: critérios e CTs detalhados; QA_READY_FOR_DEV após gate de integridade. Coordenação decide encaminhamento; nenhum CT de correção foi executado.
+
+## Reteste QA — 2026-11-11
+
+8/8 CTs passaram em escopo sintético; gate final aguarda sincronização dos Fixes DEV; [[03 - Validação dev]] e [[06 - Evidências QA]]. Não equivale a go de produção.

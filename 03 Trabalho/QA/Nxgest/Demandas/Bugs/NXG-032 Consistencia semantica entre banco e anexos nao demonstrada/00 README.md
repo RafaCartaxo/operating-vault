@@ -1,7 +1,7 @@
 ---
-status: execucao
+status: validacao
 tipo: bug
-etapa_atual: "DEV · Análise técnica"
+etapa_atual: "QA · Validação"
 projeto: nxgest
 pai: NXG-MEL-0009
 ---
@@ -69,8 +69,12 @@ Cada CT usa um callout recolhível com identificador (`^ct-b01`). A nota de vali
 
 ## Encaminhamento
 
-Achado derivado de [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0009 Backup recuperavel e rollback do servico/04 - Validação dev|validação QA MEL-0009]]. QA_READY_FOR_DEV após auditoria de integridade; Coordenação recebe o pacote e define o encaminhamento. Sem acesso a recursos reais.
+Achado derivado de [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0009 Backup recuperavel e rollback do servico/04 - Validação dev|validação QA MEL-0009]]. Gate histórico QA_READY_FOR_DEV foi seguido de reteste. Coordenação recebe resultado; sincronização dos Fixes DEV permanece pendente. Sem acesso a recursos reais.
 
 ## Gate de integridade
 
 2026-11-11: critérios, matriz, CTs, validação e links conferidos; ver [[05 - Gate de integridade QA]]. Nenhum CT da correção foi executado.
+
+## Reteste QA — 2026-11-11
+
+8/8 CTs passaram em fixtures; gate QA final aguarda sincronização dos Fixes DEV; [[03 - Validação dev]] e [[06 - Evidências QA]]. Pai mantém QA_REJECTED/no-go devido a CTs bloqueados e NXG-035.
