@@ -140,3 +140,7 @@ Critérios e 14 CTs, matriz de falhas e evidências para implementação local p
 ## Rodada QA — 2026-11-11
 
 QA_REJECTED: CT-005/009/012 falharam; CT-003/011/013 bloqueados. Consultar [[04 - Validação dev]] e [[07 - Evidências QA]]. Defeitos NXG-032/033/034; Coordenação encaminha. Nenhum recurso real foi tocado nesta rodada QA; o desvio anterior do DEV permanece registrado.
+
+## Preparação dos defeitos filhos — 2026-11-11
+
+NXG-032, NXG-033 e NXG-034 têm gate QA_READY_FOR_DEV com quatro critérios e oito CTs planejados cada. A Coordenação fará o encaminhamento; nenhum CT de correção foi executado. O parecer da rodada pai permanece QA_REJECTED até reteste independente, incluindo CT-003/011 e decisão sobre o histórico de CT-013.

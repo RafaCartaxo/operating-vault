@@ -10,6 +10,13 @@ resultado: aguardando
 pontos: 0
 ct_resultados:
   ct_001: "⏳ Aguardando"
+  ct_002: "⏳ Aguardando"
+  ct_003: "⏳ Aguardando"
+  ct_004: "⏳ Aguardando"
+  ct_005: "⏳ Aguardando"
+  ct_006: "⏳ Aguardando"
+  ct_007: "⏳ Aguardando"
+  ct_008: "⏳ Aguardando"
 data_inicio: ""
 data_fim: ""
 ---
@@ -23,7 +30,7 @@ data_fim: ""
 > **Casos de teste:** [[02 - Casos de teste]]  
 > **Validação:** [[03 - Validação dev]]  
 > **Preparação Qase:** [[04 - Preparação Qase]]  
-> **Execução DEV:** [[03 Trabalho/DEV/Nxgest/Fixes/NXG-033/00 README|Execução NXG-033]]
+> **Execução DEV:** pendente de encaminhamento da Coordenação.
 
 > [!settings]- Controle da validação
 > **Status:** `INPUT[inlineSelect(option(execucao),option(concluido)):status]`  
@@ -40,8 +47,8 @@ data_fim: ""
 
 ## Contexto
 
-- Ambiente: fixtures/dublês locais; correção ainda não implementada.
-- Versão: base c7b65c8 + delta MEL-0009.
+- Ambiente: fixtures/dublês; isolamento e interceptação a confirmar antes de executar.
+- Versão: aguardando implementação; 8 CTs planejados, nenhum executado.
 
 ---
 
@@ -80,6 +87,13 @@ dv.list([
 | CT | Resultado | Evidência | Observação | Defeito/Bug | Pontos entregues |
 |---|---|---|---|---|---:|
 | [[02 - Casos de teste#^ct-b01\|CT-B01]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_001]` |  |  |  | `= choice(this.ct_resultados.ct_001 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
+| [[02 - Casos de teste#^ct-b02\|CT-B02]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_002]` |  |  |  | `= choice(this.ct_resultados.ct_002 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
+| [[02 - Casos de teste#^ct-b03\|CT-B03]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_003]` |  |  |  | `= choice(this.ct_resultados.ct_003 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
+| [[02 - Casos de teste#^ct-b04\|CT-B04]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_004]` |  |  |  | `= choice(this.ct_resultados.ct_004 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
+| [[02 - Casos de teste#^ct-b05\|CT-B05]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_005]` |  |  |  | `= choice(this.ct_resultados.ct_005 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
+| [[02 - Casos de teste#^ct-b06\|CT-B06]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_006]` |  |  |  | `= choice(this.ct_resultados.ct_006 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
+| [[02 - Casos de teste#^ct-b07\|CT-B07]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_007]` |  |  |  | `= choice(this.ct_resultados.ct_007 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
+| [[02 - Casos de teste#^ct-b08\|CT-B08]] | `INPUT[inlineSelect(option(⏳ Aguardando),option(🔵 Em andamento),option(✅ Aprovado),option(❌ Falhou),option(🚫 Bloqueado),option(⚪ Não executado)):ct_resultados.ct_008]` |  |  |  | `= choice(this.ct_resultados.ct_008 = "✅ Aprovado", round(number(this.pontos) / length(this.ct_resultados), 2), 0)` |
 
 > **Regra de esforço:** aprovado e falhou = 100% da parcela; em andamento = 25%; bloqueado = 50%; aguardando e não executado = 0%.
 

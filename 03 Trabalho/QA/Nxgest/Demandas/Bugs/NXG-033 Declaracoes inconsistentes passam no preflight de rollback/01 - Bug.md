@@ -1,8 +1,8 @@
 ---
 prioridade: alta
-status: analise
+status: execucao
 tipo: bug
-etapa_atual: "QA · Análise da demanda"
+etapa_atual: "DEV · Análise técnica"
 modulo: infra
 plano: ""
 execucao: ""
@@ -31,7 +31,7 @@ pontos_alocados: 3
 > **Prioridade:** `INPUT[inlineSelect(option(baixa),option(media),option(alta)):prioridade]`  
 > **Ambiente:** `INPUT[inlineSelect(option(dev),option(hml),option(prod)):ambiente]`  
 > **Origem:** `INPUT[inlineSelect(option(repo),option(observado),option(conversa),option(validação)):origem]`<br>
-> **Projeto:** preencher `projeto` no frontmatter antes de roteiar o bug.
+> **Projeto:** nxgest.
 
 
 ---
@@ -39,9 +39,9 @@ pontos_alocados: 3
 ## Capacidade e esforço
 
 > [!tip]- Capacidade do ciclo
-> Preencha apenas `pontos_alocados` no frontmatter com a capacidade reservada para este bug.
+> Capacidade de planejamento: 3 pontos; a execução poderá estimar o esforço.
 > 
-> Exemplo: se houver 50 pontos disponíveis no ciclo, use `pontos_alocados: 50`.
+> Estimativa não equivale a trabalho executado.
 
 ```dataviewjs
 const projeto = String(dv.current().projeto || "").toUpperCase();
@@ -89,18 +89,20 @@ Definir e tornar verificável o gate de evidência externa e revisão para compa
 
 ## Critérios de aceite
 
-- C1. Definir e tornar verificável o gate de evidência externa e revisão para compatibilidade, configuração/mounts e associação SHA-imagem; condição ausente ou contraditória deve parar ou permanecer explicitamente bloqueada sem afirmar comprovação. Não presumir que uma declaração ou hash prove compatibilidade real. ^c1
-- C2. Não executar ou alegar teste em infraestrutura real; preservar NXG-031 e os dados de teste anteriores. ^c2
+- C1. A evidência de compatibilidade e configuração tem formato verificável, identifica responsável e objeto revisado; ausência, estado incompatível ou contradição explícita bloqueiam a promoção ou mantêm no-go. ^c1
+- C2. O vínculo entre SHA anterior e imagem preservada é verificável por evidência sintética associada; ausente, divergente ou não verificável impede declarar o rollback pronto. ^c2
+- C3. O retorno distingue health, integridade e SHA efetivamente demonstrados de declarações; dados/health inválidos ou SHA não comprovado impedem declarar sucesso. ^c3
+- C4. Nenhum teste usa CLI/daemon Docker, rede, serviços, dados reais ou segredos; atestação humana e fixtures não são prova de compatibilidade real. ^c4
 
 ---
 
 ## Checklist de entrega ao DEV
 
-- [ ] Sintoma, ambiente e passos de reprodução estão claros.
-- [ ] Resultado esperado está definido.
-- [ ] Critérios de aceite são objetivos e testáveis.
-- [ ] Casos de teste estão vinculados.
-- [ ] `pontos_alocados` foi preenchido.
+- [x] Sintoma, ambiente, passos e resultado esperado definidos.
+- [x] Critérios observáveis e casos de teste vinculados.
+- [x] Cobertura, validação e evidências reservadas.
+- [x] Pontos de planejamento e limites de isolamento registrados.
+- [x] Gate de integridade conferido; Coordenação fará o encaminhamento.
 
 ---
 
@@ -109,3 +111,7 @@ Definir e tornar verificável o gate de evidência externa e revisão para compa
 - Ambiente: Linux local, fixtures e dublês exclusivamente; sem Docker daemon, SSH/VPS ou segredos.
 - Versão: produto HEAD c7b65c8 + working tree MEL-0009.
 - Próxima ação: Coordenação analisar e encaminhar DEV; QA não faz despacho. Não equivale a aprovação de teste de correção.
+
+## Histórico de preparação
+
+2026-11-11: critérios e CTs detalhados; QA_READY_FOR_DEV após gate de integridade. Coordenação decide encaminhamento; nenhum CT de correção foi executado.

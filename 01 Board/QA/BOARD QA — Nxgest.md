@@ -7,9 +7,9 @@ kanban-plugin: board
 ## 🔍 Análise da demanda
 
 - [ ] [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0009 Backup recuperavel e rollback do servico/00 README|NXG-MEL-0009 — Backup e rollback]] — QA_REJECTED; Coordenação encaminha
-- [ ] [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-032 Consistencia semantica entre banco e anexos nao demonstrada/00 README|NXG-032 — Consistencia semantica entre banco e anexos nao demonstrada]] — defeito filho em análise
-- [ ] [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-033 Declaracoes inconsistentes passam no preflight de rollback/00 README|NXG-033 — Declaracoes inconsistentes passam no preflight de rollback]] — defeito filho em análise
-- [ ] [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-034 Copia offsite legada sinaliza sucesso sem arquivos/00 README|NXG-034 — Copia offsite legada sinaliza sucesso sem arquivos]] — defeito filho em análise
+- [ ] [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-032 Consistencia semantica entre banco e anexos nao demonstrada/00 README|NXG-032 — Consistencia semantica entre banco e anexos nao demonstrada]] — QA_READY_FOR_DEV; Coordenação encaminha
+- [ ] [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-033 Declaracoes inconsistentes passam no preflight de rollback/00 README|NXG-033 — Declaracoes inconsistentes passam no preflight de rollback]] — QA_READY_FOR_DEV; Coordenação encaminha
+- [ ] [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-034 Copia offsite legada sinaliza sucesso sem arquivos/00 README|NXG-034 — Copia offsite legada sinaliza sucesso sem arquivos]] — QA_READY_FOR_DEV; Coordenação encaminha
 
 - [ ] 🟡 [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-001 Excluir gasto/00 README|NXG-001 — Excluir gasto]]
 - [ ] 🟡 [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-002 Excluir cliente/00 README|NXG-002 — Excluir cliente]]

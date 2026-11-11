@@ -86,3 +86,7 @@ NXG-MEL-0009/
 ## Validação independente — 2026-11-11
 
 QA_REJECTED: 8 CTs aprovados localmente, 3 falharam e 3 bloqueados. Consultar [[04 - Validação dev]] e [[07 - Evidências QA]]. Defeitos filhos NXG-032, NXG-033 e NXG-034 aguardam Coordenação; teste real e publicação permanecem fora do escopo.
+
+## Retrabalho preparado — 2026-11-11
+
+NXG-032/033/034: QA_READY_FOR_DEV, 4 critérios e 8 CTs por pacote; Coordenação encaminha. O QA_REJECTED da demanda pai permanece vigente e a violação anterior de isolamento não é apagada por testes futuros.

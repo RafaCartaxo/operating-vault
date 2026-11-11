@@ -1,7 +1,7 @@
 ---
-status: analise
+status: execucao
 tipo: bug
-etapa_atual: "QA · Análise da demanda"
+etapa_atual: "DEV · Análise técnica"
 projeto: nxgest
 pai: NXG-MEL-0009
 ---
@@ -69,4 +69,8 @@ Cada CT usa um callout recolhível com identificador (`^ct-b01`). A nota de vali
 
 ## Encaminhamento
 
-Achado derivado de [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0009 Backup recuperavel e rollback do servico/04 - Validação dev|validação QA MEL-0009]]. Não é QA_READY_FOR_DEV: Coordenação recebe o parecer e define encaminhamento. Sem acesso a recursos reais.
+Achado derivado de [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0009 Backup recuperavel e rollback do servico/04 - Validação dev|validação QA MEL-0009]]. QA_READY_FOR_DEV após auditoria de integridade; Coordenação recebe o pacote e define o encaminhamento. Sem acesso a recursos reais.
+
+## Gate de integridade
+
+2026-11-11: critérios, matriz, CTs, validação e links conferidos; ver [[05 - Gate de integridade QA]]. Nenhum CT da correção foi executado.

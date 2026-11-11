@@ -45,8 +45,78 @@ Tags da nota: manter somente `qa` e `qase`. Tags enviadas ao Qase: usar o ID da 
 
 ## Casos preparados
 
-CT-B01: [[02 - Casos de teste#^ct-b01|fonte canônica]]. Qase externo não autorizado; nenhum envio.
+### CT-B01 — Referência com anexo correspondente
+
+- **Origem:** [[02 - Casos de teste#^ct-b01|CT-B01]].
+- **Pré-condições:** Banco e tar sintéticos com ID de conjunto igual e referência para arquivo existente.
+- **Ação:** executar ensaio em destino exclusivo.
+- **Resultado:** comparação de referências e conteúdo passa e evidencia identificador do conjunto.
+- **Pós-condição:** fixtures removidas; infraestrutura real intacta.
+- **Tipo/camada/automação:** regressão / infra / ambos. Não enviado.
+
+### CT-B02 — Referência sem anexo
+
+- **Origem:** [[02 - Casos de teste#^ct-b02|CT-B02]].
+- **Pré-condições:** Banco sintético referencia arquivo que não existe no tar, com hashes individuais válidos.
+- **Ação:** comparar referências restauradas.
+- **Resultado:** o ensaio identifica a referência ausente e recusa resultado consistente.
+- **Pós-condição:** fixtures removidas; infraestrutura real intacta.
+- **Tipo/camada/automação:** regressão / infra / ambos. Não enviado.
+
+### CT-B03 — Nenhuma referência legítima versus erro
+
+- **Origem:** [[02 - Casos de teste#^ct-b03|CT-B03]].
+- **Pré-condições:** Uma fixture demonstra lista de referências vazia e anexos vazios; outra simula falha de leitura.
+- **Ação:** validar ambas as condições.
+- **Resultado:** zero legítimo é identificado como tal e erro não é tratado como vazio.
+- **Pós-condição:** fixtures removidas; infraestrutura real intacta.
+- **Tipo/camada/automação:** regressão / infra / ambos. Não enviado.
+
+### CT-B04 — Falha de escrita ou cópia
+
+- **Origem:** [[02 - Casos de teste#^ct-b04|CT-B04]].
+- **Pré-condições:** Conjunto anterior íntegro com hashes conhecidos; escrita e cópia em dublês podem falhar individualmente.
+- **Ação:** injetar cada erro durante geração ou transporte sintético.
+- **Resultado:** retorna falha sem promover conjunto parcial nem modificar arquivos e hashes anteriores.
+- **Pós-condição:** fixtures removidas; infraestrutura real intacta.
+- **Tipo/camada/automação:** regressão / infra / ambos. Não enviado.
+
+### CT-B05 — Interrupção e retomada
+
+- **Origem:** [[02 - Casos de teste#^ct-b05|CT-B05]].
+- **Pré-condições:** Conjunto anterior íntegro e saída parcial em fixture exclusiva.
+- **Ação:** interromper antes da conclusão e repetir.
+- **Resultado:** parcial não é marcado completo; anterior permanece byte a byte íntegro.
+- **Pós-condição:** fixtures removidas; infraestrutura real intacta.
+- **Tipo/camada/automação:** regressão / infra / ambos. Não enviado.
+
+### CT-B06 — Limites e isolamento
+
+- **Origem:** [[02 - Casos de teste#^ct-b06|CT-B06]].
+- **Pré-condições:** Interceptadores Docker/curl/ssh/scp e arquivos sintéticos em destino exclusivo.
+- **Ação:** verificar guardas antes de cada comando e executar cenários.
+- **Resultado:** nenhum binário ou serviço real é acionado e relatório distingue associação local de consistência temporal/restore real.
+- **Pós-condição:** fixtures removidas; infraestrutura real intacta.
+- **Tipo/camada/automação:** regressão / infra / ambos. Não enviado.
+
+### CT-B07 — Caminhos inseguros e tamanho divergente
+
+- **Origem:** [[02 - Casos de teste#^ct-b07|CT-B07]].
+- **Pré-condições:** Fixtures de referências relativas, caminho absoluto, travessia, link e tamanho divergente.
+- **Ação:** reconciliar referências e anexos extraídos.
+- **Resultado:** caminhos inseguros, links ou tamanho divergente são recusados; nenhum arquivo fora da fixture é lido.
+- **Pós-condição:** fixtures removidas; infraestrutura real intacta.
+- **Tipo/camada/automação:** regressão / infra / ambos. Não enviado.
+
+### CT-B08 — Arquivos órfãos são relatados
+
+- **Origem:** [[02 - Casos de teste#^ct-b08|CT-B08]].
+- **Pré-condições:** Fixtures com referências íntegras e arquivo não referenciado.
+- **Ação:** conciliar o conjunto sintético.
+- **Resultado:** referências válidas são verificadas e órfãos são relatados sem presumir automaticamente que sejam perda ou rejeitar o conjunto por sua mera existência.
+- **Pós-condição:** fixtures removidas; infraestrutura real intacta.
+- **Tipo/camada/automação:** regressão / infra / ambos. Não enviado.
 
 ## Checklist de envio
 
-Pendente de escopo e configuração próprios.
+Qase externo fora do escopo; nenhum envio.
