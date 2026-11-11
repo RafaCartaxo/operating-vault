@@ -16,9 +16,12 @@ kanban-plugin: board
 
 ## 🧪 Casos de teste
 
+- [ ] [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0009 Backup recuperavel e rollback do servico/00 README|NXG-MEL-0009 — Backup recuperável e rollback do serviço]] — QA_READY_FOR_DEV; Coordenação encaminha
+
 
 
 ## 🧪 Validação
+
 
 
 

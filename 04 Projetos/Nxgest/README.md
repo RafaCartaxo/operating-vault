@@ -16,3 +16,7 @@ Os IDs históricos `NXG-NNN` e `MEL-NNNN` são preservados.
 ## Correção pré-publicação
 
 - [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-031 Transicao segura do deploy e continuidade operacional/00 README|NXG-031 — Transição segura do deploy e continuidade operacional]] — seis CTs aprovados, ressalvas operacionais registradas; sem commit/push/deploy; não reabre o épico encerrado.
+
+## Preparação de backup e rollback
+
+- [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0009 Backup recuperavel e rollback do servico/00 README|NXG-MEL-0009 — Backup recuperável e rollback do serviço]] — QA_READY_FOR_DEV, implementação local autorizada; encaminhamento DEV pela Coordenação; testes reais pendentes.
