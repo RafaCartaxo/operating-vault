@@ -68,3 +68,7 @@ QA_REJECTED: a política controla imagem/major antes do runner na fronteira acor
 ## Reteste cleanup — 2026-11-11
 
 Achado anterior resolvido no snapshot: sentinela e política sintéticas preservadas em bytes, estrutura e modos; 4/4 e 11/11 testes dublados sob guardas. Apto para Coordenação apresentar pedido único condicionado de ensaio PG sintético; autorização deve abranger explicitamente recursos Docker locais fora do workspace e cleanup próprio. CT-N04 real permanece bloqueado; origem nova e gates operacionais ainda pendentes. Detalhes: `.maestro/nxgest-team/CT011-NOVA-BASELINE-PARECER-QA.md`.
+
+## Ensaio PG real sintético autorizado — 2026-11-11
+
+Uma execução do harness reportou `synthetic-recovery-verified`, uma referência e nenhum órfão; cleanup confirmado posteriormente por ausência da label e comparação dos IDs preexistentes. QA não obteve medição separada de conteúdo/isolamento/negativos antes da limpeza da fixture: CT-N04 real permanece pendente de aceite independente pleno. `operationalReady:false`, fonte de build e gates operacionais continuam NO-GO. Evidência: `.maestro/nxgest-team/CT011-ENSAIO-PG-RESULTADO-QA.md`.

@@ -17,3 +17,5 @@ DEV_READY_FOR_QA para revisão local: harness PostgreSQL opt-in implementado e t
 Após QA_REJECTED, política controlada no workspace associa ID PG16 aprovado antes de criação/início; reteste DEV 17/17 sob dublês. DEV_READY_FOR_QA para reteste local, sem aprovação funcional; fonte real de build e CT-N04 permanecem bloqueados. Ver resultado consolidado `.maestro/nxgest-team/CT011-NOVA-BASELINE-DEV-RESULTADO.md`.
 
 Após QA_REJECTED reteste 2, limpeza da fixture corrigida e sentinela/política sintéticas preservadas em snapshot isolado; DEV_READY_FOR_QA para novo reteste independente.
+
+- Complemento N04: observador independente opcional preparado antes da limpeza; DEV_READY_FOR_QA para revisão. Execução real anterior positiva permanece com ressalva de independência e não valida alteração posterior.

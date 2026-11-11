@@ -23,3 +23,5 @@ Revisão local identificou bloqueios concretos; manter implementação em andame
 - Política movida da dependência administrativa para diretório controlado no workspace; loader com hash/decisão separados, dono, permissões e symlinks testado em fixtures. O usuário/checkout continuam fronteira de confiança; hash não autentica origem. 17/17 sob guardas.
 
 - Corrigida remoção recursiva da `.maestro` compartilhada. Criação exclusiva, identidade, colisão, falhas e preservação de sentinela/política foram exercitadas no snapshot sob guardas. Conferência e remoção não são atômicas contra substituição concorrente; não foi executado contra o checkout real.
+
+- Observador é código confiável, não sandbox; timeout não cancela subprocessos nem bloqueio síncrono. Payload não inclui env/senhas, mas workdir contém env sintético. Ensaio real anterior não valida o novo hash; QA deve revisar.
