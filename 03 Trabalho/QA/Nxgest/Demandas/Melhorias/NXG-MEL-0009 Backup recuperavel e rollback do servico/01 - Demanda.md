@@ -36,7 +36,7 @@ pontos_alocados: 21
 
 
 > [!info] Status atual
-> **Próximo passo:** Coordenação encaminha o pacote ao DEV após o gate de integridade.
+> **Próximo passo:** Coordenação recebe QA_REJECTED e encaminha os defeitos filhos ao DEV.
 
 ---
 
@@ -136,3 +136,7 @@ Critérios e 14 CTs, matriz de falhas e evidências para implementação local p
 ## Histórico e handoff
 
 2026-11-10: QA definiu C1–C8 e CT-001–014, validou integridade e emitiu QA_READY_FOR_DEV. Coordenação encaminha ao DEV; nenhuma implementação ou teste funcional foi aprovado.
+
+## Rodada QA — 2026-11-11
+
+QA_REJECTED: CT-005/009/012 falharam; CT-003/011/013 bloqueados. Consultar [[04 - Validação dev]] e [[07 - Evidências QA]]. Defeitos NXG-032/033/034; Coordenação encaminha. Nenhum recurso real foi tocado nesta rodada QA; o desvio anterior do DEV permanece registrado.

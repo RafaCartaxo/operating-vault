@@ -27,7 +27,7 @@ projeto: nxgest
 
 - **Responsável pela execução:** QA/`qa-first-delivery`
 - **Data da última execução:** 2026-11-10
-- **Resultado do gate:** PACOTE QA APROVADO NO GATE DE INTEGRIDADE — QA_READY_FOR_DEV
+- **Resultado do gate:** QA_REJECTED na rodada de validação funcional; integridade inicial do pacote segue aprovada
 - **Evidência detalhada:** [[06 - Gate de integridade QA]].
 
 O handoff para DEV só é permitido com resultado `PACOTE QA APROVADO NO GATE DE INTEGRIDADE`.
@@ -82,3 +82,7 @@ NXG-MEL-0009/
 ## Histórico e próximo responsável
 
 2026-11-10: pacote de QA independente criado a partir dos templates oficiais após proposta da Coordenação; integridade, rastreabilidade e sincronização conferidas; QA_READY_FOR_DEV. Não há CT executado. Próximo responsável pelo encaminhamento: Coordenação; DEV recebe somente após gate e despacho da Coordenação. Sem commit, push, deploy, SSH, segredos ou recursos reais.
+
+## Validação independente — 2026-11-11
+
+QA_REJECTED: 8 CTs aprovados localmente, 3 falharam e 3 bloqueados. Consultar [[04 - Validação dev]] e [[07 - Evidências QA]]. Defeitos filhos NXG-032, NXG-033 e NXG-034 aguardam Coordenação; teste real e publicação permanecem fora do escopo.

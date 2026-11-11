@@ -19,4 +19,4 @@ Os IDs históricos `NXG-NNN` e `MEL-NNNN` são preservados.
 
 ## Preparação de backup e rollback
 
-- [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0009 Backup recuperavel e rollback do servico/00 README|NXG-MEL-0009 — Backup recuperável e rollback do serviço]] — QA_READY_FOR_DEV, implementação local autorizada; encaminhamento DEV pela Coordenação; testes reais pendentes.
+- [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0009 Backup recuperavel e rollback do servico/00 README|NXG-MEL-0009 — Backup recuperável e rollback do serviço]] — QA_REJECTED: três defeitos filhos e três CTs bloqueados; Coordenação encaminha correções, testes reais pendentes.
