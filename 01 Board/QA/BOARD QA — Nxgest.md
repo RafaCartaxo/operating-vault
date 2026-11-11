@@ -7,7 +7,7 @@ kanban-plugin: board
 ## 🔍 Análise da demanda
 
 
-- [ ] [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0009 Backup recuperavel e rollback do servico/00 README|NXG-MEL-0009 — Backup e rollback]] — QA_REJECTED; Coordenação encaminha
+- [ ] [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0009 Backup recuperavel e rollback do servico/00 README|NXG-MEL-0009 — Backup e rollback]] — QA_REJECTED/NO-GO; adendo nova baseline QA_READY_FOR_DEV local
 
 - [ ] 🟡 [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-001 Excluir gasto/00 README|NXG-001 — Excluir gasto]]
 - [ ] 🟡 [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-002 Excluir cliente/00 README|NXG-002 — Excluir cliente]]

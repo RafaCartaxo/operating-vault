@@ -160,3 +160,7 @@ Os filhos NXG-032/033/034 receberam QA_APPROVED com ressalvas restritas a fixtur
 ## Atualização NXG-035 — 2026-11-11
 
 NXG-035 recebeu QA_APPROVED com ressalvas após 7/7 CTs sintéticos; [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-035 Suite de correcoes ausente dos gates automatizados/06 - Evidências QA|evidências]]. GitHub Actions real e disponibilidade do runner não foram comprovados. MEL-0009 mantém QA_REJECTED/NO-GO e CT-011 bloqueado; CT-013 é aprovado somente na rodada atual, sem apagar a não conformidade histórica.
+
+## Adendo de escopo — nova baseline futura, 2026-11-11
+
+O usuário considera descartáveis os dados atuais e prioriza recuperação futura. [[09 - Nova baseline QA]] define C1–C5, dez CTs e **QA_READY_FOR_DEV** para implementação local delimitada após comparação da proposta DEV. O legado E1 continua não comprovado; CT-011 e este pai permanecem QA_REJECTED/NO-GO. Ensaio PostgreSQL real isolado, descarte e publicação dependem de autorização específica.
