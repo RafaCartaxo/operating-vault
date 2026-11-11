@@ -36,7 +36,7 @@ Health/declaração são tratados, porém SHA efetivo e integridade restaurada n
 
 ## CT-013
 
-Rodada atual isolada passou; histórico de CLI Docker real anterior permanece não conforme, aguardando decisão de Coordenação/usuário.
+Rodada atual isolada aprovada por QA no escopo local, conforme decisão da Coordenação; histórico de CLI Docker real anterior permanece não conforme, sem validação retroativa.
 
 ^ev-013
 
@@ -44,4 +44,8 @@ Rodada atual isolada passou; histórico de CLI Docker real anterior permanece n�
 
 NXG-035: `corrections.check.mjs`, que contém os dois testes de cópia/vínculo, não está incluído em `test:backup`, `test:deploy` ou nos workflows CI/CD. `npm test` usa o padrão Vitest instalado que seleciona `*.test`/`*.spec`, não `*.check.mjs`. Constatação estática; CI real não foi executado. Correção e reteste independentes pendentes.
 
-Parecer pai: QA_REJECTED / no-go, 12 aprovados localmente e 2 bloqueados (CT-011 e CT-013); CTs dos filhos 032–034 passaram localmente; gates finais aguardam sincronização DEV, 035 em triagem.
+Parecer atual: QA_REJECTED / NO-GO; 13 CTs aprovados no escopo local e CT-011 bloqueado. CT-013 aprovado apenas para a rodada QA atual; violação histórica permanece não conforme. Filhos 032–034 QA_APPROVED com ressalvas em fixtures após sincronização DEV; NXG-035 encaminhado ao DEV e pendente de correção e reteste.
+
+## Atualização NXG-035 — 2026-11-11
+
+NXG-035 recebeu QA_APPROVED com ressalvas após 7/7 CTs sintéticos; [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-035 Suite de correcoes ausente dos gates automatizados/06 - Evidências QA|evidências]]. GitHub Actions real e disponibilidade do runner não foram comprovados. MEL-0009 mantém QA_REJECTED/NO-GO e CT-011 bloqueado; CT-013 é aprovado somente na rodada atual, sem apagar a não conformidade histórica.

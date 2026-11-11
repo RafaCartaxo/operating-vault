@@ -98,3 +98,11 @@ Filhos 032/033/034: 24 CTs passaram em fixtures, com sincronização dos Fixes D
 ## Preparação NXG-035 — 2026-11-11
 
 Gate QA_READY_FOR_DEV, cinco critérios e sete CTs. Coordenação encaminha ao DEV; MEL-0009 continua QA_REJECTED/NO-GO.
+
+## Atualização do gate QA — 2026-11-11
+
+Os filhos NXG-032/033/034 receberam QA_APPROVED com ressalvas restritas a fixtures após conferência dos Fixes DEV. No pai, CT-013 foi aprovado apenas para a rodada isolada atual; o desvio DEV histórico permanece não conforme, sem validação retroativa. CT-011 bloqueado; NXG-035 encaminhado ao DEV e pendente. MEL-0009 continua QA_REJECTED/NO-GO operacional; registros anteriores acima descrevem o estado histórico.
+
+## Atualização NXG-035 — 2026-11-11
+
+NXG-035 recebeu QA_APPROVED com ressalvas após 7/7 CTs sintéticos; [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-035 Suite de correcoes ausente dos gates automatizados/06 - Evidências QA|evidências]]. GitHub Actions real e disponibilidade do runner não foram comprovados. MEL-0009 mantém QA_REJECTED/NO-GO e CT-011 bloqueado; CT-013 é aprovado somente na rodada atual, sem apagar a não conformidade histórica.

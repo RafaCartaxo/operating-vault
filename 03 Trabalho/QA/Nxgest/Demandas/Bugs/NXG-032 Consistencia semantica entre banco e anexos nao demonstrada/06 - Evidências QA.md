@@ -61,3 +61,7 @@ Arquivo órfão relatado sem rejeição por mera existência — case-11, indepe
 ## Limites
 
 Aprovação restrita a fixtures/dublês. Sem prova de consistência temporal, restore PostgreSQL, transporte ou procedência real. Em NXG-033 o preflight e retorno seguem NO-GO pela ausência de fonte real autenticada.
+
+## Gate final — 2026-11-11
+
+QA_APPROVED com ressalvas após conferência da sincronização DEV. A decisão usa os resultados anteriores: nenhum teste foi repetido nesta etapa. Os limites acima e o desvio histórico de isolamento permanecem.

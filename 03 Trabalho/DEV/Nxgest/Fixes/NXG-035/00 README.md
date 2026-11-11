@@ -1,58 +1,30 @@
 ---
-status: execucao
+status: concluido
 tipo: bug
-etapa_atual: "DEV · Análise técnica"
-demanda: "<ID>"
-epico: ""
+etapa_atual: "Concluído"
+demanda: "NXG-035"
 commit: ""
-pontos: ""
 ---
 
-# <ID> — Fix
-
+# NXG-035 — Suíte de correções nos gates automatizados
 
 > [!info]- Navegação QA/DEV
-> **Bug QA:** [[<CARD>|<ID> — <título>]]  
-> **Épico:** [[<EPICO>|<épico>]]
-> **Análise:** [[01 - Análise]]  
-> **Plano de correção:** [[02 - Plano de correção]]  
-> **Implementação:** [[03 - Implementação]]  
-> **Code review:** [[04 - Code review]]  
-> **Casos de teste QA:** [[03 Trabalho/QA/<projeto>/Demandas/Bugs/<ID>/02 - Casos de teste|02 - Casos de teste]]
+> **Bug:** [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-035 Suite de correcoes ausente dos gates automatizados/01 - Bug|NXG-035]]<br>
+> **Casos:** [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-035 Suite de correcoes ausente dos gates automatizados/02 - Casos de teste|Sete CTs]]<br>
+> **Gate:** [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-035 Suite de correcoes ausente dos gates automatizados/05 - Gate de integridade QA|QA_READY_FOR_DEV]]<br>
+> **Validação:** [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-035 Suite de correcoes ausente dos gates automatizados/03 - Validação dev|Validação QA]]<br>
+> **Evidências:** [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-035 Suite de correcoes ausente dos gates automatizados/06 - Evidências QA|Evidências do reteste QA]]<br>
+> **Fix:** [[00 README|README]] · [[01 - Análise|Análise]] · [[02 - Plano de correção|Plano]] · [[03 - Implementação|Implementação]] · [[04 - Code review|Revisão]]
 
-> [!settings]- Controle do card
-> **Status:** `INPUT[inlineSelect(option(backlog),option(analise),option(execucao),option(validacao),option(concluido)):status]`  
-> **Etapa atual:** `INPUT[inlineSelect(option(DEV · Análise técnica),option(DEV · Plano de execução),option(DEV · Implementação),option(DEV · Code review),option(QA · Validação),option(Concluído)):etapa_atual]`
+## Status
 
-> [!info]- Cards relacionados
-> **Bug QA:** [[<CARD>|<ID> — <título>]]  
-> **Casos de teste:** [[03 Trabalho/QA/<projeto>/Demandas/Bugs/<ID>/02 - Casos de teste|Casos de teste]]  
-> **Validação QA:** [[03 Trabalho/QA/<projeto>/Demandas/Bugs/<ID>/03 - Validação dev|Validação QA]]  
-> **Implementação:** [[03 - Implementação]]  
-> **Code review:** [[04 - Code review]]
+**QA_APPROVED com ressalvas:** 7/7 CTs aprovados em fixtures e dublês no reteste independente; [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-035 Suite de correcoes ausente dos gates automatizados/06 - Evidências QA|Evidências do reteste QA]]. GitHub Actions e a disponibilidade de bwrap/namespaces no runner hospedado não foram comprovados.
 
-> [!tip]- Esforço
-> ```dataviewjs
-> const atual = dv.current().pontos;
-> const paginas = dv.pages('"' + dv.current().file.folder + '"').where(p => typeof p.pontos === "number");
-> const total = paginas.array().reduce((soma, pagina) => soma + Number(pagina.pontos), 0);
-> dv.table(["Artefato DEV", "Pontos"], paginas.sort(p => p.file.name).map(p => [p.file.link, p.pontos]));
-> dv.paragraph(`**Esforço desta etapa:** ${typeof atual === "number" ? atual : "a definir"} pontos · **Esforço total do fix DEV:** ${total} pontos`);
-> ```
-
-Índice do trabalho de desenvolvimento para a correção do bug.
-
----
-
-
----
+O pai MEL-0009 permanece **QA_REJECTED/NO-GO**, com CT-011 bloqueado. CT-013 foi aprovado somente para a rodada atual; a execução histórica do Docker CLI real permanece não conforme, sem validação retroativa.
 
 ## Checklist de transição DEV
 
-
-- [ ] Causa confirmada no código
-- [ ] Plano de correção aprovado
-- [ ] Implementação concluída
-- [ ] Code review aprovado
-- [ ] Validação QA concluída
-- [ ] Sincronização documental verificada: frontmatter, README, board, links, evidências, histórico e pendências
+- [x] Análise, plano, implementação, revisão e evidências locais registrados.
+- [x] Requisitos e limitação de compatibilidade GitHub documentados.
+- [x] Reteste QA aprovado com ressalvas no escopo sintético.
+- [ ] Commit fora desta autorização.

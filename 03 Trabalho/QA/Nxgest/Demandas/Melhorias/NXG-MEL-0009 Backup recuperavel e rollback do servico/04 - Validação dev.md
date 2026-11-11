@@ -21,7 +21,7 @@ ct_resultados:
   ct_010: "✅ Aprovado"
   ct_011: "🚫 Bloqueado"
   ct_012: "✅ Aprovado"
-  ct_013: "🚫 Bloqueado"
+  ct_013: "✅ Aprovado"
   ct_014: "✅ Aprovado"
 data_inicio: 2026-11-10
 data_fim: 2026-11-11
@@ -159,7 +159,7 @@ Use esta seção somente quando houver reteste após correção:
 
 ## Decisão
 
-**Resultado geral:** QA_REJECTED. Reteste local resolveu CT-003/005/009/012; CT-011 permanece bloqueado por ausência de fonte autenticada real e CT-013 pelo desvio histórico. NXG-035 aponta suíte de correções ausente dos gates automatizados; ver [[08 - Evidências reteste QA]]. Coordenação encaminha correções; sem go de produção.
+**Resultado geral:** QA_REJECTED. Reteste local resolveu CT-003/005/009/012; CT-011 permanece bloqueado por ausência de fonte autenticada real. CT-013 aprovado somente na rodada QA atual isolada; desvio DEV histórico permanece não conforme, sem validação retroativa. NXG-035 aponta suíte de correções ausente dos gates automatizados; ver [[08 - Evidências reteste QA]]. Coordenação encaminha correções; sem go de produção.
 
 ---
 
@@ -172,3 +172,11 @@ Use esta seção somente quando houver reteste após correção:
 - [ ] Status da validação e da demanda atualizados.
 - [ ] Próximo passo registrado.
 - [ ] Sincronização documental verificada: frontmatter, README, board, links, evidências, histórico e pendências.
+
+## Decisão complementar — 2026-11-11
+
+13/14 CTs aprovados no escopo local; CT-011 permanece bloqueado. CT-013 aprovado apenas na rodada isolada atual, conforme decisão da Coordenação; invocação histórica do CLI Docker real permanece não conforme, ainda que sem daemon contatado. NXG-035 segue pendente; resultado geral QA_REJECTED/NO-GO. Nenhum teste adicional nesta etapa.
+
+## Atualização NXG-035 — 2026-11-11
+
+NXG-035 recebeu QA_APPROVED com ressalvas após 7/7 CTs sintéticos; [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-035 Suite de correcoes ausente dos gates automatizados/06 - Evidências QA|evidências]]. GitHub Actions real e disponibilidade do runner não foram comprovados. MEL-0009 mantém QA_REJECTED/NO-GO e CT-011 bloqueado; CT-013 é aprovado somente na rodada atual, sem apagar a não conformidade histórica.

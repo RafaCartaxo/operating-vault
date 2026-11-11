@@ -1,8 +1,8 @@
 ---
 prioridade: alta
-status: execucao
+status: concluido
 tipo: bug
-etapa_atual: "DEV · Análise técnica"
+etapa_atual: "Concluído"
 modulo: infra
 plano: ""
 execucao: ""
@@ -12,7 +12,7 @@ projeto: nxgest
 epico: ""
 pai: "NXG-MEL-0009"
 data_inicio: 2026-11-11
-data_fim: ""
+data_fim: 2026-11-11
 responsavel: "NX Gest · QA"
 pontos_alocados: 3
 ---
@@ -24,7 +24,7 @@ pontos_alocados: 3
 > **Bug:** [[01 - Bug]]<br>
 > **Casos de teste:** [[02 - Casos de teste]]<br>
 > **Preparação Qase:** [[04 - Preparação Qase]]<br>
-> **Fix DEV:** aguardando encaminhamento pela Coordenação.
+> **Fix DEV:** [[03 Trabalho/DEV/Nxgest/Fixes/NXG-035/00 README|NXG-035 Fix DEV]].
 > **Validação QA:** [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-035 Suite de correcoes ausente dos gates automatizados/03 - Validação dev|Validação QA]]
 
 > [!settings]- Controle do bug
@@ -119,3 +119,7 @@ Ambos os gates executam os dois testes, bloqueiam na falha e impedem acesso a re
 2026-11-11: `nxg032-034/run-isolated.sh` aponta para diretório pessoal `/home/rafacartaxo/...`, guardas fora do repositório e Node no `.nvm`; requer `bwrap --unshare-user --unshare-net`. Por inspeção essas dependências não são portáveis para CI sem adaptação/configuração; disponibilidade real de paths, bwrap e namespaces no GitHub não foi verificada. CI declara setup-node 20; CD manual não declara setup-node no job validado. Confirmar requisitos antes de executar; ausência de prova não é prova de incompatibilidade real do serviço.
 
 QA_READY_FOR_DEV — Coordenação encaminha o pacote; nenhuma correção ou teste de aceitação foi executado.
+
+## Reteste QA independente — 2026-11-11
+
+**QA_APPROVED com ressalvas:** sete CTs aprovados em fixtures e simulações isoladas; [[03 - Validação dev]] e [[06 - Evidências QA]]. Sem execução de GitHub Actions real ou comprovação de disponibilidade no runner hospedado. Pai MEL-0009 permanece QA_REJECTED/NO-GO, CT-011 bloqueado; CT-013 aprovado apenas na rodada QA atual, com violação histórica não conforme. Seções anteriores descrevem estados históricos.

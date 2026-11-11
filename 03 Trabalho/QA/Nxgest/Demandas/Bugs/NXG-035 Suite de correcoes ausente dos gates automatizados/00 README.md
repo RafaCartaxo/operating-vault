@@ -1,7 +1,7 @@
 ---
-status: execucao
+status: concluido
 tipo: bug
-etapa_atual: "DEV · Análise técnica"
+etapa_atual: "Concluído"
 projeto: nxgest
 pai: NXG-MEL-0009
 ---
@@ -14,7 +14,7 @@ pai: NXG-MEL-0009
 > **Pai:** [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0009 Backup recuperavel e rollback do servico/01 - Demanda|NXG-MEL-0009]].
 > **Casos de teste:** [[02 - Casos de teste]]<br>
 > **Preparação Qase:** [[04 - Preparação Qase]]<br>
-> **Fix DEV:** aguardando encaminhamento pela Coordenação.
+> **Fix DEV:** [[03 Trabalho/DEV/Nxgest/Fixes/NXG-035/00 README|NXG-035 Fix DEV]].
 > **Validação QA:** [[03 - Validação dev|Validação QA]] — criada junto com o Bug, copiando `Templates/QA/04 - Validação dev.md` e renomeando para `03 - Validação dev.md`.
 
 > [!settings]- Controle do card
@@ -26,7 +26,7 @@ pai: NXG-MEL-0009
 > **Casos de teste:** [[02 - Casos de teste]]<br>
 > **Validação:** [[03 - Validação dev]]<br>
 > **Preparação Qase:** [[04 - Preparação Qase]]<br>
-> **Fix DEV:** aguardando encaminhamento pela Coordenação.
+> **Fix DEV:** [[03 Trabalho/DEV/Nxgest/Fixes/NXG-035/00 README|NXG-035 Fix DEV]].
 
 > [!tip]- Esforço
 > ```dataviewjs
@@ -69,8 +69,12 @@ Cada CT usa um callout recolhível com identificador (`^ct-b01`). A nota de vali
 
 ## Estado
 
-QA_READY_FOR_DEV após auditoria estrutural; sete CTs aguardando implementação e reteste. Coordenação encaminha; QA não despacha DEV.
+QA_APPROVED com ressalvas no reteste independente sintético: 7/7 CTs; [[06 - Evidências QA]]. O pai mantém QA_REJECTED/NO-GO.
 
 ## Gate de integridade — 2026-11-11
 
 Cinco critérios e sete CTs planejados. [[05 - Gate de integridade QA|Evidência do gate]]. Nenhum CT foi executado; CI GitHub e isolamento do runner real não foram verificados.
+
+## Reteste QA independente — 2026-11-11
+
+**QA_APPROVED com ressalvas:** sete CTs aprovados em fixtures e simulações isoladas; [[03 - Validação dev]] e [[06 - Evidências QA]]. Sem execução de GitHub Actions real ou comprovação de disponibilidade no runner hospedado. Pai MEL-0009 permanece QA_REJECTED/NO-GO, CT-011 bloqueado; CT-013 aprovado apenas na rodada QA atual, com violação histórica não conforme. Seções anteriores descrevem estados históricos.

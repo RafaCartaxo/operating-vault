@@ -19,4 +19,4 @@ Os IDs históricos `NXG-NNN` e `MEL-NNNN` são preservados.
 
 ## Preparação de backup e rollback
 
-- [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0009 Backup recuperavel e rollback do servico/00 README|NXG-MEL-0009 — Backup recuperável e rollback do serviço]] — QA_REJECTED/no-go: filhos 032–034 passaram em fixtures, aguardando sincronização DEV; CT-011/013 bloqueados e NXG-035 QA_READY_FOR_DEV; testes reais pendentes.
+- [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0009 Backup recuperavel e rollback do servico/00 README|NXG-MEL-0009 — Backup recuperável e rollback do serviço]] — QA_REJECTED/NO-GO: filhos 032–035 aprovados com ressalvas em fixtures; CT-011 bloqueado, CT-013 aprovado apenas na rodada atual; testes e proveniência reais pendentes.

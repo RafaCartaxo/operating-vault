@@ -1,8 +1,8 @@
 ---
 prioridade: alta
-status: validacao
+status: concluido
 tipo: bug
-etapa_atual: "QA · Validação"
+etapa_atual: "Concluído"
 modulo: infra
 plano: ""
 execucao: ""
@@ -12,7 +12,7 @@ projeto: nxgest
 epico: ""
 pai: "NXG-MEL-0009"
 data_inicio: 2026-11-11
-data_fim: ""
+data_fim: 2026-11-11
 responsavel: "NX Gest · QA"
 pontos_alocados: 3
 ---
@@ -118,4 +118,8 @@ Sincronizar instruções e comportamento para impedir declaração de sucesso se
 
 ## Reteste QA — 2026-11-11
 
-8/8 CTs passaram em escopo sintético; gate final aguarda sincronização dos Fixes DEV; [[03 - Validação dev]] e [[06 - Evidências QA]]. Não equivale a go de produção.
+8/8 CTs passaram em escopo sintético; gate final posteriormente concluído; [[03 - Validação dev]] e [[06 - Evidências QA]]. Não equivale a go de produção.
+
+## Gate final QA — 2026-11-11
+
+**QA_APPROVED com ressalvas**, exclusivamente para as correções verificadas em fixtures/dublês: 8/8 CTs aprovados. Registros DEV sincronizados conferidos; ver [[03 - Validação dev]] e [[06 - Evidências QA]]. Não demonstra recuperação, proveniência ou consistência reais; MEL-0009 permanece QA_REJECTED/NO-GO, com CT-011 bloqueado e NXG-035 pendente. Sem testes adicionais nesta decisão.

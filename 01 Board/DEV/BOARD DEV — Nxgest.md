@@ -20,16 +20,21 @@ kanban-plugin: board
 
 ## 🧪 Aguardando QA
 
-- [ ] [[03 Trabalho/DEV/Nxgest/Fixes/NXG-032/00 README|NXG-032 — Consistencia semantica entre banco e anexos nao demonstrada]] — QA aprovado em fixtures; sincronização do Fix pelo DEV pendente
-- [ ] [[03 Trabalho/DEV/Nxgest/Fixes/NXG-033/00 README|NXG-033 — Declaracoes inconsistentes passam no preflight de rollback]] — QA aprovado em fixtures; sincronização do Fix pelo DEV pendente
-- [ ] [[03 Trabalho/DEV/Nxgest/Fixes/NXG-034/00 README|NXG-034 — Copia offsite legada sinaliza sucesso sem arquivos]] — QA aprovado em fixtures; sincronização do Fix pelo DEV pendente
 
-- [ ] [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0009/00 README|NXG-MEL-0009 — Backup recuperável e rollback]] — QA_REJECTED/no-go; CT-011/013 bloqueados, NXG-035 em triagem
+
+
+- [ ] [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0009/00 README|NXG-MEL-0009 — Backup recuperável e rollback]] — QA_REJECTED/no-go; CT-011 bloqueado, CT-013 aprovado só na rodada atual; NXG-035 aprovado com ressalvas
 
 
 
 
 ## ✅ Concluído
+
+- [x] [[03 Trabalho/DEV/Nxgest/Fixes/NXG-035/00 README|NXG-035 — Suíte de correções nos gates]] — QA_APPROVED com ressalvas — 7/7 CTs sintéticos
+
+- [x] [[03 Trabalho/DEV/Nxgest/Fixes/NXG-032/00 README|NXG-032 — Consistencia semantica entre banco e anexos nao demonstrada]] — QA_APPROVED com ressalvas — 8/8 CTs sintéticos
+- [x] [[03 Trabalho/DEV/Nxgest/Fixes/NXG-033/00 README|NXG-033 — Declaracoes inconsistentes passam no preflight de rollback]] — QA_APPROVED com ressalvas — 8/8 CTs sintéticos
+- [x] [[03 Trabalho/DEV/Nxgest/Fixes/NXG-034/00 README|NXG-034 — Copia offsite legada sinaliza sucesso sem arquivos]] — QA_APPROVED com ressalvas — 8/8 CTs sintéticos
 
 - [x] [[03 Trabalho/DEV/Nxgest/Fixes/NXG-031/00 README|NXG-031 — Transição segura do deploy]] — QA aprovado com ressalvas operacionais
 

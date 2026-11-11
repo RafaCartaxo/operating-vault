@@ -1,7 +1,7 @@
 ---
-status: validacao
+status: concluido
 tipo: bug
-etapa_atual: "QA · Validação"
+etapa_atual: "Concluído"
 demanda: "NXG-033"
 commit: ""
 ---
@@ -18,12 +18,14 @@ commit: ""
 
 ## Status
 
-O reteste independente de QA registrou **8/8 CTs aprovados no escopo sintético, com ressalvas** para este filho; no conjunto dos três filhos são 24/24. O gate final do QA permanece pendente após esta sincronização. O pai MEL-0009 continua QA_REJECTED/no-go: CT-011 e CT-013 seguem bloqueados, e [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-035 Suite de correcoes ausente dos gates automatizados/01 - Bug|NXG-035]] está em triagem. [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0009 Backup recuperavel e rollback do servico/08 - Evidências reteste QA|Reteste do pai MEL-0009]].
+**QA_APPROVED com ressalvas:** QA aprovou 8/8 CTs deste filho exclusivamente no escopo sintético. A decisão não comprova restore, transporte, proveniência, estado de serviço ou consistência temporal reais.
+
+O pai MEL-0009 permanece **QA_REJECTED/no-go**, com CT-011 bloqueado e [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-035 Suite de correcoes ausente dos gates automatizados/01 - Bug|NXG-035]] pendente de reteste QA. CT-013 foi aprovado apenas para a rodada isolada atual; a chamada histórica ao CLI Docker real permanece não conforme, sem validação retroativa. [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0009 Backup recuperavel e rollback do servico/08 - Evidências reteste QA|Evidências do pai]].
 
 ## Checklist de transição DEV
 
 - [x] Causa, plano, implementação, teste sintético e revisão registrados.
 - [x] Evidências e limitações vinculadas; board DEV atualizado.
 - [x] Reteste independente de QA registrado no escopo sintético, com ressalvas.
-- [ ] Gate final e decisão de QA pendentes.
-- [ ] Commit e fechamento, fora desta autorização.
+- [x] Gate final QA aprovado com ressalvas, limitado a 8/8 CTs sintéticos.
+- [ ] Commit fora desta autorização.

@@ -1,7 +1,7 @@
 ---
-status: validacao
+status: concluido
 tipo: bug
-etapa_atual: "QA · Validação"
+etapa_atual: "Concluído"
 projeto: nxgest
 pai: NXG-MEL-0009
 ---
@@ -69,7 +69,7 @@ Cada CT usa um callout recolhível com identificador (`^ct-b01`). A nota de vali
 
 ## Encaminhamento
 
-Achado derivado de [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0009 Backup recuperavel e rollback do servico/04 - Validação dev|validação QA MEL-0009]]. Gate histórico QA_READY_FOR_DEV foi seguido de reteste. Coordenação recebe resultado; sincronização dos Fixes DEV permanece pendente. Sem acesso a recursos reais.
+Achado derivado de [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0009 Backup recuperavel e rollback do servico/04 - Validação dev|validação QA MEL-0009]]. Gate histórico QA_READY_FOR_DEV foi seguido de reteste. Coordenação recebe resultado; Fixes DEV sincronizados; gate final registrado. Sem acesso a recursos reais.
 
 ## Gate de integridade
 
@@ -77,4 +77,8 @@ Achado derivado de [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0009 Backu
 
 ## Reteste QA — 2026-11-11
 
-8/8 CTs passaram em fixtures; gate QA final aguarda sincronização dos Fixes DEV; [[03 - Validação dev]] e [[06 - Evidências QA]]. Pai mantém QA_REJECTED/no-go devido a CTs bloqueados e NXG-035.
+8/8 CTs passaram em fixtures; gate QA final posteriormente concluído; [[03 - Validação dev]] e [[06 - Evidências QA]]. Pai mantém QA_REJECTED/no-go devido a CTs bloqueados e NXG-035.
+
+## Gate final QA — 2026-11-11
+
+**QA_APPROVED com ressalvas**, exclusivamente para as correções verificadas em fixtures/dublês: 8/8 CTs aprovados. Registros DEV sincronizados conferidos; ver [[03 - Validação dev]] e [[06 - Evidências QA]]. Não demonstra recuperação, proveniência ou consistência reais; MEL-0009 permanece QA_REJECTED/NO-GO, com CT-011 bloqueado e NXG-035 pendente. Sem testes adicionais nesta decisão.

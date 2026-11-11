@@ -6,7 +6,6 @@ kanban-plugin: board
 
 ## 🔍 Análise da demanda
 
-- [ ] [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-035 Suite de correcoes ausente dos gates automatizados/00 README|NXG-035 — Suíte de correções ausente dos gates]] — QA_READY_FOR_DEV; Coordenação encaminha
 
 - [ ] [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0009 Backup recuperavel e rollback do servico/00 README|NXG-MEL-0009 — Backup e rollback]] — QA_REJECTED; Coordenação encaminha
 
@@ -25,9 +24,6 @@ kanban-plugin: board
 
 ## 🧪 Validação
 
-- [ ] [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-032 Consistencia semantica entre banco e anexos nao demonstrada/00 README|NXG-032 — Consistencia semantica entre banco e anexos nao demonstrada]] — 8/8 em fixtures; sincronização Fix DEV pendente
-- [ ] [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-033 Declaracoes inconsistentes passam no preflight de rollback/00 README|NXG-033 — Declaracoes inconsistentes passam no preflight de rollback]] — 8/8 em fixtures; sincronização Fix DEV pendente
-- [ ] [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-034 Copia offsite legada sinaliza sucesso sem arquivos/00 README|NXG-034 — Copia offsite legada sinaliza sucesso sem arquivos]] — 8/8 em fixtures; sincronização Fix DEV pendente
 
 
 
@@ -37,6 +33,12 @@ kanban-plugin: board
 
 
 ## ✅ Concluído
+
+- [x] [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-035 Suite de correcoes ausente dos gates automatizados/00 README|NXG-035 — Suíte de correções ausente dos gates]] — QA_APPROVED com ressalvas; 7/7 CTs sintéticos, Actions real não verificado
+
+- [x] [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-032 Consistencia semantica entre banco e anexos nao demonstrada/00 README|NXG-032 — Consistencia semantica entre banco e anexos nao demonstrada]] — QA_APPROVED com ressalvas; 8/8 em fixtures, sem go operacional
+- [x] [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-033 Declaracoes inconsistentes passam no preflight de rollback/00 README|NXG-033 — Declaracoes inconsistentes passam no preflight de rollback]] — QA_APPROVED com ressalvas; 8/8 em fixtures, sem go operacional
+- [x] [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-034 Copia offsite legada sinaliza sucesso sem arquivos/00 README|NXG-034 — Copia offsite legada sinaliza sucesso sem arquivos]] — QA_APPROVED com ressalvas; 8/8 em fixtures, sem go operacional
 
 
 - [x] [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-031 Transicao segura do deploy e continuidade operacional/00 README|NXG-031 — Transição segura do deploy]] — QA aprovado com ressalvas operacionais

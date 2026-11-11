@@ -3,9 +3,9 @@ demanda: "[[01 - Bug]]"
 execucao: ""
 ambiente: dev
 versao: "c7b65c8 + working tree reteste"
-status: execucao
+status: concluido
 responsavel: "NX Gest · QA"
-resultado: aguardando
+resultado: aprovado_com_ressalvas
 # Pontos da etapa de validação; substitua pelo valor planejado para esta etapa.
 pontos: 0
 ct_resultados:
@@ -18,7 +18,7 @@ ct_resultados:
   ct_007: "✅ Aprovado"
   ct_008: "✅ Aprovado"
 data_inicio: 2026-11-11
-data_fim: ""
+data_fim: 2026-11-11
 ---
 
 # Validação — NXG-032
@@ -144,7 +144,7 @@ Use esta seção somente quando houver reteste após correção:
 
 ## Decisão
 
-**Resultado geral:** 8/8 CTs passaram em fixtures. Gate QA final aguarda sincronização das notas Fix DEV; sem go operacional. Ver [[06 - Evidências QA]].
+**Resultado geral:** QA_APPROVED com ressalvas: 8/8 CTs passaram em fixtures/dublês, e sincronização DEV foi conferida. Sem validação real ou go operacional; pai permanece QA_REJECTED. Ver [[06 - Evidências QA]].
 
 ---
 
@@ -152,8 +152,12 @@ Use esta seção somente quando houver reteste após correção:
 
 - [x] Todos os CTs executados ou com justificativa registrada.
 - [x] Evidências e observações preenchidas quando necessário.
-- [ ] Bugs filhos vinculados na coluna **Defeito/Bug**.
-- [x] Resultado da rodada definido; gate final aguarda sincronização.
-- [ ] Status da validação e da demanda atualizados.
-- [x] Próximo passo registrado: Coordenação solicitar sincronização DEV.
-- [ ] Sincronização documental verificada: frontmatter, README, board, links, evidências, histórico e pendências.
+- [x] Bugs filhos: não aplicável; nenhum defeito filho novo neste reteste.
+- [x] Resultado da rodada e gate final definidos com ressalvas.
+- [x] Status da validação e da demanda atualizados.
+- [x] Próximo passo: Coordenação conduzir NXG-035; pai permanece NO-GO.
+- [x] Registros e board QA verificados; atualização dos registros DEV comunicada à Coordenação.
+
+## Gate final — 2026-11-11
+
+QA_APPROVED com ressalvas para o escopo sintético; decisão baseada no reteste independente já registrado, sem repetição. A sincronização DEV foi conferida nos cinco documentos do Fix. A Coordenação recebe o resultado para sincronizar os registros sob responsabilidade DEV.
