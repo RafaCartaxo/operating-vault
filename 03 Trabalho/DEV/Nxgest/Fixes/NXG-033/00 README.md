@@ -1,58 +1,27 @@
 ---
-status: execucao
+status: validacao
 tipo: bug
-etapa_atual: "DEV · Análise técnica"
-demanda: "<ID>"
-epico: ""
+etapa_atual: "QA · Validação"
+demanda: "NXG-033"
 commit: ""
-pontos: ""
 ---
 
-# <ID> — Fix
-
+# NXG-033 — Declaracoes inconsistentes passam no preflight de rollback
 
 > [!info]- Navegação QA/DEV
-> **Bug QA:** [[<CARD>|<ID> — <título>]]  
-> **Épico:** [[<EPICO>|<épico>]]
-> **Análise:** [[01 - Análise]]  
-> **Plano de correção:** [[02 - Plano de correção]]  
-> **Implementação:** [[03 - Implementação]]  
-> **Code review:** [[04 - Code review]]  
-> **Casos de teste QA:** [[03 Trabalho/QA/<projeto>/Demandas/Bugs/<ID>/02 - Casos de teste|02 - Casos de teste]]
-
-> [!settings]- Controle do card
-> **Status:** `INPUT[inlineSelect(option(backlog),option(analise),option(execucao),option(validacao),option(concluido)):status]`  
-> **Etapa atual:** `INPUT[inlineSelect(option(DEV · Análise técnica),option(DEV · Plano de execução),option(DEV · Implementação),option(DEV · Code review),option(QA · Validação),option(Concluído)):etapa_atual]`
-
-> [!info]- Cards relacionados
-> **Bug QA:** [[<CARD>|<ID> — <título>]]  
-> **Casos de teste:** [[03 Trabalho/QA/<projeto>/Demandas/Bugs/<ID>/02 - Casos de teste|Casos de teste]]  
-> **Validação QA:** [[03 Trabalho/QA/<projeto>/Demandas/Bugs/<ID>/03 - Validação dev|Validação QA]]  
-> **Implementação:** [[03 - Implementação]]  
-> **Code review:** [[04 - Code review]]
-
-> [!tip]- Esforço
-> ```dataviewjs
-> const atual = dv.current().pontos;
-> const paginas = dv.pages('"' + dv.current().file.folder + '"').where(p => typeof p.pontos === "number");
-> const total = paginas.array().reduce((soma, pagina) => soma + Number(pagina.pontos), 0);
-> dv.table(["Artefato DEV", "Pontos"], paginas.sort(p => p.file.name).map(p => [p.file.link, p.pontos]));
-> dv.paragraph(`**Esforço desta etapa:** ${typeof atual === "number" ? atual : "a definir"} pontos · **Esforço total do fix DEV:** ${total} pontos`);
-> ```
-
-Índice do trabalho de desenvolvimento para a correção do bug.
-
----
+> **Bug QA:** [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-033 Declaracoes inconsistentes passam no preflight de rollback/01 - Bug|Bug e critérios]]  
+> **Casos QA:** [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-033 Declaracoes inconsistentes passam no preflight de rollback/02 - Casos de teste|8 CTs]]  
+> **Gate QA:** [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-033 Declaracoes inconsistentes passam no preflight de rollback/05 - Gate de integridade QA|QA_READY_FOR_DEV]]  
+> **Fix:** [[00 README|README]] · [[01 - Análise|Análise]] · [[02 - Plano de correção|Plano]] · [[03 - Implementação|Implementação]] · [[04 - Code review|Revisão]]
 
 
----
+## Status
+
+Implementação local e revisão DEV concluídas; `DEV_READY_FOR_QA`. Nenhum CT funcional foi aprovado pelo DEV. O pai MEL-0009 permanece QA_REJECTED até reteste independente; o gate não autoriza operação real.
 
 ## Checklist de transição DEV
 
-
-- [ ] Causa confirmada no código
-- [ ] Plano de correção aprovado
-- [ ] Implementação concluída
-- [ ] Code review aprovado
-- [ ] Validação QA concluída
-- [ ] Sincronização documental verificada: frontmatter, README, board, links, evidências, histórico e pendências
+- [x] Causa, plano, implementação, teste sintético e revisão registrados.
+- [x] Evidências e limitações vinculadas; board DEV atualizado.
+- [ ] Validação funcional e aprovação QA independentes.
+- [ ] Commit e fechamento, fora desta autorização.
