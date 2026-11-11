@@ -56,3 +56,11 @@ A Coordenação relata SSH zero e sete campos validados, incluindo versão de se
 ## Navegação canônica
 
 [[01 - Demanda]] · [[03 - Casos de teste]] · [[04 - Validação dev]] · [[08 - Evidências reteste QA]]
+
+## Reteste QA independente — 2026-11-11
+
+**QA_REJECTED para aptidão do ensaio real.** Regressões sintéticas 4/4 e runner dublado 5/5 passaram sob guardas; achado: containers são iniciados antes da verificação de versão PostgreSQL, conforme sonda dublada. N04 real e gates operacionais permanecem bloqueados. Evidências e matriz N01–N10 em `.maestro/nxgest-team/CT011-NOVA-BASELINE-PARECER-QA.md`; não houve acesso real.
+
+## Reteste QA política — 2026-11-11
+
+QA_REJECTED: a política controla imagem/major antes do runner na fronteira acordada, mas `rehearsal-postgres.check.mjs` remove recursivamente `.maestro` do diretório corrente. Sonda em snapshot isolado reproduziu remoção de sentinela sintética; 4/4 e 11/11 testes passaram. Ver `.maestro/nxgest-team/CT011-NOVA-BASELINE-PARECER-QA.md`. Nenhum dado real removido; ensaio real/CT-N04 não autorizado e pai NO-GO.

@@ -13,3 +13,5 @@ demanda: "NXG-MEL-0009"
 ## Status
 
 DEV_READY_FOR_QA para revisão local: harness PostgreSQL opt-in implementado e testado exclusivamente com dublês isolados. Adaptador operacional de procedência não comprovado; CT-N04 real segue bloqueado até autorização e execução próprias. MEL-0009 segue QA_REJECTED/NO-GO.
+
+Após QA_REJECTED, política controlada no workspace associa ID PG16 aprovado antes de criação/início; reteste DEV 17/17 sob dublês. DEV_READY_FOR_QA para reteste local, sem aprovação funcional; fonte real de build e CT-N04 permanecem bloqueados. Ver resultado consolidado `.maestro/nxgest-team/CT011-NOVA-BASELINE-DEV-RESULTADO.md`.

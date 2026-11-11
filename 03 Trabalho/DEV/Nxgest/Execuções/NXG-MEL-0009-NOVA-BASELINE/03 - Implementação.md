@@ -26,3 +26,5 @@
 | N09/N10 | Guardas e regressão sintética 29/29; ausência de prova real GitHub/PG. |
 
 Sem Docker CLI/daemon, rede, SSH, dados ou recursos reais; sem commit/push/deploy. Os resultados não são aceites dos CTs pelo QA.
+
+- Após QA_REJECTED: política controlada no checkout com proprietário EUID, hash e decisão fornecidos separadamente associa referência Coordenação/QA, major 16 e ID completo antes de qualquer chamada ao runner; rejeições e ciclo testados com dublês. Loader real sem política bloqueia; política real e origem não foram verificadas. 17/17 na suíte isolada.

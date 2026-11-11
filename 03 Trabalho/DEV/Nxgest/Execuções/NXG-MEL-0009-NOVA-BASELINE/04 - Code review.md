@@ -17,3 +17,7 @@ Revisão local identificou bloqueios concretos; manter implementação em andame
 - Guardas PATH/absoluto/subprocessos e rede isolada verificadas antes de 10/10 testes; execução real e proveniência operacional permanecem não comprovadas.
 
 - Achado QA de magic ustar: exigidos bytes `ustar\0` e versão `00`; três negativos com checksum válido e teste positivo passaram na suíte isolada 11/11. O snapshot QA anterior requer nova revisão. Extração parcial e concorrência em ancestrais permanecem limitações; fixtures não provam origem operacional.
+
+- Revisão do achado de ordem: nenhum create/start quando política/ID/major/fonte divergem; teste positivo usa política de fixture. Readiness PG não equivale a health da aplicação; timeout, disco/cópia, colisão e interrupção são simulações. SIGKILL, custódia real, daemon e origem seguem não comprovados.
+
+- Política movida da dependência administrativa para diretório controlado no workspace; loader com hash/decisão separados, dono, permissões e symlinks testado em fixtures. O usuário/checkout continuam fronteira de confiança; hash não autentica origem. 17/17 sob guardas.
