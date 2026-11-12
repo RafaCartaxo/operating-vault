@@ -34,3 +34,7 @@ Review DEV: sem Compose na troca, política/hash externos, payload privado 0600,
 ## Correção de fotografia após revisão QA
 
 Executor revalida Config+HostConfig, Mounts e Networks da cápsula e da inspeção atual diretamente contra a política, antes dos efeitos. Reprodução sintética da alteração conjunta para cada seção bloqueou sem stop; runner isolado 92/92. Evidência e hashes atuais em `.maestro/nxgest-team/CT011-ADOCAO-STAGING-DEV-RESULTADO.md`. Reteste independente QA pendente; sem aprovação operacional.
+
+## Divergência de ExposedPorts observada em staging
+
+Correção local limitada à allowlist das duas representações exatas e aos testes de cápsula. Inclui caminho integrado dublado com a representação informada e negativos de porta extra/UDP com política correspondente, sem alterar bindings ou fingerprint. Runner isolado 92/92; evidências e hashes em `.maestro/nxgest-team/CT011-ADOCAO-STAGING-DEV-RESULTADO.md`. DEV_READY_FOR_QA para reteste independente; sem operação real ou aprovação QA.
