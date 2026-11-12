@@ -28,3 +28,8 @@ O pai MEL-0009 permanece **QA_REJECTED/NO-GO**, com CT-011 bloqueado. CT-013 foi
 - [x] Requisitos e limitação de compatibilidade GitHub documentados.
 - [x] Reteste QA aprovado com ressalvas no escopo sintético.
 - [ ] Commit fora desta autorização.
+
+
+## Continuidade CI — 2026-11-12
+
+Continuidade de falha real do CI: correção local do sandbox awk em fix/nxg035-awk-sandbox, DEV_READY_FOR_QA para revisão específica. O anterior QA_APPROVED sintético não comprova esta alteração nem sucesso futuro do CI. Evidência em .maestro/nxgest-team/CT011-CI-AWK-DEV-RESULTADO.md.

@@ -23,3 +23,8 @@ GitHub Actions real, Docker CLI/daemon, rede, recursos reais, SSH, push, commit 
 ## Pronto quando
 
 QA concluiu o reteste independente com 7/7 CTs sintéticos e ressalvas; [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-035 Suite de correcoes ausente dos gates automatizados/06 - Evidências QA|Evidências do reteste QA]]. Compatibilidade GitHub Actions real permanece não comprovada.
+
+
+## Continuidade CI — 2026-11-12
+
+Resolver /usr/bin/awk antes do sandbox, aceitar apenas /usr/bin/{awk,gawk,mawk,nawk} após resolução e exigir arquivo executável; montar exclusivamente esse binário em /runtime/awk, mantendo /etc e rede ausentes. Provar PATH, link sintético Ubuntu quebrado e guardas antes da suíte existente; rejeitar resolução ausente ou fora da allowlist.

@@ -25,3 +25,8 @@ O runner depende explicitamente de Linux, bubblewrap, namespaces permitidos e bi
 ## Decisão
 
 QA_APPROVED com ressalvas no escopo sintético; sem autorização de publicação. MEL-0009 permanece QA_REJECTED/NO-GO, com CT-011 bloqueado. CT-013 aprovado apenas na rodada atual; desvio histórico do Docker CLI permanece não conforme.
+
+
+## Continuidade CI — 2026-11-12
+
+Revisão DEV: nenhum mount de /etc, homes ou sockets; PATH coloca guardas antes do awk, e sonda precede os testes. O executável real é limitado à allowlist e bibliotecas permanecem sob /usr/lib já montado. Layout Ubuntu reproduz link quebrado sintético, mas a suíte executou gawk local, não o mawk nem o runner Actions Ubuntu; QA e CI reais devem validar independentemente. Sem commit/push/merge ou aprovação QA.

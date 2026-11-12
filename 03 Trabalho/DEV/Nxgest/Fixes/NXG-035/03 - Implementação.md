@@ -28,3 +28,8 @@
 - [x] Reteste independente QA: 7/7 CTs sintéticos aprovados com ressalvas; [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-035 Suite de correcoes ausente dos gates automatizados/06 - Evidências QA|Evidências do reteste QA]]. Nenhum GitHub Actions real executado.
 
 O preflight e o retorno reais mantêm NO-GO por falta de fonte confiável; o histórico de chamada anterior ao CLI Docker em MEL-0009 permanece. Nenhum commit, push, deploy, SSH, Docker CLI/daemon ou recurso real nesta rodada.
+
+
+## Continuidade CI — 2026-11-12
+
+Alterado somente nxgest/scripts/test-corrections-isolated.sh na branch fix/nxg035-awk-sandbox, sem commit. SHA-256 359c3175a9e7631a07e4d49e3a38db5b5c16bd1f90ee6c176dead9fee17fac4b. bash -n passou; runner bwrap com guardas PATH/absolutas/subprocessos e rede isolada: 83/83; sonda link Ubuntu e awk controlado confirmada. Log .maestro/nxgest-team/CT011-CI-AWK-DEV-TEST.log SHA-256 5092e527b849079d5b6c3f8c4c0eed49f9f2fe9e248bdcf516e49603c0c833b9. npm run docs:audit passou; git diff --check limpo.

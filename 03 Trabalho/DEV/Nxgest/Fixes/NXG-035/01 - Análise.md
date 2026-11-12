@@ -23,3 +23,8 @@ Runner Linux isolado, requisitos detectados e falha fechada; guardas e namespace
 ## Reteste independente
 
 QA registrou **7/7 CTs sintéticos aprovados com ressalvas**; [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-035 Suite de correcoes ausente dos gates automatizados/06 - Evidências QA|Evidências do reteste QA]]. GitHub Actions e disponibilidade de bwrap/namespaces no runner hospedado não foram comprovados.
+
+
+## Continuidade CI — 2026-11-12
+
+O CI real 43220207854 falhou 13/83 após comprovar guardas: awk ausente no sandbox. O runner monta /usr, mas não /etc; em Ubuntu, /usr/bin/awk pode apontar a /etc/alternatives/awk. O layout local tem /usr/bin/awk → gawk. Diagnóstico não atribui ao produto falha de backup real.
