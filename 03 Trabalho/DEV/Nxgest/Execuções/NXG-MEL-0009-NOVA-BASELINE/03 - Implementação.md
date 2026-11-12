@@ -32,3 +32,8 @@ Sem Docker CLI/daemon, rede, SSH, dados ou recursos reais; sem commit/push/deplo
 - Correção QA reteste 2: teste do loader limpa apenas arquivos de fixture próprios identificados por inode e diretórios criados vazios; snapshot isolado preservou sentinela e política preexistentes, 17/17.
 
 - Observador QA assíncrono opcional antes do cleanup recebe somente cópia congelada de IDs/contexto/caminhos sintéticos; erros bloqueiam e cleanup permanece. 20/20 dublês isolados.
+
+
+## Adoção staging — continuidade DEV
+
+Código e testes integrados locais; runner isolado 92/92, guardas e rede bloqueada. Política, cápsula, executor, bootstrap, transporte e workflow alterados; hashes, testes por fase e limites no resultado DEV. Nenhum Docker/SSH/API real, commit, push ou deploy.

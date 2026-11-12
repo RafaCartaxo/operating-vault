@@ -25,3 +25,12 @@ Revisão local identificou bloqueios concretos; manter implementação em andame
 - Corrigida remoção recursiva da `.maestro` compartilhada. Criação exclusiva, identidade, colisão, falhas e preservação de sentinela/política foram exercitadas no snapshot sob guardas. Conferência e remoção não são atômicas contra substituição concorrente; não foi executado contra o checkout real.
 
 - Observador é código confiável, não sandbox; timeout não cancela subprocessos nem bloqueio síncrono. Payload não inclui env/senhas, mas workdir contém env sintético. Ensaio real anterior não valida o novo hash; QA deve revisar.
+
+
+## Adoção staging — continuidade DEV
+
+Review DEV: sem Compose na troca, política/hash externos, payload privado 0600, NoCopy, retenção por ID, pending e rechecagem antes de receipt. Interrupções SIGKILL de processo foram simuladas; não prova durabilidade após queda do host. Imagem/claims e Docker API reais não foram exercitados; QA deve revisar domínio Docker, segurança, concorrência e recuperação independentemente.
+
+## Correção de fotografia após revisão QA
+
+Executor revalida Config+HostConfig, Mounts e Networks da cápsula e da inspeção atual diretamente contra a política, antes dos efeitos. Reprodução sintética da alteração conjunta para cada seção bloqueou sem stop; runner isolado 92/92. Evidência e hashes atuais em `.maestro/nxgest-team/CT011-ADOCAO-STAGING-DEV-RESULTADO.md`. Reteste independente QA pendente; sem aprovação operacional.

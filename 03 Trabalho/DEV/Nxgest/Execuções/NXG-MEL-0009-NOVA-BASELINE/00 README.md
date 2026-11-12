@@ -19,3 +19,8 @@ Após QA_REJECTED, política controlada no workspace associa ID PG16 aprovado an
 Após QA_REJECTED reteste 2, limpeza da fixture corrigida e sentinela/política sintéticas preservadas em snapshot isolado; DEV_READY_FOR_QA para novo reteste independente.
 
 - Complemento N04: observador independente opcional preparado antes da limpeza; DEV_READY_FOR_QA para revisão. Execução real anterior positiva permanece com ressalva de independência e não valida alteração posterior.
+
+
+## Adoção staging — continuidade DEV
+
+Adoção staging: DEV_READY_FOR_QA integrado para revisão independente de política, cápsula, transporte, bootstrap e executor; não é aprovação operacional nem altera NO-GO de BA10. Evidência: .maestro/nxgest-team/CT011-ADOCAO-STAGING-DEV-RESULTADO.md.
