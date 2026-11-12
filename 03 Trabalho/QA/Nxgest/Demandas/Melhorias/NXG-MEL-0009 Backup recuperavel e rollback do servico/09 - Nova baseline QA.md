@@ -72,3 +72,7 @@ Achado anterior resolvido no snapshot: sentinela e política sintéticas preserv
 ## Ensaio PG real sintético autorizado — 2026-11-11
 
 Uma execução do harness reportou `synthetic-recovery-verified`, uma referência e nenhum órfão; cleanup confirmado posteriormente por ausência da label e comparação dos IDs preexistentes. QA não obteve medição separada de conteúdo/isolamento/negativos antes da limpeza da fixture: CT-N04 real permanece pendente de aceite independente pleno. `operationalReady:false`, fonte de build e gates operacionais continuam NO-GO. Evidência: `.maestro/nxgest-team/CT011-ENSAIO-PG-RESULTADO-QA.md`.
+
+## CT-N04 — ensaio real sintético observado por QA
+
+CT-N04 aprovado com ressalvas no escopo local sintético: PostgreSQL real, conteúdo restaurado, hashes, negativos, isolamento e limpeza verificados antes/depois pelo observador QA. Não prova origem/health de produção. Ver `.maestro/nxgest-team/CT011-N04-OBSERVADOR-PARECER-QA.md`. Gate adicional QA_READY_FOR_DEV para implementação local da cadeia de artefato único em `.maestro/nxgest-team/CT011-BUILD-ARTEFATO-GATE-QA.md`; pai mantém QA_REJECTED/NO-GO.
