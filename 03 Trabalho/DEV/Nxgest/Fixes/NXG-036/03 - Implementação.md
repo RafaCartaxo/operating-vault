@@ -62,3 +62,7 @@ B13: o mesmo gate inteiro foi executado com `NXG_GATE_NEGATIVE_PROBE=1`, que inj
 - `scripts/retain-verified-image.sh`: `1843d4685c029ce25ac659c1be2ecf3ca74f98b8487e36f6cbb89838d02af165`
 - `scripts/retain-verified-image.check.mjs`: `2b73229b32f2a90da534bd5cb7d7b4addcb6ad6bfadd67e4540dc5fa0f479d5b`
 - `scripts/repair-baseline-fixture.check.mjs`: `05fc769191012979cd55be604250f24eb06d76ee894a4c8f5bdc3b86a17155e0`
+
+## Sincronização do parecer final QA — 2026-11-13
+
+A decisão vigente em `.maestro/nxgest-team/NXG-036-PARECER-QA.md` é **QA_APPROVED com ressalvas exclusivamente sintéticas**, 13/13 CTs, gate positivo 107/107 e gate negativo com única falha intencional. O QA_REJECTED anterior permanece como histórico. Backend real, pending histórico, CD e backup/rollback não foram aprovados nem operados. Snapshot QA contém instrumentação adicional somente no runner; os outros 13 arquivos coincidem byte a byte com seu manifesto, e o runner local preservado difere apenas das sondas QA adicionais documentadas no parecer.

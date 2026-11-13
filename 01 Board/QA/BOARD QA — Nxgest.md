@@ -6,7 +6,6 @@ kanban-plugin: board
 
 ## 🔍 Análise da demanda
 
-- [ ] [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-036 Retencao de imagem e conclusao do pending da baseline/00 README|NXG-036 — Retenção de imagem e pending de baseline]] — QA_REJECTED no fechamento integral: 8 CTs aprovados em fixture, 3 parciais e 2 bloqueados; ver parecer QA
 
 
 - [ ] [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0009 Backup recuperavel e rollback do servico/00 README|NXG-MEL-0009 — Backup e rollback]] — QA_REJECTED/NO-GO; adendo nova baseline QA_READY_FOR_DEV local
@@ -35,6 +34,8 @@ kanban-plugin: board
 
 
 ## ✅ Concluído
+
+- [x] [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-036 Retencao de imagem e conclusao do pending da baseline/00 README|NXG-036 — Retenção de imagem e pending de baseline]] — QA_APPROVED com ressalvas; 13/13 sintéticos, sincronização DEV pendente
 
 - [x] [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-035 Suite de correcoes ausente dos gates automatizados/00 README|NXG-035 — Suíte de correções ausente dos gates]] — QA_APPROVED com ressalvas; 7/7 CTs sintéticos, Actions real não verificado
 

@@ -9,3 +9,7 @@ Revisados reentrada, lock cooperativo, ausência de force/prune, marker/pending 
 Cobertura anterior insuficiente, sem defeito reproduzido por QA. Revisitados B06 (timeout e erro após efeito), B09 (interrupção e escrita parcial), B11/B12 (procedimento unicamente sintético com lock e evidências independentes simuladas) e B13 (falha intencional propagada ao exit do gate). Revisado o único ajuste operacional: chamadas do helper usam timeout, retornam erro em ambiguidades e não alegam desfazer ações no daemon. Não se realizou nem se automatizou reparo histórico.
 
 As evidências 107/107 e 106/107 com uma falha deliberada comprovam apenas cenários com fixtures. O verificador de origem simulado não substitui autenticação da cadeia real; ausência de origem verificada, backend compatível ou qualquer evidência operacional ainda fecha o gate. Nenhuma aprovação QA foi atribuída pelo DEV.
+
+## Sincronização do parecer final QA — 2026-11-13
+
+A decisão vigente em `.maestro/nxgest-team/NXG-036-PARECER-QA.md` é **QA_APPROVED com ressalvas exclusivamente sintéticas**, 13/13 CTs, gate positivo 107/107 e gate negativo com única falha intencional. O QA_REJECTED anterior permanece como histórico. Backend real, pending histórico, CD e backup/rollback não foram aprovados nem operados. Snapshot QA contém instrumentação adicional somente no runner; os outros 13 arquivos coincidem byte a byte com seu manifesto, e o runner local preservado difere apenas das sondas QA adicionais documentadas no parecer.

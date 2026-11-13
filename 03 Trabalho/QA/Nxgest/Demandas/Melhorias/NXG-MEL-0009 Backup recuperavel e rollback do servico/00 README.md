@@ -114,3 +114,7 @@ O usuário considera descartáveis os dados atuais e prioriza recuperação futu
 ## Filho NXG-036 — 2026-11-12
 
 [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-036 Retencao de imagem e conclusao do pending da baseline/00 README|NXG-036]] preparado com critérios e CTs locais para retenção/untag e conclusão segura de pending; QA_READY_FOR_DEV. Publicação manual já observada não aprova backup ou rollback; BA10 e CT-011 permanecem NO-GO. Nenhuma operação real ou teste da correção nesta triagem.
+
+## NXG-036 — reteste QA, 2026-11-13
+
+Filho NXG-036 QA_APPROVED com ressalvas em 13/13 CTs sintéticos; backend real e eventual reparo histórico exigem evidência e escopo próprios. BA10/CT-011 e CD completo permanecem pendentes; a baseline manual bed9 segue publicada. Fix DEV aguarda sincronização pelo responsável.

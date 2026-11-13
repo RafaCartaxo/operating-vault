@@ -1,8 +1,8 @@
 ---
 prioridade: alta
-status: analise
+status: concluido
 tipo: bug
-etapa_atual: "QA · Validação"
+etapa_atual: "Concluído"
 modulo: deploy
 ambiente: dev
 origem: observado
@@ -63,3 +63,7 @@ Implementação local autorizada para encaminhamento pela Coordenação; nenhum 
 ## Reteste QA — 2026-11-13
 
 QA_REJECTED para fechamento integral por cobertura incompleta; suíte isolada 100/100 e sonda adicional 4/4. O plano histórico é documental; B11/B12 bloqueados e B06/B09/B13 parciais. Parecer: `.maestro/nxgest-team/NXG-036-PARECER-QA.md`. Nenhum pending histórico ou serviço real foi operado.
+
+## Decisão vigente — 2026-11-13
+
+QA_APPROVED com ressalvas para 13/13 CTs sintéticos após retrabalho; o QA_REJECTED anterior permanece histórico. Backend real deve ser confirmado antes de operação; fixture não autoriza reparo histórico. Parecer `.maestro/nxgest-team/NXG-036-PARECER-QA.md`.
