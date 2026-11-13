@@ -37,3 +37,7 @@ Sem Docker CLI/daemon, rede, SSH, dados ou recursos reais; sem commit/push/deplo
 ## Adoção staging — continuidade DEV
 
 Código e testes integrados locais; runner isolado 92/92, guardas e rede bloqueada. Política, cápsula, executor, bootstrap, transporte e workflow alterados; hashes, testes por fase e limites no resultado DEV. Nenhum Docker/SSH/API real, commit, push ou deploy.
+
+## BA10 — progresso local 2026-11-13
+
+Implementação parcial, não DEV_READY_FOR_QA. Núcleos de admissão/protocolo não integrados, simulação de captura e reconciliação somente sintética; 14/14 testes e tipagem em isolamento. Ver `.maestro/nxgest-team/CT011-BA10-DEV-RESULTADO.md` para hashes, limites e pendências dos critérios QA. Nenhuma operação real, aprovação QA ou alteração de rollback.

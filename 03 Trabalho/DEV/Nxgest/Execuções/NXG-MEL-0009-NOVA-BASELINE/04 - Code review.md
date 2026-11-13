@@ -38,3 +38,7 @@ Executor revalida Config+HostConfig, Mounts e Networks da cápsula e da inspeç�
 ## Divergência de ExposedPorts observada em staging
 
 Correção local limitada à allowlist das duas representações exatas e aos testes de cápsula. Inclui caminho integrado dublado com a representação informada e negativos de porta extra/UDP com política correspondente, sem alterar bindings ou fingerprint. Runner isolado 92/92; evidências e hashes em `.maestro/nxgest-team/CT011-ADOCAO-STAGING-DEV-RESULTADO.md`. DEV_READY_FOR_QA para reteste independente; sem operação real ou aprovação QA.
+
+## BA10 — progresso local 2026-11-13
+
+Implementação parcial, não DEV_READY_FOR_QA. Núcleos de admissão/protocolo não integrados, simulação de captura e reconciliação somente sintética; 14/14 testes e tipagem em isolamento. Ver `.maestro/nxgest-team/CT011-BA10-DEV-RESULTADO.md` para hashes, limites e pendências dos critérios QA. Nenhuma operação real, aprovação QA ou alteração de rollback.

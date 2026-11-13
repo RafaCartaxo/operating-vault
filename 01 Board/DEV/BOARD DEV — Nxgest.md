@@ -13,7 +13,7 @@ kanban-plugin: board
 ## ⚙️ Implementação
 
 
-- [ ] [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0009-NOVA-BASELINE/00 README|Nova baseline CT-011 — implementação parcial]] — adaptadores reais pendentes
+- [ ] [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0009-NOVA-BASELINE/00 README|Nova baseline CT-011 — implementação parcial]] — BA10 em andamento; núcleo/protocolo e fixtures, sem integração operacional nem DEV_READY_FOR_QA
 
 - [ ]
 
