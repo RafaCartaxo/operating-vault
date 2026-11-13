@@ -2,7 +2,7 @@
 prioridade: alta
 status: analise
 tipo: bug
-etapa_atual: "DEV · Análise técnica"
+etapa_atual: "QA · Validação"
 modulo: deploy
 ambiente: dev
 origem: observado
@@ -59,3 +59,7 @@ Cobrir `scripts/deploy-staging.sh`, `staging-adoption-execute.sh`, `initial-base
 ## Contexto da execução
 
 Implementação local autorizada para encaminhamento pela Coordenação; nenhum teste, commit, push, deploy ou operação real nesta triagem.
+
+## Reteste QA — 2026-11-13
+
+QA_REJECTED para fechamento integral por cobertura incompleta; suíte isolada 100/100 e sonda adicional 4/4. O plano histórico é documental; B11/B12 bloqueados e B06/B09/B13 parciais. Parecer: `.maestro/nxgest-team/NXG-036-PARECER-QA.md`. Nenhum pending histórico ou serviço real foi operado.

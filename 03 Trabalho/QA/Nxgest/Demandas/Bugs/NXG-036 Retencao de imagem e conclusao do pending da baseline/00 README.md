@@ -1,7 +1,7 @@
 ---
 projeto: Nxgest
 status: analise
-etapa_atual: "DEV · Análise técnica"
+etapa_atual: "QA · Validação"
 pai: NXG-MEL-0009
 tipo: bug
 ---
@@ -22,3 +22,7 @@ tipo: bug
 - [[03 - Validação dev]]: resultados reservados ao reteste.
 - [[04 - Preparação Qase]]: mapeamento sem envio.
 - [[05 - Gate de integridade QA]]: auditoria e handoff.
+
+## Reteste QA — 2026-11-13
+
+QA_REJECTED para fechamento integral por cobertura incompleta; suíte isolada 100/100 e sonda adicional 4/4. O plano histórico é documental; B11/B12 bloqueados e B06/B09/B13 parciais. Parecer: `.maestro/nxgest-team/NXG-036-PARECER-QA.md`. Nenhum pending histórico ou serviço real foi operado.

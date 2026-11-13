@@ -35,3 +35,30 @@ Casos DEV: loader aceita pin exato e recusa divergente antes de `load/tag/rm`, t
 ## Histórico anterior
 
 A primeira entrega ficou parcial pois o pin era conferido após load. As rodadas anteriores e sua limitação ficam preservadas em [[evidencia-testes-sinteticos.log]]; não são a evidência da versão final.
+
+## Retrabalho após QA_REJECTED — 2026-11-13
+
+QA observou 100/100 e sonda 4/4 sintéticos, sem defeito reproduzido, mas rejeitou fechamento por cobertura B06/B09/B11/B12/B13. Este retrabalho não modifica o modelo de origem nem seus gates. `retain-verified-image.sh` limita cada chamada Docker a 10 segundos com `timeout`, mantendo falha fechada e o estado observável se a operação pode ter ocorrido. O teste usa prazo sintético de 0,8 segundo e injeta tanto timeout como erro após o efeito de `tag` e `rm`; pin é preservado e não há sucesso. A execução real do daemon pode continuar após timeout: resultado é ambíguo e requer reparo controlado.
+
+Para B09, a fixture injeta erro antes e após link do marker e da conclusão, escrita parcial do marker temporário e SIGTERM após publicação do marker; verifica ausência de sucesso, retenção do pending/evidência e bloqueio de reentrada quando o marker existe. Para B11/B12, [[05 - Reparo histórico (plano)]] descreve `repair-baseline-fixture.check.mjs`: procedimento dentro do teste, apenas no namespace `/work`, com `flock` mantido durante verificação e conclusão sintética, owner/modo, identidade, pin, SHA, tar, marker, pending, seleção, dublê de origem e health. Exercita divergências e preservação, inclusive symlink e colisão. A chave fixa do dublê não autentica nenhuma origem real e o teste não implementa reparo operacional.
+
+B13: o mesmo gate inteiro foi executado com `NXG_GATE_NEGATIVE_PROBE=1`, que injeta exclusivamente uma falha de teste; retornou **exit 1**, 106/107 e a única falha foi `NXG036_GATE_FAILURE_INJECTED`. A execução normal retornou **exit 0, 107/107**. As duas execuções confirmaram antes dos testes guardas PATH, `/usr/bin` e subprocessos para Docker/curl/ssh/scp/gh e isolamento de rede; sentinela e política sintética preservadas. [[evidencia-retrabalho-positivo.log|Log positivo]] · [[evidencia-retrabalho-gate-negativo.log|Log com falha injetada]]. Nenhum CT foi aprovado por DEV; QA_REJECTED anterior continua como histórico até reteste independente.
+
+**Limites:** Docker real, modelo/driver real, fsync e queda de energia não foram testados. O plano histórico não autoriza tocar pending real nem comprova sua origem ou health. BA10 não foi implementado nem misturado neste Fix.
+
+## Hashes SHA-256 do retrabalho final
+
+- `scripts/deploy-bootstrap.sh`: `13d87450aea62d3a8e84a5467ee0996898afb5f2362cde3138102cbbbe99eb4e`
+- `scripts/deploy-staging.sh`: `9307209f6c0493b17ae2123a215630644a300a69b702b01f778a053fac56d1cf`
+- `scripts/deploy-transition.check.mjs`: `a2db0f30a0324797d3b133295d436e2ceee7a440ed4e9497f9a2b7785d4a51f4`
+- `scripts/initial-baseline.check.mjs`: `5950599556c5aa7614e40f6433db7abd8dde987c3a688253671678ba9261071c`
+- `scripts/initial-baseline.sh`: `52db35dc90ad4359c6755ec9dcef16b31a12d9ab9d3dce6446d6b681e32c24f2`
+- `scripts/load-verified-image.check.mjs`: `c8a06c9bdbb150bfb17cebdaf46c1bf8e92cc55d3ca384a90703143a3faf1f48`
+- `scripts/load-verified-image.sh`: `2e12eddecf9682436d123f117180bd40f507d30b3d69f0f0e32e56a465f0f38a`
+- `scripts/staging-adoption-capsule.check.mjs`: `f9ff73cd10e545dcd306328e33516f6297dea8c7febc62bb5e630be4bc918f89`
+- `scripts/staging-adoption-execute.sh`: `5ccae07af439aa8c2aad056e47d34c8addb250670006d0c4184490ee38d1eef5`
+- `scripts/test-corrections-isolated.sh`: `970e4cba983e5e67d5f2c1cdfb7431961346abdc5358b0648bec80197a73d4f9`
+- `scripts/guards/gh`: `6f47211f5ddcb1bbdd822c37d05cb766d5f9e9c1fd01fda52ac0a3eea962c295`
+- `scripts/retain-verified-image.sh`: `1843d4685c029ce25ac659c1be2ecf3ca74f98b8487e36f6cbb89838d02af165`
+- `scripts/retain-verified-image.check.mjs`: `2b73229b32f2a90da534bd5cb7d7b4addcb6ad6bfadd67e4540dc5fa0f479d5b`
+- `scripts/repair-baseline-fixture.check.mjs`: `05fc769191012979cd55be604250f24eb06d76ee894a4c8f5bdc3b86a17155e0`

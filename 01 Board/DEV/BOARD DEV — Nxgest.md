@@ -23,7 +23,7 @@ kanban-plugin: board
 
 ## 🧪 Aguardando QA
 
-- [ ] [[03 Trabalho/DEV/Nxgest/Fixes/NXG-036/00 README|NXG-036 — Retenção da imagem e conclusão do pending]] — DEV_READY_FOR_QA; 100 testes sintéticos, CTs aguardam QA
+- [ ] [[03 Trabalho/DEV/Nxgest/Fixes/NXG-036/00 README|NXG-036 — Retenção da imagem e conclusão do pending]] — DEV_READY_FOR_QA após retrabalho; 107 testes sintéticos, QA_REJECTED anterior aguardando reteste
 
 
 
