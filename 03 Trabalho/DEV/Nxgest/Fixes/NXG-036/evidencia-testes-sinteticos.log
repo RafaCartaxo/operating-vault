@@ -1,0 +1,503 @@
+GUARDAS E SUBPROCESSOS CONFIRMADOS; rede isolada
+AWK CONTROLADO CONFIRMADO; link Ubuntu sem /etc isolado
+TAP version 13
+# Subtest: conjunto e anexos sintéticos íntegros são verificados sem expor env
+ok 1 - conjunto e anexos sintéticos íntegros são verificados sem expor env
+  ---
+  duration_ms: 1569.179043
+  ...
+# Subtest: diretório de anexos vazio é aceito; erro de acesso é recusado
+ok 2 - diretório de anexos vazio é aceito; erro de acesso é recusado
+  ---
+  duration_ms: 2032.956116
+  ...
+# Subtest: falhas não publicam conjunto completo nem alteram o anterior
+ok 3 - falhas não publicam conjunto completo nem alteram o anterior
+  ---
+  duration_ms: 8941.530092
+  ...
+# Subtest: corrupção ou mistura de conjuntos é recusada
+ok 4 - corrupção ou mistura de conjuntos é recusada
+  ---
+  duration_ms: 2157.577218
+  ...
+# Subtest: concorrência de backup recusa antes de ação Docker
+ok 5 - concorrência de backup recusa antes de ação Docker
+  ---
+  duration_ms: 141.144524
+  ...
+# Subtest: preflight bloqueia imagem, schema, configuração e decisão ausentes ou divergentes
+ok 6 - preflight bloqueia imagem, schema, configuração e decisão ausentes ou divergentes
+  ---
+  duration_ms: 3628.227847
+  ...
+# Subtest: retorno exige integridade documentada e health não ambíguo
+ok 7 - retorno exige integridade documentada e health não ambíguo
+  ---
+  duration_ms: 1682.899552
+  ...
+# Subtest: colisão do mesmo identificador não sobrescreve conjunto anterior
+ok 8 - colisão do mesmo identificador não sobrescreve conjunto anterior
+  ---
+  duration_ms: 1063.065219
+  ...
+# Subtest: deploy integra backup instalado e bloqueia promoção sem evidências válidas
+ok 9 - deploy integra backup instalado e bloqueia promoção sem evidências válidas
+  ---
+  duration_ms: 2428.330535
+  ...
+# Subtest: backup herda lock de deploy e recusa descritor de lock divergente
+ok 10 - backup herda lock de deploy e recusa descritor de lock divergente
+  ---
+  duration_ms: 1128.396069
+  ...
+# Subtest: reconciliação sintética confronta referências, tamanho, caminhos e relata órfãos
+ok 11 - reconciliação sintética confronta referências, tamanho, caminhos e relata órfãos
+  ---
+  duration_ms: 8.629696
+  ...
+# Subtest: falhas sintéticas de escrita impedem marca completa e preservam conjunto anterior
+ok 12 - falhas sintéticas de escrita impedem marca completa e preservam conjunto anterior
+  ---
+  duration_ms: 5273.471195
+  ...
+# Subtest: política sintética autentica sujeito e recusa emissor, replay, mistura e assinatura inválida
+ok 13 - política sintética autentica sujeito e recusa emissor, replay, mistura e assinatura inválida
+  ---
+  duration_ms: 20.132529
+  ...
+# Subtest: tar sintético extrai e reconcilia; rejeita travessia, links, corrupção e ausências
+ok 14 - tar sintético extrai e reconcilia; rejeita travessia, links, corrupção e ausências
+  ---
+  duration_ms: 28.931604
+  ...
+# Subtest: ustar recusa magic ausente ou inválido e versão inválida mesmo com checksum válido
+ok 15 - ustar recusa magic ausente ou inválido e versão inválida mesmo com checksum válido
+  ---
+  duration_ms: 9.684093
+  ...
+# Subtest: orquestração dublada exige quiescência e associação do mesmo conjunto
+ok 16 - orquestração dublada exige quiescência e associação do mesmo conjunto
+  ---
+  duration_ms: 25.886417
+  ...
+# Subtest: GH fixado recebe identidades e mantém bloqueio operacional
+ok 17 - GH fixado recebe identidades e mantém bloqueio operacional
+  ---
+  duration_ms: 8.281381
+  ...
+# Subtest: falhas de política, binário, processo e evidência bloqueiam
+ok 18 - falhas de política, binário, processo e evidência bloqueiam
+  ---
+  duration_ms: 2.323676
+  ...
+# Subtest: claims autenticados do certificado exigem identidade e tentativa exatas
+ok 19 - claims autenticados do certificado exigem identidade e tentativa exatas
+  ---
+  duration_ms: 3.375289
+  ...
+# Subtest: tar e recibo devem verificar certificados da mesma tentativa
+ok 20 - tar e recibo devem verificar certificados da mesma tentativa
+  ---
+  duration_ms: 1.218685
+  ...
+# Subtest: staging exige certificado do workflow_run e run corretos
+ok 21 - staging exige certificado do workflow_run e run corretos
+  ---
+  duration_ms: 3.30655
+  ...
+# Subtest: API dublada valida identidade e nunca libera produção
+ok 22 - API dublada valida identidade e nunca libera produção
+  ---
+  duration_ms: 110.545923
+  ...
+# Subtest: API recusa rerun, erro, SHA, artifact e identidade divergentes
+ok 23 - API recusa rerun, erro, SHA, artifact e identidade divergentes
+  ---
+  duration_ms: 27.705062
+  ...
+# Subtest: resolve artifact único somente pela API; duplicatas e ausência são recusadas
+ok 24 - resolve artifact único somente pela API; duplicatas e ausência são recusadas
+  ---
+  duration_ms: 9.53937
+  ...
+# Subtest: API staging dublada confirma workflow e rejeita replay ou recibos duplicados
+ok 25 - API staging dublada confirma workflow e rejeita replay ou recibos duplicados
+  ---
+  duration_ms: 13.378259
+  ...
+# Subtest: ZIP aceita somente os dois arquivos regulares e verifica CRC
+ok 26 - ZIP aceita somente os dois arquivos regulares e verifica CRC
+  ---
+  duration_ms: 10.201377
+  ...
+# Subtest: ZIP rejeita travessia, duplicatas, symlink e truncamento
+ok 27 - ZIP rejeita travessia, duplicatas, symlink e truncamento
+  ---
+  duration_ms: 4.908455
+  ...
+# Subtest: health usa porta do container, valida JSON e detecta troca de ID sem rede
+ok 28 - health usa porta do container, valida JSON e detecta troca de ID sem rede
+  ---
+  duration_ms: 832.692445
+  ...
+# Subtest: readiness repete falha transitória, respeita prazo e recusa mudança de identidade
+ok 29 - readiness repete falha transitória, respeita prazo e recusa mudança de identidade
+  ---
+  duration_ms: 2284.700522
+  ...
+# Subtest: vínculo de evidência sintética coerente e divergente nunca libera produção
+ok 30 - vínculo de evidência sintética coerente e divergente nunca libera produção
+  ---
+  duration_ms: 7.574881
+  ...
+# Subtest: cópia sintética completa exige transferência, integridade e preserva colisões
+ok 31 - cópia sintética completa exige transferência, integridade e preserva colisões
+  ---
+  duration_ms: 359.413891
+  ...
+# Subtest: sentinela da fixture detecta execução do script legado
+ok 32 - sentinela da fixture detecta execução do script legado
+  ---
+  duration_ms: 412.443084
+  ...
+# Subtest: primeira transição, repetição e entrada manual usam SHA e helper novos com env intacto
+ok 33 - primeira transição, repetição e entrada manual usam SHA e helper novos com env intacto
+  ---
+  duration_ms: 1293.472163
+  ...
+# Subtest: fetch/ref inválido e remoto indisponível falham antes de checkout e Docker
+ok 34 - fetch/ref inválido e remoto indisponível falham antes de checkout e Docker
+  ---
+  duration_ms: 457.522403
+  ...
+# Subtest: mudança rastreada, arquivo novo e ignorado conflitante são preservados
+ok 35 - mudança rastreada, arquivo novo e ignorado conflitante são preservados
+  ---
+  duration_ms: 1274.596043
+  ...
+# Subtest: produção bloqueia staging ausente e backup ausente ou falho antes de Docker
+ok 36 - produção bloqueia staging ausente e backup ausente ou falho antes de Docker
+  ---
+  duration_ms: 1086.005175
+  ...
+# Subtest: retry com health ruim falha sem mutação; início interrompido bloqueia retomada
+ok 37 - retry com health ruim falha sem mutação; início interrompido bloqueia retomada
+  ---
+  duration_ms: 1331.59604
+  ...
+# Subtest: serviço anterior sem estado controlado bloqueia primeira entrada antes do load
+ok 38 - serviço anterior sem estado controlado bloqueia primeira entrada antes do load
+  ---
+  duration_ms: 346.913828
+  ...
+# Subtest: retry de seleção divergente falha antes de novos efeitos
+ok 39 - retry de seleção divergente falha antes de novos efeitos
+  ---
+  duration_ms: 2056.618665
+  ...
+# Subtest: estado ausente, corrompido ou imagem divergente não autoriza retry
+ok 40 - estado ausente, corrompido ou imagem divergente não autoriza retry
+  ---
+  duration_ms: 2858.012791
+  ...
+# Subtest: falha atômica de estado ou marker preserva pendência e impede retry
+ok 41 - falha atômica de estado ou marker preserva pendência e impede retry
+  ---
+  duration_ms: 1481.400716
+  ...
+# Subtest: seleção antiga não rebaixa implantação posterior
+ok 42 - seleção antiga não rebaixa implantação posterior
+  ---
+  duration_ms: 1292.85237
+  ...
+# Subtest: tar adulterado falha antes de Docker e health ou imagem divergentes não geram recibo
+ok 43 - tar adulterado falha antes de Docker e health ou imagem divergentes não geram recibo
+  ---
+  duration_ms: 1588.95769
+  ...
+# Subtest: verificação e transporte dublados integram staging e recusam fingerprint incorreta
+ok 44 - verificação e transporte dublados integram staging e recusam fingerprint incorreta
+  ---
+  duration_ms: 732.604092
+  ...
+# Subtest: CI e recibo staging dublados materializam primeira baseline e impedem replay
+ok 45 - CI e recibo staging dublados materializam primeira baseline e impedem replay
+  ---
+  duration_ms: 1436.22678
+  ...
+# Subtest: ref legado sem bootstrap é recusada sem chamar script antigo
+ok 46 - ref legado sem bootstrap é recusada sem chamar script antigo
+  ---
+  duration_ms: 277.905739
+  ...
+# Subtest: recuperação legada exige backup, protege arquivos e restaura somente checkout
+ok 47 - recuperação legada exige backup, protege arquivos e restaura somente checkout
+  ---
+  duration_ms: 934.184557
+  ...
+# Subtest: recuperação não sobrescreve arquivo ignorado em conflito
+ok 48 - recuperação não sobrescreve arquivo ignorado em conflito
+  ---
+  duration_ms: 677.849045
+  ...
+# Subtest: disputa pelo checkout falha antes de fetch ou Docker
+ok 49 - disputa pelo checkout falha antes de fetch ou Docker
+  ---
+  duration_ms: 322.633188
+  ...
+# Subtest: gates de promoção CI e caminhos de produção permanecem explícitos
+ok 50 - gates de promoção CI e caminhos de produção permanecem explícitos
+  ---
+  duration_ms: 4.378971
+  ...
+# Subtest: procedimento documentado transporta fixture cifrada entre homes sem sobrescrever
+ok 51 - procedimento documentado transporta fixture cifrada entre homes sem sobrescrever
+  ---
+  duration_ms: 799.069671
+  ...
+# Subtest: chave pública versionada corresponde à fingerprint aceita
+ok 52 - chave pública versionada corresponde à fingerprint aceita
+  ---
+  duration_ms: 1.012314
+  ...
+# Subtest: CI descreve metadados GH limitados ao resumo e sem credenciais
+ok 53 - CI descreve metadados GH limitados ao resumo e sem credenciais
+  ---
+  duration_ms: 0.644976
+  ...
+# Subtest: health interno negativo, indisponível ou porta errada bloqueia staging e retry mesmo com URL pública saudável
+ok 54 - health interno negativo, indisponível ou porta errada bloqueia staging e retry mesmo com URL pública saudável
+  ---
+  duration_ms: 5688.485074
+  ...
+# Subtest: staging recusa banco não saudável antes de carregar imagem ou subir app
+ok 55 - staging recusa banco não saudável antes de carregar imagem ou subir app
+  ---
+  duration_ms: 434.058011
+  ...
+# Subtest: retenção de adoção bloqueia Compose posterior
+ok 56 - retenção de adoção bloqueia Compose posterior
+  ---
+  duration_ms: 712.386123
+  ...
+# Subtest: adoção sem política externa recusa antes de checkout e Docker
+ok 57 - adoção sem política externa recusa antes de checkout e Docker
+  ---
+  duration_ms: 416.114853
+  ...
+# Subtest: jq controlado: ausência, hash, permissões e symlinks falham antes de qualquer Docker
+ok 58 - jq controlado: ausência, hash, permissões e symlinks falham antes de qualquer Docker
+  ---
+  duration_ms: 430.779648
+  ...
+# Subtest: primeira baseline materializa e bloqueia repetição, preservando env
+ok 59 - primeira baseline materializa e bloqueia repetição, preservando env
+  ---
+  duration_ms: 709.837482
+  ...
+# Subtest: política divergente impede mutação; health negativo mantém pendência
+ok 60 - política divergente impede mutação; health negativo mantém pendência
+  ---
+  duration_ms: 623.955651
+  ...
+# Subtest: conteúdo de política incompatível e identidade de imagem divergente não iniciam app
+ok 61 - conteúdo de política incompatível e identidade de imagem divergente não iniciam app
+  ---
+  duration_ms: 198.89257
+  ...
+# Subtest: concorrência no lock recusa bootstrap antes de Docker
+ok 62 - concorrência no lock recusa bootstrap antes de Docker
+  ---
+  duration_ms: 96.917351
+  ...
+# Subtest: health interno de produção falho bloqueia mesmo com URL pública saudável
+ok 63 - health interno de produção falho bloqueia mesmo com URL pública saudável
+  ---
+  duration_ms: 1144.361068
+  ...
+# Subtest: primeira baseline recusa banco não saudável antes da carga ou troca
+ok 64 - primeira baseline recusa banco não saudável antes da carga ou troca
+  ---
+  duration_ms: 182.531274
+  ...
+# Subtest: sucesso arquiva pending próprio e marker completo impede reentrada
+ok 65 - sucesso arquiva pending próprio e marker completo impede reentrada
+  ---
+  duration_ms: 571.809349
+  ...
+# Subtest: colisão de conclusão preserva pending e não declara sucesso
+ok 66 - colisão de conclusão preserva pending e não declara sucesso
+  ---
+  duration_ms: 442.261809
+  ...
+# Subtest: troca do pending pelo mesmo conteúdo não arquiva nem retorna sucesso
+ok 67 - troca do pending pelo mesmo conteúdo não arquiva nem retorna sucesso
+  ---
+  duration_ms: 407.428958
+  ...
+# Subtest: loader usa tar íntegro, lock e ID observado; digest divergente bloqueia Docker
+ok 68 - loader usa tar íntegro, lock e ID observado; digest divergente bloqueia Docker
+  ---
+  duration_ms: 224.800308
+  ...
+# Subtest: ciclo sintético usa somente recursos limitados e remove IDs próprios
+ok 69 - ciclo sintético usa somente recursos limitados e remove IDs próprios
+  ---
+  duration_ms: 40.988641
+  ...
+# Subtest: falha de restore limpa somente recursos criados
+ok 70 - falha de restore limpa somente recursos criados
+  ---
+  duration_ms: 12.413336
+  ...
+# Subtest: divergência do contexto falha antes de criar
+ok 71 - divergência do contexto falha antes de criar
+  ---
+  duration_ms: 1.290131
+  ...
+# Subtest: recusa remover containers com identidade divergente
+ok 72 - recusa remover containers com identidade divergente
+  ---
+  duration_ms: 14.357339
+  ...
+# Subtest: opt-in inválido não chama runner
+ok 73 - opt-in inválido não chama runner
+  ---
+  duration_ms: 0.781082
+  ...
+# Subtest: política ausente, falsificada, major incompatível e ID divergente falham antes de qualquer create/start
+ok 74 - política ausente, falsificada, major incompatível e ID divergente falham antes de qualquer create/start
+  ---
+  duration_ms: 2.951921
+  ...
+# Subtest: colisão, interrupção e versão runtime divergente falham com limpeza por identidade
+ok 75 - colisão, interrupção e versão runtime divergente falham com limpeza por identidade
+  ---
+  duration_ms: 8.194126
+  ...
+# Subtest: readiness negativa esgota limite e limpa recursos; não é health da aplicação
+ok 76 - readiness negativa esgota limite e limpa recursos; não é health da aplicação
+  ---
+  duration_ms: 6.895367
+  ...
+# Subtest: disco cheio, falha de cópia e corrupção de cópia falham e limpam
+ok 77 - disco cheio, falha de cópia e corrupção de cópia falham e limpam
+  ---
+  duration_ms: 14.268546
+  ...
+# Subtest: sem política externa provisionada, loader real bloqueia antes do runner
+ok 78 - sem política externa provisionada, loader real bloqueia antes do runner
+  ---
+  duration_ms: 1.786676
+  ...
+# Subtest: loader controlado preserva objetos preexistentes em sucesso, erro e colisão
+ok 79 - loader controlado preserva objetos preexistentes em sucesso, erro e colisão
+  ---
+  duration_ms: 19.390877
+  ...
+# Subtest: observador recebe cópia imutável sem credenciais após restore e antes de cleanup
+ok 80 - observador recebe cópia imutável sem credenciais após restore e antes de cleanup
+  ---
+  duration_ms: 14.299596
+  ...
+# Subtest: erro do observador falha fechado e limpa recursos próprios
+ok 81 - erro do observador falha fechado e limpa recursos próprios
+  ---
+  duration_ms: 8.951446
+  ...
+# Subtest: injeções de teste sem runner continuam recusadas e observador inválido bloqueia
+ok 82 - injeções de teste sem runner continuam recusadas e observador inválido bloqueia
+  ---
+  duration_ms: 1.420926
+  ...
+# Subtest: modelo recusa última tag em uso; helper cria pin e remove somente temporária
+ok 83 - modelo recusa última tag em uso; helper cria pin e remove somente temporária
+  ---
+  duration_ms: 855.993755
+  ...
+# Subtest: pin exato é reutilizado e colisão divergente não remove nem retagia
+ok 84 - pin exato é reutilizado e colisão divergente não remove nem retagia
+  ---
+  duration_ms: 865.215781
+  ...
+# Subtest: origem ausente e falhas em listagem, inspeção, tag ou untag não retornam sucesso
+ok 85 - origem ausente e falhas em listagem, inspeção, tag ou untag não retornam sucesso
+  ---
+  duration_ms: 1377.346858
+  ...
+# Subtest: cápsula privada contém payload da nova imagem e preserva volume e rede sem mutação Docker
+ok 86 - cápsula privada contém payload da nova imagem e preserva volume e rede sem mutação Docker
+  ---
+  duration_ms: 370.137245
+  ...
+# Subtest: política, fotografia, topologia, symlink e colisão bloqueiam sem cápsula válida ou efeitos de serviço
+ok 87 - política, fotografia, topologia, symlink e colisão bloqueiam sem cápsula válida ou efeitos de serviço
+  ---
+  duration_ms: 2377.85004
+  ...
+# Subtest: executor dublado preserva legado e bloqueia retomada após start ambíguo
+ok 88 - executor dublado preserva legado e bloqueia retomada após start ambíguo
+  ---
+  duration_ms: 68449.943355
+  ...
+# Subtest: executor recusa lock ocupado antes de efeitos
+ok 89 - executor recusa lock ocupado antes de efeitos
+  ---
+  duration_ms: 219.199773
+  ...
+# Subtest: integra política externa, seleção, ZIP, recibo e duas atestações em fixture identificada
+ok 90 - integra política externa, seleção, ZIP, recibo e duas atestações em fixture identificada
+  ---
+  duration_ms: 22.142786
+  ...
+# Subtest: recusa política/hash, ZIP e recibo divergentes e falha de qualquer atestação
+ok 91 - recusa política/hash, ZIP e recibo divergentes e falha de qualquer atestação
+  ---
+  duration_ms: 9.014265
+  ...
+# Subtest: caminho completo dublado usa download, ZIP real, API e ambas atestações
+ok 92 - caminho completo dublado usa download, ZIP real, API e ambas atestações
+  ---
+  duration_ms: 89.592953
+  ...
+# Subtest: download recusa redirect estranho e falha sem expor token
+ok 93 - download recusa redirect estranho e falha sem expor token
+  ---
+  duration_ms: 2.741457
+  ...
+# Subtest: política ausente ou permissões inseguras falham antes de consultar API
+ok 94 - política ausente ou permissões inseguras falham antes de consultar API
+  ---
+  duration_ms: 3.384083
+  ...
+# Subtest: download recusa corpo vazio e tamanho declarado excedido
+ok 95 - download recusa corpo vazio e tamanho declarado excedido
+  ---
+  duration_ms: 3.661049
+  ...
+# Subtest: política-base aprova SHA e obtém IDs da API, rejeitando SHA não aprovado
+ok 96 - política-base aprova SHA e obtém IDs da API, rejeitando SHA não aprovado
+  ---
+  duration_ms: 31.624781
+  ...
+# Subtest: recibo atestado e seleção staging são verificados em fixture
+ok 97 - recibo atestado e seleção staging são verificados em fixture
+  ---
+  duration_ms: 21.424847
+  ...
+# Subtest: replay, health, imagem e atestação divergentes bloqueiam
+ok 98 - replay, health, imagem e atestação divergentes bloqueiam
+  ---
+  duration_ms: 21.51093
+  ...
+1..98
+# tests 98
+# suites 0
+# pass 98
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 72434.158166
+SENTINELA E POLÍTICA PREEXISTENTE PRESERVADAS

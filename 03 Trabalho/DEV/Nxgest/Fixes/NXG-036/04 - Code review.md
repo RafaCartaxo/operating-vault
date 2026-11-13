@@ -1,3 +1,7 @@
-# NXG-036 — Code review
+# NXG-036 — Code review DEV
 
-Pendente: analisar o resultado integral de regressão e cenários negativos de referência, concorrência, interrupção e publicação de marker/pending antes da entrega. Nenhum parecer de QA foi emitido.
+Revisados os três pontos de untag, o loader, o lock cooperativo, rechecagem de ID, retenção sem force/prune, publicação exclusiva de marker, vínculo de inode e arquivamento do pending. Corrigidos no ciclo DEV: detecção de preexistência por listagem em vez de tratar falha de inspect como ausência; revalidação do inode do pending; interceptação de GH no runner. Não há alteração do pending real nem execução de reparo.
+
+**Limitações para QA:** estados parciais deixam evidência e podem exigir intervenção; o teste com dublês não demonstra recuperação após perda de energia/fsync, nem autentica o daemon ou uma imagem real. O pin pressupõe que o chamador já validou bytes/ID, e lock só serializa participantes cooperativos. Verificar independentemente 13 CTs, em especial ambiguidade, interrupções e plano histórico; CT-B11/B12 não foram executados pelo DEV. Sem operação real ou aprovação funcional nesta revisão.
+
+**Achado aberto:** em `deploy-staging.sh` e `deploy-bootstrap.sh`, o load precede a verificação de colisão do pin; a baseline também faz load antes do helper. Mesmo sem troca de serviço, o daemon pode receber imagem/tag temporária antes da recusa. CT-B04/C2/C3 ainda não demonstrados; não encaminhar como pronto. Definir/verificar identidade confiável antes do load mantendo reuso de pin exato e sem equiparar indevidamente index e config. O conjunto 98/98 não cobre esse efeito.
