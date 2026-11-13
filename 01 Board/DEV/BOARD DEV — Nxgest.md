@@ -12,7 +12,6 @@ kanban-plugin: board
 
 ## ⚙️ Implementação
 
-- [ ] [[03 Trabalho/DEV/Nxgest/Fixes/NXG-036/00 README|NXG-036 — Retenção da imagem e conclusão do pending]] — parcial; colisão precisa ser verificada antes do load
 
 - [ ] [[03 Trabalho/DEV/Nxgest/Execuções/NXG-MEL-0009-NOVA-BASELINE/00 README|Nova baseline CT-011 — implementação parcial]] — adaptadores reais pendentes
 
@@ -23,6 +22,8 @@ kanban-plugin: board
 - [ ]
 
 ## 🧪 Aguardando QA
+
+- [ ] [[03 Trabalho/DEV/Nxgest/Fixes/NXG-036/00 README|NXG-036 — Retenção da imagem e conclusão do pending]] — DEV_READY_FOR_QA; 100 testes sintéticos, CTs aguardam QA
 
 
 
