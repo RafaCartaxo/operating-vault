@@ -41,3 +41,7 @@ Código e testes integrados locais; runner isolado 92/92, guardas e rede bloquea
 ## BA10 — progresso local 2026-11-13
 
 Implementação parcial, não DEV_READY_FOR_QA. Núcleos de admissão/protocolo não integrados, simulação de captura e reconciliação somente sintética; 14/14 testes e tipagem em isolamento. Ver `.maestro/nxgest-team/CT011-BA10-DEV-RESULTADO.md` para hashes, limites e pendências dos critérios QA. Nenhuma operação real, aprovação QA ou alteração de rollback.
+
+## BA10 — continuidade local (parcial)
+
+POST/DELETE de anexos instrumentados parcialmente; provas de cobertura global e canal privado seguem ausentes. Política de metadados, journal e comparação de cópia/restore são apenas fixtures; 25/25 testes isolados, sem socket/serviço real. Não DEV_READY_FOR_QA. Detalhes e hashes: `.maestro/nxgest-team/CT011-BA10-DEV-RESULTADO.md`.
