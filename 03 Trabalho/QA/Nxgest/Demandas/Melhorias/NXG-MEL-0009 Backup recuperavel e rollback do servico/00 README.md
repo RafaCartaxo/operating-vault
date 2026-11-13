@@ -110,3 +110,7 @@ NXG-035 recebeu QA_APPROVED com ressalvas após 7/7 CTs sintéticos; [[03 Trabal
 ## Adendo de escopo — nova baseline futura, 2026-11-11
 
 O usuário considera descartáveis os dados atuais e prioriza recuperação futura. [[09 - Nova baseline QA]] define C1–C5, dez CTs e **QA_READY_FOR_DEV** para implementação local delimitada após comparação da proposta DEV. O legado E1 continua não comprovado; CT-011 e este pai permanecem QA_REJECTED/NO-GO. Ensaio PostgreSQL real isolado, descarte e publicação dependem de autorização específica.
+
+## Filho NXG-036 — 2026-11-12
+
+[[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-036 Retencao de imagem e conclusao do pending da baseline/00 README|NXG-036]] preparado com critérios e CTs locais para retenção/untag e conclusão segura de pending; QA_READY_FOR_DEV. Publicação manual já observada não aprova backup ou rollback; BA10 e CT-011 permanecem NO-GO. Nenhuma operação real ou teste da correção nesta triagem.

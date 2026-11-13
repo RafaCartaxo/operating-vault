@@ -6,6 +6,8 @@ kanban-plugin: board
 
 ## 🔍 Análise da demanda
 
+- [ ] [[03 Trabalho/QA/Nxgest/Demandas/Bugs/NXG-036 Retencao de imagem e conclusao do pending da baseline/00 README|NXG-036 — Retenção de imagem e pending de baseline]] — QA_READY_FOR_DEV; 13 CTs planejados, sem execução
+
 
 - [ ] [[03 Trabalho/QA/Nxgest/Demandas/Melhorias/NXG-MEL-0009 Backup recuperavel e rollback do servico/00 README|NXG-MEL-0009 — Backup e rollback]] — QA_REJECTED/NO-GO; adendo nova baseline QA_READY_FOR_DEV local
 
