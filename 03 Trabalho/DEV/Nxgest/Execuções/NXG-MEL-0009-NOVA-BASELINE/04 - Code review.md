@@ -46,3 +46,7 @@ Implementação parcial, não DEV_READY_FOR_QA. Núcleos de admissão/protocolo 
 ## BA10 — continuidade local (parcial)
 
 POST/DELETE de anexos instrumentados parcialmente; provas de cobertura global e canal privado seguem ausentes. Política de metadados, journal e comparação de cópia/restore são apenas fixtures; 25/25 testes isolados, sem socket/serviço real. Não DEV_READY_FOR_QA. Detalhes e hashes: `.maestro/nxgest-team/CT011-BA10-DEV-RESULTADO.md`.
+
+## BA10 — continuidade adicional
+
+12 handlers parcialmente instrumentados, sessão e framing apenas com dublês e journal/barreira em fixture. Suite guardada 36/36; não DEV_READY_FOR_QA. O ACK em memória não é prova operacional e um quadro enviado não é revogado; faltam peer real, reobservação, escritores e integração backup/restore. Ver `.maestro/nxgest-team/CT011-BA10-DEV-RESULTADO.md`.
