@@ -76,3 +76,9 @@ Uma execução do harness reportou `synthetic-recovery-verified`, uma referênci
 ## CT-N04 — ensaio real sintético observado por QA
 
 CT-N04 aprovado com ressalvas no escopo local sintético: PostgreSQL real, conteúdo restaurado, hashes, negativos, isolamento e limpeza verificados antes/depois pelo observador QA. Não prova origem/health de produção. Ver `.maestro/nxgest-team/CT011-N04-OBSERVADOR-PARECER-QA.md`. Gate adicional QA_READY_FOR_DEV para implementação local da cadeia de artefato único em `.maestro/nxgest-team/CT011-BUILD-ARTEFATO-GATE-QA.md`; pai mantém QA_REJECTED/NO-GO.
+
+## CD após primeira baseline — gate QA local
+
+**QA_READY_FOR_DEV para implementação local** do staging após adoção retida e CD posterior à primeira baseline. Pacote completo: [CD-POS-BASELINE-GATE-QA](../../../../../../../.maestro/nxgest-team/CD-POS-BASELINE-GATE-QA.md), com oito critérios, 12 CTs planejados, matriz e limites. Nenhum CT foi executado nesta preparação; Coordenação encaminhará ao DEV existente quando disponível.
+
+Baseline bed9 publicada manualmente não comprova CD automático, backup ou rollback. `consumed`/legado e pending histórico têm tratamentos próprios; não remover estado para passar guarda. Produção posterior permanece NO-GO até fluxo adequado e evidências BA10. NXG-036 mantém seu parecer e hashes; sem reabrir NXG-031/épico.
