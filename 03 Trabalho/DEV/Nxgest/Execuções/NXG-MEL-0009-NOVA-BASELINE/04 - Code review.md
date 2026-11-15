@@ -50,3 +50,23 @@ POST/DELETE de anexos instrumentados parcialmente; provas de cobertura global e 
 ## BA10 — continuidade adicional
 
 12 handlers parcialmente instrumentados, sessão e framing apenas com dublês e journal/barreira em fixture. Suite guardada 36/36; não DEV_READY_FOR_QA. O ACK em memória não é prova operacional e um quadro enviado não é revogado; faltam peer real, reobservação, escritores e integração backup/restore. Ver `.maestro/nxgest-team/CT011-BA10-DEV-RESULTADO.md`.
+
+## CD pós-baseline — revisão parcial
+
+Integração de staging em andamento; não DEV_READY_FOR_QA. O executor tem cobertura sintética de falhas por fase, mas faltam classificação de recursos, revisão da topologia, cadeia de atestação fim a fim, negativos de replay/expiração e testes completos CDP-01–12. Produção posterior permanece NO-GO até BA10/rollback verificáveis. Evidência e matriz: [[CD-POS-BASELINE-DEV-RESULTADO]]. Nenhuma aprovação funcional/operacional é alegada.
+
+## CD pós-baseline — recursos e cadeia sintética
+
+Classificação por labels e journals, validação de topologia e testes sintéticos ampliados; permanecem incompletos recursos fora do filtro, cadeia integral, durabilidade e produção/rollback BA10. Ver matriz e evidências em [[CD-POS-BASELINE-DEV-RESULTADO]]. Não DEV_READY_FOR_QA.
+
+## CD pós-baseline — cadeia e classificação ampliadas
+
+Executados 18 cenários isolados com cadeia sintética efetiva e dublês. A enumeração cobre labels de staging e volume; participantes relevantes da rede/projeto fora desse escopo, durabilidade e BA10/rollback operacional ainda não foram demonstrados. Permanecer NÃO DEV_READY_FOR_QA; ver matriz e hashes em [[CD-POS-BASELINE-DEV-RESULTADO]].
+
+## CD pós-baseline — participantes, política v2 e recuperação local
+
+DEV_READY_FOR_QA para o recorte local de rede/projeto e recuperação sintética: 24 cenários isolados passaram, hashes NXG-036 e BA10 preservados. QA deve revisar independently o contrato de 22 campos e fingerprint; não se afirma durabilidade de host nem backend real. Gate CD global permanece incompleto: rota operacional posterior C4/BA10/rollback ainda ausente e produção NO-GO. Evidência: [[CD-POS-BASELINE-DEV-RESULTADO]].
+
+## Produção posterior — revisão DEV parcial
+
+Composição de origem e preflight de leitura testados em fixture; BA10/rollback operacional e integração ao fluxo protegido seguem NO-GO, sem `DEV_READY_FOR_QA` global. Os 33 arquivos staging, NXG-036 e BA10 foram conferidos. Ver [[CD-PRODUCAO-POSTERIOR-DEV-RESULTADO]].

@@ -3,5 +3,6 @@
   "cssTheme": "Blue Topaz",
   "accentColor": "#4f1377",
   "baseFontSizeAction": false,
-  "enabledCssSnippets": []
+  "enabledCssSnippets": [],
+  "showRibbon": true
 }
