@@ -82,3 +82,8 @@ CT-N04 aprovado com ressalvas no escopo local sintético: PostgreSQL real, conte
 **QA_READY_FOR_DEV para implementação local** do staging após adoção retida e CD posterior à primeira baseline. Pacote completo: [CD-POS-BASELINE-GATE-QA](../../../../../../../.maestro/nxgest-team/CD-POS-BASELINE-GATE-QA.md), com oito critérios, 12 CTs planejados, matriz e limites. Nenhum CT foi executado nesta preparação; Coordenação encaminhará ao DEV existente quando disponível.
 
 Baseline bed9 publicada manualmente não comprova CD automático, backup ou rollback. `consumed`/legado e pending histórico têm tratamentos próprios; não remover estado para passar guarda. Produção posterior permanece NO-GO até fluxo adequado e evidências BA10. NXG-036 mantém seu parecer e hashes; sem reabrir NXG-031/épico.
+
+
+## Reteste focalizado CI recorrente — awk nas fixtures
+
+QA_APPROVED local para o delta de três fontes de teste/runner: reprodução independente 100/108 antes (CTs60,61,64,66,67,68,70,71), 108/108 depois, guardas/isolamento e sentinela/política preservados. Parecer canônico: [CD-CI-AWK-PARECER-QA](../../../../../../../.maestro/nxgest-team/CD-CI-AWK-PARECER-QA.md). Próximo CI Ubuntu real deve confirmar; não houve operação real ou repetição REC completa. BA10/CT-011 recuperação integral NO-GO e pending histórico preservados.
